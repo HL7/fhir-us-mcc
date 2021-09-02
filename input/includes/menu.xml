@@ -1,0 +1,12 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="mcc_use_cases.html">MCC Use Cases</a></li>
+
+  <li><a href="structure_and_design_considerations.html">Structure and Design Considerations</a></li>
+
+  <li><a href="ig_cornerstone_mcc_fhir_ecare_plan_profile_design.html">IG Cornerstone: MCC FHIR eCare Plan Profile Design</a></li>
+
+  <li><a href="profiles_or_resource_directly_reused_in_this_guide.html">Profiles or Resource Directly Reused in this Guide</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>

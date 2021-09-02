@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FamilyMemberHistory
+    xmlns="http://hl7.org/fhir">
+    <id value="father"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-12-18T21:11:16.169+00:00"/>
+        <source value="#LrzDxbVc9zEsWQmp"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">Father died of CKD and heart disease aged 74
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/IdentifyFamilyHistory"/>
+        </valueReference>
+    </extension>
+    <identifier>
+        <value value="12345"/>
+    </identifier>
+    <status value="completed"/>
+    <patient>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Patricia Noelle"/>
+    </patient>
+    <date value="2011-03-18"/>
+    <relationship>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="FTH"/>
+            <display value="father"/>
+        </coding>
+    </relationship>
+    <sex>
+        <coding>
+            <system value="http://hl7.org/fhir/administrative-gender"/>
+            <code value="male"/>
+            <display value="Male"/>
+        </coding>
+    </sex>
+    <condition>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="96711000119105"/>
+                <display value="Hypertensive heart AND chronic kidney disease stage 5 (disorder)"/>
+            </coding>
+            <text value="Hypertensive heart AND chronic kidney disease stage 5"/>
+        </code>
+        <contributedToDeath value="true"/>
+        <onsetAge>
+            <value value="74"/>
+            <unit value="yr"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="a"/>
+        </onsetAge>
+    </condition>
+</FamilyMemberHistory>

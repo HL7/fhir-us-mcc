@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="FamilyHistoryofCKD"/>
+    <meta>
+        <versionId value="13"/>
+        <lastUpdated value="2021-08-26T20:51:06.804+00:00"/>
+        <source value="#HKih4FqMcFDqUgH4"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/FamilyHistoryofCKD"/>
+    <name value="FamilyHistoryofCKD"/>
+    <title value="Family Member History of Chronic Kidney Disease"/>
+    <status value="active"/>
+    <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains the FHIR Family Member History Resource to chronic kidney disease conditions."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="FamilyMemberHistory"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="FamilyMemberHistory">
+            <path value="FamilyMemberHistory"/>
+        </element>
+        <element id="FamilyMemberHistory.extension">
+            <path value="FamilyMemberHistory.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="FamilyMemberHistory.extension:resource-pertainsToGoal">
+            <path value="FamilyMemberHistory.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="FamilyMemberHistory.extension:resource-pertainsToGoal.url">
+            <path value="FamilyMemberHistory.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="FamilyMemberHistory.extension:resource-pertainsToGoal.value[x]">
+            <path value="FamilyMemberHistory.extension.value[x]"/>
+            <short value="Reference to a Goal"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="FamilyMemberHistory.relationship">
+            <path value="FamilyMemberHistory.relationship"/>
+            <label value="Label"/>
+            <short value="First Degree Family Member"/>
+            <binding>
+                <strength value="preferred"/>
+                <description value="This set of values includes first degree family members (i.e., parent, sibling, full child)"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1032.92/expansion/Latest"/>
+            </binding>
+        </element>
+        <element id="FamilyMemberHistory.condition">
+            <path value="FamilyMemberHistory.condition"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="FamilyMemberHistory.condition.code">
+            <path value="FamilyMemberHistory.condition.code"/>
+            <short value="Chronic Kidney Disease All Stages (1 through 5)"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.159/expansion"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Urinalysis"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2020-08-21T17:39:26.226+00:00"/>
+        <source value="#AKJOeliht5uphlDR"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/Urinalysis"/>
+    <name value="Urinalysis"/>
+    <title value="Urinalysis Report"/>
+    <status value="active"/>
+    <description value="This profile constrains US Core Diagnostic Report for Labs profile, to urinalysis results associated with a patient."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+            <display value="United States"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.code">
+            <path value="DiagnosticReport.code"/>
+        </element>
+        <element id="DiagnosticReport.code.coding">
+            <path value="DiagnosticReport.code.coding"/>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="DiagnosticReport.code.coding.system">
+            <path value="DiagnosticReport.code.coding.system"/>
+            <fixedUri value="http://loinc.org"/>
+        </element>
+        <element id="DiagnosticReport.code.coding.code">
+            <path value="DiagnosticReport.code.coding.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCode value="24356-8"/>
+        </element>
+    </differential>
+</StructureDefinition>

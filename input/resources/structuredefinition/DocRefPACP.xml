@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="DocRefPACP"/>
+    <meta>
+        <versionId value="15"/>
+        <lastUpdated value="2021-08-26T20:47:45.082+00:00"/>
+        <source value="#zxiHYZCISbkJ1yCe"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
+    <name value="DocRefPACP"/>
+    <title value="Document Reference to Patient's Personal Advance Care Plan (Advance Directive)"/>
+    <status value="active"/>
+    <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains US Core DocumentReference to reference, query for and retrieve Personal Advance Care Plans that exist for a patient."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+            <display value="United States"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DocumentReference"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DocumentReference">
+            <path value="DocumentReference"/>
+        </element>
+        <element id="DocumentReference.extension">
+            <path value="DocumentReference.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="DocumentReference.extension:resource-pertainsToGoal">
+            <path value="DocumentReference.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DocumentReference.extension:resource-pertainsToGoal.url">
+            <path value="DocumentReference.extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DocumentReference.extension:resource-pertainsToGoal.value[x]">
+            <path value="DocumentReference.extension.value[x]"/>
+            <short value="Reference to a Goal"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DocumentReference.type">
+            <path value="DocumentReference.type"/>
+        </element>
+        <element id="DocumentReference.type.coding">
+            <path value="DocumentReference.type.coding"/>
+            <min value="1"/>
+            <max value="*"/>
+        </element>
+        <element id="DocumentReference.type.coding.system">
+            <path value="DocumentReference.type.coding.system"/>
+            <fixedUri value="http://loinc.org"/>
+        </element>
+        <element id="DocumentReference.type.coding.code">
+            <path value="DocumentReference.type.coding.code"/>
+            <label value="Label"/>
+            <short value="Patient Personal advance care plan"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="81334-5"/>
+        </element>
+    </differential>
+</StructureDefinition>

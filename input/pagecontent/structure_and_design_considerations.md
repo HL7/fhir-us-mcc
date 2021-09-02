@@ -1,0 +1,12 @@
+## Manual Association Vs Derived or Queried for Associations
+As described in the [Care Plan Profile](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/StructureDefinition-mccCarePlan.html) and in the introductory paragraphs, the Multiple Chronic Condition (MCC) Care Plan FHIR IG intends to define a consensus-driven dynamic plan that represents a patient’s and Care Team Members’ prioritized concerns, goals, planned and actual interventions and the resultant care outcomes. It serves as a blueprint shared by all Care Team Members (including the patient, their caregivers, and providers), to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A Care Plan may represent one or more Care Plans and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:
+
+1. Query for patient data across providers and compile into a consolidated care plan representation.
+2. Encourage capture of and communication of a patient’s health concerns and related goals, interventions, and outcomes
+3. Gather and aggregate patient data for uses beyond the point of care (e.g. public health, population health, quality measurement, risk adjustment, quality improvement, and research.)
+
+Because of these use case paradigms and underlying philosophy of retrieving care coordination relevant details and avoiding double documentation that a Care Plan sometimes engenders, the IG describes leverage referencing profiles wherever possible and avoids in-line representation as is done with activity.detail. The Care Plan profile precludes using activity detail.
+
+Please review the rules within the [Care Plan Profile](http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan) Snapshot table closely as well as the explanatory text provided in the profile detailing what is required in both the Care Plan profile and each referenced profile AND the library of MCC Profiles available to be used at these reference points in the Care Plan in order to support the Care Planning/Care Coordination process.
+
+Please see the IG Cornerstone page for additional design tips.

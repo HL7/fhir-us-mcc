@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="VitaminD"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2021-08-27T01:16:43.469+00:00"/>
+        <source value="#tMsvwqbeK7V5mblB"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/VitaminD"/>
+    <name value="VitaminDMedicationRequest"/>
+    <title value="Vitamin D Medication Request"/>
+    <status value="active"/>
+    <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains US Core Medication Request to Vitamin D Formulation Medications."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+            <display value="United States"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MedicationRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MedicationRequest">
+            <path value="MedicationRequest"/>
+        </element>
+        <element id="MedicationRequest.extension">
+            <path value="MedicationRequest.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="MedicationRequest.extension:resource-pertainsToGoal">
+            <path value="MedicationRequest.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationRequest.extension:resource-pertainsToGoal.url">
+            <path value="MedicationRequest.extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationRequest.extension:resource-pertainsToGoal.value[x]">
+            <path value="MedicationRequest.extension.value[x]"/>
+            <short value="Reference to a Goal"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationRequest.medication[x]">
+            <path value="MedicationRequest.medication[x]"/>
+            <label value="Label"/>
+            <short value="Vitamin D Medications"/>
+            <binding>
+                <strength value="required"/>
+                <description value="This set of values contains medication terms that are Vitamin D formulations. The set includes RxNorm Clinical Drug terms (term types SCDG, SCDF and SCD) representing Vitamin D formulations."/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1196.306/expansion"/>
+            </binding>
+        </element>
+        <element id="MedicationRequest.reasonReference">
+            <path value="MedicationRequest.reasonReference"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

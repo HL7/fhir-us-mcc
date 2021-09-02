@@ -1,0 +1,1 @@
+This profile sets additional expectations for the US Core Condition profile to record, search, and fetch hyperkalemia conditions associated with a patient. In addition to the requirements set in the US Core Condition profile, conditionCode is bound to a hyperkalemia value set and the Condition.onset and Condition.recordedDate are set to "must support".

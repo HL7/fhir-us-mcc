@@ -1,0 +1,1 @@
+This profile constrains [US Core Diagnostic Report for Labs](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) profile, to record, search, and fetch urinalysis results associated with a patient. 

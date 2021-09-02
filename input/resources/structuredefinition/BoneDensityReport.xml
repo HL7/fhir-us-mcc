@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="BoneDensityReport"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2021-08-26T19:57:20.132+00:00"/>
+        <source value="#sIFWqWCiGYduVx1A"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/BoneDensityReport"/>
+    <name value="BoneDensityReport"/>
+    <title value="Bone Density Report"/>
+    <status value="active"/>
+    <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains US Core Diagnostic Report Note to Diagnostic Reports about bone density studies."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+            <display value="United States"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.extension">
+            <path value="DiagnosticReport.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="DiagnosticReport.extension:resource-pertainesToGoal">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="resource-pertainesToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:resource-pertainesToGoal.url">
+            <path value="DiagnosticReport.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:resource-pertainesToGoal.value[x]">
+            <path value="DiagnosticReport.extension.value[x]"/>
+            <short value="Reference to a goal"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.basedOn">
+            <path value="DiagnosticReport.basedOn"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.code">
+            <path value="DiagnosticReport.code"/>
+            <label value="Label"/>
+            <short value="Bone Density Tests"/>
+            <binding>
+                <strength value="required"/>
+                <description value="This set of values contains codes commonly used to describe Bone Density Tests."/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.156/expansion"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>
