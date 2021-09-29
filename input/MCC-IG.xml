@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCC-IG"/>
     <meta>
-        <versionId value="406"/>
-        <lastUpdated value="2021-08-31T22:27:14.095+00:00"/>
-        <source value="#Nm0nx14kMXqFqkJL"/>
+        <versionId value="408"/>
+        <lastUpdated value="2021-09-16T16:14:11.220+00:00"/>
+        <source value="#3dK7IJ7scEnm4BxZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
     <version value="0.1.0"/>
@@ -81,6 +81,12 @@
     <packageId value="hl7.fhir.us.mcc"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-location">
+            <valueString value="https://www.hl7.org/fhir/us/core"/>
+        </extension>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-name">
+            <valueString value="USCoreR4"/>
+        </extension>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#3.1.1"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="3.1.1"/>
@@ -801,7 +807,7 @@
                 <reference value="StructureDefinition/IronSaturation"/>
                 <display value="Iron Saturation"/>
             </reference>
-            <name value="Iron Saturation"/>
+            <name value="Iron Saturation (Transferrin Saturation)"/>
             <description value="This profile constrains US Core Laboratory Result Observation to iron saturation results."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group3"/>

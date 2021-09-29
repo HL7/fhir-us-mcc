@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="BoneDensityReport"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-08-26T19:57:20.132+00:00"/>
-        <source value="#sIFWqWCiGYduVx1A"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-09-28T21:22:48.140+00:00"/>
+        <source value="#NluouYCzWMbya1Y5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/BoneDensityReport"/>
     <name value="BoneDensityReport"/>
@@ -75,7 +75,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="This set of values contains codes commonly used to describe Bone Density Tests."/>
-                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.156/expansion"/>
+                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.155/expansion"/>
             </binding>
         </element>
     </differential>
