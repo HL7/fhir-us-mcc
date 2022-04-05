@@ -1,4 +1,3 @@
-
 **Table Column Key**
 * **Topic**: Provides the general context that the LOINC panel code based questionnaire addresses.
 * **LOINC** **Panel** **Code**: The computable identifier (code) assigned by LOINC (Regenstrief) to the named questionnaire.

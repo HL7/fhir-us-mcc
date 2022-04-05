@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="74"/>
-        <lastUpdated value="2021-08-31T22:36:17.053+00:00"/>
-        <source value="#aDSB5eez045dOaN1"/>
+        <versionId value="75"/>
+        <lastUpdated value="2021-12-10T23:12:24.825+00:00"/>
+        <source value="#fbJ5IM61lnAmrB9c"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.1"/>
@@ -90,9 +90,9 @@
             <definition value="Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. These may be thought of as Health Concerns within the Care Plan context. In the MCC Care Plan supportingInfor when available (Must Support) should contain US Core compliant profiles identified in the Artifact Index Library of profiles, the identified CIMI profiles for vital signs, and QuestionnaireResponses preferentially using the QuestionnaireLOINC Panel codes identified &lt;insert Link&gt;. Please also see the Care Plan Profile Relationship diagram for addtional guidance &lt;link?&gt;. Profiles not identified in the library may also be used and are not precluded."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalspanel"/>
-                <targetProfile value="http://hl7.org/fhir/us/vitals/StructureDefinition/BodyWeight"/>
-                <targetProfile value="http://hl7.org/fhir/us/vitals/StructureDefinition/BodyMassIndex"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>

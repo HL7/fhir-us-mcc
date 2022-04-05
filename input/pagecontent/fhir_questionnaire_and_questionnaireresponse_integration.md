@@ -27,6 +27,3 @@ http://loinc.org/q/62199-5
 This implementation Guide recommends using QuestionnaireResponse profile from the [Structured Data Capture IG]http://build.fhir.org/ig/HL7/sdc/) (SDC) and will describe in future drafts using the SDC QuestionnaireResponses observation extraction from the this IG to retrieve derived observations and bring into the MCC Care Plan.  The published IG is from 2017 and uses FHIR STU 3. The link provided is to the continuous build.
  
 As described in the SDC IG, key responses values from completed questionnaires (e.g. pain intensity rating, PROMIS total score variables, etc) to be represented as/converted to Observations. LHC-Forms can output a DiagnosticReport, the SDC approach would be a combination of QuestionnaireResponse plus extracted Observations.  The advantage is that it is a documented, standard approach in the IG; the downside is that in the Questionnaire definition requires marking each question that needs to be extracted into an Observation. As this IG matures we will recommend leveraging this method.
- 
-
-

@@ -1,21 +1,5 @@
 ### Overview
 
-|IG Characteristic  | 	Value |
-|------------------------------------------------------|--------------------------------------------|
-|**FHIR Version:** |	FHIR R4 |
-|**IG Realm:** |	US |
-|**IG Type:** |	STU |
-|**Exchange Methods:** |	RESTful Query, Messages, Transactions,  Tasks |
-|**IG Dependencies:** |	The MCC eCare Plan IG utilizes and adopts guidance or profiles developed in several other FHIR&reg; Implementation Guides. |
-{:.table-striped}
-
-|IG Dependencies         |  IG Code     	| Version                  	|
-|----------------------------------|-------------------------|---------------|
-| HL7 FHIR US Core           	|  [US Core](https://www.hl7.org/fhir/us/core/)            	| Version 3.1.1|
-| Vital Sign Implmentation Guide (CIMI)                	|  [CIMI VS](http://hl7.org/fhir/us/vitals/2020Sep/) | Version 0.1.0 |
-|Structured Data Capture (Questionnaires and QuestionnaireResponses                 	|  [SDC](http://build.fhir.org/ig/HL7/sdc/) | Latest |
-{:.table-striped}
-
 ### Introduction
 This HL7&reg; IG defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease. Prior to balloting in September of 2022, addition chronic condition profiles and content will be developed representing Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), and pain .The profiles defined within this IG were based on data elements of importance identified by the National Institute of Health's (NIH) National Institute of Diabetes and Digestive and Kidney Disease technical expert panels.
 
@@ -85,22 +69,7 @@ Please comment within this google sheet [MCC eCare Plan Comment Sheet](https://d
 
 
 ####  Project Timelines
-
-
-
-
-| Item | Planned Date(s) | 
-| -------- | -------- |
-| Draft IG (non -balloted, ready for testing)     | September 2020     | 
-| SMART on FHIR App v1.0 (ready for testing)    | September 2020     | 
-| Connectathons 1-6    | September 2020  - May 2022   | 
-| Real world implementation and testing    | January 2021 - September 2021     | 
-| Expansion of conditions and values sets in IG from CKD to include other MCC Round 1  | January 2021 - September 2021     | 
-| Expansion of conditions and values sets in IG from CKD to include other MCC Round 2  | September 2021 - September 2022     | 
-| Submit for STU September 2022 Ballot   | September 2022     | 
-|STU Publication    | August 2022     | 
-| Normative Publication   | May 2026     | 
-
+To be developed
 
 ### Acknowledgements
 To be developed
@@ -137,7 +106,6 @@ Because the value sets are housed in VSAC, it is necessary for implementation si
 
 
 
-
 ### Authors
 
 <table>
@@ -157,28 +125,24 @@ Because the value sets are housed in VSAC, it is necessary for implementation si
 <td><a href="mailto:jenna.norton@nih.gov">jenna.norton@nih.gov</a></td>
 </tr>
 <tr>
-<td>Tom Hicke (Project Manager/ Cognitive Medical)</td>
-<td><a href="mailto:thicke@cognitivemedicine.com">thicke@cognitivemedicine.com</a></td>
-</tr>
-<tr>
-<td>Jerry Goodnough (Developer Lead)</td>
-<td><a href="mailto:jgoodnough@saperi.io">jgoodnough@saperi.io</a></td>
-</tr>
-<tr>
 <td>Evelyn Gallego (SDO Business Liason)</td>
 <td><a href="mailto:evelyn.gallego@emiadvisors.net">evelyn.gallego@emiadvisors.net</a></td>
 </tr>
 <tr>
-<td>Joe Bormel MD, MPH (Clinical Analyst)</td>
-<td><a href="mailto:jbormel@cognitivemedicine.com">jbormel@cognitivemedicine.com</a></td>
-</tr>
-<tr>
-<td>Gay Dolin MSN RN (Clinical Modeler and IG Lead)</td>
+<td>Gay Dolin MSN RN (Clinical and IG Modeler)</td>
 <td><a href="mailto:gdolin@NamasteInformatics.com">gdolin@NamasteInformatics.com</a></td>
 </tr>
 <tr>
 <td>HL7 International - Patient Care</td>
 <td><a href="http://www.hl7.org/Special/committees/patientare" target="_new">http://www.hl7.org/Special/committees/patientare</a></td>
+</tr>
+<tr>
+<td>Emma Jones (Clinical and IG Modeler)</td>
+<td></td>
+</tr>
+<tr>
+<td>Dave Carlson (Technical and IG Developer)</td>
+<td></td>
 </tr>
 </tbody>
 </table>

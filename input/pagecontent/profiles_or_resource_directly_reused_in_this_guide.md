@@ -36,9 +36,9 @@ These profiles or resources are referenced from within (contstrained into) the C
 -----
 
 
- - [Body Weight (CIMI)](http://hl7.org/fhir/us/vitals/2020Sep/StructureDefinition-BodyWeight.html) - Note: in ballot fall 2020
- - [Blood Pressure Panel (CIMI)](http://hl7.org/fhir/us/vitals/2020Sep/StructureDefinition-BloodPressurePanel.html) - Note: in ballot fall 2020
- - [Body Mass Index (CIMI)](http://hl7.org/fhir/us/vitals/2020Sep/StructureDefinition-BodyMassIndex.html) - Note: in ballot fall 2020
+ - [US Core Body Weight](http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight) 
+ - [US Core Blood Pressure](http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure)
+ - [US Core Body Mass Index](http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi)
  - [US Core Immunization](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization)
  - [US Core Diagnostic Report - Lab](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab)
  - [MedicationStatement](https://www.hl7.org/fhir/medicationstatement-definitions.html#MedicationStatement)
