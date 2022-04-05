@@ -1,0 +1,17 @@
+{
+	"list": [
+		{
+			"version": "current",
+			"path": "http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG",
+			"desc": "Developing Draft",
+			"fhirversion": "4.0.1",
+			"date": "",
+			"sequence": "",
+			"status": "ci-build",
+			"current": true
+		}
+	],
+	"package-id": "hl7.fhir.us.mcc",
+	"title": "MCC eCare Plan Draft Implementation Guide",
+	"canonical": "http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"
+}
