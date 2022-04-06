@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCC-IG"/>
     <meta>
-        <versionId value="434"/>
-        <lastUpdated value="2022-04-05T21:35:05.920+00:00"/>
-        <source value="#7Zx7LHIc6EDOX9RM"/>
+        <versionId value="435"/>
+        <lastUpdated value="2022-04-06T17:17:08.356+00:00"/>
+        <source value="#jg7W2Wz6HyI9PZkb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
     <version value="0.1.0"/>
     <name value="MCCeCarePlan"/>
-    <title value="MCC eCare Plan Draft Implementation Guide"/>
+    <title value="MCC eCare Plan Implementation Guide"/>
     <status value="draft"/>
     <publisher value="HL7 International - Patient Care WG"/>
     <contact>
