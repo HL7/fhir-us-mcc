@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="BoneSurvey"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-12-18T21:09:10.034+00:00"/>
-        <source value="#mLj3svHYRGf1z4OZ"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-15T21:09:28.621+00:00"/>
+        <source value="#QFHxz8SGYCn3rqyK"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -14,13 +14,16 @@
             xmlns="http://www.w3.org/1999/xhtml">
             <h2>
                 <span title="Codes: {http://loinc.org 30746-2}">Bone Survey Xrays</span> (
+                
                 <span title="Codes: {http://loinc.org LP29684-5}">Radiology</span>) 
+            
             </h2>
             <table class="grid">
                 <tr>
                     <td>Subject</td>
                     <td>
                         <b>Patricia Noelle </b>  1987-02-20 ( Medical Record Number: 1032702 (USUAL))
+                    
                     </td>
                 </tr>
                 <tr>

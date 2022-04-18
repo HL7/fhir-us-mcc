@@ -3,14 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="father"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-12-18T21:11:16.169+00:00"/>
-        <source value="#LrzDxbVc9zEsWQmp"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-04-15T21:09:28.638+00:00"/>
+        <source value="#DxWfMRDMO2IDE3ad"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">Father died of CKD and heart disease aged 74
+        
         </div>
     </text>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">

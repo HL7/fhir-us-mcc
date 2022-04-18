@@ -3,14 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dialysis"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-08-31T21:30:42.230+00:00"/>
-        <source value="#TJS2A4GJQpNpYeZN"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-04-15T21:09:28.741+00:00"/>
+        <source value="#LJBedJAHFdAdnEMX"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">Dialysis
+        
         </div>
     </text>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">

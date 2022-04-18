@@ -42,4 +42,4 @@ These profiles or resources are referenced from within (contstrained into) the C
  - [US Core Immunization](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization)
  - [US Core Diagnostic Report - Lab](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab)
  - [MedicationStatement](https://www.hl7.org/fhir/medicationstatement-definitions.html#MedicationStatement)
- - [StructuredDefinition - QuestionnaireResponse](https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaireresponse.html) - Note: Latest Build
+ - [StructuredDefinition - QuestionnaireResponse](https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaireresponse.html)

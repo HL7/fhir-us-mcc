@@ -6,14 +6,14 @@ A Care Plan is a consensus-driven dynamic plan that represents a patient’s and
 
 ### Standards Supported Care Planning and Coordination Process
 
-The vision of this implementation guide (IG), with the FHIR Care Plan profile as its framework,  is to define a profile on the FHIR Care Plan resource that describes how it can be implemented and leveraged to support machine assisted care coordination between systems. It is assumed that SMART on FHIR Apps can be designed off of this guide to achieve that goal. The IG will also inform EHR systems on how to implement a structured encoded Care Plan.
+The vision of this implementation guide (IG), with the FHIR Care Plan profile as its framework,  is to define a profile on the FHIR Care Plan resource that describes how it can be implemented and leveraged to support machine assisted care coordination between systems. It is assumed that clinician and patient facing SMART on FHIR Apps can be designed off of this guide to achieve that goal. The IG will also inform EHR systems on how to implement a structured encoded Care Plan.
 
 The dynamic care plan process diagram shows Care Plan Cornerstones as they exist within the clinical world and elements and attributes from the FHIR Care Plan resource structure that support the process. In order to encourage reuse and dynamic, machine assisted care coordination, the Care Plan profile design leverages referrencing profiles wherever possible, especially within CarePlan.Activity. 
 
 #### High Level Dynamic Care Plan Process Diagram
 <table><tr><td><img src="CarePlanProcessCornerstones.png" /></td></tr></table>
 
-This profile on the [FHIR Care Plan Resource](http://hl7.org/fhir/R4/careplan.html) describes rules, contraints to  record, search, and fetch care plan data associated with a patient with multiple chronic conditions. It identifies which profiles, core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. Care plan data may or may not be tagged in an EHR as part of a care plan, but is also useful to retrieve data such as goals, problems, medications etc. and their time stamps from EHRs and other health system records to bring into an aggegated plan. This includes care plans that may be authored by a patient.
+This profile on the [FHIR Care Plan Resource](http://hl7.org/fhir/R4/careplan.html) describes rules and contraints to record, search, and fetch care plan data associated with a patient with multiple chronic conditions. It identifies which profiles, core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. Care plan data may or may not be tagged in an EHR as part of a care plan, but is also useful to retrieve data such as goals, problems, medications etc. and their time stamps from EHRs and other health system records to bring into an aggegated plan. This includes care plans that may be authored by a patient.
 
 
 #### Multiple Chronic Condition FHIR Care Plan Profile Relationship Diagram
@@ -27,9 +27,9 @@ CarePlan.Activity" is a Backbone element.
 It identifies an action that has occurred or is a planned action to occur as part of the plan. 
 For example, a medication to be used, lab tests to perform, self-monitoring that has occurred, education etc., within which in R4 can be OutcomeCodeableConcept, OutcomeReference, Progress Note when using activity.reference. 
 		
-OUTCOME REFERENCE (aka PERFORMED ACTIVITY reference: to be renamed in R5 to "CarePlan.performedActivity". Please see https://jira.hl7.org/browse/FHIR-26064.) OutcomeReference is not only an outcome but rather an action such as Procedure or an Encounter that was made or occurred or an Observation. Within CarePlan.performedActivity, the extension, "resource-pertainsToGoal" **SHALL** be used to reference this activity's related goal. Within the resource referenced within performedActivity, "Procedure.reason" **SHALL** be used to reference the health concern or problem for which the activity is done.
+OUTCOME REFERENCE (aka PERFORMED ACTIVITY reference): to be renamed in R5 to "CarePlan.performedActivity". Please see https://jira.hl7.org/browse/FHIR-26064.) OutcomeReference is not only an outcome but rather an action such as Procedure or an Encounter that was made or occurred or an Observation. Within CarePlan.performedActivity, the extension, "resource-pertainsToGoal" **SHALL** be used to reference this activity's related goal. Within the resource referenced within performedActivity, "Procedure.reason" **SHALL** be used to reference the health concern or problem for which the activity is done.
 
-ACTIVITY REFERENCE (aka PLANNED ACTIVITY reference: to be renamed in R5 to "PlannedActivityReference". Please see https://jira.hl7.org/browse/FHIR-26064.) Within plannedActivityReference, the extension, "resource-pertainsToGoal" **SHALL** be used to reference this activity's request's related goal. "xxx.Request.reason" **SHALL** be used to reference the health concern or problem for which the activity is done. Within the referenced Goal resource, goal.address **SHALL** be used to reference the goal's related Condition, Observation, MedicationStatement, NutritionOrder, ServiceRequest or RiskAssessment. Within the referenced Goal resource, Goal.outcomeReference, references the outcome (e.g observations related to the goal).
+ACTIVITY REFERENCE (aka PLANNED ACTIVITY reference): to be renamed in R5 to "PlannedActivityReference". Please see https://jira.hl7.org/browse/FHIR-26064.) Within plannedActivityReference, the extension, "resource-pertainsToGoal" **SHALL** be used to reference this activity's request's related goal. "xxx.Request.reason" **SHALL** be used to reference the health concern or problem for which the activity is done. Within the referenced Goal resource, goal.address **SHALL** be used to reference the goal's related Condition, Observation, MedicationStatement, NutritionOrder, ServiceRequest or RiskAssessment. Within the referenced Goal resource, Goal.outcomeReference, references the outcome (e.g observations related to the goal).
 
 
 **Health Concerns** represented with:
@@ -43,6 +43,7 @@ ACTIVITY REFERENCE (aka PLANNED ACTIVITY reference: to be renamed in R5 to "Plan
 **Goals** represented with:
  - CarePlan.goal (for entire plan)
  - resource-pertainsToGoal
+ - CarePlan.activity.outcomeReference.MCC Goal Profile
 
 **Interventions** represented with:
 
@@ -54,6 +55,5 @@ ACTIVITY REFERENCE (aka PLANNED ACTIVITY reference: to be renamed in R5 to "Plan
  - CarePlan.ActivityOutcome
  - Goal.outcome.reference
 
- 
 #### Instanciated FHIR Supported Dynamic Care Planning and Coordination
 <table><tr><td><img src="InstanciatedFHIRSuppportedDynamicCarePlanning.png" /></td></tr></table>

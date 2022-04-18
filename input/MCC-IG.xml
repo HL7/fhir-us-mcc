@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCC-IG"/>
     <meta>
-        <versionId value="435"/>
-        <lastUpdated value="2022-04-06T17:17:08.356+00:00"/>
-        <source value="#jg7W2Wz6HyI9PZkb"/>
+        <versionId value="586"/>
+        <lastUpdated value="2022-04-15T23:14:39.661+00:00"/>
+        <source value="#cqSl1Wt9S9vNSrnn"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
     <version value="0.1.0"/>
     <name value="MCCeCarePlan"/>
     <title value="MCC eCare Plan Implementation Guide"/>
     <status value="draft"/>
+    <date value="2022-04-13"/>
     <publisher value="HL7 International - Patient Care WG"/>
     <contact>
         <name value="Entire MCC Project Team"/>
@@ -54,7 +55,7 @@
     <contact>
         <name value="Dave Carlson (Technical and IG Developer)"/>
     </contact>
-    <description value="### Introduction&#xA;This HL7&amp;reg; IG defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease. Prior to balloting in September of 2022, addition chronic condition profiles and content will be developed representing Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), and pain .The profiles defined within this IG were based on data elements of importance identified by the National Institute of Health's (NIH) National Institute of Diabetes and Digestive and Kidney Disease technical expert panels.&#xA;&#xA;A Care Plan is a consensus-driven dynamic plan that represents a patient’s and Care Team Members’ prioritized concerns, goals, planned and actual interventions and the resultant care outcomes. It serves as a blueprint shared by all Care Team Members (including the patient, their caregivers, and providers), to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A Care Plan may represent one or more Care Plans and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:&#xA; &#xA;1.        	Query for patient data across providers and compile into a consolidated care plan representation.&#xA;2.        	Encourage capture of and communication of a patient's health concerns and related goals, interventions, and outcomes.&#xA;3.        	Gather and aggregate patient data for uses beyond the point of care (e.g. public health, population health, quality measurement, risk adjustment, quality improvement, and research.)&#xA;&#xA;&#xA;### How to Read this Guide and Cautions&#xA;This Guide is divided into several pages which are listed in the navigation bar at the top each page. The contents of each page are listed in a yellow &quot;Contents&quot; box at the top right of each page.&#xA;&#xA;### Profile Library&#xA;&#xA;Rather than constraining over 75 templates into mutliple areas of the MCC FHIR Care Plan profile, we have referenced the base resources or profiles (most often US Core) and provide a [Library of Profiles ](https://trifolia-fhir-dev.lantanagroup.com/igs/lantana_prod_hapi_r4/MCC-IG/artifacts.html) on the Artifact Index Page. These profiles can be used wherever its relevenet profile is referenced. For example, the [Anemia Conditions Profile](http://hl7.org/fhir/us/mcc/StructureDefinition/AnemiaConditions) can be used wherever [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) is referenced.&#xA; &#xA;A FHIR IG addresses the needs of multiple audiences. It provides technical artifacts that assist programmers when implementing standards-based FHIR application program interfaces (APIs) for specific purposes. It provides instructive material that explains how FHIR is used to accomplish specific use cases. It also provides general information that helps business analysts and technology decision-makers understand the use cases and benefits associated with achieving specific data exchange capabilities. A FHIR IG is as much a business planning tool as it is an educational resource and a technical specification.&#xA; &#xA;&#xA;### History of the Care Plan and Electronic Care Plans&#xA;&#xA;&#xA;&#xA;The concept of a care plan began as a teaching tool for nursing students to research and document the medical conditions their patients had and identify the associated nursing care and family support needed. This was document in a structured paper format that fostered the nursing process. The nursing process is the identification of health concerns and related goals, and the interventions needed to meet those goals and then evaluating the meeting of those goals – the outcomes. Over the years, the care plan evolved from a student teaching tool to something required for most patients in some format by various regulating or certifying bodies, and further, from a nursing care based plan, to an interdisciplinary patient focused tool.&#xA;&#xA;Most major vendors have electronic Care Plan modules, but the degree to which the modules are implemented and actively used is unknown. Few, if any are exchanged standards ready or mapped to exhcnage standards. The first HL7 standard representing Care Plan was the C-CDA Care Plan document designed to represent an instance of an EHR Care Plan similar to the Continuity of Care (CCD) CDA. Many of the learnings and design for the FHIR Care Plan Resource and this IG were derived from the C-CDA Care Plan. There currently is a [ C-CDA on FHIR Pharmacy Care Plan FHIR Document ](http://hl7.org/fhir/us/phcp/)standard also representing an instance in time of a patient’s care plan. There is also an [IHE Profile Dynamic Care Planning Profile](https://wiki.ihe.net/index.php/Dynamic_Care_Planning. The Office of the National Coordinator (ONC) has put in to regulation requirements around goals and health concerns which can currently be met by free text. The Dynamic Care Planning (DCP) Profile provides the structures and transactions for care planning and sharing Care Plans that meet the needs of many, such as providers, patients and payers. The DCP profile leverages the FHIR Care Plan resource, but does not specify describe or define the use of it for representing specific conditions or multiple conditions. We are unaware of any real world implementations of it at this time.&#xA;&#xA;We believe that this IG will be the first fully defined HL7 FHIR IG leveraging the FHIR Care Plan resources as its backbone structure for representing a dynamic care plan and testing its ability to bring together aggregated patient care plan data including patient outcomes.&#xA;&#xA;&#xA;&#xA;### Project Overview&#xA;&#xA;&#xA;&#xA;More than 25% of Americans have MCC, accounting for more than 65% of U.S. health care spending. These individuals have complex health needs handled by diverse providers, across multiple settings of care. As a result, their care is often fragmented, poorly coordinated, and inefficient. Therefore, data aggregation is particularly important and challenging for people with MCC. These challenges will increasingly strain the U.S. health system, with the aging of the US population. Projections suggest numbers of adults aged 65 and older will more than double and numbers of those aged 85 and older will triple by 2050.&#xA; &#xA;Care plans are a prominent part of multifaceted, care coordination interventions that reduce mortality and hospitalizations and improve disease management and satisfaction. In addition, proactive care planning promotes person-centeredness, improves outcomes, and reduces the cost of care. By design, care plans take a patient-centered approach, both by making comprehensive health data available across providers and settings and through the incorporation of data elements that have not traditionally been included in health IT systems (e.g., social determinants of health SDOH, patient health and life goals, patient preferences). While Care Plans have been developed, they remain paper-based in many U.S. healthcare settings and are not standardized and interoperable across care settings when electronic. While care plans focused on a single disease or condition are unlikely to be tenable for patients with MCC or their providers, existing care plans infrequently address individuals with MCC. The development of care plans based on structured data has been proposed as a method for enabling electronic systems to pull together and share data elements automatically and dynamically. Such aggregated data would not only provide actionable information to identify and achieve health and wellness goals for individuals with MCC, but also would reduce missingness and improve quality of point-of-care data for use in pragmatic research.&#xA; &#xA;The Fast Healthcare Interoperability Resources (FHIR) specification is an open-source standard for exchanging healthcare information electronically based on emerging industry approaches. The FHIR workflow specification includes a CarePlan request resource that may facilitate transfer of data for an e-care plan across healthcare settings. SMART (https://smarthealthit.org/) and SMART on FHIR standards include open specifications to integrate applications with health IT systems and may enable the development of an e-care plan application that can integrate with a variety of electronic health record (EHR) systems.&#xA;Initiated by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), the multiple chronic conditions (MCC) electronic care (eCare) Plan Project aims to develop, test, and pilot an interoperable eCare plan that will facilitate aggregation and sharing of critical patient-centered data across home, community, clinic, and research-based settings for persons with MCC, including chronic kidney disease (CKD), type 2 diabetes mellitus (T2DM), cardiovascular disease (CVD), and pain with opioid use disorder (OUD). The HL7 based activities of the MCC eCare Plan Project:&#xA; &#xA;&#xA; - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.&#xA; -  Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards (clinical information models (CIMs)), and FHIR® mappings that will enable the standardized transfer of data across health settings.&#xA; - Through an external to HL7 project, the initiative will develop and test an open-source clinician facing SMART on FHIR eCare plan application for managing persons with MCC.&#xA; - Develop, test, and ballot an HL7® Fast Health Interoperability Resource (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.&#xA; &#xA; &#xA;Additional non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate/display/EC/eCare+Plan+Home).&#xA;&#xA;&#xA;&#xA;### Notes to Reviewers&#xA;&#xA;&#xA;&#xA;This draft implementation guide will be used for connectathon testing, support for development and implementation of the related SMART on FHIR application, guidance for implementing Care Plans in EHRs that could support integration of multiple chronic conditions and for seeking informal comments in preparation for editing and redesigning for the September 2022 Ballot.&#xA;&#xA;&#xA;#### How to Comment on this Draft (non-balloted) IG&#xA;&#xA;&#xA;Comments on this developing preballot implmentation guide are welcome. Commenting as the IG develops over the years will ensure a more robust guide heading into the formal ballot in September of 2022.&#xA;Please comment within this google sheet [MCC eCare Plan Comment Sheet](https://docs.google.com/spreadsheets/d/1rdwAtu5RLOi7RITFcGOA3uiHWHPzCGjSJGH4_yH4T-g/edit#gid=0). Please complete all fields within each comment's row to ease in the authors' resolution.&#xA;&#xA;&#xA;####  Project Timelines&#xA;To be developed&#xA;&#xA;### Acknowledgements&#xA;To be developed&#xA;&#xA;### Guidance&#xA;&#xA;The guidance section provides general implementation guidance and best practices. It describes the relation to and reuse of the US Core Implementation Guide profiles and reuse of its conformance requirements and expectations for the servers and client applications. Vocabulary use and value set binding heuristics are described.&#xA;&#xA;####  Relationship to US Core&#xA;&#xA;This Implementation Guide strives to reuse US Core profiles either through direct use or by constraining select profiles to represent specific clinical conditions, medications, results, etc.. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG constrains or directly reuses other resources, or profiles defined in other FHIR IGs. &#xA;This guide will not reuse the US Core Care Plan. This IG will profile the Base FHIR Care Plan Resource (link) as its core framework rather the US Core Care Plan Profile. The required US Core CarePlan.text and the required Care.Plan.category:AssessPlan are limiting factors for this context of use: aggregation of multiple chronic condition care plans and the ability to query for structured data within a structured Care Plan. The core profile is the [Multiple Chronic Condition FHIR Care Plan Profile](http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan). This non US Core based Care Plan profile primarily references US Core based profiles.&#xA;&#xA;#####  Profile Conformance&#xA;&#xA;Most often, within each profile that is constrained for a particular clinical representation, the only constraint beyond what is defined in the US Core profile is a vocabulary binding to a value set containing the standard codes that represent the particular clinical item. The condition profiles add constraints around time stamps. The MCC FHIR Care Plan contrains, or builds upon, the based FHIR Care Plan Resource and reference US Core Profiles, as well as other profiles. It replicates many of the contraints in the US Core Care Plan profile, but needs to allow for many types of Care Plans beyond an &quot;AssessmentPlan&quot; and encourages reference profiles to faciliate the dynamic nature by reusing what already exists.&#xA;&#xA;#####  General US Core IG Conformance&#xA;&#xA;This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html) and it’s [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. &#xA;&#xA;#####  Provenance&#xA;&#xA;This IG recommends implementers adhere to guidelines and definitions provide in US Core’s [Basic Provenance Guidance](https://www.hl7.org/fhir/us/core/basic-provenance.html). The guide wil likely specify additional provenance rules as it matures and before ballot. &#xA;&#xA;#####  Must Support&#xA;&#xA;This IG will adhere to the US Core [Must Support](https://www.hl7.org/fhir/us/core/general-guidance.html#must-support) concept and rules.&#xA;&#xA;####  Value Set Binding&#xA;&#xA;This project has built and houses its value sets in the National Library of Medicine's (NLM) Value Set Authority Center (VSAC) except where it does not constrain a US Core or other profile’s defined value set. If a value set is bound where there is an existing US Core value set binding, the MCC value set is a subset of the US Core value set. For example, all Condition.code value sets are a subset of [USCoreConditionCode](https://www.hl7.org/fhir/us/core/ValueSet-us-core-condition-code.html). &#xA;Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) UMLS license. In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue."/>
+    <description value="### Introduction&#xA;This HL7&amp;reg; IG defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), chronic pain and Long Covid.The profiles defined within this IG were based on data elements of importance identified by the National Institute of Health's (NIH) National Institute of Diabetes and Digestive and Kidney Disease technical expert panels.&#xA;&#xA;A Care Plan is a consensus-driven dynamic plan that represents a patient’s and Care Team Members’ prioritized concerns, goals, planned and actual interventions and the resultant care outcomes. It serves as a blueprint shared by all Care Team Members (including the patient, their caregivers, and providers), to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A Care Plan may represent one or more Care Plans and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:&#xA; &#xA;1.        	Query for patient data across providers and compile into a consolidated care plan representation.&#xA;2.        	Encourage capture of and communication of a patient's health concerns and related goals, interventions, and outcomes.&#xA;3.        	Gather and aggregate patient data for uses beyond the point of care (e.g. public health, population health, quality measurement, risk adjustment, quality improvement, and research.)&#xA;&#xA;&#xA;### How to Read this Guide and Cautions&#xA;This Guide is divided into several pages which are listed in the navigation bar at the top each page. The contents of each page are listed in a yellow &quot;Contents&quot; box at the top right of each page.&#xA;&#xA;### Value Set Library&#xA;&#xA;Rather than creating nearly 1000 profiles covering important concepts for chronic care coordination for use within the MCC FHIR Care Plan profile, we have created XX foundation profiles which conform to US Core Profiles (where available) adding constraints or extensions pertinent to their representation within a dynamic FHIR care plan.&#xA; &#xA;This FHIR IG addresses the needs of multiple audiences. It provides technical artifacts that assist programmers when implementing standards-based FHIR application program interfaces (APIs) for specific purposes. It provides instructive material that explains how FHIR is used to accomplish specific use cases. It also provides general information that helps business analysts and technology decision-makers understand the use cases and benefits associated with achieving specific data exchange capabilities. A FHIR IG is as much a business planning tool as it is an educational resource and a technical specification.&#xA; &#xA;&#xA;### History of the Care Plan and Electronic Care Plans&#xA;&#xA;&#xA;&#xA;The concept of a care plan began as a teaching tool for nursing students to research and document the medical conditions their patients had and identify the associated nursing care and family support needed. This was documented in a structured paper format that fostered the nursing process. The nursing process is the identification of health concerns and related goals, and the interventions needed to meet those goals and then evaluating the meeting of those goals – the outcomes. Over the years, the care plan evolved from a student teaching tool to something required for most patients in some format by various regulating or certifying bodies, and further, from a nursing care based plan, to an interdisciplinary patient focused tool.&#xA;&#xA;Most major vendors have electronic Care Plan modules, but the degree to which the modules are implemented and actively used is unknown. Few, if any, are exchanged standards ready or mapped to exchange standards. The first HL7 standard representing Care Plan was the C-CDA Care Plan document designed to represent an instance of an EHR Care Plan similar to the Continuity of Care (CCD) CDA. Many of the learnings and designs for the FHIR Care Plan Resource and this IG were derived from the C-CDA Care Plan. There currently is a [ C-CDA on FHIR Pharmacy Care Plan FHIR Document ](http://hl7.org/fhir/us/phcp/)standard also representing an instance in time of a patient’s care plan. There is also an [IHE Profile Dynamic Care Planning Profile](https://wiki.ihe.net/index.php/Dynamic_Care_Planning. The Office of the National Coordinator (ONC) has put into regulation requirements around goals and health concerns which can currently be met by free text. The Dynamic Care Planning (DCP) Profile provides the structures and transactions for care planning and sharing Care Plans that meet the needs of many, such as providers, patients and payers. The DCP profile leverages the FHIR Care Plan resource, but does not specify, describe or define the use of it for representing specific conditions or multiple conditions. We are unaware of any real world implementations of it at this time.&#xA;&#xA;We believe that this IG will be the first fully defined HL7 FHIR IG leveraging the FHIR Care Plan resources as its backbone structure for representing a dynamic care plan and testing its ability to bring together aggregated patient care plan data including patient outcomes.&#xA;&#xA;&#xA;&#xA;### Project Overview&#xA;&#xA;&#xA;&#xA;More than 25% of Americans have MCC, accounting for more than 65% of U.S. health care spending. These individuals have complex health needs handled by diverse providers, across multiple settings of care. As a result, their care is often fragmented, poorly coordinated, and inefficient. Therefore, data aggregation is particularly important and challenging for people with MCC. These challenges will increasingly strain the U.S. health system, with the aging of the US population. Projections suggest numbers of adults aged 65 and older will more than double and numbers of those aged 85 and older will triple by 2050.&#xA; &#xA;Care plans are a prominent part of multifaceted, care coordination interventions that reduce mortality and hospitalizations and improve disease management and satisfaction. In addition, proactive care planning promotes person-centeredness, improves outcomes, and reduces the cost of care. By design, care plans take a patient-centered approach, both by making comprehensive health data available across providers and settings and through the incorporation of data elements that have not traditionally been included in health IT systems (e.g., social determinants of health SDOH, patient health and life goals, patient preferences). While Care Plans have been developed, they remain paper-based in many U.S. healthcare settings and are not standardized and interoperable across care settings when electronic. While care plans focused on a single disease or condition are unlikely to be tenable for patients with MCC or their providers, existing care plans infrequently address individuals with MCC. The development of care plans based on structured data has been proposed as a method for enabling electronic systems to pull together and share data elements automatically and dynamically. Such aggregated data would not only provide actionable information to identify and achieve health and wellness goals for individuals with MCC, but also would reduce missingness and improve quality of point-of-care data for use in pragmatic research.&#xA; &#xA;The Fast Healthcare Interoperability Resources (FHIR) specification is an open-source standard for exchanging healthcare information electronically based on emerging industry approaches. The FHIR workflow specification includes a CarePlan request resource that may facilitate transfer of data for an e-care plan across healthcare settings. SMART (https://smarthealthit.org/) and SMART on FHIR standards include open specifications to integrate applications with health IT systems and may enable the development of an e-care plan application that can integrate with a variety of electronic health record (EHR) systems.&#xA;Initiated by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), the multiple chronic conditions (MCC) electronic care (eCare) Plan Project aims to develop, test, and pilot an interoperable eCare plan that will facilitate aggregation and sharing of critical patient-centered data across home, community, clinic, and research-based settings for persons with MCC, including chronic kidney disease (CKD), type 2 diabetes mellitus (T2DM), cardiovascular disease (CVD), and pain with opioid use disorder (OUD). The HL7 based activities of the MCC eCare Plan Project:&#xA; &#xA;&#xA; - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.&#xA; -  Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards (clinical information models (CIMs)), and FHIR® mappings that will enable the standardized transfer of data across health settings.&#xA; - Through an non-HL7 project, the initiative will develop and test an open-source clinician facing SMART on FHIR eCare plan application for managing persons with MCC.&#xA; - Develop, test, and ballot an HL7® Fast Health Interoperability Resource (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.&#xA; &#xA; &#xA;Additional non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate/display/EC/eCare+Plan+Home).&#xA;&#xA;&#xA;####  Project Timelines&#xA;To be developed&#xA;&#xA;### Acknowledgements&#xA;To be developed&#xA;&#xA;### Guidance&#xA;&#xA;The guidance section provides general implementation guidance and best practices. It describes the relation to and reuse of the US Core Implementation Guide profiles and reuse of its conformance requirements and expectations for the servers and client applications. Vocabulary use and value set binding heuristics are described.&#xA;&#xA;####  Relationship to US Core&#xA;&#xA;This Implementation Guide strives to reuse US Core profiles either through direct use or by constraining select profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG constrains or directly reuses other resources, or profiles defined in other FHIR IGs. &#xA;This guide will reuse the US Core Care Plan. However, the required US Core CarePlan.text and the required Care.Plan.category:AssessPlan may be limiting factors for this context of use: aggregation of multiple chronic condition care plans and the ability to query for structured data within a structured Care Plan. As such, we recommend adding additional Care Plan categories if deemed more informational to reflect multiple chronic condition care coordination and plans and to hard code “Multiple Chronic Condition Care Coordination Plan” at CarePlan.text&#xA;&#xA;&#xA;#####  General US Core IG Conformance&#xA;&#xA;This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html) and it’s [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. &#xA;&#xA;#####  Provenance&#xA;&#xA;This IG recommends implementers adhere to guidelines and definitions provided in US Core’s [Basic Provenance Guidance](https://www.hl7.org/fhir/us/core/basic-provenance.html). &#xA;&#xA;#####  Must Support&#xA;&#xA;This IG will adhere to the US Core [Must Support](https://www.hl7.org/fhir/us/core/general-guidance.html#must-support) concept and rules.&#xA;&#xA;####  Value Set Binding&#xA;&#xA;This project has built and houses its value sets in the National Library of Medicine's (NLM) Value Set Authority Center (VSAC). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used.&#xA;Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) UMLS license. In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -74,41 +75,52 @@
         </extension>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.1"/>
+        <version value="4.0.0"/>
     </dependsOn>
     <dependsOn id="hl7fhiruvsdc">
-        <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+        <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc#3.0.0"/>
         <packageId value="hl7.fhir.uv.sdc"/>
-        <version value="current"/>
+        <version value="3.0.0"/>
     </dependsOn>
     <definition>
         <grouping id="new-group1">
-            <name value="Multiple Chronic Condition (MCC) FHIR Care Plan Profile and chronic condition foci."/>
-            <description value="The Multiple Chronic Condition (MCC) FHIR Care Plan Profile is the backbone or core profile of this of this implementation guide. All of the profiles defined in this IG are referred to from the MCC Care Plan profile. This draft, focuses on Chronic Kidney Disease (CKD) as the first of several chronic conditions that the IG will focus on. Therefore, CKD is also considered a core profile. The CKD profile contains or refers to several profiles especialy significant to CKD."/>
+            <name value="Multiple Chronic Condition (MCC) FHIR Care Plan Profile"/>
+            <description value="The Multiple Chronic Condition (MCC) FHIR Care Plan Profile is the backbone or core profile of this of this implementation guide. All of the profiles defined in this IG are referred to from the MCC Care Plan profile."/>
         </grouping>
         <grouping id="new-group2">
-            <name value="Conditions"/>
-            <description value="**MCC Conditions Library:** These artifacts are all derived from the US Core Condition profile and  have been constrained for use in the MCC Care Plan IG. All of the MCC conditions are conformant to the [US Core Condition Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of conditions from which to select to query for, fetch  or record. These profiles may be used wherever the US Core Condition profile is bound within the MCC FHIR Care Plan.&#xA;&#xA;Please see [Library of Profiles vs Explicit Reference Constraints](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/library_of_profiles_vs_explicit_reference_constraints.html#library-of-profiles-vs-explicit-reference-constraints) for additional discussion on this topic."/>
+            <name value="MCC Condition"/>
+            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (Disorders, Findings, ICD and snomed and location e.g. condition.code, conditon.supporting evidence, etc - to be written after value set pages are developed)"/>
         </grouping>
         <grouping id="new-group6">
-            <name value="Goals"/>
-            <description value="**MCC Goal Library**: These artifacts are all derived from the US Core Goal that have been constrained for use in the MCC Care Plan IG. All of the MCC Goals are conformant to the [US Core Goal ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) with additional requirements for following elements:&#xA;&#xA; -  Goal.measure (Required) Bound to it's relevant goal target value set&#xA; - Goal.expressedBy (Must Support)&#xA; - Goal.addresses (Must Support)&#xA; - Goal.outcomeReference (Must Support)&#xA; - Goal.extension:goal-acceptance (Must Support)&#xA; - Goal.extension:reasonRejected (Must Support)&#xA; - Goal.extension:goal-relationship (Must Support)&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of goals from which to select to query for, fetch or record. These profiles may be used wherever the resource-pertainsToGoal extension is used to relate a resource to its goal.&#xA;&#xA;Please see [Library of Profiles vs Explicit Reference Constraints](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/library_of_profiles_vs_explicit_reference_constraints.html#library-of-profiles-vs-explicit-reference-constraints) for additional discussion on this topic."/>
+            <name value="MCC Goal"/>
+            <description value="**MCC Goal**: This artifact is derived from the US Core Goal and has been constrained for use in the MCC Care Plan IG. The MCC Goals is conformant to the [US Core Goal ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) with additional requirements for following elements:&#xA;&#xA; - Goal.expressedBy (Must Support)&#xA; - Goal.addresses (Must Support)&#xA; - Goal.outcomeReference (Must Support)&#xA; - Goal.extension:goal-acceptance (Must Support)&#xA; - Goal.extension:reasonRejected (Must Support)&#xA; - Goal.extension:goal-relationship (Must Support)&#xA;&#xA;The MCC Goal profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;This initial version of the implementation guide has not developed a library of value sets for goals for use at Goal.description, the assumption being that in todays' EHRs goals are currently most often captured as text. Use of code is not precluded."/>
         </grouping>
         <grouping id="new-group3">
-            <name value="Laboratory Results"/>
-            <description value="**MCC Laboratory Results Library:** These artifacts are all derived from the US Core Laboratory Result Observation profile that have been constrained for use in the MCC Care Plan IG. All of the MCC laboratory result profiles are conformant to the [US Core Laboratory Result Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) with additional requirements for following elements:&#xA;&#xA; - Observation.extension:resource-pertainsToGoal (Must Support)&#xA; - Observation.code (Must Support) Bound to it's relevant laboratory result  value set&#xA; - Observation.basedOn (Must Support) to encourage linking back Care Plan activities.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of laboratory results from which to select to query for, fetch  or record. These profiles may be used wherever the US Core Laboratory Observation profile is bound within the MCC FHIR Care Plan.&#xA;&#xA;Please see [Library of Profiles vs Explicit Reference Constraints](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/library_of_profiles_vs_explicit_reference_constraints.html#library-of-profiles-vs-explicit-reference-constraints) for additional discussion on this topic."/>
+            <name value="MCC Laboratory Result"/>
+            <description value="**MCC Laboratory Result:** This artifacts is derived from the US Core Laboratory Result Observation profile that have been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. All of the MCC laboratory result profiles are conformant to the [US Core Laboratory Result Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) with additional requirements for following elements:&#xA;&#xA; - Observation.extension:resource-pertainsToGoal (Must Support)&#xA; - Observation.basedOn (Must Support) to encourage linking back Care Plan activities.&#xA;&#xA;The MCC Goal profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Laboratory Result profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (element location, LOINC etc - to be written after value set pages are developed)"/>
         </grouping>
         <grouping id="new-group4">
-            <name value="Medication Request"/>
-            <description value="**MCC MedicationRequest Library:** These artifacts are all derived from the US Core MedicationRequest profile that have been constrained for use in the MCC Care Plan IG. All of the MCC laboratory result profiles are conformant to the [US Core MedicationRequest](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html) with additional requirements for following elements:&#xA;&#xA; - MedicationRequest.extension:resource-pertainsToGoal (Must Support)&#xA; - MedicationRequest.medication (Must Support) Bound to it's relevant medication value set&#xA; - Medication.reasonReference (Must Support) to encourage linking back to the health concern, problem or observation it was ordered for.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of medications from which to select to query for, fetch  or record. These profiles may be used wherever the US Core MedicationRequest profile is bound within the MCC FHIR Care Plan.&#xA;&#xA;Please see [Library of Profiles vs Explicit Reference Constraints](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/library_of_profiles_vs_explicit_reference_constraints.html#library-of-profiles-vs-explicit-reference-constraints) for additional discussion on this topic."/>
+            <name value="MCC Medication Request"/>
+            <description value="**MCC MedicationRequest:** This artifacts are is derived from the US Core MedicationRequest profile that has been constrained for use in the MCC Care Plan IG or other FHIR IGs. The MCC MedicationRequest profile is conformant to the [US Core MedicationRequest](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html) with additional requirements for following elements:&#xA;&#xA; - MedicationRequest.extension:resource-pertainsToGoal (Must Support)&#xA; - Medication.reasonReference (Must Support) to encourage linking back to the health concern, problem or observation it was ordered for.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of medications from which to select to query for, fetch  or record. These profiles may be used wherever the US Core MedicationRequest profile is bound within the MCC FHIR Care Plan.&#xA;&#xA;The MCC MedicationRequest profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC MedicationRequest profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets and element location etc., to be written after value set pages are developed&gt;"/>
         </grouping>
         <grouping id="new-group5">
-            <name value="Procedures"/>
-            <description value="**MCC Procedure Library:** These artifacts are all derived from the US Core Procedure profile that have been constrained for use in the MCC Care Plan IG. All of the MCC laboratory result profiles are conformant to the [US Core Procedure](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html) with additional requirements for following elements:&#xA;&#xA; - Procedure.extension:resource-pertainsToGoal (Must Support)&#xA; - Procedure.code (Must Support) Bound to it's relevant procedure value set&#xA; - Procedure.reasonReference (Must Support) to encourage linking back to the health concern, problem, procedure, report or observation it was ordered for.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of procedures from which to select to query for, fetch  or record. These profiles may be used wherever the US Core Procedure is bound within the MCC FHIR Care Plan.&#xA;&#xA;Please see [Library of Profiles vs Explicit Reference Constraints](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/library_of_profiles_vs_explicit_reference_constraints.html#library-of-profiles-vs-explicit-reference-constraints) for additional discussion on this topic."/>
+            <name value="MCC Procedure"/>
+            <description value="**MCC Procedure:** This artifacts is derived from the US Core Procedure profile and been constrained for use in the MCC Care Plan IG. All of the MCC procedure profiles are conformant to the [US Core Procedure](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html) with additional requirements for following elements:&#xA;&#xA; - Procedure.extension:resource-pertainsToGoal (Must Support)&#xA; - Procedure.reasonReference (Must Support) to encourage linking back to the health concern, problem, procedure, report or observation it was ordered for.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of procedures from which to select to query for, fetch  or record. These profiles may be used wherever the US Core Procedure is bound within the MCC FHIR Care Plan.&#xA;&#xA;The MCC procedure profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Procedure profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;"/>
         </grouping>
         <grouping id="new-group7">
-            <name value="Radiology Reports"/>
-            <description value="**MCC Radiology Report Library:** These artifacts are all derived from the US Core Diagnostic Report profile that have been constrained for use in the MCC Care Plan IG. All of the MCC Radiology Report profiles are conformant to the [US Core Diagnostic Report Profile ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) with additional requirements for following elements:&#xA;&#xA; - DiagnosticReport.extension:resource-pertainsToGoal (Must Support)&#xA; - DiagnosticReport.code (Must Support) Bound to it's relevant procedure value set&#xA; - DiagnosticReport.basedOn (Must Support) (Must Support) to encourage linking back Care Plan activities.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of diagnostic radiology reports from which to select to query for, fetch  or record. These profiles may be used wherever the US Core DiagnosticReport is bound within the MCC FHIR Care Plan.&#xA;&#xA;Please see [Library of Profiles vs Explicit Reference Constraints](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/library_of_profiles_vs_explicit_reference_constraints.html#library-of-profiles-vs-explicit-reference-constraints) for additional discussion on this topic."/>
+            <name value="MCC Radiology Report"/>
+            <description value="**MCC Radiology Report and Note:** This artifact is all derived from the US Core Diagnostic Report profile and been constrained for use in the MCC Care Plan IG. The MCC Radiology Report profile is conformant to the [US Core Diagnostic Report Profile ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) with additional requirements for following elements:&#xA;&#xA; - DiagnosticReport.extension:resource-pertainsToGoal (Must Support)&#xA; - DiagnosticReport.basedOn (Must Support) (Must Support) to encourage linking back Care Plan activities.&#xA;&#xA;The MCC Radiology Report and Note profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Radiology Report and Note profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;"/>
+        </grouping>
+        <grouping id="new-group9">
+            <name value="MCC Symptom Observation"/>
+            <description value="NOTE: PROFILE STILL TO BE BUILT&#xA;**MCC Symptom Observation:** This artifact is derived from the Observation Resource and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC Symptom Observation conformant to the [FHIR Observation Resource](http://hl7.org/fhir/R4/observation.html) with additional requirements for following elements:&#xA;&#xA; - Observation.extension:resource-pertainsToGoal (Must Support)&#xA; - Observation.category to LOINC 95419-8 Whether the patient has symptoms related to condition of interest (??)&#xA; -  ??&#xA; - ??&#xA;&#xA;The MCC Symptom Observation profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Symptom Observation profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;"/>
+        </grouping>
+        <grouping id="new-group10">
+            <name value="MCC Service Request"/>
+            <description value="NOTE: THIS PROFILE WILL BE ADDED AFTER US CORE V5.0.0 IS PUBLISHED&#xA;**MCC Service Request:** This artifact is derived from the US Core xx profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC Service request is conformant to the [US Service Request](http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest) with additional requirements for following elements:&#xA;&#xA; - ServiceRequest.extension:resource-pertainsToGoal (Must Support)&#xA; - ??&#xA; -  - ??&#xA;&#xA;The MCC Service Request profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Service Request profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;&#xA;"/>
+        </grouping>
+        <grouping id="new-group11">
+            <name value="MCC Family Member History"/>
         </grouping>
         <grouping id="new-group8">
             <name value="Miscellaneous"/>
@@ -116,321 +128,53 @@
         </grouping>
         <resource>
             <reference>
-                <reference value="Goal/WGT-loss"/></reference>
-            <name value="Weight Loss"/>
-            <description value="[object Object]"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ACEandARB"/>
-                <display value="ACEandARBMedicationRequest"/>
+                <reference value="StructureDefinition/MCCMedicationRequest"/>
+                <display value="Multiple Chronic Condition Care Plan Medication Request"/>
             </reference>
-            <name value="ACE and ARB Medication Request"/>
-            <description value="This profile constrains US Core Medication Request to ACE and ARB Medications."/>
+            <name value="Multiple Chronic Condition Care Plan Medication Request"/>
+            <description value="This profile constrains [US Core Medication Request ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group4"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/AlcoholAbuseDisorder"/>
-                <display value="Alcohol Abuse Conditions"/>
+                <reference value="StructureDefinition/MCCLaboratoryResultObservation"/>
+                <display value="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
             </reference>
-            <name value="Alcohol Abuse Conditions"/>
-            <description value="This profile constrains US Core Condition to alcohol abuse conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/AlkalinePhosphataseDeficiencyConditions"/>
-                <display value="Alkaline Phosphatase Deficiency Conditions"/>
-            </reference>
-            <name value="Alkaline Phosphatase Deficiency Conditions"/>
-            <description value="This profile constrains US Core Condition to alkaline phosphatase deficiency conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/AnemiaConditions"/>
-                <display value="Anemia Conditions"/>
-            </reference>
-            <name value="Anemia Conditions"/>
-            <description value="This profile constrains US Core Condition to anemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/AnionGap"/>
-                <display value="Anion Gap"/>
-            </reference>
-            <name value="Anion Gap"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to anion gap results."/>
+            <name value="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
+            <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group3"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/AnxietyConditions"/>
-                <display value="Anxiety Conditions"/>
+                <reference value="StructureDefinition/MCCGoal"/>
+                <display value="Multiple Chronic Condition Care Plan Goal"/>
             </reference>
-            <name value="Anxiety Conditions"/>
-            <description value="This profile constrains US Core Condition to anxiety conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ArthritisDisorders"/>
-                <display value="Arthritis Disorders"/>
-            </reference>
-            <name value="Arthritis Disorders"/>
-            <description value="This profile constrains US Core Condition to arthritis conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BicarbonateLevelTarget"/>
-                <display value="Bicarbonate Level Target"/>
-            </reference>
-            <name value="Bicarbonate Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for serum bicarbonate levels."/>
+            <name value="Multiple Chronic Condition Care Plan Goal"/>
+            <description value="This profile constrains [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BipolarConditions"/>
-                <display value="Bipolar Conditions"/>
+                <reference value="StructureDefinition/MCCDiagnosticReportAndNote"/>
+                <display value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             </reference>
-            <name value="Bipolar Conditions"/>
-            <description value="This profile constrains US Core Condition to bipolar conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BloodPressureDiastolicTarget"/>
-                <display value="Blood Pressure Diastolic Target"/>
-            </reference>
-            <name value="Blood Pressure Diastolic Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for diastolic blood pressure."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BloodPressureSystolicTarget"/>
-                <display value="BloodPressureSystolicTarget"/>
-            </reference>
-            <name value="Blood Pressure Systolic Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for systolic blood pressure."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BloodUreaNitrogen"/>
-                <display value="Blood Urea Nitrogen"/>
-            </reference>
-            <name value="Blood Urea Nitrogen"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to blood urea nitrogen results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BodyWeightTarget"/>
-                <display value="Body Weight Target"/>
-            </reference>
-            <name value="Body Weight Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for body weight."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/BoneDensityReport"/>
-                <display value="Bone Density Report"/>
-            </reference>
-            <name value="Bone Density Report"/>
-            <description value="This profile constrains US Core Diagnostic Report Note to Diagnostic Reports about bone density studies."/>
+            <name value="BoneSurvey Radiology Report  and Note Example"/>
+            <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group7"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/BoneSurveyXrays"/>
-                <display value="BoneSurveyXrays"/>
+                <reference value="StructureDefinition/MCCChronicDisease"/>
+                <display value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
             </reference>
-            <name value="Bone Survey Xrays"/>
-            <description value="This profile constrains US Core Diagnostic Report Note to Diagnostic Reports about bone survey xrays."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group7"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="DiagnosticReport/BoneSurvey"/>
-                <display value="BoneSurvey"/>
-            </reference>
-            <name value="BoneSurvey Radiology Report Example"/>
-            <description value="A US Core compliant Diagnostic Report for Bone Survey for MCC Care Plan example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/BoneDensityReport"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CalciumLevelTarget"/>
-                <display value="Calcium Level Target"/>
-            </reference>
-            <name value="Calcium Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for calcium levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ChronicKidneyDisease"/>
-                <display value="Chronic Kidney Disease Condition"/>
-            </reference>
-            <name value="Chronic Kidney Disease Condition"/>
-            <description value="This profile constrains US Core Condition to chronic kidney disease conditions and supporting information."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group1"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/f202"/>
-                <display value="f202"/>
-            </reference>
-            <name value="Chronic Kidney Disease Example"/>
-            <description value="This example is a conformant US Core Condition example representing Chronic Kidney Disease. Condition due to is represented, as well as examples of referring to profiles instances that represent &quot;evidence&quot;."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/ChronicKidneyDisease"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ChronicKidneyDiseaseTypeorCause"/>
-                <display value="Chronic Kidney Disease Type or Cause"/>
-            </reference>
-            <name value="Chronic Kidney Disease Type or Cause"/>
-            <description value="This profile constrains US Core Condition to causes or types of chronic kidney conditions."/>
+            <name value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
+            <description value="This profile constrains [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/examplePain"/>
-                <display value="examplePain"/>
-            </reference>
-            <name value="Chronic Pain Condition Example"/>
-            <description value="US Core compliant Chronic Pain Condition for MCC Care Plan example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/ChronicPainConditions"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ChronicPainConditions"/>
-                <display value="Chronic Pain Conditions"/>
-            </reference>
-            <name value="Chronic Pain Conditions"/>
-            <description value="This profile constrains US Core Condition to chronic pain conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CognitivehealthImpairedMemoryDisorders"/>
-                <display value="Cognitive health and Impaired Memory Disorders"/>
-            </reference>
-            <name value="Cognitive health and Impaired Memory Disorders"/>
-            <description value="This profile constrains US Core Condition to cognitive health and impaired memory conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CBC"/>
-                <display value="CompleteBloodCount"/>
-            </reference>
-            <name value="Complete Blood Count"/>
-            <description value="This profile constrains US Core Diagnostic Report Lab to a Complete Blood Count Panel."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CoronaryArteryDiseaseConditions"/>
-                <display value="Coronary Artery Disease Conditions"/>
-            </reference>
-            <name value="Coronary Artery Disease Conditions"/>
-            <description value="This profile constrains US Core Condition to coronary artery conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CorrectedCalcium"/>
-                <display value="Corrected Calcium"/>
-            </reference>
-            <name value="Corrected Calcium"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to corrected calcium results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/CystatinC"/>
-                <display value="Cystatin C"/>
-            </reference>
-            <name value="Cystatin C"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Cystatin C results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DepressionConditions"/>
-                <display value="Depression Conditions"/>
-            </reference>
-            <name value="Depression Conditions"/>
-            <description value="This profile constrains US Core Condition to depression conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DiabeticNeuropathyConditions"/>
-                <display value="Diabetic Neuropathy Conditions"/>
-            </reference>
-            <name value="Diabetic Neuropathy Conditions"/>
-            <description value="This profile constrains US Core Condition to diabetic neuropathy conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DiabeticRetinopathyConditons"/>
-                <display value="Diabetic Retinopathy Conditons"/>
-            </reference>
-            <name value="Diabetic Retinopathy Conditons"/>
-            <description value="This profile constrains US Core Condition to diabetic retinopathy conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/DietaryGoal"/>
-                <display value="Dietary Goal"/>
-            </reference>
-            <name value="Dietary Goal"/>
-            <description value="This profile constrains US Core Goal to focus on goals for dietary intake for modified cholesterol, fat, phosphorous, protein, potassium and sodium diets."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
         </resource>
         <resource>
             <reference>
@@ -444,443 +188,23 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/EndStageRenalDiseaseConditions"/>
-                <display value="End Stage Renal Disease Conditions"/>
+                <reference value="StructureDefinition/MCCFamilyHistory"/>
+                <display value="Multiple Chronic Condition Care Plan Family History"/>
             </reference>
-            <name value="End Stage Renal Disease Conditions"/>
-            <description value="This profile constrains US Core Condition to end stage renal conditions."/>
+            <name value="Multiple Chronic Condition Care Plan Family History"/>
+            <description value="This profile constrains the FHIR Family Member History Resource for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
+            <groupingId value="new-group11"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ErythrocyteDistributionWidth"/>
-                <display value="Erythrocyte Distribution Width"/>
+                <reference value="StructureDefinition/MCCProcedure"/>
+                <display value="Multiple Chronic Condition Care Plan Procedure"/>
             </reference>
-            <name value="Erythrocyte Distribution Width"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to erythrocyte distribution width results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ErythropoiesisStimulatingAgent"/>
-                <display value="ErythropoiesisStimulatingAgent"/>
-            </reference>
-            <name value="Erythropoiesis Stimulating Agent"/>
-            <description value="This profile constrains US Core Medication Request to Erythropoiesis Stimulating Agent Medications."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group4"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/EstimatedAverageGlucose"/>
-                <display value="Estimated Average Glucose"/>
-            </reference>
-            <name value="Estimated Average Glucose"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to estimated average glucose results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/EstimatedGFR"/>
-                <display value="EstimatedGFR"/>
-            </reference>
-            <name value="Estimated Glomerular Filtration Rate Example"/>
-            <description value="US Core laboratory result observation profile compliant example representing an estimated glomerular filtration rate result"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/EstimatedGlomerularFiltrationRate"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/EstimatedGlomerularFiltrationRate"/>
-                <display value="EstimatedGlomerularFiltrationRate"/>
-            </reference>
-            <name value="EstimatedGlomerularFiltrationRate"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to estimated glomerular filtration rate results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/FamilyHistoryofCKD"/>
-                <display value="FamilyHistoryofCKD"/>
-            </reference>
-            <name value="Family History of Chronic Kidney disease"/>
-            <description value="This profile constrains the FHIR Family Member History Resource to chronic kidney disease conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group8"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="FamilyMemberHistory/father"/>
-                <display value="father"/>
-            </reference>
-            <name value="Family Member Hx CKD Example"/>
-            <description value="Family Member History of CKD Example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/FamilyHistoryofCKD"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Ferritin"/>
-                <display value="Ferritin"/>
-            </reference>
-            <name value="Ferritin"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Ferritin results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/FerritinLevelTarget"/>
-                <display value="Ferritin Level Target"/>
-            </reference>
-            <name value="Ferritin Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for ferritin levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HeartFailure"/>
-                <display value="Heart Failure"/>
-            </reference>
-            <name value="Heart Failure"/>
-            <description value="This profile constrains US Core Condition to heart failure conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Hematocrit"/>
-                <display value="Hematocrit"/>
-            </reference>
-            <name value="Hematocrit"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to hematocrit results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HematuriaConditions"/>
-                <display value="Hematuria Conditions"/>
-            </reference>
-            <name value="Hematuria Conditions"/>
-            <description value="This profile constrains US Core Condition to hematuria conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Hemoglobin"/>
-                <display value="Hemoglobin"/>
-            </reference>
-            <name value="Hemoglobin"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to hemoglobin results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HemoglobinA1C"/>
-                <display value="Hemoglobin A1C"/>
-            </reference>
-            <name value="Hemoglobin A1C"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to hemoglobin A1C results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HemogobinA1CTarget"/>
-                <display value="Hemogobin A1C Target"/>
-            </reference>
-            <name value="Hemogobin A1C Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for  A1C."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HemogobinLevelTarget"/>
-                <display value="Hemogobin Level Target"/>
-            </reference>
-            <name value="Hemogobin Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for hemogobin levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HepatitisBCondition"/>
-                <display value="Hepatitis B Condition"/>
-            </reference>
-            <name value="Hepatitis B Condition"/>
-            <description value="This profile constrains US Core Condition to hepatitis B  conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HepatitisCCondition"/>
-                <display value="Hepatitis C Conditions"/>
-            </reference>
-            <name value="Hepatitis C Conditions"/>
-            <description value="This profile constrains US Core Condition to hepatitis C conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HighDensityLipoprotein"/>
-                <display value="High Density Lipoprotein"/>
-            </reference>
-            <name value="High Density Lipoprotein"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to high density lipoprotein results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HumanImmunodeficiencyVirusHIVDisease"/>
-                <display value="Human Immunodeficiency Virus (HIV) Disease"/>
-            </reference>
-            <name value="Human Immunodeficiency Virus (HIV) Disease"/>
-            <description value="This profile constrains US Core Condition to XX conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HypercalcemiaConditions"/>
-                <display value="Hypercalcemia Conditions"/>
-            </reference>
-            <name value="Hypercalcemia Conditions"/>
-            <description value="This profile constrains US Core Condition to hypercalcemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HyperkalemiaConditions"/>
-                <display value="Hyperkalemia Conditions"/>
-            </reference>
-            <name value="Hyperkalemia Conditions"/>
-            <description value="This profile constrains US Core Condition to hyperkalemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HyperlipidemiaConditions"/>
-                <display value="Hyperlipidemia Conditions"/>
-            </reference>
-            <name value="Hyperlipidemia Conditions"/>
-            <description value="This profile constrains US Core Condition to hyperlipidemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HyperparathyroidismCondition"/>
-                <display value="Hyperparathyroidism Condition"/>
-            </reference>
-            <name value="Hyperparathyroidism Condition"/>
-            <description value="This profile constrains US Core Condition to hyperparathyroidism conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HyperphosphatemiaConditions"/>
-                <display value="Hyperphosphatemia Conditions"/>
-            </reference>
-            <name value="Hyperphosphatemia Conditions"/>
-            <description value="This profile constrains US Core Condition to Hyperphosphatemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HypertensionConditions"/>
-                <display value="Hypertension Conditions"/>
-            </reference>
-            <name value="Hypertension Conditions"/>
-            <description value="This profile constrains US Core Condition to hypertension conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HyperuricemiaConditions"/>
-                <display value="Hyperuricemia Conditions"/>
-            </reference>
-            <name value="Hyperuricemia Conditions"/>
-            <description value="This profile constrains US Core Condition to hyperuricemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HypoalbuminemiaConditions"/>
-                <display value="Hypoalbuminemia Conditions"/>
-            </reference>
-            <name value="Hypoalbuminemia Conditions"/>
-            <description value="This profile constrains US Core Condition to hypoalbuminemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/HypocalcemiaConditions"/>
-                <display value="Hypocalcemia Conditions"/>
-            </reference>
-            <name value="Hypocalcemia Conditions"/>
-            <description value="This profile constrains US Core Condition to hypocalcemia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/InsomniaDisorders"/>
-                <display value="Insomnia Disorders"/>
-            </reference>
-            <name value="Insomnia Disorders"/>
-            <description value="This profile constrains US Core Condition to Insomnia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/IntactParathyroidHormone"/>
-                <display value="Intact Parathyroid Hormone"/>
-            </reference>
-            <name value="Intact Parathyroid Hormone"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to intact parathyroid hormone results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/IntactParathyroidHormoneLevelTarget"/>
-                <display value="Intact Parathyroid Hormone Level Target"/>
-            </reference>
-            <name value="Intact Parathyroid Hormone Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for intact parathyroid hormone levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/IronSaturation"/>
-                <display value="Iron Saturation"/>
-            </reference>
-            <name value="Iron Saturation (Transferrin Saturation)"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to iron saturation results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/IronSaturationLevelTarget"/>
-                <display value="Iron Saturation Level Target"/>
-            </reference>
-            <name value="Iron Saturation Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for iron saturation levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/IronSupplements"/>
-                <display value="IronSupplementsMedicationRequest"/>
-            </reference>
-            <name value="Iron Supplements Medication Request"/>
-            <description value="This profile constrains US Core Medication Request to Iron Supplement Medications."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group4"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/KidneyBiopsy"/>
-                <display value="Kidney Biopsy Procedure"/>
-            </reference>
-            <name value="Kidney Biopsy Procedure"/>
-            <description value="This profile constrains US Core Procedure to Kidney Biopsy procedures."/>
+            <name value="Multiple Chronic Condition Care Plan Procedure"/>
+            <description value="This profile constrains [US Core Procedure ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/KTVHemodialysisRatio"/>
-                <display value="KT/V Hemodialysis Ratio"/>
-            </reference>
-            <name value="KT/V Hemodialysis Ratio"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to KT/V hemodialysis ratio results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/LowDensityLipoprotein"/>
-                <display value="Low Density Lipoprotein"/>
-            </reference>
-            <name value="Low Density Lipoprotein"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to low density lipoprotein results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/LowDensityLipoproteinLevelTarget"/>
-                <display value="Low Density Lipoprotein Level Target"/>
-            </reference>
-            <name value="Low Density Lipoprotein Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for low density lipoprotein levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CarePlan/cc-careplan-pnoelle-ckd"/>
-                <display value="cc-careplan-pnoelle-ckd"/>
-            </reference>
-            <name value="MCC FHIR Care Plan Example"/>
-            <description value="This is a basic example of an Multiple Chronic Condition (MCC) FHIR Care Plan with extensive commenting to guide implementers."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MeanCorpuscularHemoglobinConcentration"/>
-                <display value="Mean Corpuscular Hemoglobin Concentration"/>
-            </reference>
-            <name value="Mean Corpuscular Hemoglobin Concentration"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Mean Corpuscular Hemoglobin Concentration results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MeanCorpuscularVolume"/>
-                <display value="MeanCorpuscularVolume"/>
-            </reference>
-            <name value="Mean Corpuscular Volume"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to mean corpuscular volume results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MetabolicAcidosisConditions"/>
-                <display value="Metabolic Acidosis Conditions"/>
-            </reference>
-            <name value="Metabolic Acidosis Conditions"/>
-            <description value="This profile constrains US Core Condition to metabolic acidosis conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
         </resource>
         <resource>
             <reference>
@@ -894,499 +218,83 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ObesityConditions"/>
-                <display value="Obesity Conditions"/>
+                <reference value="CarePlan/MCCCarePlan"/>
+                <display value="Care Plan"/>
             </reference>
-            <name value="Obesity Conditions"/>
-            <description value="This profile constrains US Core Condition to obesity conditions."/>
+            <name value="Multiple Chronic Condition Care Plan Example"/>
+            <description value="A Multiple Chronic Condition Care Plan Example reflecting multiple chronic conditions and associated, goals, health concerns, interventions and outcomes as seen in the profile and profile relationship diagram. (NOTE: Only CKD examples present as of 2022-APR)"/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/PeripheralVascularDisease"/>
-                <display value="Peripheral Vascular Disease"/>
+                <reference value="Procedure/Dialysis"/>
+                <display value="Procedure"/>
             </reference>
-            <name value="Peripheral Vascular Disease"/>
-            <description value="This profile constrains US Core Condition to peripheral vascular conditions."/>
+            <name value="MCC Procedure Example - Dialysis"/>
+            <description value="MCC Procedure Example - Dialysis"/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/BoneSurvey"/>
+                <display value="Diagnostic Report"/>
+            </reference>
+            <name value="MCC Diagnostic Report and Note Example"/>
+            <description value="MCC Diagnostic Report and Note Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/PractitionerRole2"/>
+                <display value="Practitioner"/>
+            </reference>
+            <name value="PractitionerRole/PractitionerRole2"/>
+            <description value="PractitionerRole/PractitionerRole2"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="FamilyMemberHistory/father"/>
+                <display value="FamilyMemberHistory"/>
+            </reference>
+            <name value="MCC Family Member History Example - Father"/>
+            <description value="MCC Family Member History Example - Father"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
         </resource>
         <resource>
             <reference>
                 <reference value="DocumentReference/PACP"/>
-                <display value="PACP"/>
+                <display value="Document Reference"/>
             </reference>
-            <name value="Personal Advanced Care Plan Document Reference Example"/>
-            <description value="A conformant example of a US Core Document reference seeking Personal advance care plan that may reside in a patient's record."/>
+            <name value="MCC Document Reference to Advance Directives Example"/>
+            <description value="MCC Document Reference to Advance Directives Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
         </resource>
         <resource>
             <reference>
-                <reference value="MedicationRequest/uscore-mo1"/>
-                <display value="uscore-mo1"/>
+                <reference value="Condition/ConditionCKD"/>
+                <display value="Condition"/>
             </reference>
-            <name value="Phophate Binder Medication Request Example"/>
-            <description value="US Core compliant MedicationRequest phosphate binder medication example for MCC Care Plan example"/>
+            <name value="MCC Chronic Condition - CKD Example"/>
+            <description value="MCC Chronic Condition - CKD Example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/PhosphateBinders"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/PhosphateBinders"/>
-                <display value="PhosphateBindersMedicationRequest"/>
+                <reference value="Goal/WGT-loss"/>
+                <display value="Goal"/>
             </reference>
-            <name value="Phosphate Binders Medication Request"/>
-            <description value="This profile constrains US Core Medication Request to Phosphate Binder Medications."/>
+            <name value="MCC Goal Example - Weight Loss"/>
+            <description value="MCC Goal Example - Weight Loss"/>
             <exampleBoolean value="false"/>
-            <groupingId value="new-group4"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PhosphorusLevelTarget"/>
-                <display value="Phosphorus Level Target"/>
-            </reference>
-            <name value="Phosphorus Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for phosphorus levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PhysicalActivityTarget"/>
-                <display value="Physical Activity Target"/>
-            </reference>
-            <name value="Physical Activity Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for physical activity level from light through strenuous levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlateletCount"/>
-                <display value="PlateletCount"/>
-            </reference>
-            <name value="Platelet Count"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Platelet Count results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlateletDistributionWidth"/>
-                <display value="Platelet Distribution Width"/>
-            </reference>
-            <name value="Platelet Distribution Width"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to platelet distribution width results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PlateletMeanVolume"/>
-                <display value="Platelet Mean Volume"/>
-            </reference>
-            <name value="Platelet Mean Volume"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Platelet Mean Volume results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PostTraumaticStressDisorderPTSD"/>
-                <display value="PostTraumatic Stress Disorder PTSD"/>
-            </reference>
-            <name value="PostTraumatic Stress Disorder PTSD"/>
-            <description value="This profile constrains US Core Condition to post traumatic stress disorder PTSD conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PotasssiumLevelTarget"/>
-                <display value="Potasssium Level Target"/>
-            </reference>
-            <name value="Potasssium Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for potasssium levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/PreeclampsiaDisorders"/>
-                <display value="Preeclampsia Disorders"/>
-            </reference>
-            <name value="Preeclampsia Disorders"/>
-            <description value="This profile constrains US Core Condition to preeclampsia conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RedBloodCellCount"/>
-                <display value="Red Blood Cell (Erythrocyte) Count"/>
-            </reference>
-            <name value="Red Blood Cell (Erythrocyte) Count"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to red blood cell (erythrocyte) count results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RenalDialysis"/>
-                <display value="Renal Dialysis"/>
-            </reference>
-            <name value="Renal Dialysis"/>
-            <description value="This profile constrains US Core Procedure to renal dialysis procedures."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/RT1234"/>
-                <display value="RT1234"/>
-            </reference>
-            <name value="Renal Transplant Example"/>
-            <description value="US Core compliant Renal Transplant Procedure Example."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/RenalTransplant"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/RenalTransplant"/>
-                <display value="RenalTransplant"/>
-            </reference>
-            <name value="RenalTransplant"/>
-            <description value="This profile constrains US Core Procedure to renal transplant procedures."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SchizophreniaorPsychoticDisorder"/>
-                <display value="Schizophrenia or Psychotic Disorder"/>
-            </reference>
-            <name value="Schizophrenia or Psychotic Disorder"/>
-            <description value="This profile constrains US Core Condition to schizophrenia or psychotic conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumAlbumin"/>
-                <display value="Serum Albumin"/>
-            </reference>
-            <name value="Serum Albumin"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to serum albumin results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumBicarbonate"/>
-                <display value="Serum Bicarbonate"/>
-            </reference>
-            <name value="Serum Bicarbonate"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to serum bicarbonate results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumChloride"/>
-                <display value="Serum Chloride"/>
-            </reference>
-            <name value="Serum Chloride"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to serum chloride results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumCreatinine"/>
-                <display value="Serum Creatinine"/>
-            </reference>
-            <name value="Serum Creatinine"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to serum creatinine results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumPhosphorus"/>
-                <display value="Serum Phosphorus"/>
-            </reference>
-            <name value="Serum Phosphorus"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to serum phosphorus results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumPotassium"/>
-                <display value="Serum Potassium"/>
-            </reference>
-            <name value="Serum Potassium"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Serum Potassium results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SerumSodium"/>
-                <display value="Serum Sodium"/>
-            </reference>
-            <name value="Serum Sodium"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to serum sodium results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SleepApneaDisorders"/>
-                <display value="Sleep Apnea Disorders"/>
-            </reference>
-            <name value="Sleep Apnea Disorders"/>
-            <description value="This profile constrains US Core Condition to sleep apnea conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/SubstanceAbuseDisorder"/>
-                <display value="Substance Abuse Disorder"/>
-            </reference>
-            <name value="Substance Abuse Disorder"/>
-            <description value="This profile constrains US Core Condition to substance abuse disorder conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TotalCholesterol"/>
-                <display value="Total Cholesterol"/>
-            </reference>
-            <name value="Total Cholesterol"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to total cholesterol results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Triglyceride"/>
-                <display value="Triglyceride"/>
-            </reference>
-            <name value="Triglyceride"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to triglyceride results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/TuberculosisDisorders"/>
-                <display value="Tuberculosis Disorders"/>
-            </reference>
-            <name value="Tuberculosis Disorders"/>
-            <description value="This profile constrains US Core Condition to tuberculosis conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Type1DiabetesDiagnosis"/>
-                <display value="Type 1 Diabetes Diagnosis"/>
-            </reference>
-            <name value="Type 1 Diabetes Diagnosis"/>
-            <description value="This profile constrains US Core Condition to type 1 diabetes conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Type2DiabetesDiagnosis"/>
-                <display value="Type 2 Diabetes Diagnosis"/>
-            </reference>
-            <name value="Type 2 Diabetes Diagnosis"/>
-            <description value="This profile constrains US Core Condition to type 1 diabetes conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/UpperLimbVeinUltrasound"/>
-                <display value="Upper Limb Vein Ultrasound"/>
-            </reference>
-            <name value="Upper Limb Vein Ultrasound"/>
-            <description value="This profile constrains US Core Procedure to upper limb veinography procedures."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/UremicPruritusConditions"/>
-                <display value="Uremic Pruritus Conditions"/>
-            </reference>
-            <name value="Uremic Pruritus Conditions"/>
-            <description value="This profile constrains US Core Condition to uremic pruritus conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Urinalysis"/>
-                <display value="Urinalysis"/>
-            </reference>
-            <name value="Urinalysis"/>
-            <description value="This profile constrains US Core Diagnostic Report for Labs profile, to urinalysis results associated with a patient."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/UrineAlbuminCreatinineRatio"/>
-                <display value="Urine Albumin Creatinine Ratio"/>
-            </reference>
-            <name value="Urine Albumin Creatinine Ratio"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to urine albumin creatinine ratio results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/UrineSediment"/>
-                <display value="Urine Sediment"/>
-            </reference>
-            <name value="Urine Sediment"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to urine sediment results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/UrineUreaNitrogen"/>
-                <display value="Urine Urea Nitrogen"/>
-            </reference>
-            <name value="Urine Urea Nitrogen"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to urine urea nitrogen results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/cc-pat-pnoelle"/>
-                <display value="Patient Paticia Noelle"/>
-            </reference>
-            <name value="US Core Patient Patricia Noelle Example"/>
-            <description value="The MCC Care Plan references US Core Patient that carries the patient information for the Care Plan. This is a valid US Core Patient example.&#xA;"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-1"/>
-                <display value="Practitioner Ronald Bone"/>
-            </reference>
-            <name value="US Core Practitioner Example"/>
-            <description value="The MCC Care Plan references US Core Practitioner that carries practitioner information for the Care Plan. This is a valid US Core practtioner example."/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/PractitionerRole2"/>
-                <display value="PractitionerRole2"/>
-            </reference>
-            <name value="US Core PractitionerRole Example"/>
-            <description value="The MCC Care Plan references US Core PractitionerRole that carries practitionerRole information for the Care Plan. This is a valid US Core practitionerRole example."/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ValvularHeartDisease"/>
-                <display value="Valvular Heart Disease"/>
-            </reference>
-            <name value="Valvular Heart Disease"/>
-            <description value="This profile constrains US Core Condition to valvular heart conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/VascularAccessforDialysis"/>
-                <display value="VascularAccessforDialysis"/>
-            </reference>
-            <name value="Vascular Access for Dialysis"/>
-            <description value="This profile constrains US Core Procedure to dialysis vascular access procedures."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group5"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/VitaminDDeficiencyConditions"/>
-                <display value="Vitamin D Deficiency Conditions"/>
-            </reference>
-            <name value="Vitamin D Deficiency Conditions"/>
-            <description value="This profile constrains US Core Condition to vitamin D deficiency conditions."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group2"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/VitaminDLevel"/>
-                <display value="Vitamin D Level"/>
-            </reference>
-            <name value="Vitamin D Level"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to vitamin D level results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/VitaminD"/>
-                <display value="VitainDMedicationRequest"/>
-            </reference>
-            <name value="Vitamin D Medication Request"/>
-            <description value="This profile constrains US Core Medication Request to Vitamin D Formulation Medications."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group4"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/VitaminDLevelTarget"/>
-                <display value="VitaminD Level Target"/>
-            </reference>
-            <name value="VitaminD Level Target"/>
-            <description value="This profile constrains US Core Goal to focus on goals for vitamin D levels."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group6"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Goal/goal-1"/>
-                <display value="goal-1"/>
-            </reference>
-            <name value="Weight Goal Example"/>
-            <description value="US Core compliant Weight Goal for MCC Care Plan example."/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/BodyWeightTarget"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/WhiteBloodCellCount"/>
-                <display value="White Blood Cell (Leukocytes) Count "/>
-            </reference>
-            <name value="White Blood Cell (Leukocytes) Count"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to white blood cell (leukocytes) count results."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group3"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Dialysis"/>
-                <display value="Dialysis Procedure Example"/>
-            </reference>
-            <name value="Dialysis Procedure Example"/>
-            <description value="Example of a Dialysis Procedure."/>
-            <exampleBoolean value="true"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -1437,27 +345,12 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <nameUrl value="library_of_profiles_vs_explicit_reference_constraints.html"/>
-                    <title value="Library of Profiles vs Explicit Reference Constraints"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
                     <nameUrl value="fhir_questionnaire_and_questionnaireresponse_integration.html"/>
                     <title value="FHIR Questionnaire and QuestionnaireResponse Integration"/>
                     <generation value="markdown"/>
                     <page>
                         <nameUrl value="table_of_loinc_panel_codes.html"/>
                         <title value="Table of LOINC Panel Codes"/>
-                        <generation value="markdown"/>
-                    </page>
-                </page>
-                <page>
-                    <nameUrl value="fhir_service_requests_in_mcc.html"/>
-                    <title value="FHIR Service Requests in MCC"/>
-                    <generation value="markdown"/>
-                    <page>
-                        <nameUrl value="mcc_service_request_codes_of_interest.html"/>
-                        <title value="MCC Service Request Codes of Interest"/>
                         <generation value="markdown"/>
                     </page>
                 </page>

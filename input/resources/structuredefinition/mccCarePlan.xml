@@ -3,23 +3,23 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="75"/>
-        <lastUpdated value="2021-12-10T23:12:24.825+00:00"/>
-        <source value="#fbJ5IM61lnAmrB9c"/>
+        <versionId value="87"/>
+        <lastUpdated value="2022-04-14T20:26:54.458+00:00"/>
+        <source value="#XuipTCvXfZESfZPP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
-    <version value="0.1"/>
+    <version value="0.2"/>
     <name value="MCCCarePLan"/>
     <title value="Multiple Chronic Care Condition Care Plan"/>
     <status value="active"/>
-    <date value="2020-03-29"/>
+    <date value="2022-04-13"/>
     <publisher value="Patient Care Work Group"/>
     <description value="This profile constrains the FHIR Care Plan Resource to represent the requirements of a care plan for patients with multiple chronic conditions."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="CarePlan"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
     <derivation value="constraint"/>
     <differential>
         <element id="CarePlan">
@@ -86,22 +86,20 @@
         </element>
         <element id="CarePlan.supportingInfo">
             <path value="CarePlan.supportingInfo"/>
-            <short value="Please see library of available MCC US Core conformant profiles to use for supportingInfo on the Artifact Index page. Any of the MCC defined profiles may be used to represent supporting information"/>
-            <definition value="Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. These may be thought of as Health Concerns within the Care Plan context. In the MCC Care Plan supportingInfor when available (Must Support) should contain US Core compliant profiles identified in the Artifact Index Library of profiles, the identified CIMI profiles for vital signs, and QuestionnaireResponses preferentially using the QuestionnaireLOINC Panel codes identified &lt;insert Link&gt;. Please also see the Care Plan Profile Relationship diagram for addtional guidance &lt;link?&gt;. Profiles not identified in the library may also be used and are not precluded."/>
+            <short value="Please see the libraries of available value sets (link(s)?) pertinent for use with the appropriate Multiple Chronic Condition Care Plan Profile for use within the referenced profiles at CarePlan.supportingInfo"/>
+            <definition value="Identifies portions of the patient's record that specifically influenced the formation of the overall plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. These may be thought of as Health Concerns within the Care Plan context. &#xA;In the MCC Care Plan, supportingInfo should refer to MCC Profiles. In most cases these profiles are profiles derived from US Core, with additional requirements or guidance for the use of these profiles within a Care Plan.&#xA;Profiles not specifically referenced may also be used and are not precluded."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/FamilyHistoryofCKD"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
                 <targetProfile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
             </type>
             <mustSupport value="true"/>
@@ -112,7 +110,7 @@
             <definition value="Describes the intended objective(s) of carrying out the care plan. In the MCC Care Plan, CarePlan.goal When used US Core Goal should be used."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
             </type>
             <mustSupport value="false"/>
         </element>
@@ -123,34 +121,33 @@
         </element>
         <element id="CarePlan.activity.outcomeReference">
             <path value="CarePlan.activity.outcomeReference"/>
-            <short value="PERFORMED ACTIVITY. Please see library of available MCC US Core conformant profiles to use for CarePlan.outcomeReference on the Artifact Index page."/>
-            <definition value="Details of the outcome or action resulting from the activity. The reference to an &quot;event&quot; resource, such as Procedure or Encounter or Observation, is the result/outcome of the activity itself. The activity can be conveyed using CarePlan.activity.detail OR using the CarePlan.activity.reference (a reference to a “request” resource). MedicationStatement is directly referenced to fetch or record ANY medication that is being consumed by a patient. &#xA;&#xA;In the MCC Care Plan, CarePlan.activity.OutcomeReference (Must Support) should contain US Core compliant profiles identified in the Artifact Index Library of procedure, lab result, and diagnostic report profiles. Please also see the Care Plan Profile Relationship diagram for additional guidance &lt;link?&gt;. Goal Profiles not identified in the library may also be used and are not precluded.&#xA;&#xA;&#xA;There is an existing FHIR JIRA #26064 with respect to clarifying the description and names for activity within Care Plan: 1. Rename:  activity.outcome to performedActivity, 2. Rename:  activity.reference to plannedActivityReference, 3. Rename:  activity.detail to plannedActivityDetail."/>
+            <short value="This CarePlan element represents a PERFORMED ACTIVITY. Please see the libraries of available value sets (insert link(s)?) pertinent for use with the appropriate Multiple Chronic Condition Care Plan Profile for use within the referenced profiles at CarePlan.activity.outcomeReference"/>
+            <definition value="This element details the outcome or action resulting from the activity. The reference to an &quot;event&quot; resource, such as Procedure or Encounter or Observation, is the result/outcome of the activity itself. The activity can be conveyed using CarePlan.activity.detail OR using the CarePlan.activity.reference (a reference to a “request” resource). In the MCC Care Plan, CarePlan.activity.OutcomeReference (Must Support) is preferred.&#xA;Please see the libraries of available value sets (insert link(s)?) pertinent for use with the appropriate Multiple Chronic Condition Care Plan Profile for use within the referenced profiles at CarePlan.activity.outcomeReference.  Please also see the Care Plan Profile Relationship diagram for additional guidance &lt;link?&gt;. There is an existing Ticket FHIR- 26064 (https://jira.hl7.org/browse/FHIR-26064) with respect to clarifying the description and names for activity within Care Plan applied in R5: 1. Rename: activity.outcome to performedActivity, 2. Rename: activity.reference to plannedActivityReference, 3. Rename: activity.detail to plannedActivityDetail."/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
-                <targetProfile value="http://hl7.org/fhir/us/vitals/StructureDefinition/BloodPressurePanel"/>
-                <targetProfile value="http://hl7.org/fhir/us/vitals/StructureDefinition/BodyWeight"/>
-                <targetProfile value="http://hl7.org/fhir/us/vitals/StructureDefinition/BodyMassIndex"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
             </type>
             <mustSupport value="true"/>
         </element>
         <element id="CarePlan.activity.reference">
             <path value="CarePlan.activity.reference"/>
             <label value="Label"/>
-            <short value="PLANNED ACTIVITY. Please see library of available MCC US Core conformant profiles to use for CarePlan.activityReference on the Artifact Index page."/>
-            <definition value="The details of the proposed activity represented in a specific resource. Proposed Activites represent ordered or planned activities that are part of the Care Plan. Please see library of available MCC US Core conformant MedicationRequest profiles to use for CarePlan.activityReference on the Artifact Index page. BsER ReferralRequest SHOULD be used to represent the MCC ReferralRequests such as Vascular Surgery Referral, Dietician Referral, Social Work referral, etc. In the &lt;xx&gt; of the this guide, the primary referral types of interest for CKD and other chronic diseases that can be used will be listed including and in addition to the extensible serviceRequest.code Bidirectional Services eReferral Type value set.&#xA;&#xA;There is an exsiting FHIR JIRA #26064 with respect to clarifying the description and names for activity within Care Plan: 1. Rename:  activity.outcome to performedActivity, 2. Rename:  activity.reference to plannedActivityReference, 3. Rename:  activity.detail to plannedActivityDetail."/>
+            <short value="This CarePlan element represents a PLANNED ACTIVITY. Please see the libraries of available value sets (insert link(s)?) pertinent for use with the appropriate Multiple Chronic Condition Care Plan Profile for use within the referenced profiles at CarePlan.activityReference"/>
+            <definition value="This CarePlan element holds the details of the proposed activity represented in a specific resource. &#xA;Planned activities represent ordered or planned activities that are part of the Care Plan. &#xA;&#xA;Please see the libraries of available value sets (insert link(s)?) pertinent for use with the appropriate Multiple Chronic Condition Care Plan Profile for use within the referenced profiles at CarePlan.activityReference. The referred to profiles are suggested for use within the MCC Care Plan, but additional ServiceRequest may be used. When US Core R5 is published. US Core Service Request will be used and may be profiled to add additional requirements for whn serviceRequest is used within a FHIR Care Plan&#xA;&#xA;There is an existing Ticket FHIR- 26064 (https://jira.hl7.org/browse/FHIR-26064) with respect to clarifying the description and names for activity within Care Plan applied in R5: 1. Rename: activity.outcome to performedActivity, 2. Rename: activity.reference to plannedActivityReference, 3. Rename: activity.detail to plannedActivityDetail."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/CommunicationRequest"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Task"/>
