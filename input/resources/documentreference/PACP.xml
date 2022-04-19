@@ -9,7 +9,7 @@
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
     </meta>
     <text>
-        <status value="generated"/>
+        <status value="additional"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <p>

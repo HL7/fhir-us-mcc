@@ -9,7 +9,7 @@
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
     </meta>
     <text>
-        <status value="extensions"/>
+        <status value="additional"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <p>
@@ -89,13 +89,8 @@
         </div>
     </text>
     <extension url="http://hl7.org/fhir/StructureDefinition/condition-dueTo">
-        <valueCodeableConcept>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="123609007"/>
-                <display value="Subacute glomerulonephritis (disorder)"/>
-            </coding>
-        </valueCodeableConcept>
+        <reference value="Condition/subacute-gn"/>
+        <display value="Subacute glomerulonephritis (disorder)"/>
     </extension>
     <clinicalStatus>
         <coding>
