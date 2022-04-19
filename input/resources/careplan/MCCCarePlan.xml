@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CarePlan
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCCarePlan"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Multiple Chronic Condition Care Plan Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is an example for the *MCC CarePlan Profile*."/>
+        </extension>
+        <versionId value="1"/>
+        <lastUpdated value="2022-04-14T23:08:25.120+00:00"/>
+        <source value="#bYazHRT0rQF3ifKi"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <h1>Multiple Chronic Condition Care Coordination Plan</h1>
+        </div>
+    </text>
+    <status value="active"/>
+    <intent value="plan"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="734163000"/>
+            <display value="Care Plan"/>
+        </coding>
+        <coding>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+            <code value="assess-plan"/>
+        </coding>
+    </category>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Patricia Noelle"/>
+    </subject>
+    <period>
+        <start value="2018-05-01"/>
+    </period>
+    <created value="2019-01-01"/>
+    <author>
+        <reference value="Device/SMARTapp123"/>
+        <display value="MCCSmartonFHIRApp"/>
+    </author>
+    <contributor>
+        <reference value="PractitionerRole/HenryLevVII123"/>
+        <display value="Henry Levin VII MD Nephrologist"/>
+    </contributor>
+    <contributor>
+        <reference value="PractitionerRole/NNR123"/>
+        <display value="Nancy Nurse RN"/>
+    </contributor>
+    <contributor>
+        <reference value="PractitionerRole/PPLev54321"/>
+        <display value="Peter Primary MD Primary Provider"/>
+    </contributor>
+    <careTeam>
+        <reference value="CareTeam/cc-team-pnoelle"/>
+        <display value="Longitudinal care-coordination focused care team"/>
+    </careTeam>
+    <addresses>
+        <reference value="Condition/f202"/>
+        <display value="Chronic Kidney Disease"/>
+    </addresses>
+    <supportingInfo>
+        <reference value="Condition/cc-cond-pnoelle-cp"/>
+        <display value="Chronic Pain"/>
+    </supportingInfo>
+    <supportingInfo>
+        <reference value="QuestionnaireResponse/cc-QR-pnoelle-pc"/>
+        <display value="PROMIS short form - pain intensity 3a - version 1.0 - 11 Moderate to Severe"/>
+    </supportingInfo>
+    <supportingInfo>
+        <reference value="Condition/cc-cond-pnoelle-dp"/>
+        <display value="Recurrent major depressive episodes, moderate (disorder)"/>
+    </supportingInfo>
+    <supportingInfo>
+        <reference value="Observation/cc-EstimatedGFR-pnoelle-cp"/>
+        <display value="eGFR 35 mL/min/{1.73_m2}"/>
+    </supportingInfo>
+    <goal>
+        <reference value="Goal/cc-goal-pnoelle-cp-overallgoaltext"/>
+        <display value="(From Description text in the referenced goal resource. The patient and care team would like Patricia's overall health status to improve as much as possible with her exisitng CKD:&#xA;   Lose weight, decrease chronic pain with less use of pain medication and improved lab results"/>
+    </goal>
+    <activity>
+        <outcomeReference>
+            <reference value="Procedure/cc-actPerf-pnoelle-cp-dailyWeights"/>
+            <display value="DailyWeightsPerformed"/>
+        </outcomeReference>
+        <progress>
+            <time value="2019-01-10"/>
+            <text value="Patricia Noelle is measuring her weight daily"/>
+        </progress>
+        <reference>
+            <reference value="Task/cc-taskReq-pnoelle-cp-weight"/>
+            <display value="Patricia Noelle or cargiver to perform daily weights"/>
+        </reference>
+    </activity>
+    <activity>
+        <outcomeReference>
+            <reference value="Encounter/cc-actPerf-pnoelle-cp-Encounter321"/>
+            <display value="PreOp Encounter For Creation of external arteriovenous shunt (procedure)"/>
+        </outcomeReference>
+        <outcomeReference>
+            <reference value="Procedure/cc-actPerf-pnoelle-cp-upperlimbveinultrsound"/>
+            <display value="Fluoroscopic venography of bilateral upper limbs Performed. Results: Normal"/>
+        </outcomeReference>
+        <progress>
+            <time value="2019-01-10"/>
+            <text value="Patricia Noelle Completed prep for an AV Shunt. She needs the shunt due to the need for diayalis related to the goal to improve her health related to CKD"/>
+        </progress>
+        <reference>
+            <reference value="Appointment/cc-servReq-pnoelle-cp-preOp"/>
+            <display value="PreOp Encounter Request For Creation of external arteriovenous shunt (procedure). Relates to overall health improvement goal and encounter requestActivity"/>
+        </reference>
+    </activity>
+</CarePlan>
