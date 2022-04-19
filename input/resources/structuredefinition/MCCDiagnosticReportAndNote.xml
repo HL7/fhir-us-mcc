@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCDiagnosticReportAndNote"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-12T23:28:36.500+00:00"/>
+        <source value="#O7w8GiKVkDDei2wg"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
+    <name value="MCCDiagnosticReportAndNote"/>
+    <title value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
+    <status value="active"/>
+    <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+            <display value="United States"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.extension">
+            <path value="DiagnosticReport.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="DiagnosticReport.extension:resource-pertainesToGoal">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="resource-pertainesToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:resource-pertainesToGoal.url">
+            <path value="DiagnosticReport.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:resource-pertainesToGoal.value[x]">
+            <path value="DiagnosticReport.extension.value[x]"/>
+            <short value="Reference to a goal"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.basedOn">
+            <path value="DiagnosticReport.basedOn"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.code">
+            <path value="DiagnosticReport.code"/>
+            <label value="Label"/>
+            <short value="Please see the Diagnostic Report and Note Value Set Library (link?) for value sets that are derived from LOINC that can be used at DiagnosticReport.code element"/>
+        </element>
+    </differential>
+</StructureDefinition>

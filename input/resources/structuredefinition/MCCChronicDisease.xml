@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCChronicDisease"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2022-04-13T17:36:14.953+00:00"/>
+        <source value="#i019s3A7gbNS5hn5"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+    <name value="MCCChronicDisease"/>
+    <title value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
+    <status value="draft"/>
+    <date value="2020-06-29"/>
+    <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+        </element>
+        <element id="Condition.extension">
+            <path value="Condition.extension"/>
+            <label value="Label"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Condition.extension:Condition-dueTo">
+            <path value="Condition.extension"/>
+            <sliceName value="Condition-dueTo"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+        </element>
+        <element id="Condition.extension:Condition-dueTo.url">
+            <path value="Condition.extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/condition-dueTo"/>
+        </element>
+        <element id="Condition.extension:Condition-dueTo.value[x]">
+            <path value="Condition.extension.value[x]"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+        </element>
+        <element id="Condition.extension:resource-pertainsToGoal">
+            <path value="Condition.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.extension:resource-pertainsToGoal.url">
+            <path value="Condition.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.extension:resource-pertainsToGoal.value[x]">
+            <path value="Condition.extension.value[x]"/>
+            <short value="Reference to a Goal"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.code">
+            <path value="Condition.code"/>
+            <label value="Label"/>
+            <short value="Please see the Condition Value Set Library (link?) for value sets that are subsets of US Core Condition Code that can be used at Conditon.code element"/>
+        </element>
+        <element id="Condition.onset[x]">
+            <path value="Condition.onset[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.recordedDate">
+            <path value="Condition.recordedDate"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.evidence">
+            <path value="Condition.evidence"/>
+            <label value="label on evidence"/>
+            <short value="Supporting evidence for the presence of a chronic condition should be provided whenever possible."/>
+        </element>
+        <element id="Condition.evidence.detail">
+            <path value="Condition.evidence.detail"/>
+            <label value="label on detail"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <description value="DESCRIPTION ON DETAIL ELEMENT"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="Condition.evidence allows asserting an encoded term code OR pointing to a profile where more detail is available. The use of referring to detail through referred profiles is encouraged."/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="false"/>
+        </element>
+    </differential>
+</StructureDefinition>
