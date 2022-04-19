@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="WGT-loss"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-15T21:09:28.634+00:00"/>
-        <source value="#2hP2FPeQDhoYmZOx"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-04-19T01:06:06.890+00:00"/>
+        <source value="#YmZ48N7IAaQro5g5"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     </meta>
     <text>
@@ -19,6 +19,7 @@
                 <p style="margin-bottom: 0px">Resource "WGT-loss" Version "2" Updated "2021-08-31 09:52:32+0000" </p>
                 <p style="margin-bottom: 0px">Information Source: #SQBJ7BvdjNqtXQVb!</p>
                 <p style="margin-bottom: 0px">Profile: 
+                    
                     <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>
                 </p>
             </div>
@@ -28,7 +29,9 @@
                 </p>
                 <p>
                     <b>value</b>: 
+                    
                     <a href="Patient-cc-pat-pnoelle.html">Patient/cc-pat-pnoelle</a> " NOELLE"
+                
                 </p>
             </blockquote>
             <blockquote>
@@ -37,11 +40,13 @@
                 </p>
                 <p>
                     <b>value</b>: 
+                    
                     <a href="Practitioner/PatrickPrimaryMD">Practitioner/PatrickPrimaryMD</a>
                 </p>
             </blockquote>
             <p>
                 <b>reason rejected</b>: doesn't want to lose his happy fat 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
             </p>
             <blockquote>
@@ -50,40 +55,55 @@
                 </p>
                 <p>
                     <b>value</b>: this goal relates to the BMI goal 
+                    
                     <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                        
                         <a href="http://terminology.hl7.org/3.1.0/CodeSystem-goal-relationship-type.html">GoalRelationshipType</a>#other)
+                    
                     </span>
                 </p>
                 <p>
                     <b>value</b>: 
+                    
                     <a href="Goal/BMI">Goal/BMI</a>
                 </p>
             </blockquote>
             <p>
                 <b>lifecycleStatus</b>: active
+            
             </p>
             <p>
                 <b>category</b>: Dietary 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                    
                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-goal-category.html">Goal category</a>#dietary)
+                
                 </span>
             </p>
             <p>
                 <b>priority</b>: high 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                    
                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html">Goal priority</a>#high-priority "High Priority")
+                
                 </span>
             </p>
             <p>
                 <b>description</b>: Target weight is 150 to 155 lbs. 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
             </p>
             <p>
                 <b>subject</b>: 
+                
                 <a href="Patient-cc-pat-pnoelle.html">Patient/cc-pat-pnoelle: Patricia Noelle</a> " NOELLE"
+            
             </p>
             <p>
                 <b>start</b>: 2019-10-14
+            
             </p>
             <h3>Targets</h3>
             <table class="grid">
@@ -102,8 +122,11 @@
                 <tr>
                     <td>*</td>
                     <td>Body Weight 
+                        
                         <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                            
                             <a href="https://loinc.org/">LOINC</a>#29463-7)
+                        
                         </span>
                     </td>
                     <td>150-155 lbs</td>
@@ -112,20 +135,26 @@
             </table>
             <p>
                 <b>statusDate</b>: 2019-10-14
+            
             </p>
             <p>
                 <b>statusReason</b>: Patient wants to lose weight for general health and pain relief.
+            
             </p>
             <p>
                 <b>expressedBy</b>: 
+                
                 <a href="Patient-cc-pat-pnoelle.html">Patient/cc-pat-pnoelle: Patricia Noelle</a> " NOELLE"
+            
             </p>
             <p>
                 <b>addresses</b>: 
+                
                 <span>: obesity condition</span>
             </p>
             <p>
                 <b>outcomeReference</b>: 
+                
                 <a href="Observation/example">Observation/example: Body Weight Measured</a>
             </p>
         </div>
