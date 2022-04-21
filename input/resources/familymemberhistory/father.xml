@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="father"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-15T21:09:28.638+00:00"/>
-        <source value="#DxWfMRDMO2IDE3ad"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-04-21T17:37:13.794+00:00"/>
+        <source value="#nXMDbpn6VDNC56oz"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
     </meta>
     <text>
@@ -13,13 +13,9 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">Father died of CKD and heart disease aged 74
         
+        
         </div>
     </text>
-    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
-        <valueReference>
-            <reference value="Goal/IdentifyFamilyHistory"/>
-        </valueReference>
-    </extension>
     <identifier>
         <value value="12345"/>
     </identifier>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PractitionerRole
     xmlns="http://hl7.org/fhir">
-    <id value="PractitionerRole2"/>
+    <id value="PractitionerRoleMCC2"/>
     <meta>
         <versionId value="4"/>
         <lastUpdated value="2022-04-15T21:09:28.612+00:00"/>
@@ -12,8 +12,8 @@
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <p> Dr Adam Careful is a Referring Practitioner for Acme Hospital from 1-Jan 2012 to
-                31-Mar 2012 </p>
+            <p> Nancy Nurse NP is a Diabteets Nurse paractitioner for Acme Hospital from 1-Jan 2012 to
+                31-Mar 2022 </p>
         </div>
     </text>
     <identifier>
@@ -26,31 +26,31 @@
         <end value="2012-03-31"/>
     </period>
     <practitioner>
-        <reference value="Practitioner/example"/>
-        <display value="Dr Adam Careful"/>
+        <reference value="Practitioner/practitionerMCC-2"/>
+        <display value="Nancy Nurse NP"/>
     </practitioner>
     <organization>
-        <reference value="Organization/f001"/>
+        <reference value="http://example.org/Organization/123"/>
     </organization>
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0286"/>
-            <code value="RP"/>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="363L00000X"/>
         </coding>
     </code>
     <specialty>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="408443003"/>
-            <display value="General medical practice"/>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="163WD0400X"/>
+            <display value="Nursing Service Providers; Registered Nurse, Diabetes Educator"/>
         </coding>
     </specialty>
     <location>
-        <reference value="Location/SouthWing"/>
+        <reference value="http://example.org/Location/SouthWing"/>
         <display value="South Wing, second floor"/>
     </location>
     <healthcareService>
-        <reference value="HealthcareService/example"/>
+        <reference value="http://example.org/HealthcareService/123"/>
     </healthcareService>
     <telecom>
         <system value="phone"/>
@@ -59,7 +59,7 @@
     </telecom>
     <telecom>
         <system value="email"/>
-        <value value="adam.southern@example.org"/>
+        <value value="NNNP@example.org"/>
         <use value="work"/>
     </telecom>
     <availableTime>
@@ -76,14 +76,11 @@
         <availableEndTime value="12:00:00"/>
     </availableTime>
     <notAvailable>
-        <description value="Adam will be on extended leave during May 2017"/>
+        <description value="Nancy will be on extended leave during May 2022"/>
         <during>
-            <start value="2017-05-01"/>
-            <end value="2017-05-20"/>
+            <start value="2022-05-01"/>
+            <end value="2022-05-20"/>
         </during>
     </notAvailable>
-    <availabilityExceptions value="Adam is generally unavailable on public holidays and during the Christmas/New Year break"/>
-    <endpoint>
-        <reference value="Endpoint/example"/>
-    </endpoint>
+    <availabilityExceptions value="Nancy is generally unavailable on public holidays and during Jewish Holidays"/>
 </PractitionerRole>

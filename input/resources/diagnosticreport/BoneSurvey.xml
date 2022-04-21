@@ -3,37 +3,24 @@
     xmlns="http://hl7.org/fhir">
     <id value="BoneSurvey"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-15T21:09:28.621+00:00"/>
-        <source value="#QFHxz8SGYCn3rqyK"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-04-21T17:36:48.651+00:00"/>
+        <source value="#reRcJt7fQYYpDpmR"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <h2>
-                <span title="Codes: {http://loinc.org 30746-2}">Bone Survey Xrays</span> (
-                
-                <span title="Codes: {http://loinc.org LP29684-5}">Radiology</span>) 
-            
-            </h2>
-            <table class="grid">
-                <tr>
-                    <td>Subject</td>
-                    <td>
-                        <b>Patricia Noelle </b>  1987-02-20 ( Medical Record Number: 1032702 (USUAL))
-                    
-                    </td>
-                </tr>
-                <tr>
-                    <td>When For</td>
-                    <td>04/02/2019 6:43:30 AM</td>
-                </tr>
+            <div class="hapiHeaderText"> XR Bones Survey Views </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td>FINAL</td>
+                    </tr>
+                </tbody>
             </table>
-            <p>
-                <b>Report Details</b>
-            </p>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -42,7 +29,7 @@
         </valueReference>
     </extension>
     <basedOn>
-        <reference value="ServiceRequest/cc-xrayBS-pnoelle"/>
+        <reference value="http://example.org/ServiceRequest/54321"/>
         <display value="Bone survey Xrays"/>
     </basedOn>
     <status value="final"/>

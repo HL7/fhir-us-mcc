@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ConditionCKD"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-19T01:06:06.889+00:00"/>
-        <source value="#I8ZhgdzVDTwueJ2s"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-21T17:36:35.583+00:00"/>
+        <source value="#lMvNbJ7cfWjNjo61"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
     </meta>
     <text>
@@ -20,76 +20,99 @@
                 <p style="margin-bottom: 0px">Information Source: #Sz9odTgHbrmXTzFm!</p>
                 <p style="margin-bottom: 0px">Profile: 
                     
+                    
                     <a href="StructureDefinition-ChronicKidneyDisease.html">Chronic Kidney Disease Conditions</a>
                 </p>
             </div>
             <p>
                 <b>dueTo</b>: Subacute glomerulonephritis (disorder) 
                 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                     
+                    
                     <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#123609007)
+                
                 
                 </span>
             </p>
             <p>
                 <b>clinicalStatus</b>: Active 
                 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                     
+                    
                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)
+                
                 
                 </span>
             </p>
             <p>
                 <b>verificationStatus</b>: Confirmed 
                 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                     
+                    
                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)
+                
                 
                 </span>
             </p>
             <p>
                 <b>category</b>: Problem 
                 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                     
+                    
                     <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item "Problem List Item")
+                
                 
                 </span>
             </p>
             <p>
                 <b>severity</b>: Severe 
                 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                     
+                    
                     <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#24484000)
+                
                 
                 </span>
             </p>
             <p>
                 <b>code</b>: Chronic kidney disease stage 3B (disorder) 
                 
+                
                 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
                     
+                    
                     <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#700379002)
+                
                 
                 </span>
             </p>
             <p>
                 <b>subject</b>: 
                 
+                
                 <a href="Patient-cc-pat-pnoelle.html">Patient/cc-pat-pnoelle: Patricia Noelle</a> " NOELLE"
+            
             
             </p>
             <p>
                 <b>onset</b>: 52 years
                 
+                
                 <span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span>
             </p>
             <p>
                 <b>recordedDate</b>: 2018-12-01
+            
             
             </p>
             <h3>Evidences</h3>
@@ -105,7 +128,9 @@
                     <td>
                         <a href="FamilyMemberHistory-father.html">FamilyMemberHistory/father: Father had Chronic Kidney disease</a>, 
                         
+                        
                         <a href="Procedure-Dialysis.html">Procedure/Dialysis: Patient receives regular dialysis</a>, 
+                        
                         
                         <a href="Observation-EstimatedGFR.html">Observation/EstimatedGFR: EGFR is 35 indicating stage 3b Chronic Kidney Disease</a>
                     </td>

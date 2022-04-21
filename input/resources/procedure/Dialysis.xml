@@ -3,23 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dialysis"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-04-15T21:09:28.741+00:00"/>
-        <source value="#LJBedJAHFdAdnEMX"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-04-21T17:38:23.131+00:00"/>
+        <source value="#aiRMQeI29XGd2Snr"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">Dialysis
-        
-        </div>
-    </text>
-    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
-        <valueReference>
-            <reference value="Goal/QualityOfLife"/>
-        </valueReference>
-    </extension>
     <status value="completed"/>
     <code>
         <coding>

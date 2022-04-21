@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCC-IG"/>
     <meta>
-        <versionId value="588"/>
-        <lastUpdated value="2022-04-18T23:37:31.495+00:00"/>
-        <source value="#AJtNEWhXAJa6RRuO"/>
+        <versionId value="602"/>
+        <lastUpdated value="2022-04-21T18:06:46.618+00:00"/>
+        <source value="#x4xzvw1hVXCvXZK9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
     <version value="0.1.0"/>
@@ -155,7 +155,7 @@
                 <reference value="StructureDefinition/MCCDiagnosticReportAndNote"/>
                 <display value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             </reference>
-            <name value="BoneSurvey Radiology Report  and Note Example"/>
+            <name value="Multiple Chronic Condition Diagnostic Report and Note"/>
             <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group7"/>
@@ -242,16 +242,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="PractitionerRole/PractitionerRole2"/>
-                <display value="Practitioner"/>
-            </reference>
-            <name value="PractitionerRole/PractitionerRole2"/>
-            <description value="PractitionerRole/PractitionerRole2"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="FamilyMemberHistory/father"/>
                 <display value="FamilyMemberHistory"/>
             </reference>
@@ -289,6 +279,92 @@
             <description value="MCC Goal Example - Weight Loss"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitionerMCC-1"/>
+                <display value="MCC Practitioner - Nephrologist"/>
+            </reference>
+            <name value="MCC Practitioner - Nephrologist"/>
+            <description value="US Core Conformant Practitioner Example For MCC - Nephrologist"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitionerMCC-2"/>
+                <display value="MCC Practitioner - Nurse Practitioner"/>
+            </reference>
+            <name value="MCC Practitioner - Nurse Practitioner"/>
+            <description value="US Core Conformant Practitioner Example For MCC - Nurse Practitioner"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitionerMCC-3"/>
+                <display value="MCC Practitioner - Primary Care Provider"/>
+            </reference>
+            <name value="MCC Practitioner - Primary Care Provider"/>
+            <description value="US Core Conformant Practitioner Example For MCC - Primary Care"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/PractitionerRoleMCC1"/>
+                <display value="MCC Practitioner - Nephrologist Provider Role"/>
+            </reference>
+            <name value="MCC Practitioner - Nephrologist Provider Role"/>
+            <description value="US Core Conformant Practitioner Role Example For MCC - Nephrologist"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/PractitionerRoleMCC2"/>
+                <display value="MCC Practitioner - Nurse Practitioner Role"/>
+            </reference>
+            <name value="MCC Practitioner - Nurse Practitioner Role"/>
+            <description value="US Core conformant Practitioner Role example for MCC"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="PractitionerRole/PractitionerRoleMCC3"/>
+                <display value="MCC Practitioner - Primary Care Provider Role"/>
+            </reference>
+            <name value="MCC Practitioner - Primary Care Provider Role"/>
+            <description value="US Core Conformant Practitioner Role Example For MCC - Primary Care"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/bunMCC"/></reference>
+            <name value="MCC Lab Observation - BUN"/>
+            <description value="BUN Lab Observation"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="hhttp://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/cc-pat-pnoelle"/></reference>
+            <name value="MCC Patient"/>
+            <description value="US Core Conformant Patient Example for MCC"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CareTeam/MCCCareTeamexample"/>
+                <display value="US-Core MCC example CareTeam"/>
+            </reference>
+            <name value="US-Core MCC example CareTeam"/>
+            <description value="MCC Example of US Core Care Team"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
