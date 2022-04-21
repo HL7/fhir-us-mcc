@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="bunMCC"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="BUN Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a BUN example for the *US Core Observation Lab Profile*."/>
+        </extension>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-21T17:34:45.999+00:00"/>
+        <source value="#TYVZOnlbG0i8Zp4R"/>
+        <profile value="hhttp://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+            <display value="Laboratory"/>
+        </coding>
+        <text value="Laboratory"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="3094-0"/>
+            <display value="BUN SerPl-mCnc"/>
+        </coding>
+        <text value="BUN SerPl-mCnc"/>
+    </code>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Amy Shaw"/>
+    </subject>
+    <effectiveDateTime value="2022-05-05"/>
+    <valueQuantity>
+        <value value="24"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+    </valueQuantity>
+    <referenceRange>
+        <low>
+            <value value="5"/>
+            <unit value="mg/dL"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg/dL"/>
+        </low>
+        <high>
+            <value value="20"/>
+            <unit value="mg/dL"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg/dL"/>
+        </high>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/referencerange-meaning"/>
+                <code value="treatment"/>
+                <display value="Treatment Range"/>
+            </coding>
+            <text value="Treatment Range"/>
+        </type>
+    </referenceRange>
+</Observation>

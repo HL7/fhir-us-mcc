@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareTeam
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCCareTeamexample"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="CareTeam Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a US Core CareTeam Example for MCC."/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-21T17:30:10.117+00:00"/>
+        <source value="#fOlntPRC97ZmQthM"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+    </meta>
+    <status value="active"/>
+    <name value="US-Core MCC example CareTeam"/>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Amy V. Shaw"/>
+    </subject>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="11911009"/>
+                <display value="Nephrologist"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Practitioner/practitionerMCC-1"/>
+            <display value="Henry Levin VII, MD"/>
+        </member>
+    </participant>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="224571005"/>
+                <display value="Nurse Practitioner"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Practitioner/practitionerMCC-2"/>
+            <display value="Nancy Nurse, RN NP"/>
+        </member>
+    </participant>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="453231000124104"/>
+                <display value="Primary care provider"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Practitioner/practitionerMCC-3"/>
+            <display value="Peter Primary, MD"/>
+        </member>
+    </participant>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="116154003"/>
+                <display value="Patient (person)"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Patient/cc-pat-pnoelle"/>
+            <display value="Patricia Noelle"/>
+        </member>
+    </participant>
+</CareTeam>

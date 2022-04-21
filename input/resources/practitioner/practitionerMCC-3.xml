@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner
+    xmlns="http://hl7.org/fhir">
+    <id value="practitionerMCC-3"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="PractitionerMCC-3"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a practitioner 1 example for the *US Core Practitioner Profile*."/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-21T20:04:20.639+00:00"/>
+        <source value="#PFl2LJ5HsUkESlP1"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="9941339108"/>
+    </identifier>
+    <identifier>
+        <system value="http://www.acme.org/practitioners"/>
+        <value value="25456"/>
+    </identifier>
+    <name>
+        <family value="Primary"/>
+        <given value="Peter"/>
+        <prefix value="Dr"/>
+    </name>
+    <address>
+        <use value="home"/>
+        <line value="1003 Healthcare Drive"/>
+        <city value="Amherst"/>
+        <state value="MA"/>
+        <postalCode value="01002"/>
+    </address>
+</Practitioner>

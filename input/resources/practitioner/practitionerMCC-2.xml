@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner
+    xmlns="http://hl7.org/fhir">
+    <id value="practitionerMCC-2"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="PractitionerMCC-2"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a practitioner 2 example for the *US Core Practitioner Profile*."/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-21T20:04:20.632+00:00"/>
+        <source value="#2i0KUIJOrgWECPPA"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="1245319599"/>
+    </identifier>
+    <identifier>
+        <system value="http://www.acme.org/practitioners"/>
+        <value value="456789"/>
+    </identifier>
+    <name>
+        <family value="Nurse"/>
+        <given value="Nancy"/>
+        <prefix value="RNP"/>
+    </name>
+    <telecom>
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct">
+            <valueBoolean value="true"/>
+        </extension>
+        <system value="email"/>
+        <value value="NNNP@direct.ExampleMedicalPractice.net"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <use value="work"/>
+        <line value="1080 FIRST COLONIAL RD"/>
+        <city value="Virginia Beach"/>
+        <state value="VA"/>
+        <postalCode value="21454-2406"/>
+    </address>
+</Practitioner>

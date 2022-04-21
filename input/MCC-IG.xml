@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCC-IG"/>
     <meta>
-        <versionId value="602"/>
-        <lastUpdated value="2022-04-21T18:06:46.618+00:00"/>
-        <source value="#x4xzvw1hVXCvXZK9"/>
+        <versionId value="603"/>
+        <lastUpdated value="2022-04-21T19:56:01.871+00:00"/>
+        <source value="#6XRgstlPzcJCeI4d"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
     <version value="0.1.0"/>
@@ -350,7 +350,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/cc-pat-pnoelle"/></reference>
+                <reference value="Patient/cc-pat-pnoelle"/>
+                <display value="MCC Patient"/>
+            </reference>
             <name value="MCC Patient"/>
             <description value="US Core Conformant Patient Example for MCC"/>
             <exampleBoolean value="false"/>

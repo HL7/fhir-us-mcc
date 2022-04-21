@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="PractitionerRoleMCC1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-04-21T02:06:18.377+00:00"/>
+        <source value="#fb5IGOPcJ9LfdEhl"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p> Dr Henry Levin is the consulting Nephrologist for Acme Hospital from 1-Jan 2012 to
+                31-Mar 2022 </p>
+        </div>
+    </text>
+    <identifier>
+        <system value="http://www.acme.org/practitioners"/>
+        <value value="23"/>
+    </identifier>
+    <active value="true"/>
+    <period>
+        <start value="2012-01-01"/>
+        <end value="2012-03-31"/>
+    </period>
+    <practitioner>
+        <reference value="Practitioner/practitionerMCC-1"/>
+        <display value="Dr Henry Levin VII"/>
+    </practitioner>
+    <organization>
+        <reference value="http://example.org/Organization/123"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="207RN0300X"/>
+            <display value="Nephrology Physician"/>
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="207RN0300X"/>
+            <display value="Allopathic Osteopathic Physicians; Internal Medicine, Nephrology"/>
+        </coding>
+    </specialty>
+    <location>
+        <reference value="http://example.org/Location/SouthWing"/>
+        <display value="South Wing, second floor"/>
+    </location>
+    <healthcareService>
+        <reference value="http://example.org/HealthcareService/123"/>
+    </healthcareService>
+    <telecom>
+        <system value="phone"/>
+        <value value="215-947-0319"/>
+        <use value="work"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="HLV.southern@example.org"/>
+        <use value="work"/>
+    </telecom>
+    <availableTime>
+        <daysOfWeek value="mon"/>
+        <daysOfWeek value="tue"/>
+        <daysOfWeek value="wed"/>
+        <availableStartTime value="09:00:00"/>
+        <availableEndTime value="16:30:00"/>
+    </availableTime>
+    <availableTime>
+        <daysOfWeek value="thu"/>
+        <daysOfWeek value="fri"/>
+        <availableStartTime value="09:00:00"/>
+        <availableEndTime value="12:00:00"/>
+    </availableTime>
+    <notAvailable>
+        <description value="Adam will be on extended leave during May 2017"/>
+        <during>
+            <start value="2017-05-01"/>
+            <end value="2017-05-20"/>
+        </during>
+    </notAvailable>
+    <availabilityExceptions value="Adam is generally unavailable on public holidays and during the Christmas/New Year break"/>
+</PractitionerRole>
