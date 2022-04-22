@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="MCC-IG"/>
+    <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="603"/>
-        <lastUpdated value="2022-04-21T19:56:01.871+00:00"/>
-        <source value="#6XRgstlPzcJCeI4d"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-04-21T22:59:21.419+00:00"/>
+        <source value="#Cw1aTvG6UHxOYW8z"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
+    <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
     <name value="MCCeCarePlan"/>
     <title value="MCC eCare Plan Implementation Guide"/>
@@ -346,7 +346,7 @@
             <name value="MCC Lab Observation - BUN"/>
             <description value="BUN Lab Observation"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="hhttp://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
         </resource>
         <resource>
             <reference>
@@ -367,6 +367,13 @@
             <description value="MCC Example of US Core Care Team"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/expansion-parameters-mcc"/></reference>
+            <name value="Expansion Parameters - MCC SNOMED"/>
+            <description value="This Expansion Parameters specifies the US edition of SNOMED CT reference to US National Library of Medicine maintained module (core metadata concept)"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -433,6 +440,10 @@
                 <generation value="markdown"/>
             </page>
         </page>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/expansion-parameters-mcc.xml"/>
+        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>

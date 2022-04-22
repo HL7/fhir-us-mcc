@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCGoal"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-04-21T20:44:50.508+00:00"/>
-        <source value="#koj2mVDbHlmESrRB"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-04-21T22:15:49.583+00:00"/>
+        <source value="#d0uMfebLdXt4LQDQ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     <name value="MCCGoal"/>
@@ -45,18 +45,11 @@
             <path value="Goal.extension"/>
             <sliceName value="goal-acceptance"/>
             <short value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/goal-acceptance"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.extension:goal-acceptance.url">
-            <path value="Goal.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/goal-acceptance"/>
-        </element>
-        <element id="Goal.extension:goal-acceptance.value[x]">
-            <path value="Goal.extension.value[x]"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/goal-acceptance"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Goal.extension:reasonRejected">
             <path value="Goal.extension"/>
