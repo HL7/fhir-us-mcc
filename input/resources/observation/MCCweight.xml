@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCweight"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Weight Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a weight example for the *Vitalsigns Profile*."/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-05-19T22:28:38.017+00:00"/>
+        <source value="#PFPwMgIoicORI1Kp"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+        </coding>
+        <text value="Vital Signs"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="29463-7"/>
+            <display value="Body Weight"/>
+        </coding>
+        <text value="weight"/>
+    </code>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Patricia Noelle"/>
+    </subject>
+    <encounter>
+        <display value="GP Visit"/>
+    </encounter>
+    <effectiveDateTime value="1999-07-02"/>
+    <valueQuantity>
+        <value value="165"/>
+        <unit value="Pounds"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="[lb_av]"/>
+    </valueQuantity>
+</Observation>

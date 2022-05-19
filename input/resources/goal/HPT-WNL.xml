@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Goal
     xmlns="http://hl7.org/fhir">
-    <id value="WGT-loss"/>
+    <id value="HPT-WNL"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-05-19T22:17:39.050+00:00"/>
-        <source value="#ukMzGZQIVuIrGpxB"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-05-19T22:28:55.145+00:00"/>
+        <source value="#Rrt2f0lfwpBDZLSb"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
@@ -15,13 +15,13 @@
             </valueReference>
         </extension>
         <extension url="status">
-            <valueCode value="disagree"/>
+            <valueCode value="agree"/>
         </extension>
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
-                    <code value="low-priority"/>
+                    <code value="high-priority"/>
                 </coding>
             </valueCodeableConcept>
         </extension>
@@ -44,11 +44,6 @@
             </valueCodeableConcept>
         </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/goal-reasonRejected">
-        <valueCodeableConcept>
-            <text value="Food is my only pleasure in life"/>
-        </valueCodeableConcept>
-    </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/goal-relationship">
         <extension url="type">
             <valueCodeableConcept>
@@ -56,32 +51,26 @@
                     <system value="http://terminology.hl7.org/CodeSystem/goal-relationship-type"/>
                     <code value="other"/>
                 </coding>
-                <text value="this goal relates to the Hypertension Goal"/>
+                <text value="This goal relates to the Weight loss goal"/>
             </valueCodeableConcept>
         </extension>
         <extension url="target">
             <valueReference>
-                <reference value="Goal/HPT-WNL"/>
+                <reference value="Goal/WGT-loss"/>
             </valueReference>
         </extension>
     </extension>
     <lifecycleStatus value="active"/>
-    <category>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/goal-category"/>
-            <code value="dietary"/>
-        </coding>
-    </category>
     <priority>
         <coding>
-            <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
+            <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
             <code value="high-priority"/>
             <display value="High Priority"/>
         </coding>
         <text value="high"/>
     </priority>
     <description>
-        <text value="Target weight is 150 to 155 lbs."/>
+        <text value="Target Systolic Blood pressure between 110 and 140 mmHg."/>
     </description>
     <subject>
         <reference value="Patient/cc-pat-pnoelle"/>
@@ -92,28 +81,28 @@
         <measure>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="29463-7"/>
-                <display value="Body Weight"/>
+                <code value="8480-6"/>
+                <display value="Systolic blood pressure"/>
             </coding>
         </measure>
         <detailRange>
             <low>
-                <value value="150"/>
+                <value value="110"/>
                 <unit value="lbs"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="[lb_av]"/>
+                <code value="mm[Hg]"/>
             </low>
             <high>
-                <value value="155"/>
+                <value value="140"/>
                 <unit value="lbs"/>
                 <system value="http://unitsofmeasure.org"/>
-                <code value="[lb_av]"/>
+                <code value="mm[Hg]"/>
             </high>
         </detailRange>
         <dueDate value="2020-04-05"/>
     </target>
     <statusDate value="2019-10-14"/>
-    <statusReason value="Patient wants to lose weight for general health and pain relief."/>
+    <statusReason value="Patient knows that normal blood pressure is important for CKD, Hypertension and diabetes control."/>
     <expressedBy>
         <reference value="Patient/cc-pat-pnoelle"/>
         <display value="Patricia Noelle"/>
