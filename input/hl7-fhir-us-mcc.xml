@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-04-21T22:59:21.419+00:00"/>
-        <source value="#Cw1aTvG6UHxOYW8z"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-05-18T23:44:26.279+00:00"/>
+        <source value="#YFV8o3EYnNpxb0fp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -155,7 +155,7 @@
                 <reference value="StructureDefinition/MCCDiagnosticReportAndNote"/>
                 <display value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             </reference>
-            <name value="Multiple Chronic Condition Diagnostic Report and Note"/>
+            <name value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group7"/>
@@ -175,7 +175,7 @@
                 <reference value="StructureDefinition/DocRefPACP"/>
                 <display value="DocRefPACP"/>
             </reference>
-            <name value="Document Reference Personal Advance Care Plan (PACP)"/>
+            <name value="Document Reference to Patient's Personal Advance Care Plan (Advance Directive)"/>
             <description value="This profile constrains US Core DocumentReference to reference, query for and retrieve Personal Advance Care Plans that exist for a patient."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group8"/>
@@ -374,6 +374,21 @@
             <name value="Expansion Parameters - MCC SNOMED"/>
             <description value="This Expansion Parameters specifies the US edition of SNOMED CT reference to US National Library of Medicine maintained module (core metadata concept)"/>
             <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Goal/HPT-WNL"/></reference>
+            <name value="MCC Goal Example - Normal Hypertension"/>
+            <description value="[object Object]"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/MCCweight"/></reference>
+            <name value="US-Core MCC Weight Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

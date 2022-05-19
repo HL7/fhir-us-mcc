@@ -3,141 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="ConditionCKD"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-21T17:36:35.583+00:00"/>
-        <source value="#lMvNbJ7cfWjNjo61"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-05-18T23:33:01.238+00:00"/>
+        <source value="#DaBo8mhWMSyO5MKD"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
     </meta>
-    <text>
-        <status value="additional"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b>Generated Narrative</b>
-            </p>
-            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                <p style="margin-bottom: 0px">Resource "f202" Version "10" Updated "2021-08-31 05:59:09+0000" </p>
-                <p style="margin-bottom: 0px">Information Source: #Sz9odTgHbrmXTzFm!</p>
-                <p style="margin-bottom: 0px">Profile: 
-                    
-                    
-                    <a href="StructureDefinition-ChronicKidneyDisease.html">Chronic Kidney Disease Conditions</a>
-                </p>
-            </div>
-            <p>
-                <b>dueTo</b>: Subacute glomerulonephritis (disorder) 
-                
-                
-                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                    
-                    
-                    <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#123609007)
-                
-                
-                </span>
-            </p>
-            <p>
-                <b>clinicalStatus</b>: Active 
-                
-                
-                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                    
-                    
-                    <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)
-                
-                
-                </span>
-            </p>
-            <p>
-                <b>verificationStatus</b>: Confirmed 
-                
-                
-                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                    
-                    
-                    <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)
-                
-                
-                </span>
-            </p>
-            <p>
-                <b>category</b>: Problem 
-                
-                
-                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                    
-                    
-                    <a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item "Problem List Item")
-                
-                
-                </span>
-            </p>
-            <p>
-                <b>severity</b>: Severe 
-                
-                
-                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                    
-                    
-                    <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#24484000)
-                
-                
-                </span>
-            </p>
-            <p>
-                <b>code</b>: Chronic kidney disease stage 3B (disorder) 
-                
-                
-                <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                    
-                    
-                    <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#700379002)
-                
-                
-                </span>
-            </p>
-            <p>
-                <b>subject</b>: 
-                
-                
-                <a href="Patient-cc-pat-pnoelle.html">Patient/cc-pat-pnoelle: Patricia Noelle</a> " NOELLE"
-            
-            
-            </p>
-            <p>
-                <b>onset</b>: 52 years
-                
-                
-                <span style="background: LightGoldenRodYellow"> (Details: UCUM code a = 'a')</span>
-            </p>
-            <p>
-                <b>recordedDate</b>: 2018-12-01
-            
-            
-            </p>
-            <h3>Evidences</h3>
-            <table class="grid">
-                <tr>
-                    <td>-</td>
-                    <td>
-                        <b>Detail</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>*</td>
-                    <td>
-                        <a href="FamilyMemberHistory-father.html">FamilyMemberHistory/father: Father had Chronic Kidney disease</a>, 
-                        
-                        
-                        <a href="Procedure-Dialysis.html">Procedure/Dialysis: Patient receives regular dialysis</a>, 
-                        
-                        
-                        <a href="Observation-EstimatedGFR.html">Observation/EstimatedGFR: EGFR is 35 indicating stage 3b Chronic Kidney Disease</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <clinicalStatus>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -195,8 +65,8 @@
             <display value="Patient receives regular dialysis"/>
         </detail>
         <detail>
-            <reference value="Observation/EstimatedGFR"/>
-            <display value="EGFR is 35 indicating stage 3b Chronic Kidney Disease"/>
+            <reference value="Observation/bunMCC"/>
+            <display value="BUN is 24 mg/dL"/>
         </detail>
     </evidence>
 </Condition>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCChronicDisease"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-04-13T17:36:14.953+00:00"/>
-        <source value="#i019s3A7gbNS5hn5"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-05-19T22:33:31.892+00:00"/>
+        <source value="#WABULXjt0P3Q1WLT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
     <name value="MCCChronicDisease"/>
@@ -43,39 +43,16 @@
             <max value="*"/>
             <type>
                 <code value="Extension"/>
-            </type>
-        </element>
-        <element id="Condition.extension:Condition-dueTo.url">
-            <path value="Condition.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/condition-dueTo"/>
-        </element>
-        <element id="Condition.extension:Condition-dueTo.value[x]">
-            <path value="Condition.extension.value[x]"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/condition-dueTo"/>
             </type>
         </element>
         <element id="Condition.extension:resource-pertainsToGoal">
             <path value="Condition.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Condition.extension:resource-pertainsToGoal.url">
-            <path value="Condition.extension.url"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Condition.extension:resource-pertainsToGoal.value[x]">
-            <path value="Condition.extension.value[x]"/>
-            <short value="Reference to a Goal"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
         </element>

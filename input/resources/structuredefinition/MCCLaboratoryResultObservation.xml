@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCLaboratoryResultObservation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-04-12T21:04:45.624+00:00"/>
-        <source value="#GmmF7ctrfGdxBaYt"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-05-17T21:18:22.867+00:00"/>
+        <source value="#GMhtiydBAXDAh890"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
     <name value="MCCLaboratoryResultObservation"/>
@@ -82,21 +82,9 @@
             <path value="Observation.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.extension:resource-pertainsToGoal.url">
-            <path value="Observation.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.extension:resource-pertainsToGoal.value[x]">
-            <path value="Observation.extension.value[x]"/>
-            <short value="A Reference to a Goal"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
         </element>

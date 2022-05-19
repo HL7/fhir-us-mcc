@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCFamilyHistory"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-04-12T23:56:20.448+00:00"/>
-        <source value="#n1axd9IrkHFaHvzC"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-05-17T21:16:49.931+00:00"/>
+        <source value="#anrH5YDYAa0l1Y9r"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
     <name value="MCCFamilyHistory"/>
@@ -36,22 +36,9 @@
         <element id="FamilyMemberHistory.extension:resource-pertainsToGoal">
             <path value="FamilyMemberHistory.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="FamilyMemberHistory.extension:resource-pertainsToGoal.url">
-            <path value="FamilyMemberHistory.extension.url"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="FamilyMemberHistory.extension:resource-pertainsToGoal.value[x]">
-            <path value="FamilyMemberHistory.extension.value[x]"/>
-            <short value="Reference to a Goal"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DocRefPACP"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2021-08-26T20:47:45.082+00:00"/>
-        <source value="#zxiHYZCISbkJ1yCe"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-05-17T20:59:59.943+00:00"/>
+        <source value="#uHDR3V3Lzxu6bEY3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
     <name value="DocRefPACP"/>
@@ -45,19 +45,9 @@
             <path value="DocumentReference.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DocumentReference.extension:resource-pertainsToGoal.url">
-            <path value="DocumentReference.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DocumentReference.extension:resource-pertainsToGoal.value[x]">
-            <path value="DocumentReference.extension.value[x]"/>
-            <short value="Reference to a Goal"/>
-            <min value="1"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
         </element>

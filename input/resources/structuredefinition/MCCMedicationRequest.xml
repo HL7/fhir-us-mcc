@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCMedicationRequest"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-04-12T20:27:08.272+00:00"/>
-        <source value="#ExxIu9Z3K07NyeqP"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-05-17T21:19:33.703+00:00"/>
+        <source value="#liV4SrYTwBS0TKE9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
     <name value="MCCMedicationRequest"/>
@@ -68,20 +68,9 @@
             <path value="MedicationRequest.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="MedicationRequest.extension:resource-pertainsToGoal.url">
-            <path value="MedicationRequest.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="MedicationRequest.extension:resource-pertainsToGoal.value[x]">
-            <path value="MedicationRequest.extension.value[x]"/>
-            <short value="Reference to a Goal"/>
-            <min value="1"/>
             <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
         </element>

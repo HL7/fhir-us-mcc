@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCGoal"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-04-21T22:15:49.583+00:00"/>
-        <source value="#d0uMfebLdXt4LQDQ"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-05-17T20:09:02.989+00:00"/>
+        <source value="#uG6IJaLac0kGymH6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     <name value="MCCGoal"/>
@@ -55,35 +55,21 @@
             <path value="Goal.extension"/>
             <sliceName value="reasonRejected"/>
             <short value="The reason the goal was not accepted. Applies only if the status of the goal is rejected"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/goal-reasonRejected"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.extension:reasonRejected.url">
-            <path value="Goal.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/goal-reasonRejected"/>
-        </element>
-        <element id="Goal.extension:reasonRejected.value[x]">
-            <path value="Goal.extension.value[x]"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/goal-reasonRejected"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Goal.extension:relationship">
             <path value="Goal.extension"/>
             <sliceName value="relationship"/>
             <short value="Establishes a relationship between this goal and other goals"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/goal-relationship"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.extension:relationship.url">
-            <path value="Goal.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/goal-relationship"/>
-        </element>
-        <element id="Goal.extension:relationship.value[x]">
-            <path value="Goal.extension.value[x]"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/goal-relationship"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Goal.achievementStatus">
             <path value="Goal.achievementStatus"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dialysis"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-04-21T17:38:23.131+00:00"/>
-        <source value="#aiRMQeI29XGd2Snr"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-05-18T23:39:46.499+00:00"/>
+        <source value="#12zrNKqqDMJf4FSk"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
     </meta>
     <status value="completed"/>
@@ -23,21 +23,21 @@
     </subject>
     <performedDateTime value="2012-08-05"/>
     <recorder>
-        <reference value="Practitioner/practitioner-1"/>
-        <display value="Dr Ronald Bone"/>
+        <reference value="Practitioner/practitionerMCC-1"/>
+        <display value="Dr Henry Levin"/>
     </recorder>
     <asserter>
-        <reference value="Practitioner/practitioner-1"/>
-        <display value="Dr Ronald Bone"/>
+        <reference value="Practitioner/practitionerMCC-1"/>
+        <display value="Dr Henry Levin"/>
     </asserter>
     <performer>
         <actor>
-            <reference value="Practitioner/practitioner-1"/>
-            <display value="Dr Ronald Bone"/>
+            <reference value="Practitioner/practitionerMCC-1"/>
+            <display value="Dr Henry Levin"/>
         </actor>
     </performer>
     <reasonReference>
-        <reference value="Condition/f202"/>
+        <reference value="Condition/ConditionCKD"/>
         <display value="Chronic Kidney Disease"/>
     </reasonReference>
 </Procedure>

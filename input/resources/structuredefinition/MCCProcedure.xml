@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCProcedure"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-13T00:11:16.655+00:00"/>
-        <source value="#VbUxBdAhCKpWjYOQ"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-05-17T21:20:38.825+00:00"/>
+        <source value="#RRSVBXw7gi6qVII3"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -77,23 +77,10 @@
             <path value="Procedure.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-        </element>
-        <element id="Procedure.extension:resource-pertainsToGoal.url">
-            <path value="Procedure.extension.url"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Procedure.extension:resource-pertainsToGoal.value[x]">
-            <path value="Procedure.extension.value[x]"/>
-            <short value="A Reference to a Goal"/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
-                <code value="Reference"/>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
-            <mustSupport value="true"/>
         </element>
         <element id="Procedure.code">
             <path value="Procedure.code"/>

@@ -10,4 +10,4 @@ The following pages provide the use case details.
 # Use Case Scope
 * Identify use cases to support the documentation and exchange of Multiple Chronic Conditions (MCC) eCare Plan data within electronic health record (EHR) systems and other healthcare technology systems.
 * Identify workflow processes required to support basic care coordination requirements such as processes defined in the Integrating the Healthcare Enterprise (IHE) dynamic care planning (DCP) technical profile <make in to link>.
-* Note:  The current FHIR IG will not define consent and subscription. However, those will be considered for future use.
+* Note: The current FHIR IG will not define consent and subscription. However, those will be considered for future use.

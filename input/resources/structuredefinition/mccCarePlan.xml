@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="87"/>
-        <lastUpdated value="2022-04-14T20:26:54.458+00:00"/>
-        <source value="#XuipTCvXfZESfZPP"/>
+        <versionId value="89"/>
+        <lastUpdated value="2022-05-18T23:27:38.865+00:00"/>
+        <source value="#DEeiu03wm5bAxk2i"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.2"/>
@@ -35,10 +35,9 @@
         </element>
         <element id="CarePlan.category">
             <path value="CarePlan.category"/>
-            <label value="Care Plan category code describes the type of care plan2"/>
+            <label value="Care Plan category code describes the type of care plan"/>
             <short value="Care Plan category code describes the type of care plan. Please see CarePlan.category detail for guidance."/>
-            <definition value="The Care Plan categoy code example value set currently (August 2020) consists of 173 types of SNOMED CT Care Plan record artifact codes that are children of and inclusive of 734163000 Care Plan. Currently in the MCC Care plan this is available to use but not required or Must Support. Testing may prove we should design this as must support. A code that could be used for this version of the MCC Care Plan is 737429003 Chronic kidney disease clinical management plan. Note that more than 1 code is allowed here and through &quot;slicing&quot; the MCC Care Plan could accumulate multiple applicable code to represent mutliple types of Care Plans that the Mutliple Chronic Condition Care Plan is intended to represent."/>
-            <mustSupport value="false"/>
+            <mustSupport value="true"/>
         </element>
         <element id="CarePlan.subject">
             <path value="CarePlan.subject"/>

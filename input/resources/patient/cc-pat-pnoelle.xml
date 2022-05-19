@@ -3,24 +3,42 @@
     xmlns="http://hl7.org/fhir">
     <id value="cc-pat-pnoelle"/>
     <meta>
-        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
-            <valueString value="MCC Patient Example"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
-            <valueMarkdown value="This is an MCC patient example."/>
-        </extension>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-21T02:36:32.664+00:00"/>
-        <source value="#ANsanbumRImdct4h"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-05-19T22:22:07.359+00:00"/>
+        <source value="#zvakHDtTJsiKp5qv"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b>MCC Example Patient Patricia Noelle </b> female, DoB: 1955-01-15 ( Medical Record Number: 103270456 (USUAL))
-            </p>
+            <div class="hapiHeaderText">Patricia 
+                <b>NOELLE </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>103270456</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <span>49 Meadow St </span>
+                            <br/>
+                            <span>Mounds </span>
+                            <span>OK </span>
+                            <span>US </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>15 January 1955</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">

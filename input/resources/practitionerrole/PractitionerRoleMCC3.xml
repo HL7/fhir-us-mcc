@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRoleMCC3"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-04-21T02:06:18.379+00:00"/>
-        <source value="#Y6QiCbObbHTEdsuu"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-05-18T23:39:06.982+00:00"/>
+        <source value="#iQ383PGcdyFc6WvK"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <text>
@@ -47,7 +47,7 @@
         </coding>
     </specialty>
     <location>
-        <reference value="Location/SouthWing"/>
+        <reference value="http://example.org/Location/SouthWing"/>
         <display value="South Wing, second floor"/>
     </location>
     <healthcareService>

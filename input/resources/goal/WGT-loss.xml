@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="WGT-loss"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-04-21T19:31:16.605+00:00"/>
-        <source value="#4cEZQ9s0b9YiJuf3"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-05-19T22:17:39.050+00:00"/>
+        <source value="#ukMzGZQIVuIrGpxB"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
@@ -20,7 +20,7 @@
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/R4/codesystem-goal-priority.html"/>
+                    <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
                     <code value="low-priority"/>
                 </coding>
             </valueCodeableConcept>
@@ -29,7 +29,7 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
         <extension url="individual">
             <valueReference>
-                <reference value="Practitioner/PractitionerMCC-3"/>
+                <reference value="Practitioner/practitionerMCC-3"/>
             </valueReference>
         </extension>
         <extension url="status">
@@ -38,7 +38,7 @@
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://hl7.org/fhir/R4/codesystem-goal-priority.html"/>
+                    <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
                     <code value="high-priority"/>
                 </coding>
             </valueCodeableConcept>
@@ -61,7 +61,7 @@
         </extension>
         <extension url="target">
             <valueReference>
-                <reference value="Goal/BMI"/>
+                <reference value="Goal/HPT-WNL"/>
             </valueReference>
         </extension>
     </extension>
@@ -74,7 +74,7 @@
     </category>
     <priority>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
+            <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
             <code value="high-priority"/>
             <display value="High Priority"/>
         </coding>
@@ -119,10 +119,11 @@
         <display value="Patricia Noelle"/>
     </expressedBy>
     <addresses>
-        <display value="obesity condition"/>
+        <reference value="Condition/ConditionCKD"/>
+        <display value="chronic kidney disease condition"/>
     </addresses>
     <outcomeReference>
-        <reference value="Observation/example"/>
-        <display value="Body Weight Measured"/>
+        <reference value="Observation/MCCweight"/>
+        <display value="Body Weight Measured - 165 Pounds"/>
     </outcomeReference>
 </Goal>

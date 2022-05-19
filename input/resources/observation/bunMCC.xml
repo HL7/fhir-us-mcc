@@ -9,10 +9,10 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a BUN example for the *US Core Observation Lab Profile*."/>
         </extension>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-21T17:34:45.999+00:00"/>
-        <source value="#TYVZOnlbG0i8Zp4R"/>
-        <profile value="hhttp://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-05-18T23:37:12.617+00:00"/>
+        <source value="#qAUGMmCEAqCZRmKl"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
     </meta>
     <status value="final"/>
     <category>
