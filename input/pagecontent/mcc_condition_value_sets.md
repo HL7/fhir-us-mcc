@@ -27,7 +27,7 @@ table, th, td {
 </td>
 <td width="36%">
     <p>	
-[Chronic Kidney Disease All Stages ](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.159/definition)
+<a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.159/definition">Chronic Kidney Disease All Stages (1 through 5)</a>
 </p>
 </td>
 <td width="36%">
