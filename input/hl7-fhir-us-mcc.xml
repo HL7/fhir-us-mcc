@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-05-18T23:44:26.279+00:00"/>
-        <source value="#YFV8o3EYnNpxb0fp"/>
+        <versionId value="32"/>
+        <lastUpdated value="2022-05-23T22:33:19.476+00:00"/>
+        <source value="#5vgUm5CxNOMh9Fy1"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -398,60 +398,25 @@
                 <nameUrl value="mcc_use_cases.html"/>
                 <title value="MCC Use Cases"/>
                 <generation value="markdown"/>
-                <page>
-                    <nameUrl value="patient_story_1_assumptions.html"/>
-                    <title value="Patient Story 1 Assumptions"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="patient_story.html"/>
-                    <title value="Patient Story"/>
-                    <generation value="markdown"/>
-                    <page>
-                        <nameUrl value="ecare_plan_use_cases.html"/>
-                        <title value="eCare Plan Use Cases"/>
-                        <generation value="markdown"/>
-                        <page>
-                            <nameUrl value="use_case_1_generate_and_update_comprehensive_ecare_plan_in_clinical_setting.html"/>
-                            <title value="Use Case 1: Generate and Update Comprehensive eCare Plan in Clinical Setting"/>
-                            <generation value="markdown"/>
-                        </page>
-                        <page>
-                            <nameUrl value="use_case_2_expose_share_ecare_plan_to_clinical_care_team_and_patient_or_caregiver.html"/>
-                            <title value="Use Case 2: Expose (Share) eCare Plan to Clinical Care Team and Patient or Caregiver"/>
-                            <generation value="markdown"/>
-                        </page>
-                        <page>
-                            <nameUrl value="use_case_3_identify_care_team_members.html"/>
-                            <title value="Use Case 3: Identify Care Team Members"/>
-                            <generation value="markdown"/>
-                        </page>
-                    </page>
-                </page>
             </page>
             <page>
                 <nameUrl value="structure_and_design_considerations.html"/>
                 <title value="Structure and Design Considerations"/>
                 <generation value="markdown"/>
-                <page>
-                    <nameUrl value="ig_cornerstone_mcc_fhir_ecare_plan_profile_design.html"/>
-                    <title value="IG Cornerstone: MCC FHIR eCare Plan Profile Design"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="fhir_questionnaire_and_questionnaireresponse_integration.html"/>
-                    <title value="FHIR Questionnaire and QuestionnaireResponse Integration"/>
-                    <generation value="markdown"/>
-                    <page>
-                        <nameUrl value="table_of_loinc_panel_codes.html"/>
-                        <title value="Table of LOINC Panel Codes"/>
-                        <generation value="markdown"/>
-                    </page>
-                </page>
             </page>
             <page>
-                <nameUrl value="profiles_or_resource_directly_reused_in_this_guide.html"/>
-                <title value="Profiles or Resource Directly Reused in this Guide"/>
+                <nameUrl value="table_of_loinc_panel_codes.html"/>
+                <title value="Table of LOINC Panel Codes"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="profiles_or_resources_directly_reused_in_this_guide.html"/>
+                <title value="Profiles or Resources Directly Reused in this Guide"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="mcc_condition_value_sets.html"/>
+                <title value="MCC Condition Value Sets"/>
                 <generation value="markdown"/>
             </page>
         </page>

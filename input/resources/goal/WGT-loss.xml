@@ -56,7 +56,7 @@
                     <system value="http://terminology.hl7.org/CodeSystem/goal-relationship-type"/>
                     <code value="other"/>
                 </coding>
-                <text value="this goal relates to the Hypertension Goal"/>
+                <text value="this goal relates to the BMI goal"/>
             </valueCodeableConcept>
         </extension>
         <extension url="target">
