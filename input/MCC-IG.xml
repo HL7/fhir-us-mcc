@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="hl7-fhir-us-mcc"/>
+    <id value="MCC-IG"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2022-05-24T15:40:03.191+00:00"/>
-        <source value="#ySzwZP9qVfG5USob"/>
+        <versionId value="603"/>
+        <lastUpdated value="2022-04-21T19:56:01.871+00:00"/>
+        <source value="#6XRgstlPzcJCeI4d"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
+    <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/MCC-IG"/>
     <version value="0.1.0"/>
     <name value="MCCeCarePlan"/>
     <title value="MCC eCare Plan Implementation Guide"/>
@@ -155,7 +155,7 @@
                 <reference value="StructureDefinition/MCCDiagnosticReportAndNote"/>
                 <display value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             </reference>
-            <name value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
+            <name value="Multiple Chronic Condition Diagnostic Report and Note"/>
             <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group7"/>
@@ -175,7 +175,7 @@
                 <reference value="StructureDefinition/DocRefPACP"/>
                 <display value="DocRefPACP"/>
             </reference>
-            <name value="Document Reference to Patient's Personal Advance Care Plan (Advance Directive)"/>
+            <name value="Document Reference Personal Advance Care Plan (PACP)"/>
             <description value="This profile constrains US Core DocumentReference to reference, query for and retrieve Personal Advance Care Plans that exist for a patient."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group8"/>
@@ -346,7 +346,7 @@
             <name value="MCC Lab Observation - BUN"/>
             <description value="BUN Lab Observation"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+            <exampleCanonical value="hhttp://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
         </resource>
         <resource>
             <reference>
@@ -368,28 +368,6 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="Parameters/expansion-parameters-mcc"/></reference>
-            <name value="Expansion Parameters - MCC SNOMED"/>
-            <description value="This Expansion Parameters specifies the US edition of SNOMED CT reference to US National Library of Medicine maintained module (core metadata concept)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Goal/HPT-WNL"/></reference>
-            <name value="MCC Goal Example - Normal Hypertension"/>
-            <description value="[object Object]"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/MCCweight"/></reference>
-            <name value="US-Core MCC Weight Example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
-        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -398,32 +376,63 @@
                 <nameUrl value="mcc_use_cases.html"/>
                 <title value="MCC Use Cases"/>
                 <generation value="markdown"/>
+                <page>
+                    <nameUrl value="patient_story_1_assumptions.html"/>
+                    <title value="Patient Story 1 Assumptions"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="patient_story.html"/>
+                    <title value="Patient Story"/>
+                    <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="ecare_plan_use_cases.html"/>
+                        <title value="eCare Plan Use Cases"/>
+                        <generation value="markdown"/>
+                        <page>
+                            <nameUrl value="use_case_1_generate_and_update_comprehensive_ecare_plan_in_clinical_setting.html"/>
+                            <title value="Use Case 1: Generate and Update Comprehensive eCare Plan in Clinical Setting"/>
+                            <generation value="markdown"/>
+                        </page>
+                        <page>
+                            <nameUrl value="use_case_2_expose_share_ecare_plan_to_clinical_care_team_and_patient_or_caregiver.html"/>
+                            <title value="Use Case 2: Expose (Share) eCare Plan to Clinical Care Team and Patient or Caregiver"/>
+                            <generation value="markdown"/>
+                        </page>
+                        <page>
+                            <nameUrl value="use_case_3_identify_care_team_members.html"/>
+                            <title value="Use Case 3: Identify Care Team Members"/>
+                            <generation value="markdown"/>
+                        </page>
+                    </page>
+                </page>
             </page>
             <page>
                 <nameUrl value="structure_and_design_considerations.html"/>
                 <title value="Structure and Design Considerations"/>
                 <generation value="markdown"/>
+                <page>
+                    <nameUrl value="ig_cornerstone_mcc_fhir_ecare_plan_profile_design.html"/>
+                    <title value="IG Cornerstone: MCC FHIR eCare Plan Profile Design"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="fhir_questionnaire_and_questionnaireresponse_integration.html"/>
+                    <title value="FHIR Questionnaire and QuestionnaireResponse Integration"/>
+                    <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="table_of_loinc_panel_codes.html"/>
+                        <title value="Table of LOINC Panel Codes"/>
+                        <generation value="markdown"/>
+                    </page>
+                </page>
             </page>
             <page>
-                <nameUrl value="table_of_loinc_panel_codes.html"/>
-                <title value="Table of LOINC Panel Codes"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="profiles_or_resources_directly_reused_in_this_guide.html"/>
-                <title value="Profiles or Resources Directly Reused in this Guide"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="mcc_condition_value_sets.html"/>
-                <title value="MCC Condition Value Sets"/>
+                <nameUrl value="profiles_or_resource_directly_reused_in_this_guide.html"/>
+                <title value="Profiles or Resource Directly Reused in this Guide"/>
                 <generation value="markdown"/>
             </page>
         </page>
-        <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/expansion-parameters-mcc.xml"/>
-        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
