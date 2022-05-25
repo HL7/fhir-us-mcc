@@ -3,10 +3,27 @@
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="mcc_use_cases.html">MCC Use Cases</a></li>
 
-  <li><a href="structure_and_design_considerations.html">Structure and Design Considerations</a></li>
-
-  <li><a href="profiles_or_resources_directly_reused_in_this_guide.html">Profiles or Resources Directly Reused in this Guide</a></li>
-
-  <li><a href="mcc_condition_value_sets.html">MCC Condition Value Sets</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structure and Design Considerations<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="structure_and_design_considerations.html">Structure and Design Considerations</a></li>
+      <li><a href="mcc_care_plan_assessments_and_questionnaireresponse.html">MCC Care Plan: Assessments and QuestionnaireResponse</a></li>
+      <li><a href="profiles_or_resources_directly_reused_in_this_guide.html">Profiles or Resources Directly Reused in this Guide</a></li>    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">MCC Value Set Library<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="mcc_value_set_library.html">MCC Value Set Library</a></li>
+      <li><a href="mcc_condition_value_sets.html">MCC Condition Value Sets</a></li>
+      <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
+      <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
+      <li><a href="mcc_medication_request_value_sets.html">MCC Medication Request Value Sets</a></li>
+      <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
+      <li><a href="mcc_radiology_value_sets.html">MCC Radiology Value Sets</a></li>
+      <li><a href="mcc_symptom_value_sets.html">MCC Symptom Value Sets</a></li>    </ul>
+  </li>  <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>
