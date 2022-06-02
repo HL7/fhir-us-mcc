@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCChronicDisease"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-05-19T22:33:31.892+00:00"/>
-        <source value="#WABULXjt0P3Q1WLT"/>
+        <versionId value="13"/>
+        <lastUpdated value="2022-06-02T23:15:42.651+00:00"/>
+        <source value="#PipFMzwoNGhXjrh4"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
     <name value="MCCChronicDisease"/>
@@ -13,12 +13,12 @@
     <status value="draft"/>
     <date value="2020-06-29"/>
     <publisher value="Patient Care Work Group"/>
-    <description value="This profile constrains [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core//StructureDefinition/us-core-condition-problems-health-concerns) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Condition"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core//StructureDefinition/us-core-condition-problems-health-concerns"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Condition">

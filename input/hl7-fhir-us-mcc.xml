@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="53"/>
-        <lastUpdated value="2022-05-25T21:55:42.076+00:00"/>
-        <source value="#mgSDpYualessOk5G"/>
+        <versionId value="63"/>
+        <lastUpdated value="2022-06-02T23:20:33.701+00:00"/>
+        <source value="#XxB4pR6uAvB0vzzF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -67,14 +67,19 @@
     <packageId value="hl7.fhir.us.mcc"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.0"/>
+        <version value="5.0.0"/>
     </dependsOn>
     <dependsOn id="hl7fhiruvsdc">
-        <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc#3.0.0"/>
+        <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
         <packageId value="hl7.fhir.uv.sdc"/>
         <version value="3.0.0"/>
+    </dependsOn>
+    <dependsOn id="usnlmvsac">
+        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
+        <packageId value="us.nlm.vsac"/>
+        <version value="0.4.0"/>
     </dependsOn>
     <definition>
         <grouping id="new-group1">
@@ -83,7 +88,7 @@
         </grouping>
         <grouping id="new-group2">
             <name value="MCC Condition"/>
-            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (Disorders, Findings, ICD and snomed and location e.g. condition.code, conditon.supporting evidence, etc - to be written after value set pages are developed)"/>
+            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core//StructureDefinition/us-core-condition-problems-health-concerns) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (Disorders, Findings, ICD and snomed and location e.g. condition.code, conditon.supporting evidence, etc - to be written after value set pages are developed)"/>
         </grouping>
         <grouping id="new-group6">
             <name value="MCC Goal"/>
@@ -166,7 +171,7 @@
                 <display value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
-            <description value="This profile constrains [US Core Condition](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core//StructureDefinition/us-core-condition-problems-health-concerns) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -379,7 +384,7 @@
             <reference>
                 <reference value="Goal/HPT-WNL"/></reference>
             <name value="MCC Goal Example - Normal Hypertension"/>
-            <description value="[object Object]"/>
+            <description value="MCC Hypertension Goal Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
         </resource>
@@ -387,8 +392,17 @@
             <reference>
                 <reference value="Observation/MCCweight"/></reference>
             <name value="US-Core MCC Weight Example"/>
+            <description value="Weight Observation Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MedicationRequest/MCCMedExample"/></reference>
+            <name value="MCC Medication Request Example"/>
+            <description value="MCC Medication Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

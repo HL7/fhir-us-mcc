@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="WGT-loss"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-05-19T22:17:39.050+00:00"/>
-        <source value="#ukMzGZQIVuIrGpxB"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-06-02T22:41:40.688+00:00"/>
+        <source value="#qo0FVFXAtBs01afg"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
@@ -20,7 +20,7 @@
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
                     <code value="low-priority"/>
                 </coding>
             </valueCodeableConcept>
@@ -38,7 +38,7 @@
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
                     <code value="high-priority"/>
                 </coding>
             </valueCodeableConcept>
@@ -74,13 +74,18 @@
     </category>
     <priority>
         <coding>
-            <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
+            <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
             <code value="high-priority"/>
             <display value="High Priority"/>
         </coding>
         <text value="high"/>
     </priority>
     <description>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="43664005"/>
+            <display value="Normal weight"/>
+        </coding>
         <text value="Target weight is 150 to 155 lbs."/>
     </description>
     <subject>

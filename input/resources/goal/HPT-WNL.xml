@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="HPT-WNL"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-05-19T22:28:55.145+00:00"/>
-        <source value="#Rrt2f0lfwpBDZLSb"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-06-02T23:34:46.692+00:00"/>
+        <source value="#2FWI9BsC94EqeXTg"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
@@ -20,7 +20,7 @@
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
                     <code value="high-priority"/>
                 </coding>
             </valueCodeableConcept>
@@ -38,7 +38,7 @@
         <extension url="priority">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://terminology.hl7.org/3.1.0/CodeSystem-goal-priority.html"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
                     <code value="high-priority"/>
                 </coding>
             </valueCodeableConcept>
@@ -70,6 +70,11 @@
         <text value="high"/>
     </priority>
     <description>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="271651005"/>
+            <display value="Stable blood pressure"/>
+        </coding>
         <text value="Target Systolic Blood pressure between 110 and 140 mmHg."/>
     </description>
     <subject>
