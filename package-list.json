@@ -2,11 +2,9 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "https://build.fhir.org/ig/HL7/fhir-us-mcc/",
-			"desc": "Developing Draft",
+			"path": "https://build.fhir.org/ig/HL7/fhir-us-mcc",
+			"desc": "Continuous Integration Build (latest in version control)",
 			"fhirversion": "4.0.1",
-			"date": "",
-			"sequence": "",
 			"status": "ci-build",
 			"current": true
 		}
