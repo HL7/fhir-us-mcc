@@ -11,5 +11,6 @@
 	],
 	"package-id": "hl7.fhir.us.mcc",
 	"title": "MCC eCare Plan Draft Implementation Guide",
-	"canonical": "http://hl7.org/fhir/us/mcc"
+	"canonical": "http://hl7.org/fhir/us/mcc",
+	"category": "Patient Care"
 }
