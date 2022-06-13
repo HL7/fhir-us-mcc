@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="72"/>
-        <lastUpdated value="2022-06-13T21:23:21.293+00:00"/>
-        <source value="#8xvtS6aQXsJsnPqm"/>
+        <versionId value="73"/>
+        <lastUpdated value="2022-06-13T21:47:49.378+00:00"/>
+        <source value="#xZhHxsfSN7281Avx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>

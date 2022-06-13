@@ -1,5 +1,5 @@
-Table Will be described
-Link to MCC Symptom Profile will be added
+* Table Will be described
+* Link to MCC Symptom Profile will be added
 
 <table border="1" cellspacing="0" style="width:100.0%">
 	<tbody>
