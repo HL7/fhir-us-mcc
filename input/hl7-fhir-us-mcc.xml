@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="65"/>
-        <lastUpdated value="2022-06-08T18:55:40.412+00:00"/>
-        <source value="#UjmGhSLA3Hrz67LD"/>
+        <versionId value="72"/>
+        <lastUpdated value="2022-06-13T21:23:21.293+00:00"/>
+        <source value="#8xvtS6aQXsJsnPqm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -79,7 +79,7 @@
     <dependsOn id="usnlmvsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
         <packageId value="us.nlm.vsac"/>
-        <version value="0.4.0"/>
+        <version value="0.7.0"/>
     </dependsOn>
     <definition>
         <grouping id="new-group1">
@@ -112,7 +112,7 @@
         </grouping>
         <grouping id="new-group9">
             <name value="MCC Symptom Observation"/>
-            <description value="NOTE: PROFILE STILL TO BE BUILT&#xA;**MCC Symptom Observation:** This artifact is derived from the Observation Resource and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC Symptom Observation conformant to the [FHIR Observation Resource](http://hl7.org/fhir/R4/observation.html) with additional requirements for following elements:&#xA;&#xA; - Observation.extension:resource-pertainsToGoal (Must Support)&#xA; - Observation.category to LOINC 95419-8 Whether the patient has symptoms related to condition of interest (??)&#xA; -  ??&#xA; - ??&#xA;&#xA;The MCC Symptom Observation profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Symptom Observation profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;"/>
+            <description value="Ipsum lorum"/>
         </grouping>
         <grouping id="new-group10">
             <name value="MCC Service Request"/>
@@ -403,6 +403,16 @@
             <description value="MCC Medication Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCSymptomObservation"/>
+                <display value="MCCSymptomObservation"/>
+            </reference>
+            <name value="Multiple Chronic Condition Care Plan Symptom Observation"/>
+            <description value="This profile constrains [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) creating a symptom profile for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group9"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

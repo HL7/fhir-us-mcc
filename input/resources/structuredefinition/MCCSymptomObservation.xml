@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCSymptomObservation"/>
+    <meta>
+        <versionId value="9"/>
+        <lastUpdated value="2022-06-10T23:16:44.706+00:00"/>
+        <source value="#leyHYR6vldzAferu"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
+    <name value="MCCSymptomObservation"/>
+    <title value="Multiple Chronic Condition Care Plan Symptom Observation"/>
+    <status value="active"/>
+    <description value="This profile constrains [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) creating a symptom profile for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.category">
+            <path value="Observation.category"/>
+            <short value="Symptom Category: The Observation.category binding to LOINC 75325-1 &quot;Symptom&quot; may help some systems identify that an instance of this profile is communicating a symptom. There is currently no FHIR &quot;Symptom&quot; code in the observation.category value set"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <short value="Value sets of symptoms found [xx] may be used at this Observation.code element"/>
+            <definition value="Place three: Value sets of symptoms found [xx] may be used at this Observation.code element (this one can have a live link)"/>
+            <comment value="Place 4: Value sets of symptoms found [xx] may be used at this Observation.code element (This one can have a live link)"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code.coding">
+            <path value="Observation.code.coding"/>
+            <max value="*"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.effective[x]">
+            <path value="Observation.effective[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.category.coding.system">
+            <path value="Observation.category.coding.system"/>
+            <fixedUri value="http://loinc.org"/>
+        </element>
+        <element id="Observation.category.coding.code">
+            <path value="Observation.category.coding.code"/>
+            <label value="Symptom"/>
+            <short value="Symptom"/>
+            <fixedCode value="75325-1"/>
+        </element>
+    </differential>
+</StructureDefinition>
