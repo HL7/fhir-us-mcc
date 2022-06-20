@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-06-10T23:16:44.706+00:00"/>
-        <source value="#leyHYR6vldzAferu"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-06-17T22:58:05.366+00:00"/>
+        <source value="#LPp2sPDbOOJgEpyh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
@@ -22,10 +22,40 @@
         <element id="Observation">
             <path value="Observation"/>
         </element>
+        <element id="Observation.extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.extension:pertainsToGoal">
+            <path value="Observation.extension"/>
+            <sliceName value="pertainsToGoal"/>
+            <short value="The pertains To Goal extension allows any resource to reference a related goal"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Observation.category">
             <path value="Observation.category"/>
             <short value="Symptom Category: The Observation.category binding to LOINC 75325-1 &quot;Symptom&quot; may help some systems identify that an instance of this profile is communicating a symptom. There is currently no FHIR &quot;Symptom&quot; code in the observation.category value set"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.category.coding.system">
+            <path value="Observation.category.coding.system"/>
+            <fixedUri value="http://loinc.org"/>
+        </element>
+        <element id="Observation.category.coding.code">
+            <path value="Observation.category.coding.code"/>
+            <label value="Symptom"/>
+            <short value="Symptom"/>
+            <fixedCode value="75325-1"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -46,16 +76,6 @@
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
             <mustSupport value="true"/>
-        </element>
-        <element id="Observation.category.coding.system">
-            <path value="Observation.category.coding.system"/>
-            <fixedUri value="http://loinc.org"/>
-        </element>
-        <element id="Observation.category.coding.code">
-            <path value="Observation.category.coding.code"/>
-            <label value="Symptom"/>
-            <short value="Symptom"/>
-            <fixedCode value="75325-1"/>
         </element>
     </differential>
 </StructureDefinition>
