@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-06-17T22:58:05.366+00:00"/>
-        <source value="#LPp2sPDbOOJgEpyh"/>
+        <versionId value="26"/>
+        <lastUpdated value="2022-06-30T22:12:40.131+00:00"/>
+        <source value="#BtTnrfsVpkh8LObu"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
@@ -50,19 +50,26 @@
         <element id="Observation.category.coding.system">
             <path value="Observation.category.coding.system"/>
             <fixedUri value="http://loinc.org"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.category.coding.code">
             <path value="Observation.category.coding.code"/>
             <label value="Symptom"/>
             <short value="Symptom"/>
             <fixedCode value="75325-1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Value sets of symptoms found [xx] may be used at this Observation.code element"/>
+            <short value="MCC Symptom Value Sets may be used at this Observation.code element found on the MCC Symptom Value Sets page in this IG. The value sets are derived from SNOMED CT"/>
             <definition value="Place three: Value sets of symptoms found [xx] may be used at this Observation.code element (this one can have a live link)"/>
             <comment value="Place 4: Value sets of symptoms found [xx] may be used at this Observation.code element (This one can have a live link)"/>
+            <requirements value="This is a test [MCC Symptom Value sets](http://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_symptom_value_sets.html)"/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <description value="MCC Symptom Value Sets"/>
+            </binding>
         </element>
         <element id="Observation.code.coding">
             <path value="Observation.code.coding"/>
@@ -70,11 +77,18 @@
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
+            <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
+            <min value="1"/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
     </differential>

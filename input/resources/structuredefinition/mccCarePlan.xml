@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="89"/>
-        <lastUpdated value="2022-05-18T23:27:38.865+00:00"/>
-        <source value="#DEeiu03wm5bAxk2i"/>
+        <versionId value="92"/>
+        <lastUpdated value="2022-06-20T22:00:13.919+00:00"/>
+        <source value="#oSMCCPgIvBS1EQmK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.2"/>
@@ -100,6 +100,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
                 <targetProfile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -135,6 +136,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -1,4 +1,4 @@
-This profile sets additional expectations for the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core//StructureDefinition/us-core-condition-problems-health-concerns) to record, search, and fetch condition or diagnosis terms representing chronic disease conditions associated with a patient. In addition to the requirements set in the US Core Condition profile, this derived profile is designed to add requirements to the following elements:
+This profile sets additional expectations for the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to record, search, and fetch condition or diagnosis terms representing chronic disease conditions associated with a patient. In addition to the requirements set in the US Core Condition profile, this derived profile is designed to add requirements to the following elements:
 
 * Condition.onset (Must Support)
 * Condition.recordedDate (Must Support)
