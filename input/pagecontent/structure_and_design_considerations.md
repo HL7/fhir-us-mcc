@@ -4,11 +4,11 @@ A Care Plan is a consensus-driven dynamic plan that represents a patient’s and
  
 * Query for patient data across providers and compile into a consolidated care plan representation.
 * Encourage capture of and communication of a patient's health concerns and related goals, interventions, and outcomes.
-* Gather and aggregate patient data for uses beyond the point of care (e.g. public health, population health, quality measurement, risk adjustment, quality improvement, and research.)
+* Gather and aggregate patient data for uses beyond the point of care (e.g., public health, population health, quality measurement, risk adjustment, quality improvement, and research).
 
 ### Standards Supported Care Planning and Coordination Process
 
-The vision of this implementation guide (IG), with the FHIR Care Plan profile as its framework,  is to define a profile on the FHIR Care Plan resource that describes how it can be implemented and leveraged to support machine assisted care coordination between systems. It is assumed that SMART on FHIR Apps can be designed off of this guide to achieve that goal. The IG will also inform EHR systems on how to implement a structured encoded Care Plan.
+The vision of this implementation guide (IG), with the FHIR Care Plan profile as its framework, is to define a profile on the FHIR Care Plan resource that describes how it can be implemented and leveraged to support machine assisted care coordination between systems. It is assumed that SMART on FHIR Apps can be designed off of this guide to achieve that goal. The IG will also inform EHR systems on how to implement a structured encoded Care Plan.
 
 The dynamic care plan process diagram shows Care Plan Cornerstones as they exist within the clinical world and elements and attributes from the FHIR Care Plan resource structure that support the process. In order to encourage reuse and dynamic, machine assisted care coordination, the Care Plan profile design leverages referrencing profiles wherever possible, especially within CarePlan.Activity. 
 

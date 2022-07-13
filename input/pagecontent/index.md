@@ -22,8 +22,6 @@ This FHIR IG addresses the needs of multiple audiences. It provides technical ar
 
 ### History of the Care Plan and Electronic Care Plans
 
-
-
 The concept of a care plan began as a teaching tool for nursing students to research and document the medical conditions their patients had and identify the associated nursing care and family support needed. This was documented in a structured paper format that fostered the nursing process. The nursing process is the identification of health concerns and related goals, and the interventions needed to meet those goals and then evaluating the meeting of those goals – the outcomes. Over the years, the care plan evolved from a student teaching tool to something required for most patients in some format by various regulating or certifying bodies, and further, from a nursing care based plan, to an interdisciplinary patient focused tool.
 
 Most major vendors have electronic Care Plan modules, but the degree to which the modules are implemented and actively used is unknown. Few, if any, are exchanged standards ready or mapped to exchange standards. The first HL7 standard representing Care Plan was the C-CDA Care Plan document designed to represent an instance of an EHR Care Plan similar to the Continuity of Care (CCD) CDA. Many of the learnings and designs for the FHIR Care Plan Resource and this IG were derived from the C-CDA Care Plan. There currently is a [ C-CDA on FHIR Pharmacy Care Plan FHIR Document ](http://hl7.org/fhir/us/phcp/)standard also representing an instance in time of a patient’s care plan. There is also an [IHE Profile Dynamic Care Planning Profile](https://wiki.ihe.net/index.php/Dynamic_Care_Planning. The Office of the National Coordinator (ONC) has put into regulation requirements around goals and health concerns which can currently be met by free text. The Dynamic Care Planning (DCP) Profile provides the structures and transactions for care planning and sharing Care Plans that meet the needs of many, such as providers, patients and payers. The DCP profile leverages the FHIR Care Plan resource, but does not specify, describe or define the use of it for representing specific conditions or multiple conditions. We are unaware of any real world implementations of it at this time.
@@ -34,33 +32,30 @@ We believe that this IG will be the first fully defined HL7 FHIR IG leveraging t
 
 ### Project Overview
 
-
-
-More than 25% of Americans have MCC, accounting for more than 65% of U.S. health care spending. These individuals have complex health needs handled by diverse providers, across multiple settings of care. As a result, their care is often fragmented, poorly coordinated, and inefficient. Therefore, data aggregation is particularly important and challenging for people with MCC. These challenges will increasingly strain the U.S. health system, with the aging of the US population. Projections suggest numbers of adults aged 65 and older will more than double and numbers of those aged 85 and older will triple by 2050.
+More than 25 percent of Americans have MCC, accounting for more than 65 percent of U.S. healthcare spending. These individuals have complex health needs handled by diverse providers, across multiple settings of care. As a result, their care is often fragmented, poorly coordinated, and inefficient. Therefore, data aggregation is particularly important and challenging for people with MCC. These challenges will increasingly strain the U.S. health system, with the aging of the U.S. population. Projections suggest numbers of adults aged 65 and older will more than double and numbers of those aged 85 and older will triple by 2050.
  
 Care plans are a prominent part of multifaceted, care coordination interventions that reduce mortality and hospitalizations and improve disease management and satisfaction. In addition, proactive care planning promotes person-centeredness, improves outcomes, and reduces the cost of care. By design, care plans take a patient-centered approach, both by making comprehensive health data available across providers and settings and through the incorporation of data elements that have not traditionally been included in health IT systems (e.g., social determinants of health SDOH, patient health and life goals, patient preferences). While Care Plans have been developed, they remain paper-based in many U.S. healthcare settings and are not standardized and interoperable across care settings when electronic. While care plans focused on a single disease or condition are unlikely to be tenable for patients with MCC or their providers, existing care plans infrequently address individuals with MCC. The development of care plans based on structured data has been proposed as a method for enabling electronic systems to pull together and share data elements automatically and dynamically. Such aggregated data would not only provide actionable information to identify and achieve health and wellness goals for individuals with MCC, but also would reduce missingness and improve quality of point-of-care data for use in pragmatic research.
  
 The Fast Healthcare Interoperability Resources (FHIR) specification is an open-source standard for exchanging healthcare information electronically based on emerging industry approaches. The FHIR workflow specification includes a CarePlan request resource that may facilitate transfer of data for an e-care plan across healthcare settings. SMART (https://smarthealthit.org/) and SMART on FHIR standards include open specifications to integrate applications with health IT systems and may enable the development of an e-care plan application that can integrate with a variety of electronic health record (EHR) systems.
-Initiated by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), the multiple chronic conditions (MCC) electronic care (eCare) Plan Project aims to develop, test, and pilot an interoperable eCare plan that will facilitate aggregation and sharing of critical patient-centered data across home, community, clinic, and research-based settings for persons with MCC, including chronic kidney disease (CKD), type 2 diabetes mellitus (T2DM), cardiovascular disease (CVD), and pain with opioid use disorder (OUD). The HL7 based activities of the MCC eCare Plan Project:
- 
 
- - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
- -  Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards (clinical information models (CIMs)), and FHIR® mappings that will enable the standardized transfer of data across health settings.
- - Through an non-HL7 project, the initiative will develop and test an open-source clinician facing SMART on FHIR eCare plan application for managing persons with MCC.
- - Develop, test, and ballot an HL7® Fast Health Interoperability Resource (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
+Initiated by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK), the multiple chronic conditions (MCC) electronic care (eCare) Plan Project aims to develop, test, and pilot an interoperable eCare plan that will facilitate aggregation and sharing of critical patient-centered data across home, community, clinic, and research-based settings for persons with MCC, including chronic kidney disease (CKD), type 2 diabetes mellitus (T2D), cardiovascular disease (CVD), pain with opioid use disorder (OUD), and long COVID. 
+
+The HL7-based activities of the MCC eCare Plan Project include:
  
+ - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
+ - Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards (clinical information models (CIMs)), and FHIR® mappings that will enable the standardized transfer of data across health settings.
+ - Through an non-HL7 project, the initiative will develop and test an open-source clinician facing SMART-on-FHIR eCare plan application for managing persons with MCC.
+ - Develop, test, and ballot an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
  
 Additional non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate/display/EC/eCare+Plan+Home).
 
-
 ####  Project Timelines
-To be developed
+To be developed.
 
 ### Acknowledgements
-To be developed
+To be developed.
 
 ### Guidance
-
 The guidance section provides general implementation guidance and best practices. It describes the relation to and reuse of the US Core Implementation Guide profiles and reuse of its conformance requirements and expectations for the servers and client applications. Vocabulary use and value set binding heuristics are described.
 
 ####  Relationship to US Core
@@ -71,7 +66,7 @@ This guide will reuse the US Core Care Plan. However, the required US Core CareP
 
 #####  General US Core IG Conformance
 
-This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html) and it’s [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. 
+This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html) and its [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. 
 
 #####  Provenance
 
@@ -83,8 +78,7 @@ This IG will adhere to the US Core [Must Support](https://www.hl7.org/fhir/us/co
 
 ####  Value Set Binding
 
-This project has built and houses its value sets in the National Library of Medicine's (NLM) Value Set Authority Center (VSAC). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used.
-Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) UMLS license. In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue.
+This project has built and houses its value sets in the National Library of Medicine's (NLM) Value Set Authority Center (VSAC). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used. Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) UMLS license. In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue.
 
 
 

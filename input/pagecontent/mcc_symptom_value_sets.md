@@ -15,11 +15,12 @@ The value sets in the MCC Value Set Library pages are not bound within any profi
 
 **Accessing Value Sets using FHIR Value Set Resource**
 * To fetch the FHIR ValueSet resource (in other words, the value set definition) use:
- * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID] (Note: we might need to insert these as images so they don't try to be links)
+ * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID] 
 * To fetch the FHIR ValueSet resource expansion use the FHIR $expand operation:
- * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID]/$expand (Note: we might need to insert these as images so they don't try to be links)
+ * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID]/$expand 
 
 For more information refer to the FHIR Terminology Service for VSAC Resources
+
 <table border="1" cellspacing="0" style="width:100.0%">
 	<tbody>
 		<tr>

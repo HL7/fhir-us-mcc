@@ -1,920 +1,676 @@
-<p>This is a test for MCC Value Set library page Template</p>  
+<p>This is a draft MCC Value Set Condition Library page containing a partial listing of the MCC Condition value sets</p>  
 
-<blockquote><i>Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum Ipsum Lorum</i></blockquote>
+This table holds the value sets that may be used with the [MCC Chronic Disease Conditions Profile](http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease). 
 
-<table width="100%">
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-<tbody>
-<tr>
-<th width="27%">
-<p><strong>PROFILE ELEMENT</strong></p>
-</th>
-<th width="36%">
-<p><strong>VALUE SET NAME AND VSAC LINK</strong></p>
-</th>
-<th width="36%">
-<p><strong>VALUE SET CLINICAL FOCUS</strong></p>
-</th>
-</tr>
-<tr>
-<td width="27%">
-<p>Condition.code</p>
-</td>
-<td width="36%">
-    <p>	
-<a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.159/definition">Chronic Kidney Disease All Stages (1 through 5)</a>
-</p>
-</td>
-<td width="36%">
-    <p>This set of values contains diagnosis terms representing All Stages (1 or 2 or 3 or 4 or 5) of chronic kidney disease</p>
-</td>
-</tr>
-<tr>
-    <!-- EVERYTHNG BEYOND HERE IS UNCHANGED FROM THE COPIED TABLE FROM eICR -->
-<td width="27%">
-    <p>EVERYTHNG BEYOND HERE IS UNCHANGED FROM THE COPIED TABLE FROM eICR</p>
-</td>
-<td width="36%">
-    <p>EVERYTHNG BEYOND HERE IS UNCHANGED FROM THE COPIED TABLE FROM eICR</p>
-</td>
-<td width="36%">
-    <p>EVERYTHNG BEYOND HERE IS FROM THE COPIED TABLE FROM eICR</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Sending Application</p>
-</td>
-<td width="36%">
-<p>The name of the sending application</p>
-</td>
-<td width="36%">
-<p>Used to ensure quality and integrity of eICR data</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider ID</p>
-</td>
-<td width="36%">
-<p>Identification code for the care provider (e.g., National Provider Identifier (NPI))</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider Name</p>
-</td>
-<td width="36%">
-<p>The first and last name of the healthcare provider</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider Phone</p>
-</td>
-<td width="36%">
-<p>The provider's phone number with area code</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider Fax</p>
-</td>
-<td width="36%">
-<p>The provider's fax number with area code</p>
-</td>
-<td width="36%">
-<p>Necessary to obtain additional info during case follow-up phase or to submit supplemental information</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider Email</p>
-</td>
-<td width="36%">
-<p>The provider's email address</p>
-</td>
-<td width="36%">
-<p>If secure email is available; used for sharing secure links to health data if allowed by state regulations</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider Facility/Office Name</p>
-</td>
-<td width="36%">
-<p>The provider facility's full name, not necessarily where care was provided to patient</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Provider Address</p>
-</td>
-<td width="36%">
-<p>The geographical location or mailing address of the provider's office or facility. Address must include street address, office or suite number (if applicable), city or town, state, and zip code</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Facility ID Number</p>
-</td>
-<td width="36%">
-<p>Identification code for the facility (e.g., Facility NPI)</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Facility Name</p>
-</td>
-<td width="36%">
-<p>The facility's name</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Facility Type</p>
-</td>
-<td width="36%">
-<p>The type of facility where patient received or is receiving healthcare for the reportable condition (e.g., hospital, ambulatory, urgent care, etc.)</p>
-</td>
-<td width="36%">
-<p>Used to determine the type of care setting in which patient is receiving care for the reportable condition</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Facility Phone</p>
-</td>
-<td width="36%">
-<p>The facility's phone number with area code</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Facility Fax</p>
-</td>
-<td width="36%">
-<p>The facility's fax number with area code</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Facility Address</p>
-</td>
-<td width="36%">
-<p>The mailing address for the facility where patient received or is receiving healthcare for the reportable condition. Must include street address, city/town, county, state, and zip code</p>
-</td>
-<td width="36%">
-<p>Need provider's contact information in order to follow up appropriately for reportable event to ensure appropriate treatment, identify contact exposures, etc.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Patient ID Number</p>
-</td>
-<td width="36%">
-<p>Patient social security number, medical record number, or other identifying value as required or allowed under jurisdictional laws governing health data exchange</p>
-</td>
-<td width="36%">
-<p>Identification and contact; jurisdictions may select which they can receive based on laws governing public health data exchange</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Patient Name</p>
-</td>
-<td width="36%">
-<p>All names for the patient, including legal names and aliases. Must include the name type (i.e., legal or alias), first name, middle name, and last name</p>
-</td>
-<td width="36%">
-<p>Identification and contact</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Parent/Guardian Name</p>
-</td>
-<td width="36%">
-<p>All names for the patient&rsquo;s parent or guardian, including legal names and aliases (if patient age is &lt; 18 years). Must include name type (i.e., legal or alias), first name, middle name, and last name</p>
-</td>
-<td width="36%">
-<p>For appropriate contact with minors</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Patient or Parent/Guardian Phone</p>
-</td>
-<td width="36%">
-<p>All phone numbers and phone number types for the patient or parent/guardian</p>
-</td>
-<td width="36%">
-<p>Contact Patient</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Patient or Parent/Guardian Email</p>
-</td>
-<td width="36%">
-<p>The email address for the patient or the patient&rsquo;s parent/guardian.</p>
-</td>
-<td width="36%">
-<p>Contact Patient</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Street Address</p>
-</td>
-<td width="36%">
-<p>All addresses for the patient, including current and residential addresses. Must include street address, apartment or suite number, city or town, county, state, zip code, and country</p>
-</td>
-<td width="36%">
-<p>Case Assignment, analysis and visualization, matching</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Birth Date</p>
-</td>
-<td width="36%">
-<p>The patient's date of birth</p>
-</td>
-<td width="36%">
-<p>Appropriate identification, appropriate identification of minors, risk; Necessary to determine patient age; matching electronic laboratory reports (ELRs)</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Patient Birth Sex</p>
-</td>
-<td width="36%">
-<p>The patient's biological sex (not gender)</p>
-</td>
-<td width="36%">
-<p>Demographic reporting</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Race</p>
-</td>
-<td width="36%">
-<p>The patient's race</p>
-</td>
-<td width="36%">
-<p>Demographic reporting</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Ethnicity</p>
-</td>
-<td width="36%">
-<p>The patient's ethnicity</p>
-</td>
-<td width="36%">
-<p>Demographic reporting</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Preferred Language</p>
-</td>
-<td width="36%">
-<p>The patient's preferred language</p>
-</td>
-<td width="36%">
-<p>Communication with Patient</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Current Occupation</p>
-</td>
-<td width="36%">
-<p>Occupation which the subject currently holds.</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Usual Occupation</p>
-</td>
-<td width="36%">
-<p>The occupation which the subject has held for the longest duration through his or her working history.</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Current Industry</p>
-</td>
-<td width="36%">
-<p>Type of business (industry) in which the subject currently holds a job.</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Usual Industry</p>
-</td>
-<td width="36%">
-<p>The industry (type of business) which the subject has worked in for the longest duration while in the usual occupation</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Current Job Title</p>
-</td>
-<td width="36%">
-<p>Title of the currently held job.</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Current Employer Name, Phone, and Address</p>
-</td>
-<td width="36%">
-<p>Name, phone, and address of the current employer.</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Occupational Exposure</p>
-</td>
-<td width="36%">
-<p>Actual contact or interaction with a specific hazard at work that increases an individual&rsquo;s risk of a detrimental physical or mental health outcome.</p>
-</td>
-<td width="36%">
-<p>Identification of potential risk, transmission risk</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Pregnancy status (yes, no, possible, unknown)</p>
-</td>
-<td width="36%">
-<p>The patient's pregnancy status.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Pregnancy status determination method</p>
-</td>
-<td width="36%">
-<p>The method by which the pregnancy status was determined.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Pregnancy status recorded date</p>
-</td>
-<td width="36%">
-<p>The date on which the pregnancy status was recorded.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Estimated date of delivery (EDD)</p>
-</td>
-<td width="36%">
-<p>Estimated date a woman will give birth.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Estimated date of delivery (EDD) method</p>
-</td>
-<td width="36%">
-<p>The method used to determine the EDD.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Estimated gestational age</p>
-</td>
-<td width="36%">
-<p>The estimated gestational age of the pregnancy (in contrast to the gestational age at birth), beginning from the time of fertilization.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Estimated gestational age determination date</p>
-</td>
-<td width="36%">
-<p>The date the gestational age was determined.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Estimated gestational age determination method</p>
-</td>
-<td width="36%">
-<p>The method used to determine the gestational age.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Last menstrual period (LMP)</p>
-</td>
-<td width="36%">
-<p>Start date of the last menstrual period of the patient.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Pregnancy outcome</p>
-</td>
-<td width="36%">
-<p>The result(s) of the pregnancy, such as live birth, still birth, miscarriage, etc.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Pregnancy outcome date</p>
-</td>
-<td width="36%">
-<p>Date on which the pregnancy outcome occurred.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Postpartum status</p>
-</td>
-<td width="36%">
-<p>The postpartum status of a patient. If the template is present, the patient is in the postpartum period.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Visit Date/Time</p>
-</td>
-<td width="36%">
-<p>Date and time of the provider's most recent encounter with the patient regarding the reportable condition</p>
-</td>
-<td width="36%">
-<p>Defines when the individual may have been ill; a point in time to which can link other potential cases of reportable event; necessary to ensure follow-up within key time frames/helps triage priority follow-up and ensure control measures are implemented in a timely way</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Admission Date/Time</p>
-</td>
-<td width="36%">
-<p>Date and time the patient was admitted to the treatment facility; e.g., hospital</p>
-</td>
-<td width="36%">
-<p>Key for epidemiologic investigation - important to know if hospitalized for severity of condition and to triage priority follow-up</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>History of Present Illness</p>
-</td>
-<td width="36%">
-<p>Physician&rsquo;s narrative of the history of the reportable event. Information about possible contacts and/or exposures may be captured here.</p>
-</td>
-<td width="36%">
-<p>Indicator of reportable condition - most important descriptor of condition/ epidemiologic information - supports epidemiologic investigation; epidemiologic relevant information</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Reason for Visit</p>
-</td>
-<td width="36%">
-<p>Provider&rsquo;s interpretation for the patient&rsquo;s visit for the reportable event</p>
-</td>
-<td width="36%">
-<p>Indicator of reportable condition - most important descriptor of condition/ epidemiologic information - supports epidemiologic investigation</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Chief Complaint</p>
-</td>
-<td width="36%">
-<p>Patient&rsquo;s chief complaint (the patient&rsquo;s own description)</p>
-</td>
-<td width="36%">
-<p>An early indicator of a possible reportable condition</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Past Medical History</p>
-</td>
-<td width="36%">
-<p>A record of the patient&rsquo;s past complaints, problems, and diagnoses.</p>
-</td>
-<td width="36%">
-<p>Provides information on patient&rsquo;s previous conditions or diagnoses that could be relevant to the current condition, such as underlying conditions.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Review of Systems</p>
-</td>
-<td width="36%">
-<p>A relevant collection of symptoms and functions systematically gathered by a clinician (includes symptoms the patient is currently experiencing, some of which were not elicited during the history of present illness, as well as a potentially large number of pertinent negatives, for example, symptoms that the patient denied experiencing).</p>
-</td>
-<td width="36%">
-<p>If clinical details signify a possible case of public health importance - confirm the need for public health follow up</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Date of Onset</p>
-</td>
-<td width="36%">
-<p>The date of symptoms for the reportable event</p>
-</td>
-<td width="36%">
-<p>Helps determine possible exposure and illness- calculate incubation period</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Symptoms (list)</p>
-</td>
-<td width="36%">
-<p>List of patient symptoms (structured) for the reportable event</p>
-</td>
-<td width="36%">
-<p>If clinical symptoms signify a case of public health importance - confirm the need for public health follow-up</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Laboratory Order Code</p>
-</td>
-<td width="36%">
-<p>Ordered tests for the patient during the encounter</p>
-</td>
-<td width="36%">
-<p>Some lab test orders are reportable for suspected cases</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Laboratory Result</p>
-</td>
-<td width="36%">
-<p>The result of a laboratory test for the patient during the encounter</p>
-</td>
-<td width="36%">
-<p>Some lab test results are reportable for suspected cases</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Laboratory Result Status</p>
-</td>
-<td width="36%">
-<p>The status of a laboratory test (preliminary, final etc.)</p>
-</td>
-<td width="36%">
-<p>Indication of test completeness and reliability of results.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Specimen source/type/id/collection date</p>
-</td>
-<td width="36%">
-<p>Information about the specimen collected</p>
-</td>
-<td width="36%">
-<p>Additional details on laboratory specimen needed to confirm some conditions (e.g., collected from a sterile site)</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Placer Order Number</p>
-</td>
-<td width="36%">
-<p>Identifier for the laboratory order from the encounter</p>
-</td>
-<td width="36%">
-<p>Potential value to linking electronic laboratory reports (ELR) to eICR</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Diagnoses (list)</p>
-</td>
-<td width="36%">
-<p>The healthcare provider's diagnoses of the patient's health condition (all)</p>
-</td>
-<td width="36%">
-<p>If clinical diagnoses signify a case of public health importance - confirm the need for public health follow-up</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Date of Diagnosis</p>
-</td>
-<td width="36%">
-<p>The date of provider diagnosis</p>
-</td>
-<td width="36%">
-<p>Knowing when patient is diagnosed; integral to epidemiological investigation</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Medications</p>
-</td>
-<td width="36%">
-<p>Medications relevant to the reportable event (includes admission, administered, historical, planned medications)</p>
-</td>
-<td width="36%">
-<p>To find treatments that were prescribed; prophylaxis; knowing if the patient has already been treated, lower on the list for public health (priority)</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Death Date</p>
-</td>
-<td width="36%">
-<p>The patient's date of death</p>
-</td>
-<td width="36%">
-<p>Patient follow-up and epidemiological purposes</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Patient Class (Encounter Type)</p>
-</td>
-<td width="36%">
-<p>Whether patient is outpatient, inpatient, emergency, urgent care</p>
-</td>
-<td width="36%">
-<p>Indication of possible severity of condition</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Travel History</p>
-</td>
-<td width="36%">
-<p>The patient's travel history, includes purpose of travel, dates of travel, locations of travel, details of transportation (ship, plane, etc.)</p>
-</td>
-<td width="36%">
-<p>Risk, potential severity of action, timeliness of action (e.g., is travel history relevant); Prioritization and triaging</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Vital Signs</p>
-</td>
-<td width="36%">
-<p>The patient's relevant vital signs.</p>
-</td>
-<td width="36%">
-<p>Indication of possible severity of condition</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Therapeutic Medication Response</p>
-</td>
-<td width="36%">
-<p>The therapeutic response to a medication (as opposed to an undesired reaction). e.g., Positive response to naloxone administration after a suspected naloxone administration.</p>
-</td>
-<td width="36%">
-<p>Confirmatory response can be indicative of suspected condition.</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Homeless</p>
-</td>
-<td width="36%">
-<p>The patient's homeless status.</p>
-</td>
-<td width="36%">
-<p>Risk indicator; important health equity indicator</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Immunization Status</p>
-</td>
-<td width="36%">
-<p>The patient&rsquo;s current immunization status and pertinent immunization history.</p>
-</td>
-<td width="36%">
-<p>Risk, potential severity of action, timeliness of action</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Vaccine Credential Patient Assertion</p>
-</td>
-<td width="36%">
-<p>Whether or not the patient has asserted that they have verifiable vaccine credentials.</p>
-</td>
-<td width="36%">
-<p>Indicator of vaccine history</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Gender Identity</p>
-</td>
-<td width="36%">
-<p>The patient's gender identity. (Different from patient gender (administrativeGender) and birth sex).</p>
-</td>
-<td width="36%">
-<p>Demographic reporting</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Procedure</p>
-</td>
-<td width="36%">
-<p>Interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the encounter.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Planned Procedure</p>
-</td>
-<td width="36%">
-<p>Interventional, surgical, diagnostic, or therapeutic procedures or treatments planned as a result of the encounter.</p>
-</td>
-<td width="36%">
-<p>Appropriate treatment, follow-up, appropriate for scoring/risk ascertainment</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Disability Status</p>
-</td>
-<td width="36%">
-<p>A set of questions used to measure disability.</p>
-</td>
-<td width="36%">
-<p>Risk indicator; important health equity indicator</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Emergency Outbreak Information</p>
-</td>
-<td width="36%">
-<p>Information that is required during a public health emergency/outbreak.</p>
-</td>
-<td width="36%">
-<p>Risk indicator; ability to share critical information with public health associated with an outbreak</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Exposure/Contact Information</p>
-</td>
-<td width="36%">
-<p>Potential patient exposure and contact information.</p>
-</td>
-<td width="36%">
-<p>Risk indicator</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Tribal Affiliation</p>
-</td>
-<td width="36%">
-<p>The name of a patient&rsquo;s affiliated tribe and whether or not the patient is an enrolled member.</p>
-</td>
-<td width="36%">
-<p>Demographic reporting; important health equity indicator</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Country of Nationality</p>
-</td>
-<td width="36%">
-<p>Country of nationality (when patient has recent travel history).</p>
-</td>
-<td width="36%">
-<p>Demographic reporting</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Country of Residence</p>
-</td>
-<td width="36%">
-<p>Country of residence (when patient has recent travel history).</p>
-</td>
-<td width="36%">
-<p>Demographic reporting</p>
-</td>
-</tr>
-<tr>
-<td width="27%">
-<p>Reportability Response information</p>
-</td>
-<td width="36%">
-<p>This information does not come from the healthcare organization/EHR.</p>
-</td>
-<td width="36%">
-<p>For PHA internal use only: Information from a Reportability Response that was generated in response to the eICR.</p>
-</td>
-</tr>
-</tbody>
+**Table Key**
+* **Value Set Name and Link**: All of these value sets are housed in the [NLM Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/welcome). The value set name is a link to the value set. You must have an NLM/UMLS account to access. There is no charge for an account. Note: the first time you click on the value set name link in a given session, there my be a delay in loading and you will need to sign in once loaded.
+* **Value Set Clinical Focus**: The Value Set Clinical Focus is the same as the clinical focus as written in VSAC which is a free text statement describing the general context of the concepts in the set.
+* **OID**: The Object Identifier (OID) of the set. OIDs of value sets are unique, whereas the names may not be. If accessing the value set outside of this table link, it is safest to perform that search with the OID
+* **Profile Element**: The Profile element asserts the location within the profile the value set term **SHALL** be used.
+
+**MCC Value Sets Use and Validation**
+The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occurr. Validation support can be added in implmentation. These Symptom Value Sets may be used for several different purposes and no clinically appropriate use is precluded: 
+* Querying for patients that have experienced particular conditions or diagnoses
+* Within Quality Measures or for research using [Clinical Quality Language (CQL)](http://cql.hl7.org/) (for example)
+* For display within applications
+* Terminology validation support
+
+**Accessing Value Sets using FHIR Value Set Resource**
+* To fetch the FHIR ValueSet resource (in other words, the value set definition) use:
+ * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID] 
+* To fetch the FHIR ValueSet resource expansion use the FHIR $expand operation:
+ * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID]/$expand 
+
+For more information refer to the FHIR Terminology Service for VSAC Resources
+
+
+<table border="1" cellspacing="0" style="width:100.0%x">
+	<tbody>
+		<tr>
+			<td style="background-color:#d9e2f3; height:31.4pt; width:11%">
+			<p><strong>Value Set Name and VSAC Link</strong></p>
+			</td>
+			<td style="background-color:#d9e2f3; height:31.4pt; width:32%">
+			<p><strong>Value Set Clinical Focus</strong></p>
+			</td>
+			<td style="background-color:#d9e2f3; height:31.4pt; width:20%">
+			<p><strong>OID</strong></p>
+			</td>
+			<td style="background-color:#d9e2f3; height:31.4pt; width:12%">
+			<p><strong>Profile Element</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Chronic Kidney Disease</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.157/expansion/Latest">Chronic Kidney Disease All Stages (1 through 5) SNOMED</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnosis terms representing All Stages (1 or 2 or 3 or 4 or 5) of chronic kidney disease.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.157</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.6/expansion/Latest">Chronic Kidney Disease Type or Cause</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>This set of values contains condition or diagnosis terms representing causes of, or types of, chronic kidney disease.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.6</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:11%">
+			<p><strong>Diabetes</strong></p>
+			</td>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.103.12.1020/expansion/Latest">Type 1 Diabetes</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>The purpose of this value set is to represent concepts for a diagnosis of type I diabetes mellitus.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.464.1003.103.12.1020</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.103.12.1021/expansion/Latest">Type II Diabetes</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>This value set contains concepts related to a diagnosis of Type II Diabetes.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.464.1003.103.12.1021</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:11%">
+			<p><strong>Hypertension</strong></p>
+			</td>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#aeaaaa; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.566/expansion/Latest">Essential or Primary Hypertension</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Essential or Primary Hypertension.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.566</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:15.7pt; vertical-align:top; width:11%">
+			<p>Hypertension</p>
+			</td>
+			<td style="height:15.7pt; vertical-align:top; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="height:15.7pt; vertical-align:top; width:20%">
+			<p>Placeholder</p>
+			</td>
+			<td style="height:15.7pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.569/expansion/Latest">Secondary Hypertension</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Secondary Hypertension.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.569</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Pain</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.76/expansion/Latest">Chronic Pain Conditions</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnoses or problem terms representing that chronic pain exists.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.76</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.585/expansion/Latest">Presence of Pain</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Presence of Pain.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.585</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Mental Health</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:62.8pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.145/expansion/Latest">Depression Diagnosis</a></p>
+			</td>
+			<td style="height:62.8pt; vertical-align:top; width:32%">
+			<p>The purpose of this value set is to represent concepts for a diagnosis of a depressed state or actual depressive disorder whether recurrent, chronic, or diagnosed as moderate, major, or severe.</p>
+			</td>
+			<td style="height:62.8pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.600.145</p>
+			</td>
+			<td style="height:62.8pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.67.1.101.1.254/expansion/Latest">Dysthymia</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>The purpose of this value set is to represent concepts for diagnoses related to dysthymia.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.67.1.101.1.254</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d0cece; height:15.7pt; width:11%">
+			<p><strong>Substance Use/Misuse</strong></p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.1559/expansion/Latest">Smoking</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.600.1559</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.699/expansion/Latest">Tobacco Use or Exposure</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Tobacco Use or Exposure.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.699</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.696/expansion/Latest">Vaping</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Vaping.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.696</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d0cece; height:31.4pt; width:11%">
+			<p><strong>Cognitive &amp; functional health</strong></p>
+			</td>
+			<td style="background-color:#d0cece; height:31.4pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:31.4pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:31.4pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.115.12.1089/expansion/Latest">Blindness</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>Blindness</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.464.1003.115.12.1089</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.592/expansion/Latest">Hearing Impairment</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Hearing Impairment.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.592</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.709/expansion/Latest">Sensory Status</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Sensory Status.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.709</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d0cece; height:15.7pt; width:11%">
+			<p><strong>Genito-urinary conditions</strong></p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.715/expansion/Latest">Lower Urinary Tract Symptoms (LUTS) From Benign Prostatic Hyperplasia</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Lower Urinary Tract Symptoms (LUTS) From Benign Prostatic Hyperplasia.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.715</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.718/expansion/Latest">Urinary Incontinence</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Urinary Incontinence.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.718</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d0cece; height:15.7pt; width:11%">
+			<p><strong>Infectious Diseases</strong></p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d0cece; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.120.12.1003/expansion/Latest">HIV</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>The purpose of this value set is to represent concepts for a diagnosis of human immunodeficiency virus (HIV) disease.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.464.1003.120.12.1003</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.43/expansion/Latest">Tuberculosis Disorders</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnoses or problems that represent that the patient has tuberculosis regardless of the clinical presentation of the condition</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.43</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Nutrition / Metabolic</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.47/expansion/Latest">Hypoalbuminemia Conditions</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnosis terms representing hypoalbuminemia conditions.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.47</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.36/expansion/Latest">Obesity Conditions</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnosis terms representing obesity.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.36</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Hormonal Disorders</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:47.1pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.117.12.1016/expansion/Latest">Hyperparathyroidism</a></p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:32%">
+			<p>The purpose of this value set is to represent concepts for a diagnosis of hyperparathyroidism.</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.464.1003.117.12.1016</p>
+			</td>
+			<td style="height:47.1pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.745/expansion/Latest">Hypothyroidism</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Hypothyroidism.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.745</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Other signs &amp; symptoms</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#fcfdfd; height:31.4pt; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.67/expansion/Latest">Hematuria Conditions</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnosis terms representing hematuria conditions.</p>
+			</td>
+			<td style="background-color:#fcfdfd; height:31.4pt; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.67</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.85/expansion/Latest">Hyperuricemia Conditions</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnosis terms representing Hyperuricemia conditions.</p>
+			</td>
+			<td style="background-color:#fcfdfd; height:31.4pt; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.85</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Other Relevant Conditions</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.84/expansion/Latest">Preeclampsia Disorders</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnoses or problem terms representing preeclampsia disorders.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.84</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:62.8pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.676/expansion/Latest">Pregnant (SNOMED)</a></p>
+			</td>
+			<td style="height:62.8pt; vertical-align:top; width:32%">
+			<p>This value set contains the concept defined by the HL7 eICR Implementation Guide v1.1 to represent that a patient is currently Pregnant regardless of the clinical presentation of the condition</p>
+			</td>
+			<td style="height:62.8pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1146.676</p>
+			</td>
+			<td style="height:62.8pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:11%">
+			<p><strong>Allergies and Reactions</strong></p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:32%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:20%">
+			<p>&nbsp;</p>
+			</td>
+			<td style="background-color:#d8d8d8; height:15.7pt; width:12%">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.785/expansion/Latest">Adverse Reaction to Therapy or Treatment</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Adverse Reaction to Therapy or Treatment.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.785</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height:31.4pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.776/expansion/Latest">Allergy or Intolerance</a></p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Allergy or Intolerance.</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.776</p>
+			</td>
+			<td style="height:31.4pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+	</tbody>
 </table>
-<p>&nbsp;</p>
+
+<hr />
