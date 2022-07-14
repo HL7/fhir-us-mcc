@@ -25,5 +25,7 @@
       <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
       <li><a href="mcc_radiology_value_sets.html">MCC Radiology Value Sets</a></li>
       <li><a href="mcc_symptom_value_sets.html">MCC Symptom Value Sets</a></li>    </ul>
-  </li>  <li><a href="artifacts.html">Artifact Index</a></li>
+  </li>
+  <li><a href="mcc_care_plan_social_determinants_of_health_sdoh_guidance.html">MCC Care Plan Social Determinants of Health (SDOH) Guidance</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>
