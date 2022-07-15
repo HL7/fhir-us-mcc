@@ -47,7 +47,7 @@ The HL7-based activities of the MCC eCare Plan Project include:
  - Through an non-HL7 project, the initiative will develop and test an open-source clinician facing SMART-on-FHIR eCare plan application for managing persons with MCC.
  - Develop, test, and ballot an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
  
-Additional non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate/display/EC/eCare+Plan+Home).
+Additional non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate).
 
 ####  Project Timelines
 To be developed.
@@ -60,13 +60,13 @@ The guidance section provides general implementation guidance and best practices
 
 ####  Relationship to US Core
 
-This Implementation Guide strives to reuse US Core profiles either through direct use or by constraining select profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG constrains or directly reuses other resources, or profiles defined in other FHIR IGs. 
+This Implementation Guide reuses US Core profiles either through direct use or by constraining select profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG constrains or directly reuses other resources, or profiles defined in other FHIR IGs. 
 This guide will reuse the US Core Care Plan. However, the required US Core CarePlan.text and the required Care.Plan.category:AssessPlan may be limiting factors for this context of use: aggregation of multiple chronic condition care plans and the ability to query for structured data within a structured Care Plan. As such, we recommend adding additional Care Plan categories if deemed more informational to reflect multiple chronic condition care coordination and plans and to hard code “Multiple Chronic Condition Care Coordination Plan” at CarePlan.text
 
 
 #####  General US Core IG Conformance
 
-This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html) and its [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. 
+This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. 
 
 #####  Provenance
 
