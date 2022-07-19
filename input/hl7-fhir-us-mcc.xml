@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="112"/>
-        <lastUpdated value="2022-07-15T21:30:06.678+00:00"/>
-        <source value="#Nc1hJpxuRIj3Wcgx"/>
+        <versionId value="119"/>
+        <lastUpdated value="2022-07-19T00:07:03.443+00:00"/>
+        <source value="#8yKkhIEobQUlJfvQ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -486,8 +486,8 @@
                 </page>
             </page>
             <page>
-                <nameUrl value="mcc_care_plan_social_determinants_of_health_sdoh_guidance.html"/>
-                <title value="MCC Care Plan Social Determinants of Health (SDOH) Guidance"/>
+                <nameUrl value="mcc_care_plan_sdoh_guidance.html"/>
+                <title value="MCC Care Plan SDOH Guidance"/>
                 <generation value="markdown"/>
             </page>
         </page>
