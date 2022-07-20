@@ -1,6 +1,6 @@
 <p>This is a draft MCC Value Set Condition Library page containing a partial listing of the MCC Condition value sets</p>  
 
-This table holds the value sets that may be used with the [MCC Chronic Disease Conditions Profile](http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease). 
+This table holds the value sets that may be used with the [MCC Chronic Disease Conditions Profile](StructureDefinition-MCCChronicDisease.html). 
 
 **Table Key**
 * **Value Set Name and Link**: All of these value sets are housed in the [NLM Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/welcome). The value set name is a link to the value set. You must have an NLM/UMLS account to access. There is no charge for an account. Note: the first time you click on the value set name link in a given session, there my be a delay in loading and you will need to sign in once loaded.
