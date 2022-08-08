@@ -3,20 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="father"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-05-18T23:34:14.325+00:00"/>
-        <source value="#Wh0yv1CVbujStiyc"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-08-02T18:25:58.221+00:00"/>
+        <source value="#CbXJ3PafsCnbupVW"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">Father died of CKD and heart disease aged 74
-        
-        
-        
-        </div>
-    </text>
     <identifier>
         <value value="12345"/>
     </identifier>
@@ -40,21 +31,4 @@
             <display value="Male"/>
         </coding>
     </sex>
-    <condition>
-        <code>
-            <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="96711000119105"/>
-                <display value="Hypertensive heart AND chronic kidney disease stage 5 (disorder)"/>
-            </coding>
-            <text value="Hypertensive heart AND chronic kidney disease stage 5"/>
-        </code>
-        <contributedToDeath value="true"/>
-        <onsetAge>
-            <value value="74"/>
-            <unit value="yr"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="a"/>
-        </onsetAge>
-    </condition>
 </FamilyMemberHistory>

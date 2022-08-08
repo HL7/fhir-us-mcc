@@ -3,16 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCGoal"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-05-17T20:09:02.989+00:00"/>
-        <source value="#uG6IJaLac0kGymH6"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-08-02T18:25:27.352+00:00"/>
+        <source value="#DziC1pIUCDl9x9ex"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     <name value="MCCGoal"/>
     <title value="Multiple Chronic Condition Care Plan Goal"/>
     <status value="active"/>
     <publisher value="Patient Care Work Group"/>
-    <description value="This profile constrains [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27,69 +26,4 @@
     <type value="Goal"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
     <derivation value="constraint"/>
-    <differential>
-        <element id="Goal">
-            <path value="Goal"/>
-        </element>
-        <element id="Goal.extension">
-            <path value="Goal.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Goal.extension:goal-acceptance">
-            <path value="Goal.extension"/>
-            <sliceName value="goal-acceptance"/>
-            <short value="Information about the acceptance and relative priority assigned to the goal by the patient, practitioners and other stake-holders"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/goal-acceptance"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.extension:reasonRejected">
-            <path value="Goal.extension"/>
-            <sliceName value="reasonRejected"/>
-            <short value="The reason the goal was not accepted. Applies only if the status of the goal is rejected"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/goal-reasonRejected"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.extension:relationship">
-            <path value="Goal.extension"/>
-            <sliceName value="relationship"/>
-            <short value="Establishes a relationship between this goal and other goals"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/goal-relationship"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.achievementStatus">
-            <path value="Goal.achievementStatus"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.priority">
-            <path value="Goal.priority"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.expressedBy">
-            <path value="Goal.expressedBy"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.addresses">
-            <path value="Goal.addresses"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Goal.outcomeReference">
-            <path value="Goal.outcomeReference"/>
-            <mustSupport value="true"/>
-        </element>
-    </differential>
 </StructureDefinition>

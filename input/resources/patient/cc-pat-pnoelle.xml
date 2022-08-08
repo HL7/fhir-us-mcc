@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="cc-pat-pnoelle"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-05-19T22:22:07.359+00:00"/>
-        <source value="#zvakHDtTJsiKp5qv"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-02T18:25:58.212+00:00"/>
+        <source value="#JCaZBT444ZLpgXTH"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
@@ -41,33 +41,6 @@
             </table>
         </div>
     </text>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2028-9"/>
-                <display value="Asian"/>
-            </valueCoding>
-        </extension>
-        <extension url="text">
-            <valueString value="Asian"/>
-        </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-        <extension url="ombCategory">
-            <valueCoding>
-                <system value="urn:oid:2.16.840.1.113883.6.238"/>
-                <code value="2186-5"/>
-                <display value="Not Hispanic or Latino"/>
-            </valueCoding>
-        </extension>
-        <extension url="text">
-            <valueString value="Not Hispanic or Latino"/>
-        </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-        <valueCode value="F"/>
-    </extension>
     <identifier>
         <use value="usual"/>
         <type>

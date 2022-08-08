@@ -219,6 +219,20 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 			<p>Observation.code</p>
 			</td>
 		</tr>
+				<tr>
+			<td style="border-color:#222222; height:12.75pt; vertical-align:top; width:11%">
+				<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1446/expansion/Latest">Debility or Frailty</a></p>
+			</td>
+			<td style="height:12.75pt; vertical-align:top; width:32%">
+				<p>This set of values contains finding of Debility or Frailty related terms representing physical weakness, feebleness, or infirmity.</p>
+			</td>
+			<td style="height:12.75pt; vertical-align:top; width:20%">
+				<p>2.16.840.1.113762.1.4.1222.1502</p>
+			</td>
+			<td style="height:12.75pt; vertical-align:top; width:12%">
+				<p>Observation.code</p>
+			</td>
+		</tr>
 		<tr>
 			<td style="border-color:#222222; height:12.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1378/expansion/Latest">Depression Symptoms</a></p>
@@ -343,6 +357,20 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
 			<p>Observation.code</p>
+			</td>
+		</tr>
+				<tr>
+			<td style="border-color:#222222; height:12.75pt; vertical-align:top; width:11%">
+				<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1401/expansion">Functional and Mobility Impairment</a></p>
+			</td>
+			<td style="height:12.75pt; vertical-align:top; width:32%">
+				<p>This set of values reflect patients with difficulty completing activities of daily living and instrumental activities of daily living. The disability that affects movement ranging from gross motor skills, such as walking, to fine motor movement, involving manipulation of objects by hand..</p>
+			</td>
+			<td style="height:12.75pt; vertical-align:top; width:20%">
+				<p>2.16.840.1.113762.1.4.1222.1401</p>
+			</td>
+			<td style="height:12.75pt; vertical-align:top; width:12%">
+				<p>Observation.code</p>
 			</td>
 		</tr>
 		<tr>

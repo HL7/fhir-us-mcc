@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="123"/>
-        <lastUpdated value="2022-07-20T00:19:19.266+00:00"/>
-        <source value="#snwuukFB1QLLgFU9"/>
+        <versionId value="124"/>
+        <lastUpdated value="2022-08-08T17:57:51.437+00:00"/>
+        <source value="#EFyGk7HE7k8mZPCj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -131,7 +131,6 @@
                 <display value="Multiple Chronic Condition Care Plan Medication Request"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Medication Request"/>
-            <description value="This profile constrains [US Core Medication Request ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group4"/>
         </resource>
@@ -141,7 +140,6 @@
                 <display value="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
-            <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -151,7 +149,6 @@
                 <display value="Multiple Chronic Condition Care Plan Goal"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Goal"/>
-            <description value="This profile constrains [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>
         </resource>
@@ -161,7 +158,6 @@
                 <display value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
-            <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group7"/>
         </resource>
@@ -171,7 +167,6 @@
                 <display value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
-            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -201,7 +196,6 @@
                 <display value="Multiple Chronic Condition Care Plan Procedure"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Procedure"/>
-            <description value="This profile constrains [US Core Procedure ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group5"/>
         </resource>
@@ -211,7 +205,6 @@
                 <display value="MCCCarePLan"/>
             </reference>
             <name value="Multiple Chronic Care Condition Care Plan"/>
-            <description value="This profile constrains the FHIR Care Plan Resource to represent the requirements of a care plan for patients with multiple chronic conditions."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>

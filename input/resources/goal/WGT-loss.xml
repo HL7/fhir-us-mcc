@@ -3,68 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="WGT-loss"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-06-02T22:41:40.688+00:00"/>
-        <source value="#qo0FVFXAtBs01afg"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-08-02T18:25:27.359+00:00"/>
+        <source value="#Co3eBzwkPfsp7Smu"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     </meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
-        <extension url="individual">
-            <valueReference>
-                <reference value="Patient/cc-pat-pnoelle"/>
-            </valueReference>
-        </extension>
-        <extension url="status">
-            <valueCode value="disagree"/>
-        </extension>
-        <extension url="priority">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
-                    <code value="low-priority"/>
-                </coding>
-            </valueCodeableConcept>
-        </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/goal-acceptance">
-        <extension url="individual">
-            <valueReference>
-                <reference value="Practitioner/practitionerMCC-3"/>
-            </valueReference>
-        </extension>
-        <extension url="status">
-            <valueCode value="agree"/>
-        </extension>
-        <extension url="priority">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/goal-priority"/>
-                    <code value="high-priority"/>
-                </coding>
-            </valueCodeableConcept>
-        </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/goal-reasonRejected">
-        <valueCodeableConcept>
-            <text value="Food is my only pleasure in life"/>
-        </valueCodeableConcept>
-    </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/goal-relationship">
-        <extension url="type">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/goal-relationship-type"/>
-                    <code value="other"/>
-                </coding>
-                <text value="this goal relates to the BMI goal"/>
-            </valueCodeableConcept>
-        </extension>
-        <extension url="target">
-            <valueReference>
-                <reference value="Goal/HPT-WNL"/>
-            </valueReference>
-        </extension>
-    </extension>
     <lifecycleStatus value="active"/>
     <category>
         <coding>
@@ -93,42 +36,9 @@
         <display value="Patricia Noelle"/>
     </subject>
     <startDate value="2019-10-14"/>
-    <target>
-        <measure>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="29463-7"/>
-                <display value="Body Weight"/>
-            </coding>
-        </measure>
-        <detailRange>
-            <low>
-                <value value="150"/>
-                <unit value="lbs"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="[lb_av]"/>
-            </low>
-            <high>
-                <value value="155"/>
-                <unit value="lbs"/>
-                <system value="http://unitsofmeasure.org"/>
-                <code value="[lb_av]"/>
-            </high>
-        </detailRange>
-        <dueDate value="2020-04-05"/>
-    </target>
     <statusDate value="2019-10-14"/>
-    <statusReason value="Patient wants to lose weight for general health and pain relief."/>
     <expressedBy>
         <reference value="Patient/cc-pat-pnoelle"/>
         <display value="Patricia Noelle"/>
     </expressedBy>
-    <addresses>
-        <reference value="Condition/ConditionCKD"/>
-        <display value="chronic kidney disease condition"/>
-    </addresses>
-    <outcomeReference>
-        <reference value="Observation/MCCweight"/>
-        <display value="Body Weight Measured - 165 Pounds"/>
-    </outcomeReference>
 </Goal>
