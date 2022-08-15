@@ -5,11 +5,11 @@ This profile sets additional expectations for the [US Core Condition Problems an
 * Condition.extension:resource-pertainsToGoal
 * supporting evidence for the diagnosis (??)
 * The profile leverages the "Condition-Due To'' extension
-* Staging through precoord codes or condition.stage care must be taken that the condition.code and condition.stage do not conflict. (??)
+* Staging: This profile adds no contraints on the Condition.stage element, but some of the MCC Condition value sets that are made up of staging terms may be used at Condition.stage. Care must be taken that the staging codes used do not conflict with the codes used at Condition.code that may contain precoordinated diagnoses terms that include a stage.
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
 
-This profile can be bound with any of the value sets found (put in link to Condition Value Set Page) to query for, fetch or record particular condition of interest as described in the scope of each condition value set.
+This profile can be bound with any of the value sets found [MCC Condition Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_condition_value_sets.html) to query for, fetch or record particular condition of interest as described in the scope of each condition value set.
 
 #### Chronic Kidney Disease Profile Relationship Diagram
 <table><tr><td><img src="Chronic Kidney Disease Profile Relationship Diagram V2.png" /></td></tr></table>

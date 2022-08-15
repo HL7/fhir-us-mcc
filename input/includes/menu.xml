@@ -23,7 +23,7 @@
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
       <li><a href="mcc_medication_request_value_sets.html">MCC Medication Request Value Sets</a></li>
       <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
-      <li><a href="mcc_radiology_value_sets.html">MCC Radiology Value Sets</a></li>
+      <li><a href="mcc_diagnostic_report_value_sets.html">MCC Diagnostic Report Value Sets</a></li>
       <li><a href="mcc_symptom_value_sets.html">MCC Symptom Value Sets</a></li>    </ul>
   </li>
   <li><a href="mcc_care_plan_sdoh_guidance.html">MCC Care Plan SDOH Guidance</a></li>
