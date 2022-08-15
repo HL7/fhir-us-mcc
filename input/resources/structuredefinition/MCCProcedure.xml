@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCProcedure"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-08-15T19:57:14.167+00:00"/>
-        <source value="#SzkrYARnVJpoljln"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-08-15T23:07:33.999+00:00"/>
+        <source value="#NZq2B95TLOBKSA26"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -94,7 +94,7 @@
         </element>
         <element id="Procedure.report">
             <path value="Procedure.report"/>
-            <mustSupport value="true"/>
+            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

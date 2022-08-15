@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="125"/>
-        <lastUpdated value="2022-08-15T20:46:28.055+00:00"/>
-        <source value="#7ikdzp7mcfhReM4L"/>
+        <versionId value="130"/>
+        <lastUpdated value="2022-08-15T21:46:30.124+00:00"/>
+        <source value="#A2HAimLpCYd7Ntwt"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -87,8 +87,8 @@
             <description value="The Multiple Chronic Condition (MCC) FHIR Care Plan Profile is the backbone or core profile of this of this implementation guide. All of the profiles defined in this IG are referred to from the MCC Care Plan profile."/>
         </grouping>
         <grouping id="new-group2">
-            <name value="MCC Condition"/>
-            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (Disorders, Findings, ICD and snomed and location e.g. condition.code, conditon.supporting evidence, etc - to be written after value set pages are developed)"/>
+            <name value="MCC Chronic Disease Conditions"/>
+            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here [MCC Chronic Condition Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_condition_value_sets.html)."/>
         </grouping>
         <grouping id="new-group6">
             <name value="MCC Goal"/>
@@ -107,12 +107,12 @@
             <description value="**MCC Procedure:** This artifacts is derived from the US Core Procedure profile and been constrained for use in the MCC Care Plan IG. All of the MCC procedure profiles are conformant to the [US Core Procedure](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html) with additional requirements for following elements:&#xA;&#xA; - Procedure.extension:resource-pertainsToGoal (Must Support)&#xA; - Procedure.reasonReference (Must Support) to encourage linking back to the health concern, problem, procedure, report or observation it was ordered for.&#xA;&#xA;These are not directly constrained into the MCC Care Plan Profile - but are considered a library of procedures from which to select to query for, fetch  or record. These profiles may be used wherever the US Core Procedure is bound within the MCC FHIR Care Plan.&#xA;&#xA;The MCC procedure profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Procedure profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;"/>
         </grouping>
         <grouping id="new-group7">
-            <name value="MCC Radiology Report"/>
-            <description value="**MCC Radiology Report and Note:** This artifact is all derived from the US Core Diagnostic Report profile and been constrained for use in the MCC Care Plan IG. The MCC Radiology Report profile is conformant to the [US Core Diagnostic Report Profile ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) with additional requirements for following elements:&#xA;&#xA; - DiagnosticReport.extension:resource-pertainsToGoal (Must Support)&#xA; - DiagnosticReport.basedOn (Must Support) (Must Support) to encourage linking back Care Plan activities.&#xA;&#xA;The MCC Radiology Report and Note profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Radiology Report and Note profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;"/>
+            <name value="MCC Diagnostic Report and Note"/>
+            <description value="**MCC Radiology Report and Note:** This artifact is all derived from the US Core Diagnostic Report profile and been constrained for use in the MCC Care Plan IG. The MCC Radiology Report profile is conformant to the [US Core Diagnostic Report Profile ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) with additional requirements for following elements:&#xA;&#xA; - DiagnosticReport.extension:resource-pertainsToGoal (Must Support)&#xA; - DiagnosticReport.basedOn (Must Support) (Must Support) to encourage linking back Care Plan activities.&#xA;&#xA;The MCC Radiology Report and Note profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Diagnostic Report and Note profile can be found here [MCC Diagnostic Report Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_diagnostic_report_value_sets.html)."/>
         </grouping>
         <grouping id="new-group9">
             <name value="MCC Symptom Observation"/>
-            <description value="**MCC Symptom Observation**: This artifact is derived from the FHIR Observation Resource and has been constrained for use in the MCC Care Plan IG. The MCC Observation is conformant to the [FHIR Observation Resource](http://hl7.org/fhir/R4/observation.html) with additional requirements for following elements:&#xA;&#xA;* Observation.extension:resource-pertainsToGoal (Must Support)&#xA;* Category.code of Symptom LOINC 75325-1  (Must Support)&#xA;* Observation.effectiveTime (Required) (One of the effectiveTime types)&#xA;* Observation.subject (Required) (US Core Patient)"/>
+            <description value="**MCC Symptom Observation**: This artifact is derived from the FHIR Observation Resource and has been constrained for use in the MCC Care Plan IG. The MCC Observation is conformant to the [FHIR Observation Resource](http://hl7.org/fhir/R4/observation.html) with additional requirements for following elements:&#xA;&#xA;* Observation.extension:resource-pertainsToGoal (Must Support)&#xA;* Category.code of Symptom LOINC 75325-1  (Must Support)&#xA;* Observation.effectiveTime (Required) (One of the effectiveTime types)&#xA;* Observation.subject (Required) (US Core Patient)&#xA;&#xA;A library of value sets appropriate for use within the MCC Symprom Observation Profile can be found here: [MCC Symptom Calue Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_symptom_value_sets.html)"/>
         </grouping>
         <grouping id="new-group10">
             <name value="MCC Service Request"/>
@@ -123,7 +123,7 @@
         </grouping>
         <grouping id="new-group8">
             <name value="Miscellaneous"/>
-            <description value="These artifacts are MCC profiles on existing resources that are contained to meet need of a multiple chronic conditon care plan.&#xA;In each case the extension:resource-pertainsToGoal is included in the profile as a &quot;Must Support&quot; element."/>
+            <description value="These artifacts are MCC profiles on existing resources that are contained to meet need of a multiple chronic condition care plan.&#xA;In each case the extension:resource-pertainsToGoal is included in the profile as a &quot;Must Support&quot; element."/>
         </grouping>
         <resource>
             <reference>
@@ -171,7 +171,7 @@
                 <display value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
-            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to chronic disease conditions and supporting information for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to encourage its use for chronic disease conditions for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -450,8 +450,8 @@
                 <title value="MCC Value Set Library"/>
                 <generation value="markdown"/>
                 <page>
-                    <nameUrl value="mcc_condition_value_sets.html"/>
-                    <title value="MCC Condition Value Sets"/>
+                    <nameUrl value="mcc_chronic_condition_value_sets.html"/>
+                    <title value="MCC Chronic Condition Value Sets"/>
                     <generation value="markdown"/>
                 </page>
                 <page>

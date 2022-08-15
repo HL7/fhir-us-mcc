@@ -1,4 +1,4 @@
-The [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) sets minimum expectations for the Goal resource to record, search, and fetch medications associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Goal this derived profile is designed to add requirements to the following elements:
+The [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) sets minimum expectations for the Goal resource to record, search, and fetch goals associated with a patient, including information about a Social Determinants of Health-related goals. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Goal this derived profile is designed to add requirements to the following elements:
 
 * Goal.expressedBy (Must Support)
 * Goal.addresses (Must Support)
@@ -6,6 +6,8 @@ The [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal)
 * Goal.extension:goal-acceptance (Must Support)
 * Goal.extension:reasonRejected (Must Support)
 * Goal.extension:goal-relationship (Must Support)
+
+See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
 

@@ -18,7 +18,7 @@
     </a>
     <ul class="dropdown-menu">
       <li><a href="mcc_value_set_library.html">MCC Value Set Library</a></li>
-      <li><a href="mcc_condition_value_sets.html">MCC Condition Value Sets</a></li>
+      <li><a href="mcc_chronic_condition_value_sets.html">MCC Chronic Condition Value Sets</a></li>
       <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
       <li><a href="mcc_medication_request_value_sets.html">MCC Medication Request Value Sets</a></li>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2022-06-30T22:12:40.131+00:00"/>
-        <source value="#BtTnrfsVpkh8LObu"/>
+        <versionId value="27"/>
+        <lastUpdated value="2022-08-15T21:31:01.477+00:00"/>
+        <source value="#cRWgDJ6U5i6cIRU0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
