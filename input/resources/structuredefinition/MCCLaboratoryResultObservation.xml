@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCLaboratoryResultObservation"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-02T18:25:27.358+00:00"/>
-        <source value="#HztcIvKhOi72HfeJ"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-08-15T19:55:28.184+00:00"/>
+        <source value="#VAgoYPsoxxiEK2m9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
     <name value="MCCLaboratoryResultObservation"/>
@@ -13,6 +13,7 @@
     <status value="draft"/>
     <date value="2021-08-27"/>
     <publisher value="Patient Care Work Group"/>
+    <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -22,9 +23,79 @@
         <text value="United States of America"/>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <uri value="http://unknown.org/Argonaut-DQ-DSTU2"/>
+        <name value="Argonaut-DQ-DSTU2"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
     <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+        </element>
+        <element id="Observation.extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="false"/>
+        </element>
+        <element id="Observation.extension:resource-pertainsToGoal">
+            <path value="Observation.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.basedOn">
+            <path value="Observation.basedOn"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <label value="Label"/>
+            <short value="Please see the Laboratory Result Observation Value Set Library (link?) for value sets that are subsets of http://hl7.org/fhir/ValueSet/observation-codes that can be used at Observation.code element"/>
+        </element>
+    </differential>
 </StructureDefinition>
