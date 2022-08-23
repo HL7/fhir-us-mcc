@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCServiceRequest"/>
+    <meta>
+        <versionId value="21"/>
+        <lastUpdated value="2022-08-23T13:10:19.141+00:00"/>
+        <source value="#nEZ8hdN0LVKgIJYZ"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"/>
+    <name value="MCCServiceRequest"/>
+    <title value="Multiple Chronic Condition Care Plan Service Request"/>
+    <status value="active"/>
+    <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ServiceRequest">
+            <path value="ServiceRequest"/>
+        </element>
+        <element id="ServiceRequest.extension">
+            <path value="ServiceRequest.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+                </discriminator>
+                <description value="resource-pertainsToGoal"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <max value="*"/>
+            <condition value="pertainsToGoal"/>
+        </element>
+        <element id="ServiceRequest.extension:resource-pertainsToGoal">
+            <path value="ServiceRequest.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

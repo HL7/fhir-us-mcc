@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="130"/>
-        <lastUpdated value="2022-08-15T21:46:30.124+00:00"/>
-        <source value="#A2HAimLpCYd7Ntwt"/>
+        <versionId value="137"/>
+        <lastUpdated value="2022-08-23T17:13:48.844+00:00"/>
+        <source value="#tmLt8VeGHb9lqpLg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -116,7 +116,7 @@
         </grouping>
         <grouping id="new-group10">
             <name value="MCC Service Request"/>
-            <description value="NOTE: THIS PROFILE WILL BE ADDED AFTER US CORE V5.0.0 IS PUBLISHED&#xA;**MCC Service Request:** This artifact is derived from the US Core xx profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC Service request is conformant to the [US Service Request](http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest) with additional requirements for following elements:&#xA;&#xA; - ServiceRequest.extension:resource-pertainsToGoal (Must Support)&#xA; - ??&#xA; -  - ??&#xA;&#xA;The MCC Service Request profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Service Request profile can be found here &lt;insert link&gt;. &lt;Possibly need to add descriptions of the type of value sets (code system and location etc., - to be written after value set pages are developed&gt;&#xA;"/>
+            <description value="The [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest) sets minimum expectations for the ServiceRequest resource to record, search, and fetch service requests associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Service Requst this derived profile is designed to add requirements to the following elements:&#xA;* MCCServiceRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <grouping id="new-group11">
             <name value="MCC Family Member History"/>
@@ -418,8 +418,27 @@
             <reference>
                 <reference value="Observation/Symptom1"/></reference>
             <name value="MCC Symptom Observation Example - Taste Sense Altered"/>
+            <description value="MCC Symptom Observation Example - Taste Sense Altered"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCServiceRequest"/>
+                <display value="MCCServiceRequest"/>
+            </reference>
+            <name value="Multiple Chronic Condition Care Plan Service Request"/>
+            <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group10"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/foodpantry-referral"/></reference>
+            <name value="Multiple Chronic Condition Service Request - Food Pantry"/>
+            <description value="Multiple Chronic Condition Service Request Food Pantry Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
