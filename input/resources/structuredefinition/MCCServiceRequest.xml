@@ -36,7 +36,6 @@
             <path value="ServiceRequest.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-            <max value="*"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
