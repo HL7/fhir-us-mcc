@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NutritionOrder
+    xmlns="http://hl7.org/fhir">
+    <id value="fiberrestricteddiet"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="NutritionOrder Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a NutritionOrder example for the MCC NutritionOrder Profile."/>
+        </extension>
+        <versionId value="3"/>
+        <lastUpdated value="2022-08-24T07:58:52.417+00:00"/>
+        <source value="#rp4MN0FgmTt7zzOT"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/HPT-WNL"/>
+        </valueReference>
+    </extension>
+    <identifier>
+        <system value="http://goodhealthhospital.org/nutrition-requests"/>
+        <value value="123"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <patient>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Patricia Noelle"/>
+    </patient>
+    <!--encounter><reference value="Encounter/example"/><display value="Inpatient"/></encounter-->
+    <dateTime value="2014-09-17"/>
+    <orderer>
+        <reference value="Practitioner/practitionerMCC-3"/>
+    </orderer>
+    <allergyIntolerance>
+        <reference value="AllergyIntolerance/example"/>
+        <display value="Cashew Nuts"/>
+    </allergyIntolerance>
+    <foodPreferenceModifier>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/diet"/>
+            <code value="dairy-free"/>
+        </coding>
+    </foodPreferenceModifier>
+    <excludeFoodModifier>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="227493005"/>
+            <display value="Cashew Nut"/>
+        </coding>
+    </excludeFoodModifier>
+    <oralDiet>
+        <!--EH:  list type of diet showing standard code and local codes-->
+        <type>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="15108003"/>
+                <display value="Restricted fiber diet"/>
+            </coding>
+            <coding>
+                <system value="http://goodhealthhospital.org/diet-type-codes"/>
+                <code value="1000"/>
+                <display value="Fiber restricted"/>
+            </coding>
+            <text value="Fiber restricted diet"/>
+        </type>
+        <type>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="16208003"/>
+                <display value="Low fat diet"/>
+            </coding>
+            <coding>
+                <system value="http://goodhealthhospital.org/diet-type-codes"/>
+                <code value="1100"/>
+                <display value="Low Fat"/>
+            </coding>
+            <text value="Low fat diet"/>
+        </type>
+        <!--EH example of three times a day starting on 2/10-->
+        <schedule>
+            <repeat>
+                <boundsPeriod>
+                    <start value="2015-02-10"/>
+                </boundsPeriod>
+                <frequency value="3"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </schedule>
+        <nutrient>
+            <!--list nutrients and amounts here-->
+            <modifier>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="256674009"/>
+                    <display value="Fat"/>
+                </coding>
+            </modifier>
+            <amount>
+                <value value="50"/>
+                <unit value="grams"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+            </amount>
+        </nutrient>
+    </oralDiet>
+</NutritionOrder>

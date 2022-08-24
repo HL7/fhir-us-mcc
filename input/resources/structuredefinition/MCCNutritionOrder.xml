@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCNutritionOrder"/>
+    <meta>
+        <versionId value="11"/>
+        <lastUpdated value="2022-08-24T06:55:44.808+00:00"/>
+        <source value="#chgdwqvHHOyrOQQc"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
+    <name value="MCCNutritionOrder"/>
+    <title value="Multiple Chronic Condition Care Plan Nutrition Order"/>
+    <status value="active"/>
+    <description value="This profile constrains [NutritionOrder](http://hl7.org/fhir/StructureDefinition/NutritionOrder) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="NutritionOrder"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="NutritionOrder">
+            <path value="NutritionOrder"/>
+        </element>
+        <element id="NutritionOrder.extension">
+            <path value="NutritionOrder.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="NutritionOrder.extension:resource-pertainsToGoal">
+            <path value="NutritionOrder.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.identifier">
+            <path value="NutritionOrder.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.status">
+            <path value="NutritionOrder.status"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.intent">
+            <path value="NutritionOrder.intent"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.patient">
+            <path value="NutritionOrder.patient"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.encounter">
+            <path value="NutritionOrder.encounter"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.dateTime">
+            <path value="NutritionOrder.dateTime"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.orderer">
+            <path value="NutritionOrder.orderer"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.allergyIntolerance">
+            <path value="NutritionOrder.allergyIntolerance"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.foodPreferenceModifier">
+            <path value="NutritionOrder.foodPreferenceModifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.excludeFoodModifier">
+            <path value="NutritionOrder.excludeFoodModifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.oralDiet">
+            <path value="NutritionOrder.oralDiet"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.supplement">
+            <path value="NutritionOrder.supplement"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="NutritionOrder.enteralFormula">
+            <path value="NutritionOrder.enteralFormula"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

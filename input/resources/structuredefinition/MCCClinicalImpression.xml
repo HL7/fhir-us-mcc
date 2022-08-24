@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCClinicalImpression"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-24T08:06:06.554+00:00"/>
+        <source value="#iDUZ8ONNdbwvQf8a"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
+    <name value="MCCClinicalImpression"/>
+    <title value="Multiple Chronic Condition Care Plan Clinical Impression"/>
+    <status value="active"/>
+    <description value="This profile constrains [ClinicalImpression](http://hl7.org/fhir/StructureDefinition/ClinicalImpression) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ClinicalImpression"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ClinicalImpression">
+            <path value="ClinicalImpression"/>
+        </element>
+        <element id="ClinicalImpression.extension">
+            <path value="ClinicalImpression.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="ClinicalImpression.extension:resource-pertainsToGoal">
+            <path value="ClinicalImpression.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

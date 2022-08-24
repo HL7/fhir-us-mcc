@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="94"/>
-        <lastUpdated value="2022-08-15T18:55:00.061+00:00"/>
-        <source value="#C4fWGdMZfpFkezBK"/>
+        <versionId value="99"/>
+        <lastUpdated value="2022-08-24T08:08:24.063+00:00"/>
+        <source value="#9d6NEzLimeItBiKf"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.2"/>
@@ -101,6 +101,11 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
                 <targetProfile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImmunization"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
             </type>
             <mustSupport value="true"/>
         </element>

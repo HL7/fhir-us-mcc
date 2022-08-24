@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization
+    xmlns="http://hl7.org/fhir">
+    <id value="immunizarion-1"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Imm 1 Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a example for the MCC Immunization Profile."/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-24T06:23:52.940+00:00"/>
+        <source value="#VJo3Vl8gN38wEbkX"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImmunization"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/HPT-WNL"/>
+        </valueReference>
+    </extension>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="197"/>
+            <display value="influenza, high-dose, quadrivalent"/>
+        </coding>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/ndc"/>
+            <code value="49281012165"/>
+            <display value="FLUZONE High-Dose Quadrivalent Northern Hemisphere, 10 SYRINGE, GLASS in 1 PACKAGE (49281-121-65)  &gt; .7 mL in 1 SYRINGE, GLASS (49281-121-88)  (package)"/>
+        </coding>
+        <text value="influenza, high-dose, quadrivalent"/>
+    </vaccineCode>
+    <patient>
+        <reference value="Patient/example"/>
+        <display value="Amy Shaw"/>
+    </patient>
+    <occurrenceDateTime value="2020-11-19T12:46:57-08:00"/>
+    <primarySource value="false"/>
+</Immunization>

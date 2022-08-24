@@ -1,0 +1,6 @@
+The [NutritionOrder](http://hl7.org/fhir/StructureDefinition/NutritionOrder) sets minimum expectations for the NutritionOrder Resource to record, search, and fetch requests to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in NutritionOrder this derived profile is designed to add requirements to the following elements:
+* MCCServiceRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
+
+See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.
+
+Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
