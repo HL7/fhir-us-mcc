@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a NutritionOrder example for the MCC NutritionOrder Profile."/>
         </extension>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-24T07:58:52.417+00:00"/>
-        <source value="#rp4MN0FgmTt7zzOT"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-08-24T09:45:16.359+00:00"/>
+        <source value="#swNujXYT0WasfAGx"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -35,7 +35,7 @@
         <reference value="Practitioner/practitionerMCC-3"/>
     </orderer>
     <allergyIntolerance>
-        <reference value="AllergyIntolerance/example"/>
+        <!--reference value="AllergyIntolerance/example"/-->
         <display value="Cashew Nuts"/>
     </allergyIntolerance>
     <foodPreferenceModifier>

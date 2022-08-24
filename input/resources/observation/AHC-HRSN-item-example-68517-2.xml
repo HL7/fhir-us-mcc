@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a Ahc-Hrsn Item Example 68517-2 (How many times in the past 12 months have you had 5 or more drinks in a day (males) or 4 or more drinks in a day (females)?) for the MCC Observation SDOH Assessment profile"/>
         </extension>
-        <versionId value="3"/>
-        <lastUpdated value="2022-08-24T05:58:30.200+00:00"/>
-        <source value="#udP4BB5ec0voOmfJ"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-08-24T09:45:16.359+00:00"/>
+        <source value="#0HmHgxkgtir4ApmZ"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -60,7 +60,7 @@
         <text value="Never"/>
     </valueCodeableConcept>
     <derivedFrom>
-        <reference value="QuestionnaireResponse/AHC-HRSN-screening-example"/>
+        <!--reference value="QuestionnaireResponse/AHC-HRSN-screening-example"/-->
         <display value="US Core QuestionnaireResponse AHC HRSN Screening-Example Example"/>
     </derivedFrom>
 </Observation>

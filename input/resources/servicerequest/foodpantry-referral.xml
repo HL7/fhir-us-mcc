@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a service request example for the MCC ServiceRequest Profile."/>
         </extension>
-        <versionId value="5"/>
-        <lastUpdated value="2022-08-24T05:53:08.905+00:00"/>
-        <source value="#Mh8l6CyJzSe1euQC"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-24T09:45:48.229+00:00"/>
+        <source value="#tVrr7fz5PGZhLIfx"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -32,7 +32,8 @@
     <code>
         <coding>
             <!--system value="http://snomed.info/sct"/-->
-            <system value="http://snomed.info/sct/731000124108/version/20220301"/>
+            <system value="http://snomed.info/sct/731000124108"/>
+            <version value="20220301"/>
             <code value="467771000124109"/>
             <display value="Assistance with application for food pantry program"/>
         </coding>
