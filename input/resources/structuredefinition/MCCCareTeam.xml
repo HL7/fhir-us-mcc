@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCCareTeam"/>
+    <meta>
+        <versionId value="43"/>
+        <lastUpdated value="2022-08-30T20:14:49.365+00:00"/>
+        <source value="#43GyPInRh28DN5Xf"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
+    <name value="MCCCareTeam"/>
+    <title value="MCCCareTeam"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="CareTeam"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="CareTeam">
+            <path value="CareTeam"/>
+        </element>
+        <element id="CareTeam.extension">
+            <path value="CareTeam.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="false"/>
+        </element>
+        <element id="CareTeam.extension:resource-pertainsToGoal">
+            <path value="CareTeam.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant">
+            <path value="CareTeam.participant"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="role.coding.code"/>
+                </discriminator>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="$this.member.resolve()"/>
+                </discriminator>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="role.coding.system"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="CareTeam.participant:patient-as-team-member">
+            <path value="CareTeam.participant"/>
+            <sliceName value="patient-as-team-member"/>
+            <label value="patient-as-careTeam-member"/>
+            <short value="patient-as-careTeam-member"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant:patient-as-team-member.role">
+            <path value="CareTeam.participant.role"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="116154003"/>
+                    <display value="Patient (person)"/>
+                </coding>
+            </fixedCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant:patient-as-team-member.member">
+            <path value="CareTeam.participant.member"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant:patient-as-team-member.onBehalfOf">
+            <path value="CareTeam.participant.onBehalfOf"/>
+        </element>
+        <element id="CareTeam.participant:caregiver">
+            <path value="CareTeam.participant"/>
+            <sliceName value="caregiver"/>
+            <label value="caregiver"/>
+            <short value="caregiver"/>
+            <min value="1"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant:caregiver.role">
+            <path value="CareTeam.participant.role"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="133932002"/>
+                    <display value="Caregiver (person)"/>
+                </coding>
+            </fixedCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant:caregiver.member">
+            <path value="CareTeam.participant.member"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

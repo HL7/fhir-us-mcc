@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CareTeam
+    xmlns="http://hl7.org/fhir">
+    <id value="careteam-of-noelle"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="CareTeam Example for Noelle"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a careteam example for the MCC CareTeam."/>
+        </extension>
+        <versionId value="6"/>
+        <lastUpdated value="2022-08-30T20:08:46.465+00:00"/>
+        <source value="#8MWdc3Ib7r8cVFaT"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
+    </meta>
+    <status value="active"/>
+    <name value="Care Team of Noelle Example"/>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+    </subject>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="11911009"/>
+                <display value="Nephrologist"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Practitioner/practitionerMCC-1"/>
+        </member>
+    </participant>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <version value="http://snomed.info/sct/731000124108/version/20220301"/>
+                <code value="453231000124104"/>
+                <display value="Primary care provider"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Practitioner/practitionerMCC-3"/>
+        </member>
+    </participant>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="116154003"/>
+                <display value="Patient (person)"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="Patient/cc-pat-pnoelle"/>
+            <display value="Noelle"/>
+        </member>
+    </participant>
+    <participant>
+        <role>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="133932002"/>
+                <display value="Caregiver (person)"/>
+            </coding>
+        </role>
+        <member>
+            <reference value="RelatedPerson/caregiver-of-noelle"/>
+            <display value="Sarah van Putten"/>
+        </member>
+    </participant>
+</CareTeam>

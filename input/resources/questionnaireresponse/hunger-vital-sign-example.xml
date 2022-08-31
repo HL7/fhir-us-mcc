@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuestionnaireResponse
+    xmlns="http://hl7.org/fhir">
+    <id value="hunger-vital-sign-example"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Hunger Vital Sign [HVS] Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="'An example of an SDC QuestionnaireResponse that represents questions and selected answers from the Hunger Vital Sign Example questionnaire represented in LOINC (code 88122-7). The example is generated using the LHC-Forms SDC Questionnaire App.'"/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-30T07:38:31.806+00:00"/>
+        <source value="#mf17jHs5Yo3l7GmQ"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/HPT-WNL"/>
+        </valueReference>
+    </extension>
+    <questionnaire value="http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire/SDOHCC-QuestionnaireHungerVitalSign">
+        <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-extension-questionnaire-uri">
+            <valueUri value="https://example.org/forms/hsv"/>
+        </extension>
+    </questionnaire>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+    </subject>
+    <authored value="2020-09-10T21:56:54.671Z"/>
+    <author>
+        <reference value="RelatedPerson/caregiver-of-noelle"/>
+    </author>
+    <item>
+        <linkId value="/88122-7"/>
+        <text value="(I/We) worried whether (my/our) food would run out before (I/we) got money to buy more."/>
+        <answer>
+            <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA28397-0"/>
+                <display value="Often true"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="/88123-5"/>
+        <text value="The food that (I/we) bought just didn't last, and (I/we) didn't have money to get more."/>
+        <answer>
+            <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA28397-0"/>
+                <display value="Often true"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="/88124-3"/>
+        <text value="Food insecurity risk"/>
+        <answer>
+            <valueCoding>
+                <system value="http://loinc.org"/>
+                <code value="LA19952-3"/>
+                <display value="At risk"/>
+            </valueCoding>
+        </answer>
+    </item>
+</QuestionnaireResponse>

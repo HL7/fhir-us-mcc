@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCClinicalImpression"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-08-24T08:06:06.554+00:00"/>
-        <source value="#iDUZ8ONNdbwvQf8a"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-08-30T07:16:52.443+00:00"/>
+        <source value="#kXyBWjLJJmQcFxf6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
     <name value="MCCClinicalImpression"/>
@@ -40,6 +40,26 @@
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ClinicalImpression.subject">
+            <path value="ClinicalImpression.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ClinicalImpression.subject.type.value">
+            <path value="ClinicalImpression.subject.type.value"/>
+        </element>
+        <element id="ClinicalImpression.effective[x]">
+            <path value="ClinicalImpression.effective[x]"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ClinicalImpression.problem">
+            <path value="ClinicalImpression.problem"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
     </differential>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCChronicDisease"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2022-08-15T22:33:06.315+00:00"/>
-        <source value="#To6musOOvunV94VG"/>
+        <versionId value="27"/>
+        <lastUpdated value="2022-08-30T19:02:42.629+00:00"/>
+        <source value="#ohwVLW0dAXxr3JfS"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
     <name value="MCCChronicDisease"/>

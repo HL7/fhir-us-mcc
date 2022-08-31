@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="MCCImmunization"/>
+    <id value="MCCQuestionnaireResponse"/>
     <meta>
         <versionId value="7"/>
-        <lastUpdated value="2022-08-29T21:39:31.368+00:00"/>
-        <source value="#0YczlxQFuH4bpyXq"/>
+        <lastUpdated value="2022-08-30T06:13:33.272+00:00"/>
+        <source value="#7NOOlyEUq4TDCKM5"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImmunization"/>
-    <name value="MCCImmunization"/>
-    <title value="Multiple Chronic Condition Care Plan Immunization"/>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
+    <name value="MCCQuestionnaireResponse"/>
+    <title value="MCCQuestionnaireResponse"/>
     <status value="active"/>
-    <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
-    <type value="Immunization"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
+    <type value="QuestionnaireResponse"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
     <derivation value="constraint"/>
     <differential>
-        <element id="Immunization">
-            <path value="Immunization"/>
+        <element id="QuestionnaireResponse">
+            <path value="QuestionnaireResponse"/>
         </element>
-        <element id="Immunization.extension">
-            <path value="Immunization.extension"/>
+        <element id="QuestionnaireResponse.extension">
+            <path value="QuestionnaireResponse.extension"/>
             <slicing>
                 <discriminator>
                     <type value="value"/>
@@ -32,8 +32,8 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Immunization.extension:resource-pertainsToGoal">
-            <path value="Immunization.extension"/>
+        <element id="QuestionnaireResponse.extension:resource-pertainsToGoal">
+            <path value="QuestionnaireResponse.extension"/>
             <sliceName value="resource-pertainsToGoal"/>
             <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
             <type>

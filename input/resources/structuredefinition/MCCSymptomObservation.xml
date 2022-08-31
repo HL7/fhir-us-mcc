@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2022-08-15T21:31:01.477+00:00"/>
-        <source value="#cRWgDJ6U5i6cIRU0"/>
+        <versionId value="29"/>
+        <lastUpdated value="2022-08-30T19:27:40.991+00:00"/>
+        <source value="#40GNhtQ9rtnp2oyL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
@@ -81,7 +81,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
             <mustSupport value="true"/>
         </element>

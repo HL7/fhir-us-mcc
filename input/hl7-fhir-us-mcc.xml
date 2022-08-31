@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="162"/>
-        <lastUpdated value="2022-08-24T08:57:26.484+00:00"/>
-        <source value="#APWDconaUG4V8nhW"/>
+        <versionId value="177"/>
+        <lastUpdated value="2022-08-31T08:06:40.845+00:00"/>
+        <source value="#0mjppHMyZoUjuVn6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -88,7 +88,7 @@
         </grouping>
         <grouping id="new-group2">
             <name value="MCC Chronic Disease Conditions"/>
-            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here [MCC Chronic Condition Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_condition_value_sets.html)."/>
+            <description value="**MCC Condition:** This artifact is derived from the US Core Condition profile and has been constrained for use in the MCC Care Plan IG or other FHIR Care Plans. The MCC condition is conformant to the [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) with additional requirements for following elements:&#xA;&#xA; - Goal.extension:resource-pertainsToGoal (Must Support)&#xA; - Condition.onset (Must Support)&#xA; - Condition.recordedDate (Must Support)&#xA; - Conditon.extension:AssertedDate (Will be present after V5.0.0 Pub)&#xA;&#xA;The MCC condition profile is directly constrained into the MCC Care Plan Profile where appropriate as identified in the MCC Care Plan profile and in the profile relationship diagram.&#xA;A library of value sets appropriate for use within the MCC Condition profile can be found here [MCC Chronic Condition Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_chronic_condition_value_sets.html)."/>
         </grouping>
         <grouping id="new-group6">
             <name value="MCC Goal"/>
@@ -112,7 +112,7 @@
         </grouping>
         <grouping id="new-group9">
             <name value="MCC Symptom Observation"/>
-            <description value="**MCC Symptom Observation**: This artifact is derived from the FHIR Observation Resource and has been constrained for use in the MCC Care Plan IG. The MCC Observation is conformant to the [FHIR Observation Resource](http://hl7.org/fhir/R4/observation.html) with additional requirements for following elements:&#xA;&#xA;* Observation.extension:resource-pertainsToGoal (Must Support)&#xA;* Category.code of Symptom LOINC 75325-1  (Must Support)&#xA;* Observation.effectiveTime (Required) (One of the effectiveTime types)&#xA;* Observation.subject (Required) (US Core Patient)&#xA;&#xA;A library of value sets appropriate for use within the MCC Symprom Observation Profile can be found here: [MCC Symptom Calue Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_symptom_value_sets.html)"/>
+            <description value="**MCC Symptom Observation**: This artifact is derived from the FHIR Observation Resource and has been constrained for use in the MCC Care Plan IG. The MCC Observation is conformant to the [FHIR Observation Resource](http://hl7.org/fhir/R4/observation.html) with additional requirements for following elements:&#xA;&#xA;* Observation.extension:resource-pertainsToGoal (Must Support)&#xA;* Category.code of Symptom LOINC 75325-1  (Must Support)&#xA;* Observation.effectiveTime (Required) (One of the effectiveTime types)&#xA;* Observation.subject (Required) (US Core Patient)&#xA;&#xA;A library of value sets appropriate for use within the MCC Symptom Observation Profile can be found here: [MCC Symptom Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_symptom_value_sets.html)"/>
         </grouping>
         <grouping id="new-group10">
             <name value="MCC Service Request"/>
@@ -127,19 +127,19 @@
         </grouping>
         <grouping id="new-group12">
             <name value="MCC Observation SDOH Assessment"/>
-            <description value="The [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sdoh-assessment) sets minimum expectations for the Observation Resource to record, search, and fetch SDOH assessment questionaire responses associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Observation SDOH Assessment Profile this derived profile is designed to add requirements to the following elements:&#xA;* MCCServiceRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+            <description value="The [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sdoh-assessment) sets minimum expectations for the Observation Resource to record, search, and fetch SDOH assessment questionaire responses associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Observation SDOH Assessment Profile this derived profile is designed to add requirements to the following elements:&#xA;* MCCObservationSDOHAssessment.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <grouping id="new-group13">
             <name value="MCC Immunization"/>
-            <description value="The [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) sets minimum expectations for the Immunization Resource to record, search, and fetch immunizations associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Immunization Profile this derived profile is designed to add requirements to the following elements:&#xA;* MCCServiceRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+            <description value="The [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) sets minimum expectations for the Immunization Resource to record, search, and fetch immunizations associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Immunization Profile this derived profile is designed to add requirements to the following elements:&#xA;* MCCImmunization.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <grouping id="new-group14">
             <name value="MCC Nutrition Order"/>
-            <description value="The [NutritionOrder](http://hl7.org/fhir/StructureDefinition/NutritionOrder) sets minimum expectations for the NutritionOrder Resource to record, search, and fetch requests to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in NutritionOrder this derived profile is designed to add requirements to the following elements:&#xA;* MCCServiceRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+            <description value="The [NutritionOrder](http://hl7.org/fhir/StructureDefinition/NutritionOrder) sets minimum expectations for the NutritionOrder Resource to record, search, and fetch requests to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in NutritionOrder this derived profile is designed to add requirements to the following elements:&#xA;* MCCNutritionOrder.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <grouping id="new-group15">
             <name value="MCC Clinical Impression"/>
-            <description value="The [ClinicalImpression](http://hl7.org/fhir/StructureDefinition/ClinicalImpression) sets minimum expectations for the ClinicalImpression Resource to record, search, and fetch clnical impressions that apply to a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in ClinicalImpression this derived profile is designed to add requirements to the following elements:&#xA;* MCCServiceRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+            <description value="The [ClinicalImpression](http://hl7.org/fhir/StructureDefinition/ClinicalImpression) sets minimum expectations for the ClinicalImpression Resource to record, search, and fetch clnical impressions that apply to a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in ClinicalImpression this derived profile is designed to add requirements to the following elements:&#xA;* MCCClinicalImpressionClinicalImpression.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCClinicalImpression.subject is set to us-core-patient and set to must support&#xA;* MCCClinicalImpression.effective is must support&#xA;* MCCClinicalImpression.problem is required and must be supported&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <resource>
             <reference>
@@ -384,7 +384,7 @@
                 <reference value="CareTeam/MCCCareTeamexample"/>
                 <display value="US-Core MCC example CareTeam"/>
             </reference>
-            <name value="US-Core MCC example CareTeam"/>
+            <name value="MCCCareTeam"/>
             <description value="MCC Example of US Core Care Team"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
@@ -526,6 +526,60 @@
             <description value="Multiple Chronic Condition Care Plan Clinical Impression Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCQuestionnaireResponse"/>
+                <display value="MCCQuestionnaireResponse"/>
+            </reference>
+            <name value="MCCQuestionnaireResponse"/>
+            <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCCareTeam"/>
+                <display value="MCCCareTeam"/>
+            </reference>
+            <name value="MCCCareTeam"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CareTeam/careteam-of-noelle"/>
+                <display value="Care Team of Noelle Example"/>
+            </reference>
+            <name value="Care Team of Noelle Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="RelatedPerson/caregiver-of-noelle"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="QuestionnaireResponse/hunger-vital-sign-example"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCPatientCaregiverConditionStatus"/>
+                <display value="MCCPatientCaregiverConditionStatus"/>
+            </reference>
+            <name value="Multiple Chronic Condition Care Patient/Caregiver Condition Status Observation"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCCaregiverConsiderationsObservation"/>
+                <display value="MCCCaregiverConsiderationsObservation"/>
+            </reference>
+            <name value="Multiple Chronic Condition Care Caregiver Considerations Observation"/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
