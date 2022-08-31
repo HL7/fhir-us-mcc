@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="195"/>
-        <lastUpdated value="2022-08-31T20:41:44.944+00:00"/>
-        <source value="#WPet13xfPcb2Idt2"/>
+        <versionId value="196"/>
+        <lastUpdated value="2022-08-31T21:49:47.438+00:00"/>
+        <source value="#3MKuaPGMx8fZtjUg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -498,6 +498,7 @@
             <name value="Multiple Chronic Condition Care Plan Immunization"/>
             <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
+            <groupingId value="new-group13"/>
         </resource>
         <resource>
             <reference>
