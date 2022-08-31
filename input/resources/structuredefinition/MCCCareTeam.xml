@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCareTeam"/>
     <meta>
-        <versionId value="43"/>
-        <lastUpdated value="2022-08-30T20:14:49.365+00:00"/>
-        <source value="#43GyPInRh28DN5Xf"/>
+        <versionId value="47"/>
+        <lastUpdated value="2022-08-31T20:12:13.390+00:00"/>
+        <source value="#aJxOTJio7pCWqC1D"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
     <name value="MCCCareTeam"/>
-    <title value="MCCCareTeam"/>
+    <title value="Multiple Chronic Condition Care Plan Care Team"/>
     <status value="active"/>
+    <description value="This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It features a requirement for Patient and at least one caregiver to be part of the members of the team."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -90,6 +91,7 @@
         </element>
         <element id="CareTeam.participant:patient-as-team-member.onBehalfOf">
             <path value="CareTeam.participant.onBehalfOf"/>
+            <max value="0"/>
         </element>
         <element id="CareTeam.participant:caregiver">
             <path value="CareTeam.participant"/>

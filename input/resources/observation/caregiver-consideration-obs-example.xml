@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="caregiver-consideration-obs-example"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="MCC Observation of caregiver consideration example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is an example of assessing caregiver strain for the Multiple Chronic Condition Care Caregiver Considerations Observation profile."/>
+        </extension>
+        <versionId value="2"/>
+        <lastUpdated value="2022-08-31T16:32:50.539+00:00"/>
+        <source value="#2E6e9IOedzH2yqO7"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/HPT-WNL"/>
+        </valueReference>
+    </extension>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="81380-8"/>
+            <display value="Goals, preferences, and priorities for care experience [Reported]"/>
+        </coding>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+        <text value="Goals, preferences, and priorities for care experience [Reported]"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="42821-9"/>
+            <display value="Caregiver role strain Caregiver [CCC]"/>
+        </coding>
+        <text value="Caregiver role strain Caregiver [CCC]"/>
+    </code>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Noelle"/>
+    </subject>
+    <focus>
+        <reference value="RelatedPerson/caregiver-of-noelle"/>
+    </focus>
+    <effectiveDateTime value="2021-11-10T16:48:57.246958-08:00"/>
+    <performer>
+        <reference value="Practitioner/practitionerMCC-3"/>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="LA65-8"/>
+            <display value="Improved"/>
+        </coding>
+        <text value="Improved"/>
+    </valueCodeableConcept>
+</Observation>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="99"/>
-        <lastUpdated value="2022-08-24T08:08:24.063+00:00"/>
-        <source value="#9d6NEzLimeItBiKf"/>
+        <versionId value="101"/>
+        <lastUpdated value="2022-08-31T18:33:13.953+00:00"/>
+        <source value="#m52tUZxli8wMjmDp"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.2"/>
@@ -59,6 +59,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -73,6 +74,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -106,6 +108,9 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImmunization"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
             </type>
             <mustSupport value="true"/>
         </element>

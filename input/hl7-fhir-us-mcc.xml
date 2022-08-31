@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="177"/>
-        <lastUpdated value="2022-08-31T08:06:40.845+00:00"/>
-        <source value="#0mjppHMyZoUjuVn6"/>
+        <versionId value="195"/>
+        <lastUpdated value="2022-08-31T20:41:44.944+00:00"/>
+        <source value="#WPet13xfPcb2Idt2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -140,6 +140,22 @@
         <grouping id="new-group15">
             <name value="MCC Clinical Impression"/>
             <description value="The [ClinicalImpression](http://hl7.org/fhir/StructureDefinition/ClinicalImpression) sets minimum expectations for the ClinicalImpression Resource to record, search, and fetch clnical impressions that apply to a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in ClinicalImpression this derived profile is designed to add requirements to the following elements:&#xA;* MCCClinicalImpressionClinicalImpression.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCClinicalImpression.subject is set to us-core-patient and set to must support&#xA;* MCCClinicalImpression.effective is must support&#xA;* MCCClinicalImpression.problem is required and must be supported&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+        </grouping>
+        <grouping id="new-group16">
+            <name value="MCC CareTeam"/>
+            <description value="The [US Core Care Team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) sets minimum expectations for the CareTeam resource to record, search, and fetch Care associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;* MCCCareTeam.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCCareTeam.participant required slice for Patient and set to must support&#xA;* MCCCareTeam.participant required slice for RelatedPerson (caregiver) and set to must support&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+        </grouping>
+        <grouping id="new-group17">
+            <name value="MCC QuestionnaireResponse"/>
+            <description value="The [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) sets minimum expectations for the Immunization Resource to record, search, and fetch immunizations associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Immunization Profile this derived profile is designed to add requirements to the following elements:&#xA;* QuestionnaireResponse.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+        </grouping>
+        <grouping id="new-group18">
+            <name value="MCC PatientCaregiverConditionStatus"/>
+            <description value="The [US Core Observation Clinical Test Result Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) sets minimum expectations for the Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;* MCCPatientCaregiverConditionStatus.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCPatientCaregiverConditionStatus.category requires LOINC code 81380-8&#xA;* MCCPatientCaregiverConditionStatus.code requires LOINC code 89253-9 Observation on patient/caregiver feelings on the condition satus&#xA;* MCCPatientCaregiverConditionStatus.focus is limited to us-core-condition-problems-health-concerns and us-core-condition-encounter-diagnosis  and set to must support&#xA;* MCCPatientCaregiverConditionStatus.performer is limited to Patient and RelatedPerson (caregiver) &#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+        </grouping>
+        <grouping id="new-group19">
+            <name value="MCC CaregiverConsiderationsObservation"/>
+            <description value="The [US Core Observation Social History Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history) sets minimum expectations for the Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;* MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCCaregiverConsiderationsObservation.category requires LOINC code 81380-8&#xA;* MCCCaregiverConsiderationsObservation.focus is limited to RelatedPerson (caregiver)&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <resource>
             <reference>
@@ -384,7 +400,7 @@
                 <reference value="CareTeam/MCCCareTeamexample"/>
                 <display value="US-Core MCC example CareTeam"/>
             </reference>
-            <name value="MCCCareTeam"/>
+            <name value="Multiple Chronic Condition Care Plan Care Team"/>
             <description value="MCC Example of US Core Care Team"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
@@ -535,6 +551,7 @@
             <name value="MCCQuestionnaireResponse"/>
             <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
+            <groupingId value="new-group17"/>
         </resource>
         <resource>
             <reference>
@@ -542,26 +559,33 @@
                 <display value="MCCCareTeam"/>
             </reference>
             <name value="MCCCareTeam"/>
+            <description value="This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It features a requirement for Patient and at least one caregiver to be part of the members of the team."/>
             <exampleBoolean value="false"/>
+            <groupingId value="new-group16"/>
         </resource>
         <resource>
             <reference>
                 <reference value="CareTeam/careteam-of-noelle"/>
                 <display value="Care Team of Noelle Example"/>
             </reference>
-            <name value="Care Team of Noelle Example"/>
+            <name value="MCC Care Team Example"/>
+            <description value="MCC Care Team Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
         </resource>
         <resource>
             <reference>
                 <reference value="RelatedPerson/caregiver-of-noelle"/></reference>
+            <name value="Caregiver Example"/>
+            <description value="Caregiver Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
         </resource>
         <resource>
             <reference>
                 <reference value="QuestionnaireResponse/hunger-vital-sign-example"/></reference>
+            <name value="MCC QuestionnaireResponse Example"/>
+            <description value="MCC QuestionnaireResponse Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse"/>
         </resource>
@@ -570,16 +594,36 @@
                 <reference value="StructureDefinition/MCCPatientCaregiverConditionStatus"/>
                 <display value="MCCPatientCaregiverConditionStatus"/>
             </reference>
-            <name value="Multiple Chronic Condition Care Patient/Caregiver Condition Status Observation"/>
+            <name value="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation"/>
+            <description value="This profile constrains [US Core Observation Clinical Test Result Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings."/>
             <exampleBoolean value="false"/>
+            <groupingId value="new-group18"/>
         </resource>
         <resource>
             <reference>
                 <reference value="StructureDefinition/MCCCaregiverConsiderationsObservation"/>
                 <display value="MCCCaregiverConsiderationsObservation"/>
             </reference>
-            <name value="Multiple Chronic Condition Care Caregiver Considerations Observation"/>
+            <name value="Multiple Chronic Condition Care Plan Caregiver Considerations Observation"/>
+            <description value="This profile constrains [US Core Observation Social History Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care. The focus is on the RelatedPerson (caregiver)."/>
             <exampleBoolean value="false"/>
+            <groupingId value="new-group19"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/caregiver-consideration-obs-example"/></reference>
+            <name value="MCC Observation of Caregiver considerations example"/>
+            <description value="MCC Observation of Caregiver considerations example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/caregiver-feelings-condition-status"/></reference>
+            <name value="Multiple Chronic Condition Care Plan example of  Observation of Caregiver feelings towards status of a patient's condition"/>
+            <description value="Multiple Chronic Condition Care Plan example of  Observation of Caregiver feelings towards status of a patient's condition"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

@@ -3,19 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCaregiverConsiderationsObservation"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-08-31T08:06:40.793+00:00"/>
-        <source value="#9ftM7X0pN6iNNzKj"/>
+        <versionId value="25"/>
+        <lastUpdated value="2022-08-31T20:33:05.751+00:00"/>
+        <source value="#JbC0D68VJU5oeyIh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
     <name value="MCCCaregiverConsiderationsObservation"/>
-    <title value="Multiple Chronic Condition Care Caregiver Considerations Observation"/>
+    <title value="Multiple Chronic Condition Care Plan Caregiver Considerations Observation"/>
     <status value="active"/>
+    <description value="This profile constrains [US Core Observation Social History Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care. The focus is on the RelatedPerson (caregiver)."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-social-history"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
@@ -72,12 +73,14 @@
         </element>
         <element id="Observation.focus">
             <path value="Observation.focus"/>
+            <label value="caregiver"/>
+            <short value="caregiver"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedReference>
-                <reference value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
-                <display value="caregiver"/>
-            </fixedReference>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.effective[x]">
