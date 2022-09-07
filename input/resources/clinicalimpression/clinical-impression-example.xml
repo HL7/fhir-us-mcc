@@ -25,7 +25,6 @@
         <reference value="Patient/cc-pat-pnoelle"/>
         <display value="Patricia Noelle"/>
     </subject>
-    <!--encounter><reference value="Encounter/example"/></encounter-->
     <effectivePeriod>
         <start value="2014-12-06T20:00:00+11:00"/>
         <end value="2014-12-06T22:33:00+11:00"/>
@@ -34,6 +33,5 @@
     <problem>
         <reference value="Condition/ConditionCKD"/>
     </problem>
-    <!--<investigation><code><text value="Initial Examination"/></code><item><display value="deep laceration of the scalp (left temporo-occipital)"/></item><item><display value="decreased level of consciousness"/></item><item><display value="disoriented to time and place"/></item><item><display value="restless"/></item></investigation>-->
     <summary value="signs of worsening depression and Anxiety, concerns about deteriorating health"/>
 </ClinicalImpression>
