@@ -3,24 +3,604 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCPatientCaregiverConditionStatus"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2022-08-31T20:24:14.525+00:00"/>
-        <source value="#AYw2ZBei3P0TDX7b"/>
+        <versionId value="60"/>
+        <lastUpdated value="2022-09-28T01:12:53.512+00:00"/>
+        <source value="#LRHHdPIUq2e6swuJ"/>
     </meta>
+    <text>
+        <status value="extensions"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+                <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
+                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a>
+                    </th>
+                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a>
+                    </th>
+                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+                    </th>
+                    <th style="width: 100px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a>
+                    </th>
+                    <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+                        <span style="float: right">
+                            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">
+                                <img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/>
+                            </a>
+                        </span>
+                    </th>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation">Observation</a>
+                        <a name="Observation"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4conformance-rules.html#constraints" title="This element has or is affected by some invariants (us-core-2)">C</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">*</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Measurements and simple assertions</span>
+                        <br/>
+                        <span style="font-weight:bold">us-core-2: </span>If there is no component or hasMember element then either a value[x] or a data absent reason must be present
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.extension">Slices for extension</a>
+                        <a name="Observation.extension"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">*</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Extension</span>
+                        <br/>
+                        <span style="font-weight:bold">Slice: </span>Unordered, Open by value:url
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.extension:resource-pertainesToGoal" title="Extension URL = http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">resource-pertainesToGoal</a>
+                        <a name="Observation.extension"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">*</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(
+                        <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>)
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources.
+                        <br/>
+                        <span style="font-weight:bold">URL: </span>
+                        <a href="http://hl7.org/fhir/R4/extension-resource-pertainstogoal.html">http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal</a>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.status">status</a>
+                        <a name="Observation.status"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">1</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">registered | preliminary | final | amended +</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.category">category</a>
+                        <a name="Observation.category"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">*</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Classification of  type of observation</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.code">code</a>
+                        <a name="Observation.code"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">1</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)
+                        <br/>
+                        <span style="font-weight:bold">Required Pattern: </span>
+                        <span style="color: darkgreen">At least the following</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_fixed.gif" alt="." style="background-color: white; background-color: inherit" title="Fixed Value" class="hierarchy"/>
+                        <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding">coding</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code defined by a terminology system
+                        <br/>
+                        <span style="font-weight: bold">Fixed Value: </span>
+                        <span style="color: darkgreen">(complex)</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_fixed.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Fixed Value" class="hierarchy"/>
+                        <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system">system</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identity of the terminology system
+                        <br/>
+                        <span style="font-weight: bold">Fixed Value: </span>
+                        <a style="color: darkgreen" href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">http://loinc.org</a>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_fixed.gif" alt="." style="background-color: white; background-color: inherit" title="Fixed Value" class="hierarchy"/>
+                        <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code">code</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Symbol in syntax defined by the system
+                        <br/>
+                        <span style="font-weight: bold">Fixed Value: </span>
+                        <span style="color: darkgreen">89253-9</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_fixed.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Fixed Value" class="hierarchy"/>
+                        <a href="http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display">display</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Representation defined by the system
+                        <br/>
+                        <span style="font-weight: bold">Fixed Value: </span>
+                        <span style="color: darkgreen">Trend</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.subject">subject</a>
+                        <a name="Observation.subject"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(
+                        <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>)
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Who and/or what the observation is about</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/>
+                        <a style="font-style: italic" href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.focus">focus</a>
+                        <a name="Observation.focus"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="font-style: italic"/>
+                        <span style="font-style: italic">1</span>
+                        <span style="font-style: italic">..</span>
+                        <span style="font-style: italic">*</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="font-style: italic" href="http://hl7.org/fhir/R4/references.html">Reference</a>
+                        <span style="font-style: italic">(</span>
+                        <a style="font-style: italic" href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>
+                        <span style="font-style: italic"> | </span>
+                        <a style="font-style: italic" href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a>
+                        <span style="font-style: italic">)</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5; font-style: italic">What the observation is about, when it is not about the subject of record</span>
+                        <br style="font-style: italic"/>
+                        <span style="font-weight:bold; font-style: italic">Slice: </span>
+                        <span style="font-style: italic">Unordered, Open by value:url</span>
+                        <br style="font-style: italic"/>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.effective[x]">effective[x]</a>
+                        <a name="Observation.effective_x_"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                        <a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4conformance-rules.html#constraints" title="This element has or is affected by some invariants (us-core-1)">C</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a>
+                        <span style="opacity: 0.5">, </span>
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>
+                        <span style="opacity: 0.5">, </span>
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>
+                        <span style="opacity: 0.5">, </span>
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Clinically relevant time/time-period for observation</span>
+                        <br/>
+                        <span style="font-weight:bold">us-core-1: </span>Datetime must be at least to day.
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.performer">performer</a>
+                        <a name="Observation.performer"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..
+                        <span style="opacity: 0.5">*</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(
+                        <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-patient.html">US Core Patient Profile</a> | 
+                        <a href="StructureDefinition-MCCCaregiverOnCareTeam.html">Multiple Chronic Condition Care Plan Caregiver on Care Team</a>)
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Who is responsible for the observation</span>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.value[x]">value[x]</a>
+                        <a name="Observation.value_x_"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/R4conformance-rules.html#constraints" title="This element has or is affected by some invariants (us-core-3)">C</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">1</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Coded or narrative feeling about condition
+                        <br/>
+                        <span style="font-weight:bold">us-core-3: </span>SHALL use UCUM for coded quantity units.
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/>
+                        <span title="Base StructureDefinition for CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">valueCodeableConcept</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/>
+                        <span title="Base StructureDefinition for string Type: A sequence of Unicode characters">valueString</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.valueCodeableConcept">valueCodeableConcept</a>
+                        <a name="Observation.valueCodeableConcept"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Response for feeling about the condition
+                        <br/>
+                        <span style="font-weight:bold">Binding: </span>
+                        <a href="https://loinc.org/LL4938-8/">https://loinc.org/LL4938-8/</a> (
+                        <a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>): Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding.
+                        <br/>
+                        <br/>
+                    </td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.valueCodeableConcept.text">text</a>
+                        <a name="Observation.valueCodeableConcept.text"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">can be used with or in place of code to provide a string representation</td>
+                </tr>
+                <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
+                        <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>
+                        <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/>
+                        <a href="StructureDefinition-MCCPatientCaregiverConditionStatus-definitions.html#Observation.dataAbsentReason">dataAbsentReason</a>
+                        <a name="Observation.dataAbsentReason"/>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">0</span>
+                        <span style="opacity: 0.5">..</span>
+                        <span style="opacity: 0.5">1</span>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+                    </td>
+                    <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+                        <span style="opacity: 0.5">Why the result is missing</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="hierarchy">
+                        <br/>
+                        <a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">
+                            <img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </text>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
+    <version value="0.1.0"/>
     <name value="MCCPatientCaregiverConditionStatus"/>
     <title value="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation"/>
     <status value="active"/>
-    <description value="This profile constrains [US Core Observation Clinical Test Result Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings."/>
+    <date value="2022-09-27T19:57:15+00:00"/>
+    <publisher value="HL7 International - Patient Care WG"/>
+    <contact>
+        <name value="Entire MCC Project Team"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://ecareplan.ahrq.gov/collaborate/display/EC/Project+Team"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Jenna Norton (NIH/NIDDK)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="jenna.norton@nih.gov"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Evelyn Gallego (SDO Business Liason)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="evelyn.gallego@emiadvisors.net"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Gay Dolin MSN RN (Clinical and IG Modeler)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="gdolin@NamasteInformatics.com"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="HL7 International - Patient Care"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientare"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Emma Jones (Clinical and IG Modeler)"/>
+    </contact>
+    <contact>
+        <name value="Dave Carlson (Technical and IG Developer)"/>
+    </contact>
+    <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
             <path value="Observation"/>
+            <constraint>
+                <key value="us-core-2"/>
+                <severity value="error"/>
+                <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+                <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
+            </constraint>
         </element>
         <element id="Observation.extension">
             <path value="Observation.extension"/>
@@ -48,24 +628,18 @@
         </element>
         <element id="Observation.category">
             <path value="Observation.category"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="81380-8"/>
-                    <display value="Goals, preferences, and priorities for care experience [Reported]"/>
-                </coding>
-            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
+            <label value="Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)"/>
+            <short value="Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="89253-9"/>
                     <display value="Trend"/>
                 </coding>
-                <text value="Observation on patient/caregiver feelings on the condition satus"/>
             </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
@@ -98,6 +672,12 @@
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
+            <constraint>
+                <key value="us-core-1"/>
+                <severity value="error"/>
+                <human value="Datetime must be at least to day."/>
+                <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+            </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.performer">
@@ -106,12 +686,27 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
             </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <short value="Coded or narrative feeling about condition"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <!--element id="Observation.valueCodeableConcept"><path value="Observation.valueCodeableConcept"/><short value="Response for feeling about the condition"/><min value="1"/><type><code value="CodeableConcept"/></type><mustSupport value="true"/><binding><strength value="preferred"/><description
+                     value="Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding."/><valueSet value="https://loinc.org/LL4938-8/"/></binding><mapping><identity value="argonaut-dq-dstu2"/><map value="Observation.valueCodeableConcept"/></mapping></element><element id="Observation.valueCodeableConcept.text"><path value="Observation.valueCodeableConcept.text"/><label
+             value="can be used with or in place of code to provide a string representation"/><short
+             value="can be used with or in place of code to provide a string representation"/></element-->
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
             <mustSupport value="true"/>
         </element>
     </differential>

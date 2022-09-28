@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCObservationSDOHAssessment"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-08-29T21:40:14.974+00:00"/>
-        <source value="#XtlkzBepiiVFPdYh"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-09-09T10:38:49.396+00:00"/>
+        <source value="#BheBbCC8t1EJ4b7V"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
     <name value="MCCObservationSDOHAssessment"/>
     <title value="Multiple Chronic Condition Care Plan Observation SDOH Assessment"/>
     <status value="active"/>
-    <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sdoh-assessment) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <description value="This profile constrains [US Core Observation SDOH Assessment Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sdoh-assessment) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

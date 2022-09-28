@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MCCCaregiverOnCareTeam"/>
+    <meta>
+        <versionId value="25"/>
+        <lastUpdated value="2022-09-27T15:41:56.345+00:00"/>
+        <source value="#p4LDId61QVjOd7ye"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+    <name value="MCCCaregiverOnCareTeam"/>
+    <title value="Multiple Chronic Condition Care Plan Caregiver on Care Team"/>
+    <status value="active"/>
+    <description value="Like neurosurgeon, caregiver is an entity defined, in part, by a person (caregiver), a target of care (patient) and a role. This profile provides the ability to define a Caregiver for a specific patient, and provides a referenceable entity that is a Caregiver. Caregiver is not necessarily a formal position, so it does not fall under FHIR Practitioner. This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It features a requirement for one caregiver as a participant. The purpose is to establish that the RelatedPerson is a caregiver for the indicated patient. Use of this profile allows for explicitly indicating that observations on the caregiver are specific to the position of caregiver for a specific patient. Caregivers are not considered practitioners by FHIR as they may not have formal roles in the care of patient. However, their participation as the caregiver is a critical function/context to observations about their ability to deliver care to the patient. Again, this profile creates an entity that can be considered to be a Caregiver (caregiver requires a RelatedPerson, the giver, and a Patient, person to whom care is given, to be defined)."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="CareTeam"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="CareTeam">
+            <path value="CareTeam"/>
+        </element>
+        <element id="CareTeam.extension">
+            <path value="CareTeam.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mustSupport value="false"/>
+        </element>
+        <element id="CareTeam.extension:resource-pertainsToGoal">
+            <path value="CareTeam.extension"/>
+            <sliceName value="resource-pertainsToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="CareTeam.participant">
+            <path value="CareTeam.participant"/>
+            <label value="Caregiver"/>
+            <short value="Caregiver"/>
+            <definition value="Identifies the caregiver for the patient."/>
+            <max value="1"/>
+        </element>
+        <element id="CareTeam.participant.role">
+            <path value="CareTeam.participant.role"/>
+            <label value="Caregiver"/>
+            <short value="Caregiver"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="133932002"/>
+                    <display value="Caregiver (person)"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="CareTeam.participant.member">
+            <path value="CareTeam.participant.member"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

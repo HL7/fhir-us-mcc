@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="caregiver-feelings-condition-status"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-31T18:55:04.526+00:00"/>
-        <source value="#g3OOYCNwgsfFnaqt"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-09-09T12:12:45.266+00:00"/>
+        <source value="#Lw4Z4lWhBMPBQUxh"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -44,7 +44,7 @@
     </focus>
     <effectiveDateTime value="2021-11-10T16:48:57.246958-08:00"/>
     <performer>
-        <reference value="RelatedPerson/caregiver-of-noelle"/>
+        <reference value="CareTeam/caregiveronteam-of-noelle"/>
     </performer>
     <valueCodeableConcept>
         <coding>

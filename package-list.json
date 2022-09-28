@@ -2,15 +2,16 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "https://build.fhir.org/ig/HL7/fhir-us-mcc",
-			"desc": "Continuous Integration Build (latest in version control)",
+			"path": "https://build.fhir.org/ig/HL7/fhir-us-mcc/",
+			"desc": "Developing Draft",
 			"fhirversion": "4.0.1",
+			"date": "",
+			"sequence": "",
 			"status": "ci-build",
 			"current": true
 		}
 	],
 	"package-id": "hl7.fhir.us.mcc",
 	"title": "MCC eCare Plan Draft Implementation Guide",
-	"canonical": "http://hl7.org/fhir/us/mcc",
-	"category": "Patient Care"
+	"canonical": "http://hl7.org/fhir/us/mcc"
 }

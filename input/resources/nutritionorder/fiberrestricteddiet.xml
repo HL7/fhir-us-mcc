@@ -29,11 +29,13 @@
         <reference value="Patient/cc-pat-pnoelle"/>
         <display value="Patricia Noelle"/>
     </patient>
+    <!--encounter><reference value="Encounter/example"/><display value="Inpatient"/></encounter-->
     <dateTime value="2014-09-17"/>
     <orderer>
         <reference value="Practitioner/practitionerMCC-3"/>
     </orderer>
     <allergyIntolerance>
+        <!--reference value="AllergyIntolerance/example"/-->
         <display value="Cashew Nuts"/>
     </allergyIntolerance>
     <foodPreferenceModifier>
@@ -50,6 +52,7 @@
         </coding>
     </excludeFoodModifier>
     <oralDiet>
+        <!--EH:  list type of diet showing standard code and local codes-->
         <type>
             <coding>
                 <system value="http://snomed.info/sct"/>
@@ -76,6 +79,7 @@
             </coding>
             <text value="Low fat diet"/>
         </type>
+        <!--EH example of three times a day starting on 2/10-->
         <schedule>
             <repeat>
                 <boundsPeriod>
@@ -87,6 +91,7 @@
             </repeat>
         </schedule>
         <nutrient>
+            <!--list nutrients and amounts here-->
             <modifier>
                 <coding>
                     <system value="http://snomed.info/sct"/>

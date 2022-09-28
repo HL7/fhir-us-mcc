@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is an example of assessing caregiver strain for the Multiple Chronic Condition Care Caregiver Considerations Observation profile."/>
         </extension>
-        <versionId value="2"/>
-        <lastUpdated value="2022-08-31T16:32:50.539+00:00"/>
-        <source value="#2E6e9IOedzH2yqO7"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-09-09T12:12:45.266+00:00"/>
+        <source value="#k60DkM4brEus0tLp"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -46,7 +46,7 @@
         <display value="Noelle"/>
     </subject>
     <focus>
-        <reference value="RelatedPerson/caregiver-of-noelle"/>
+        <reference value="CareTeam/caregiveronteam-of-noelle"/>
     </focus>
     <effectiveDateTime value="2021-11-10T16:48:57.246958-08:00"/>
     <performer>

@@ -60,6 +60,7 @@
         <text value="Never"/>
     </valueCodeableConcept>
     <derivedFrom>
+        <!--reference value="QuestionnaireResponse/AHC-HRSN-screening-example"/-->
         <display value="US Core QuestionnaireResponse AHC HRSN Screening-Example Example"/>
     </derivedFrom>
 </Observation>
