@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="pulse-intensity-palpation"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="Pulse intensity Palpation Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This is a Pulse intensity Palpation Example for the *Clinical Test Result Observation Profile*."/>
+        </extension>
+        <versionId value="4"/>
+        <lastUpdated value="2022-10-10T22:17:46.228+00:00"/>
+        <source value="#XsLG4Yc4ehU8NjEm"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/HPT-WNL"/>
+        </valueReference>
+    </extension>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-observation-category"/>
+            <code value="clinical-test"/>
+            <display value="Clinical Test"/>
+        </coding>
+        <text value="Clinical Test"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="44974-4"/>
+            <display value="Pulse intensity Palpation"/>
+        </coding>
+        <text value="Pulse intensity Palpation"/>
+    </code>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Patricia Noelle"/>
+    </subject>
+    <encounter>
+        <display value="Diabetes Consult"/>
+    </encounter>
+    <effectiveDateTime value="2021-11-10T16:48:57.246958-08:00"/>
+    <performer>
+        <reference value="Practitioner/practitionerMCC-1"/>
+    </performer>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="LA11841-6"/>
+            <display value="1+"/>
+        </coding>
+        <text value="1+"/>
+    </valueCodeableConcept>
+</Observation>

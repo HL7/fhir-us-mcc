@@ -3,224 +3,243 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCPatientCaregiverConditionStatus"/>
     <meta>
-        <versionId value="61"/>
-        <lastUpdated value="2022-09-29T17:38:30.734+00:00"/>
-        <source value="#4lqZ94FGeoOpTziW"/>
+        <versionId value="67"/>
+        <lastUpdated value="2022-10-10T15:13:15.422+00:00"/>
+        <source value="#ug7uJldxZSvVYFKD"/>
     </meta>
     <text>
         <status value="additional"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml"/>
-        </text>
-        <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
-        <version value="0.1.0"/>
-        <name value="MCCPatientCaregiverConditionStatus"/>
-        <title value="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation"/>
-        <status value="active"/>
-        <date value="2022-09-27T19:57:15+00:00"/>
-        <publisher value="HL7 International - Patient Care WG"/>
-        <contact>
-            <name value="Entire MCC Project Team"/>
-            <telecom>
-                <system value="url"/>
-                <value value="https://ecareplan.ahrq.gov/collaborate/display/EC/Project+Team"/>
-            </telecom>
-        </contact>
-        <contact>
-            <name value="Jenna Norton (NIH/NIDDK)"/>
-            <telecom>
-                <system value="email"/>
-                <value value="jenna.norton@nih.gov"/>
-            </telecom>
-        </contact>
-        <contact>
-            <name value="Evelyn Gallego (SDO Business Liason)"/>
-            <telecom>
-                <system value="email"/>
-                <value value="evelyn.gallego@emiadvisors.net"/>
-            </telecom>
-        </contact>
-        <contact>
-            <name value="Gay Dolin MSN RN (Clinical and IG Modeler)"/>
-            <telecom>
-                <system value="email"/>
-                <value value="gdolin@NamasteInformatics.com"/>
-            </telecom>
-        </contact>
-        <contact>
-            <name value="HL7 International - Patient Care"/>
-            <telecom>
-                <system value="url"/>
-                <value value="http://www.hl7.org/Special/committees/patientare"/>
-            </telecom>
-        </contact>
-        <contact>
-            <name value="Emma Jones (Clinical and IG Modeler)"/>
-        </contact>
-        <contact>
-            <name value="Dave Carlson (Technical and IG Developer)"/>
-        </contact>
-        <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings."/>
-        <jurisdiction>
-            <coding>
-                <system value="urn:iso:std:iso:3166"/>
-                <code value="US"/>
-                <display value="United States of America"/>
-            </coding>
-            <text value="United States"/>
-        </jurisdiction>
-        <fhirVersion value="4.0.1"/>
-        <mapping>
-            <identity value="workflow"/>
-            <uri value="http://hl7.org/fhir/workflow"/>
-            <name value="Workflow Pattern"/>
-        </mapping>
-        <mapping>
-            <identity value="sct-concept"/>
-            <uri value="http://snomed.info/conceptdomain"/>
-            <name value="SNOMED CT Concept Domain Binding"/>
-        </mapping>
-        <mapping>
-            <identity value="v2"/>
-            <uri value="http://hl7.org/v2"/>
-            <name value="HL7 v2 Mapping"/>
-        </mapping>
-        <mapping>
-            <identity value="rim"/>
-            <uri value="http://hl7.org/v3"/>
-            <name value="RIM Mapping"/>
-        </mapping>
-        <mapping>
-            <identity value="w5"/>
-            <uri value="http://hl7.org/fhir/fivews"/>
-            <name value="FiveWs Pattern Mapping"/>
-        </mapping>
-        <mapping>
-            <identity value="sct-attr"/>
-            <uri value="http://snomed.org/attributebinding"/>
-            <name value="SNOMED CT Attribute Binding"/>
-        </mapping>
-        <kind value="resource"/>
-        <abstract value="false"/>
-        <type value="Observation"/>
-        <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-        <derivation value="constraint"/>
-        <differential>
-            <element id="Observation">
-                <path value="Observation"/>
-                <constraint>
-                    <key value="us-core-2"/>
-                    <severity value="error"/>
-                    <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
-                    <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
-                </constraint>
-            </element>
-            <element id="Observation.extension">
-                <path value="Observation.extension"/>
-                <slicing>
-                    <discriminator>
-                        <type value="value"/>
-                        <path value="url"/>
-                    </discriminator>
-                    <rules value="open"/>
-                </slicing>
-            </element>
-            <element id="Observation.extension:resource-pertainesToGoal">
-                <path value="Observation.extension"/>
-                <sliceName value="resource-pertainesToGoal"/>
-                <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-                <type>
-                    <code value="Extension"/>
-                    <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-                </type>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.status">
-                <path value="Observation.status"/>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.category">
-                <path value="Observation.category"/>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.code">
-                <path value="Observation.code"/>
-                <label value="Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)"/>
-                <short value="Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)"/>
-                <patternCodeableConcept>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="89253-9"/>
-                        <display value="Trend"/>
-                    </coding>
-                </patternCodeableConcept>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.subject">
-                <path value="Observation.subject"/>
-                <min value="1"/>
-                <type>
-                    <code value="Reference"/>
-                    <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                </type>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.focus">
-                <path value="Observation.focus"/>
-                <slicing>
-                    <discriminator>
-                        <type value="value"/>
-                        <path value="url"/>
-                    </discriminator>
-                    <rules value="open"/>
-                </slicing>
-                <min value="1"/>
-                <max value="*"/>
-                <type>
-                    <code value="Reference"/>
-                    <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"/>
-                    <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
-                </type>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.effective[x]">
-                <path value="Observation.effective[x]"/>
-                <constraint>
-                    <key value="us-core-1"/>
-                    <severity value="error"/>
-                    <human value="Datetime must be at least to day."/>
-                    <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
-                </constraint>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.performer">
-                <path value="Observation.performer"/>
-                <min value="1"/>
-                <type>
-                    <code value="Reference"/>
-                    <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                    <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
-                </type>
-                <mustSupport value="true"/>
-            </element>
-            <element id="Observation.value[x]">
-                <path value="Observation.value[x]"/>
-                <short value="Coded or narrative feeling about condition"/>
-                <type>
-                    <code value="CodeableConcept"/>
-                </type>
-                <type>
-                    <code value="string"/>
-                </type>
-                <mustSupport value="true"/>
-            </element>
-            <!--element id="Observation.valueCodeableConcept"><path value="Observation.valueCodeableConcept"/><short value="Response for feeling about the condition"/><min value="1"/><type><code value="CodeableConcept"/></type><mustSupport value="true"/><binding><strength value="preferred"/><description
-                     value="Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding."/><valueSet value="https://loinc.org/LL4938-8/"/></binding><mapping><identity value="argonaut-dq-dstu2"/><map value="Observation.valueCodeableConcept"/></mapping></element><element id="Observation.valueCodeableConcept.text"><path value="Observation.valueCodeableConcept.text"/><label
-             value="can be used with or in place of code to provide a string representation"/><short
-             value="can be used with or in place of code to provide a string representation"/></element-->
-            <element id="Observation.dataAbsentReason">
-                <path value="Observation.dataAbsentReason"/>
-                <mustSupport value="true"/>
-            </element>
-        </differential>
-    </StructureDefinition>
+    </text>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
+    <version value="0.1.0"/>
+    <name value="MCCPatientCaregiverConditionStatus"/>
+    <title value="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation"/>
+    <status value="active"/>
+    <date value="2022-09-27T19:57:15+00:00"/>
+    <publisher value="HL7 International - Patient Care WG"/>
+    <contact>
+        <name value="Entire MCC Project Team"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://ecareplan.ahrq.gov/collaborate/display/EC/Project+Team"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Jenna Norton (NIH/NIDDK)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="jenna.norton@nih.gov"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Evelyn Gallego (SDO Business Liason)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="evelyn.gallego@emiadvisors.net"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Gay Dolin MSN RN (Clinical and IG Modeler)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="gdolin@NamasteInformatics.com"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="HL7 International - Patient Care"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/patientare"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Emma Jones (Clinical and IG Modeler)"/>
+    </contact>
+    <contact>
+        <name value="Dave Carlson (Technical and IG Developer)"/>
+    </contact>
+    <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-concept"/>
+        <uri value="http://snomed.info/conceptdomain"/>
+        <name value="SNOMED CT Concept Domain Binding"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="sct-attr"/>
+        <uri value="http://snomed.org/attributebinding"/>
+        <name value="SNOMED CT Attribute Binding"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation">
+            <path value="Observation"/>
+            <constraint>
+                <key value="us-core-2"/>
+                <severity value="error"/>
+                <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+                <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
+            </constraint>
+        </element>
+        <element id="Observation.extension">
+            <path value="Observation.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Observation.extension:resource-pertainesToGoal">
+            <path value="Observation.extension"/>
+            <sliceName value="resource-pertainesToGoal"/>
+            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.category">
+            <path value="Observation.category"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.code">
+            <path value="Observation.code"/>
+            <label value="Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)"/>
+            <short value="Observation on patient/caregiver feelings on the condition status (what is the trend of the condition status?)"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="89253-9"/>
+                    <display value="Trend"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.subject">
+            <path value="Observation.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.focus">
+            <path value="Observation.focus"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.effective[x]">
+            <path value="Observation.effective[x]"/>
+            <constraint>
+                <key value="us-core-1"/>
+                <severity value="error"/>
+                <human value="Datetime must be at least to day."/>
+                <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
+            </constraint>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.performer">
+            <path value="Observation.performer"/>
+            <label value="Represents the caregiver or patient who is making the observation on the condition’s trend"/>
+            <short value="Represents the caregiver or patient who is making the observation on the condition’s trend"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="Coded or narrative feeling about condition"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <type>
+                <code value="string"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.valueCodeableConcept">
+            <path value="Observation.valueCodeableConcept"/>
+            <short value="Response for feeling about the condition"/>
+            <min value="0"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <description value="Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding. valueString is also available as an alternative to valueCodeableConcept."/>
+                <valueSet value="https://loinc.org/LL4938-8/"/>
+            </binding>
+            <mapping>
+                <identity value="argonaut-dq-dstu2"/>
+                <map value="Observation.valueCodeableConcept"/>
+            </mapping>
+        </element>
+        <element id="Observation.valueCodeableConcept.text">
+            <path value="Observation.valueCodeableConcept.text"/>
+            <label value="can be used with or in place of code to provide a string representation"/>
+            <short value="can be used with or in place of code to provide a string representation"/>
+        </element>
+        <element id="Observation.dataAbsentReason">
+            <path value="Observation.dataAbsentReason"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

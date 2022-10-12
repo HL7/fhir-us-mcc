@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCQuestionnaireResponse"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-08-30T06:13:33.272+00:00"/>
-        <source value="#7NOOlyEUq4TDCKM5"/>
+        <versionId value="16"/>
+        <lastUpdated value="2022-10-12T15:41:58.826+00:00"/>
+        <source value="#6qIiAAbYD9Q4K3or"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
     <name value="MCCQuestionnaireResponse"/>
-    <title value="MCCQuestionnaireResponse"/>
+    <title value="Multiple Chronic Condition Care Plan Questionnaire Response"/>
     <status value="active"/>
     <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <fhirVersion value="4.0.1"/>
@@ -41,6 +41,28 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="QuestionnaireResponse.author">
+            <path value="QuestionnaireResponse.author"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+            </type>
+        </element>
+        <element id="QuestionnaireResponse.source">
+            <path value="QuestionnaireResponse.source"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>

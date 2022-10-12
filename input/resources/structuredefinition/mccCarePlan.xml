@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="101"/>
-        <lastUpdated value="2022-08-31T18:33:13.953+00:00"/>
-        <source value="#m52tUZxli8wMjmDp"/>
+        <versionId value="103"/>
+        <lastUpdated value="2022-10-10T23:35:41.900+00:00"/>
+        <source value="#pJQ0BQxpcA38Sv7c"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.2"/>
@@ -80,6 +80,12 @@
         </element>
         <element id="CarePlan.careTeam">
             <path value="CarePlan.careTeam"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="CarePlan.addresses.reference">
@@ -111,6 +117,8 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
             </type>
             <mustSupport value="true"/>
         </element>

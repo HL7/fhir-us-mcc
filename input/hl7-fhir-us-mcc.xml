@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="206"/>
-        <lastUpdated value="2022-09-09T16:35:37.418+00:00"/>
-        <source value="#hC5h1zx3v0vHmenr"/>
+        <versionId value="216"/>
+        <lastUpdated value="2022-10-12T03:38:56.774+00:00"/>
+        <source value="#EV1vHsv5rlaaSEGT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -151,7 +151,7 @@
         </grouping>
         <grouping id="new-group18">
             <name value="MCC PatientCaregiverConditionStatus"/>
-            <description value="The  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) sets minimum expectations for the Observation resource to record, search, and fetch Observations. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. This profile adds critical requirements to the following elements:&#xA;&#xA;* MCCPatientCaregiverConditionStatus.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCPatientCaregiverConditionStatus.category requires LOINC code 81380-8&#xA;* MCCPatientCaregiverConditionStatus.code requires LOINC code 89253-9 Observation on patient/caregiver feelings on the condition satus&#xA;* MCCPatientCaregiverConditionStatus.focus is limited to us-core-condition-problems-health-concerns and us-core-condition-encounter-diagnosis  and set to must support&#xA;* MCCPatientCaregiverConditionStatus.performer is limited to Patient and RelatedPerson (caregiver) &#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+            <description value="The [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) sets minimum expectations for the Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. This is similar to a clinical impression but is being made by a non-clinican. The profile identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;* MCCPatientCaregiverConditionStatus.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCPatientCaregiverConditionStatus.category requires LOINC code 81380-8&#xA;* MCCPatientCaregiverConditionStatus.code requires LOINC code 89253-9 Observation on patient/caregiver feelings on the condition satus&#xA;* MCCPatientCaregiverConditionStatus.focus is limited to us-core-condition-problems-health-concerns and us-core-condition-encounter-diagnosis  and set to must support&#xA;* MCCPatientCaregiverConditionStatus.performer is limited to Patient and RelatedPerson (caregiver) &#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
         </grouping>
         <grouping id="new-group19">
             <name value="MCC CaregiverConsiderationsObservation"/>
@@ -160,6 +160,10 @@
         <grouping id="new-group20">
             <name value="MCC CaregiverOnCareTeam"/>
             <description value="This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It features a requirement for one caregiver as a participant. The purpose is to establish that the RelatedPerson is a caregiver for the indicated patient. Use of this profile allows for explictly indicating that observations on the caregiver are specific to the position of caregiver for a specific patient. Caregivers are not considered practicioners by FHIR as they may not have formal roles in the care of patient. However, thier participation as the caregiver is a criticial function/context to observations about thier ability to deliver care to the patinet. Again, this profle creates an entity that can be considered to be a Caregiver (caregiver requires a RelatedPerson, the giver, and a Patient, person to whom care is given, to be defined). The [US Core Care Team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) sets minimum expectations for the CareTeam resource to record, search, and fetch caregivers associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;* MCCCareTeam.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;* MCCCareTeam.participant requires single RelatedPerson (caregiver) and set to must support&#xA;&#xA;See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the &quot;Must Support&quot; rules defined on these elements."/>
+        </grouping>
+        <grouping id="new-group21">
+            <name value="MCC Clinical Test Observation"/>
+            <description value="The [US Core Clinical Test Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) sets minimum expectations for the Observation resource to record, search, and fetch Observations where the Observation is neither a labortory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements."/>
         </grouping>
         <resource>
             <reference>
@@ -553,7 +557,7 @@
                 <reference value="StructureDefinition/MCCQuestionnaireResponse"/>
                 <display value="MCCQuestionnaireResponse"/>
             </reference>
-            <name value="MCCQuestionnaireResponse"/>
+            <name value="Multiple Chronic Condition Care Plan Questionnaire Response"/>
             <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group17"/>
@@ -600,7 +604,7 @@
                 <display value="MCCPatientCaregiverConditionStatus"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation"/>
-            <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings."/>
+            <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group18"/>
         </resource>
@@ -649,6 +653,24 @@
             <description value="MCC CaregiverOnCareTeam of Noelle Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCClinicalTestObservation"/>
+                <display value="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
+            </reference>
+            <name value="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
+            <description value="This profile constrains [US Core Clinical Test Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a labortory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Bowl sounds' is an example observation which would use the Simple Observation profile."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group21"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/pulse-intensity-palpation"/></reference>
+            <name value="MCC Clinical Test Observation example"/>
+            <description value="Multiple Chronic Condition Care Plan example of Clinical Test Observation"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
