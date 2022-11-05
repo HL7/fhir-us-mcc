@@ -4,20 +4,30 @@
   <li><a href="mcc_use_cases.html">MCC Use Cases</a></li>
 
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structure and Design Considerations<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li><a href="structure_and_design_considerations.html">Structure and Design Considerations</a></li>
-      <li><a href="mcc_care_plan_assessments_and_questionnaireresponse.html">MCC Care Plan: Assessments and QuestionnaireResponse</a></li>
-      <li><a href="profiles_or_resources_directly_reused_in_this_guide.html">Profiles or Resources Directly Reused in this Guide</a></li>    </ul>
+      <li><a href="profiles_or_resources_directly_reused_in_this_guide.html">Profiles or Resources Directly Reused in this Guide</a></li>
+      <li><a href="security.html">Security</a></li>
+      <li><a href="questionnaire_response.html">Questionnaire Response</a></li>
+      <li><a href="mcc_care_plan_sdoh_guidance.html">MCC Care Plan SDOH Guidance</a></li>    </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">MCC Value Set Library<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="mcc_value_set_library.html">MCC Value Set Library</a></li>
+      <li><a href="conformance.html">Conformance</a></li>
+      <li><a href="mcc_must-support.html">MCC Must-support</a></li>    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology Guidance<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="mcc_value_set_library_use.html">MCC Value Set Library Use</a></li>
       <li><a href="mcc_chronic_condition_value_sets.html">MCC Chronic Condition Value Sets</a></li>
       <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
@@ -25,7 +35,5 @@
       <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
       <li><a href="mcc_diagnostic_report_value_sets.html">MCC Diagnostic Report Value Sets</a></li>
       <li><a href="mcc_symptom_value_sets.html">MCC Symptom Value Sets</a></li>    </ul>
-  </li>
-  <li><a href="mcc_care_plan_sdoh_guidance.html">MCC Care Plan SDOH Guidance</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
+  </li>  <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

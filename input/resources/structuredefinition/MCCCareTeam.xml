@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCareTeam"/>
     <meta>
-        <versionId value="47"/>
-        <lastUpdated value="2022-08-31T20:12:13.390+00:00"/>
-        <source value="#aJxOTJio7pCWqC1D"/>
+        <versionId value="51"/>
+        <lastUpdated value="2022-11-04T16:49:07.399+00:00"/>
+        <source value="#aslouVUCrMejFV5n"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
     <name value="MCCCareTeam"/>
@@ -60,6 +60,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <min value="2"/>
         </element>
         <element id="CareTeam.participant:patient-as-team-member">
             <path value="CareTeam.participant"/>
@@ -72,13 +73,13 @@
         </element>
         <element id="CareTeam.participant:patient-as-team-member.role">
             <path value="CareTeam.participant.role"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
                     <code value="116154003"/>
                     <display value="Patient (person)"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="CareTeam.participant:patient-as-team-member.member">
@@ -104,20 +105,20 @@
         </element>
         <element id="CareTeam.participant:caregiver.role">
             <path value="CareTeam.participant.role"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://snomed.info/sct"/>
                     <code value="133932002"/>
                     <display value="Caregiver (person)"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="CareTeam.participant:caregiver.member">
             <path value="CareTeam.participant.member"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
             </type>
             <mustSupport value="true"/>
         </element>

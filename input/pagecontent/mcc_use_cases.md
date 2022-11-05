@@ -16,15 +16,12 @@ The following pages provide the use case details.
 The MCC eCare Plan use cases focus on the functionality and interoperability required to allow an end-user to generate, exchange, share, query, and update an electronic person-centered care plan. These use cases are high-level descriptions of the most value-add interactions among the various actors identified in Patient Story 1. 
 1. 	Generate/update comprehensive eCare Plan in clinical setting
 2. 	Expose (share) eCare Plan to clinical care team and patient/caregiver
-3. 	Identify Care Team Members
-
-
-**Note: Use Cases 4 through 7 will be defined in a future version of the FHIR IG:**
-
-4. Subscribe to eCare Plan Updates
-5. Consent to share eCare Plan information for research (e.g. S4S)
-6. Consent to share eCare Plan sensitive information with specific team members
-7. Expose (share) eCare Plan to community-based (non-clinical provider)
+3. 	Identify Care Team Members<br>
+    **Note: Use Cases 4 through 7 will be defined in a future version of the FHIR IG:**
+5. 	Subscribe to eCare Plan Updates
+6. 	Consent to share eCare Plan information for research (e.g. S4S)
+7. 	Consent to share eCare Plan sensitive information with specific team members
+8. 	Expose (share) eCare Plan to community-based (non-clinical provider)
 
 ### Patient Story 1 Assumptions
 **Patient**
@@ -127,260 +124,31 @@ Patricia’s care team receives an alert via the EHR that an updated version of 
 
 This use case is relevant to how a shared care plan is generated in a health care system incorporating data from existing patient data inputs such as a self-administered or provider administered screening/assessment activity.
 
--   Use Case 1A: Query for Patient Data
-    
--   Use Case 1B: Information Request and Response
-    
+-  o	Generation of an eCare Plan with FHIR
+    - A FHIR eCare Plan is an aggregation of the clnical indications and supporting information for conditions and issues which the plan is created to address. The plan also includes the CareTeam. Most items in a [MCC CarePlan](StructureDefinition-mccCarePlan.html) are connected (i.e. added) to the CarePlan through [FHIR references](https://www.hl7.org/fhir/references.html). For example, a goal would be linked through the FHIR MCC CarePlan instance through the aptly named [goal](StructureDefinition-mccCarePlan.html#CarePlan.goal) backbone data element. As activities are added to the careplan the [activity.outcome](StructureDefinition-mccCarePlan.html#CarePlan.activity.outcomeReference) or [activity.reference](StructureDefinition-mccCarePlan.html#CarePlan.activity.reference) elements are populated. In our example patient story, these are the interventions/referrals that Judy documents. In the EMR future interventions related to the careplan would be ordered and a reference to the order would be attached to the careplan instance. The care team is referenced through the careplan. For more details on specific data elements please refer to the [MCC CarePlan structure definition](StructureDefinition-mccCarePlan.html), and the other profiles found on the [artifacts](artifacts.html) page.
 
-To illustrate this use case, the role of Information Recipient is filled by a Clinical Staff Member and the Information Source is carried out by the Pain Specialist (see Table 1 below). The Information Recipient can be filled by other human actors to include the Patient and their proxy. In this case, the Patient can use a mobile app, PHR, or patient portal to query and interact with the Information Source. The transactions are illustrated in Tables 2, 3 and 4 and Figures 1 and 2.
-
-
-
-
------
-
-
-
-
-**Table 1: Use Case 1 Actors**
-
-
-
-
-
-| Human Actor 	| - 	| Business Actor 	| - 	| System Actor 	| - 	| Technical Role 	|
-|-	|-	|-	|-	|-	|-	|-	|
-| Clinical Staff Member 	| - 	| PCP Practice 	| - 	| EHR or SMART on FHIR app 	| - 	| Information Recipient 	|
-| Pain Specialist 	| - 	| Provider Organization 	| - 	| Portal or mobile app, another EHR, or Health Information Exchange (HIE) system 	| - 	| Information Source 	|
-
-
-
-
-
------
-
-
-
------
-
-
-
-
-**Table 2: Use Case 1A Query for Patient Data**
-
-
-
-| Use Case Element 	| - 	| RESTFul Query by Smart Receiver 	|
-|-:	|-:	|-	|
-| Assumptions: 	| - 	| Information Source has the capability and consent protocols in place to respond to a patient query from an Information Recipient.<br>Information Recipient is able to perform query or lookup of patient assessment data in another system. 	|
-| Preconditions: 	| - 	| Pain Specialist has patient pain assessment data available for Clinical Staff Member lookup. 	|
-| Transaction #1: 	| - 	| Query Patient Data<br>Information Recipient system performs query for patient assessment data. 	|
-| Message Content: 	| - 	| Completed pain questionnaire in standard format. 	|
-| Post Conditions: 	| - 	| Information Recipient has a receipt that patient questionnaire data is available. 	|
-
------
-
-
-
------
-
-
-**Figure 1: Use Case 1A Query for Patient Data**
-
-<table><tr><td><img src="Corrected_fig1_usecase_1a_query_for_patient_data.png" /></td></tr></table>
-
------
-
-**Table 3: Use Case 1B Solicited Information Request**
-
-
-| Use Case Element 	| - 	| Information Request Task 	|
-|-:	|:-:	|-	|
-| Assumptions: 	| - 	| Information Recipient (order placer) has the capability to receive and use submitted patient questionnaire data to update the care plan.<br>Information Source (order filler) is able to receive and process the information request. 	|
-| Preconditions: 	| - 	| PCP system (EHR) has documented Care Team Members.<br>PCP EHR automatically assigns and includes a unique Service Request ID in the Information Request.<br>Pain Specialist has patient pain assessment data available to share with Clinical Staff Members upon request. 	|
-| Transaction #2: 	| - 	| Information Request Task<br>Information Recipient sends a request for the completed questionnaire (ordered activity) to the Information Source.<br>Information Source responds to indicate receipt of the request transaction. 	|
-| Message Content: 	| - 	| Relevant information needed for the Information Source to start the ordered activity. 	|
-| Post Conditions: 	| - 	| Information Recipient has a receipt of the order/request from the Information Source. Information Source has acknowledged receipt of the request and supplied an ID associated with the request in its system. 	|
-
-
-
------
-
-**Table 4: Use Case 1B Solicited Information Request Response**
-
-
-| Use Case Element 	| - 	| Information Request Response 	|
-|:-:	|:-:	|-	|
-| Assumptions: 	| - 	| ID of the service request (provided by the Requester System) is maintained by the Information Recipient and Information Source system.  The Information Recipient also retains the Order ID assigned by the Information Source system.<br>Information Source system returns both of these IDs with the Request Completion that indicates the ordered activity has been completed. 	|
-| Preconditions: 	| - 	| Information Recipient system generates and manages request IDs used to track initiated requests and order IDs used to track initiated orders.<br>Information Source system generates and manages activity IDs and maintains the relationship between tasks and requests/orders based on these IDs. 	|
-| Transaction #3: 	| - 	| Request Task Update<br>Information about the completed activity is communicated back to the initiating party/system (Information Recipient). 	|
-| Message Content: 	| - 	| Information about the initial request that was completed and information about the activity that was performed to complete the request. Includes the ID of the original service request and the ID of the ordered activity in the system where completion of the activity is documented. 	|
-| Post Conditions: 	| - 	| Information Source uses the ID of the original request to associate incoming information to previously generated requests/orders.<br>Information Recipient uses the returned completed activity information to update ordered activities to be completed activities within the system. 	|
-
-**Figure 2: Use Case 1B Information Request and Response**
-<table><tr><td><img src="Corrected_fig2_usecase_1b_info_requestresponse.png" /></td></tr></table>
+-  o	Updating the eCare Clinical Plan 
+    - As changes are made to the targets of the eCarePlan references the MCC CarePlan will include those references through the link. As interventions are performed the reference target from the eCarePlan are updated.  For example, if the CareTeam gains a team member the CareTeam instance referenced by the MCC CarePlan will reflect that change. <<<previous needs rework>>> Other updates to the eCare plan, such as adding new interventions are achieved by add additional references in the appropriate data element. 
+	
+-  o	This implementation guide also covers standard terminology codes that are expected to be encountered. The terminology libraries contain the details on their use. 
 
 ### Use Case 2: Expose (Share) eCare Plan to Clinical Care Team and Patient or Caregiver
+*Typical exposure of a FHIR endpoint is through the FHIR API Read or FHIR Search API. There are several patterns of exchange that FHIR supports. Please see the [core exchange module](http://hl7.org/fhir/R4/exchange-module.html) and [core Implementation module](http://hl7.org/fhir/R4/implsupport-module.html), and this IG's [capability statement](CapabilityStatement-mcc-server.html). Additionally, there is a Subscription Resource, not covered here, that can provide a notification mechanism when changes occur.*
 
+-  o	Individual and Aggregate Care Plan data
+    - A MCC Careplan instance will contain links to all pertinent see the [structure definition for details] (StructureDefinition-mccCarePlan.html#supporting-machine-assisted-dynamic-care-coordinationplanning-with-the-fhir-care-plan-resource-and-fhir-goal-resource). The purpose of the MCC Careplan instance is to act as an aggregation of the data for the CarePlan. By following reference links to, or retrieving through FHIR API search by _id, the referenced data instances provide the individual components of the CarePlan, refer to the structure definition [relationship diagram](StructureDefinition-mccCarePlan.html#multiple-chronic-condition-fhir-care-plan-profile-relationship-diagram). The component data can also be included with a request for a MCC CarePlan in a bundle. In the patient story above, the data delivered from the EMR to the mobile app could have been through the delivery of such a bundle. Similarly, care team members, including the caregiver, can interact with either the MCC Careplan or the component data.
 
-
-*This use case focuses on the ability to push and pull care plan information from provider to provider or provider to patient. Several use case patterns exist to describe the transactions for sharing eCare Plan data from one system to another.*
-
-### Use Case 2A Send Care Plan (Unsolicited Communication by Smart Sender)
-
-This pattern describes a transaction where the Information Source system has the capability to send care plan data to another system. Refer to Table 6 and Figure 3 below. 
-
-### Use Case 2C Send Individual and Aggregate Care Plan Data (Unsolicited Communication managed by Middle System). 
-
-This pattern describes transactions where a “middleware” system performs the care plan data pull activity and sends the data to another system. Examples of middle systems include clearinghouses, health information system providers (HISP), health information exchanges (HIE), or community information exchanges (CIE). Refer to Tables 9 and Figure 5 below.
-
-**Not defined below:**
-**RESTFul Query by Smart Receiver.**
-This pattern follows transactions where the recipient of the care plan data performs the data query. Transactions resemble Table 3 and Figure 1 above.
-
-**Setting:**
-
-To illustrate this use case, the role of Information Source is filled by a Clinical Staff Member (see Table 5 below). The Information Source can be filled by other human actors to include the Patient and their proxy. In this case, the Patient can use a mobile app, PHR, or patient portal to send care plan data to the Information Recipient. The Information Recipient can be performed by any Care Team Member as well as the Patient and his or her caregiver. The Health Information Exchange Administrator is filled by a Health Information System Provider (HISP) or data hub.
-
-**Table 5 Use Case 2 Actors**
-
-
-| Human Actor 	| - 	| Business Actor 	| - 	| System Actor 	| - 	| Technical Role 	|
-|-	|-	|-	|-	|-	|-	|-	|
-| Clinical Staff Member 	| - 	| PCP Practice 	| - 	| EHR or SMART on FHIR app 	| - 	| Information Source 	|
-| Care  Team Member (Cardiologist, Pain Specialist, Nephrologist) 	| - 	| Care Team Organization 	| - 	| Portal or mobile app, another EHR, or Health Information Exchange (HIE) system 	| - 	| Information Recipient 	|
-| Patient 	| - 	| N/A 	| - 	| Portal or mobile app 	| - 	| Information Recipient 	|
-| Health Information Exchange Administrator 	| - 	| Systems Integrator 	| - 	| Health Information System Provider (HISP) 	| - 	| Information Recipient / Data Aggregator 	|
-
-
-**Figure 3: Use Case 2A Unsolicited Communication**
-
-<table><tr><td><img src="Use Case 2A.png" /></td></tr></table>
-
-**Table 7 Use Case 2B Solicited Communication Request**
-
-| Use Case Element 	| - 	| Solicited Communication Request 	|
-|:-:	|:-:	|-	|
-| Assumptions: 	| - 	| Information Source only needs to be able to generate care plan related data.<br> <br>Information Recipient has the capability to receive and use submitted patient data to generate care plan. 	|
-| Preconditions: 	| - 	| Care Team Member (Information Recipient) identifies the care plan components for submission (e.g., health concerns, goals, interventions, or outcomes).<br>Information Source generates the care plan for Information Recipient. The care plan is automatically prepopulated with available patient demographic information, date, and medical record number (MRN).<br>The system assigns a unique request ID number to identify the Communication Request for the associated patient. 	|
-| Transaction #5: 	| - 	| Communication Request<br>Information Recipient system (mobile App, EHR) sends care plan data request to Information Source (EHR). 	|
-| Message Content: 	| - 	| Prepopulated care plan document (with coded questions and answer fields where available). 	|
-| Post Conditions: 	| - 	| Prepopulated care plan document has been provided to the Information Source system along with information needed to process the Communication Request Response. 	|
-| Alternate Flow<br>(Paper Form) 	| - 	| The Information Recipient generates the care plan for the Primary Care Physician (PCP) Practice. The care plan is prepopulated with some available patient demographic information, date, medical record number (MRN), and a unique request ID number is assigned. The Information Recipient emails the prepopulated care plan to the PCP. 	|
-
-**Table 8 Use Case 2B Solicited Communication Request Response**
-
-| Use Case Element 	| - 	| Solicited Communication Request Response 	|
-|:-:	|:-:	|-	|
-| Assumptions: 	| - 	| System that receives the Communication Request (Information Source) includes a user interface that allows the user to complete and return the care plan to the system indicated as the “Communication Recipient” in the Communication Request. 	|
-| Preconditions: 	| - 	| A Communication Request was received. It contains the prepopulated care plan to be completed by the PCP. The system automatically prompts the user to complete and return the care plan. 	|
-| Transaction #6: 	| - 	| Communication Response<br>Information Source (mobile app, EHR) facilitates gathering care plan information from PCP Clinical Staff and sends the completed care plan back to Information Recipient (EHR) based on the original Communication Request received. 	|
-| Message Content: 	| - 	| Populated care plan with patient data (includes the patient identifier and the unique request ID and any other patient demographic information supplied by the PCP team). 	|
-| Post Conditions: 	| - 	| The Information Recipient receives the response payload (completed care plan document). The Information Recipient reviews and then confirms the correct chart to attach to the Patient’s record. 	|
-
-**Figure 4 Use Case 2B Solicited Communication Request and Response**
-
-<table><tr><td><img src="Use Case 2B.png" /></td></tr></table>
-
-**Table 9 Use Case 2C Unsolicited Communication – Middleware System**
-
-| Use Case Element 	| - 	| Unsolicited Communication - Data Aggregator “Middleware System” 	|
-|:-:	|:-:	|-	|
-| Assumptions: 	| - 	| Information Source only needs to be able to generate the care plan information.<br>Information Recipient is able to process and use care plan data.<br>Information Recipient identifies data variables for data aggregation and data processing.<br>Middleware System can receive and process care plan data and share aggregated data with other systems. 	|
-| Preconditions: 	| - 	| Clinical Staff Member identifies care plan components and data elements for submission. 	|
-| Transaction #7: 	| - 	| Send Individual Care Plan Data<br>Information Source pushes individual care plan data to an Information Recipient / Data Aggregator Middleware System. 	|
-| Message Content: 	| - 	| Individual care plan data documented within a clinical encounter for a specific period. 	|
-| Post Conditions: 	| - 	| Information Recipient / Data Aggregator Middleware System accepts care plan data and generates care plan. 	|
-| Transaction #8: 	| - 	| Send Aggregate Care Plan Data<br>Data Aggregator Middleware System pushes care plan data to an Information Recipient. 	|
-| Message Content: 	| - 	| Care plan data in standard format. 	|
-| Post Conditions: 	| - 	| Information Recipient accepts and acts on care plan data. 	|
-| Notes: 	| - 	| This is the same transaction as Transaction #3. 	|
-
-**Figure 5 Use Case 2C  Unsolicited Communication – Middleware System**
-
-<table><tr><td><img src="Corrected_fig5_usecase_2c_unsolicited_communication_middleware.png" /></td></tr></table>
+-  o	Notifications
+    - Not covered in this guide is the FHIR subscription resource and its use. The R5 resource is being back-ported into R4. Interested parties should learn more about it as a way to receive notifications when Resources of interest change. 
 
 ### Use Case 3: Identify Care Team Members
 
 *This use case describes how the patient’s care team is created and shared in an electronic system.*
+-  o	Care Team Members
+    - The care team members can be found by examining the contents of the [MCC CareTeam profile](StructureDefinition-MCCCareTeam.html) linked to the MCC CarePlan through the [participant](StructureDefinition-MCCCareTeam-definitions.html#CareTeam.participant) element. This element is a repeating element that contains the role and access to demographics on each member of the care team. In our patient story above, if a dietitian joins the care team in response to the referral for medical nutrition therapy, then a new participant entry will be associated with the MCC CareTeam instance associated with the care plan.
 
-* **Use Case 3A**: Send Care Team Information
-* **Use Case 3B**: Query and Request Care Team Information
+-  o	Send/Query/Request Care Team Information
+    -  As noted in Use Case 2 above, FHIR supports a number of data exchange patterns. Please see the [core exchange module](http://hl7.org/fhir/R4/exchange-module.html) and [core Implementation module](http://hl7.org/fhir/R4/implsupport-module.html), and this IG's [capability statement](CapabilityStatement-mcc-server.html).  With a properly conformant FHIR server, access to care team member demographic data can also be achieved by using the _includes search parameter to pull back the referred granular Resource instances, such as an instance of [Practitioner](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-practitioner.html). The FHIR Resource instances referenced by the CarePlan contain information such as a careteam member name. If the underlying data instance that represents the careteam members demographic data is updated that update will automatically be included in future requests for the CarePlan care team members. 
 
-To illustrate this use case, the role of Care Team creator (Information Source) is filled by a Clinical Staff Member and the role of Care Team Requestor (Information Recipient) is filled by the Pain Specialist. The Care Team Requestor role can be filled by any other Care Team member to include the Patient and his/her caregiver.
-
-
-
------
-
-
-
-**Table 10: Use Case 3 Actors**
-
-| Human Actor 	| - 	| Business Actor 	| - 	| System Actor 	| - 	| Technical Role 	|
-|-	|-	|-	|-	|-	|-	|-	|
-| Clinical Staff Member 	| - 	| PCP Practice 	| - 	| EHR or SMART on FHIR App 	| - 	| Information Source 	|
-| Pain Specialist 	| - 	| Provider Organization 	| - 	| Portal or mobile app, another EHR, or Health Information Exchange (HIE) system 	| - 	| Information Recipient 	|
-
-
-
------
-
-
-
-**Table 11:  Use Case 3A Unsolicited Communication – Send Care Team**
-
-| Use Case Element 	| - 	| Unsolicited Communication – Send Care Team 	|
-|-	|-	|-	|
-| Assumptions: 	| - 	| Information Source has the capability to generate structured care team data and share with other systems.<br> <br>Information Recipient is able to process and use structured care team data. 	|
-| Preconditions: 	| - 	| Clinical Staff Member creates Care Team in the EHR and associates with the Patient’s care plan. 	|
-| Transaction #9: 	| - 	| Send Care Team Data<br>Information Source (EHR or source clinical info system) pushes care team data to an Information Recipient. 	|
-| Message Content: 	| - 	| Care team data in standard format. 	|
-| Post Conditions: 	| - 	| Information Recipient accepts and acts on care team data. 	|
-
-
-
------
-
-**Figure 6 Use Case 3A Unsolicited Communication – Send Care Team Data**
-
-<table><tr><td><img src="Use Case 3A.png" /></td></tr></table>
-
-
-
------
-
-
-**Table 12: Use Case 3B Request Care Team Data**
-
-
-
-| Use Case Element 	| - 	| Request Care Team Data 	|
-|-	|-	|-	|
-| Assumptions: 	| - 	| Information Source has the capability to generate Care Team and share care team data with other systems.<br> <br>Information Recipient is able to perform query or lookup of patient care team data in another system.<br> <br>Information Recipient is able to process and use structured care team data. 	|
-| Preconditions: 	| - 	| Clinical Staff Member captures and generates Care Team in the EHR.<br>Pain Specialist EHR is able to query for and request care team information about patient. 	|
-| Transaction #10: 	| - 	| Request Care Team<br>Information Recipient system sends care team request to the Information Source. 	|
-| Message Content: 	| - 	| Care team data in standard format. 	|
-| Post Conditions: 	| - 	| Care team information has been provided to the Information Source along with information needed to process the Communication Request Response.  	|
-
-
-
------
-
-**Table 13 Use Case 3B Solicited Communication Request Response**
-
-| Use Case Element 	| - 	| Solicited Communication Request Response 	|
-|-	|-	|-	|
-| Assumptions: 	| - 	| System that receives the Communication Request (Information Source) includes a user interface that allows the user to complete and return the care team data to the system indicated as the “Communication Recipient” in the Communication Request. 	|
-| Preconditions: 	| - 	| The Information Source receives the request for care team data. 	|
-| Transaction #11: 	| - 	| Communication Response<br>Information Source (mobile app, EHR) facilitates gathering care team data and sends to Information Recipient (EHR) based on the original Communication Request received. 	|
-| Message Content: 	| - 	| Care team data (includes the patient identifier,  the unique request ID, and any other patient demographic information supplied by the PCP Clinical Staff). 	|
-| Post Conditions: 	| - 	| The Information Recipient receives the response payload (care team data). The Information Recipient reviews and then confirms the correct chart for attaching the care team data to the patient’s record. 	|
-
-
-
------
-
-**Figure 7 Use Case 3B Care Team Solicited Communication Request and Response**
-
-<table><tr><td><img src="Corrected_fig7_usecase_3b_careteam_solicited_requestresponse.png" /></td></tr></table>
+-  o	Note on Caregiver
+    - For caregiver’s we have used a special profile of CareTeam that includes a reference to only a caregiver. The [MCC CareGiver on team profile](StructureDefinition-MCCCaregiverOnCareTeam.html) is used as a participant in a CareTeam. The reason for this construct is to be able to refer to the person of that is the caregiver in the context of being a caregiver. The relationship field in Related Person is not semantically correct to communicate that a person is someone’s caregiver.

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="216"/>
-        <lastUpdated value="2022-10-12T03:38:56.774+00:00"/>
-        <source value="#EV1vHsv5rlaaSEGT"/>
+        <versionId value="267"/>
+        <lastUpdated value="2022-11-04T14:03:37.651+00:00"/>
+        <source value="#NRv1VOXoYBu6Zpkb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="0.1.0"/>
@@ -164,6 +164,10 @@
         <grouping id="new-group21">
             <name value="MCC Clinical Test Observation"/>
             <description value="The [US Core Clinical Test Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) sets minimum expectations for the Observation resource to record, search, and fetch Observations where the Observation is neither a labortory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. In addition to the requirements set forth in US Core CareTeam this derived profile is designed to add requirements to the following elements:&#xA;&#xA;MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.&#xA;&#xA;Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements."/>
+        </grouping>
+        <grouping id="new-group22">
+            <name value="MCC Simple Observation"/>
+            <description value="This profile constrains [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles."/>
         </grouping>
         <resource>
             <reference>
@@ -660,7 +664,7 @@
                 <display value="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
-            <description value="This profile constrains [US Core Clinical Test Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a labortory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Bowl sounds' is an example observation which would use the Simple Observation profile."/>
+            <description value="This profile constrains [US Core Clinical Test Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a labortory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Bowel sounds' is an example observation which would use the Simple Observation profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group21"/>
         </resource>
@@ -671,6 +675,25 @@
             <description value="Multiple Chronic Condition Care Plan example of Clinical Test Observation"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CapabilityStatement/mcc-server"/>
+                <display value="MCC Server CapabilityStatement"/>
+            </reference>
+            <name value="MCC Server CapabilityStatement"/>
+            <description value="This Section describes the expected capabilities of the MCC Server actor which is responsible for providing responses to the queries submitted by the MCC Requestors. See http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of this guide. A conformant server will meet all the requriements of the US CORE server specification, as noted in computable representation of this capability statement. Please refer to the computable definition. This narrative attempts to be complete but itself is not the specification."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MCCSimpleObservation"/>
+                <display value="Multiple Chronic Condition Care Plan Simple Observation"/>
+            </reference>
+            <name value="Multiple Chronic Condition Care Plan Simple Observation"/>
+            <description value="This profile constrains [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="new-group22"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -685,20 +708,40 @@
                 <nameUrl value="structure_and_design_considerations.html"/>
                 <title value="Structure and Design Considerations"/>
                 <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="profiles_or_resources_directly_reused_in_this_guide.html"/>
+                <title value="Profiles or Resources Directly Reused in this Guide"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="security.html"/>
+                <title value="Security"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="questionnaire_response.html"/>
+                <title value="Questionnaire Response"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="mcc_care_plan_sdoh_guidance.html"/>
+                <title value="MCC Care Plan SDOH Guidance"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="conformance.html"/>
+                <title value="Conformance"/>
+                <generation value="markdown"/>
                 <page>
-                    <nameUrl value="mcc_care_plan_assessments_and_questionnaireresponse.html"/>
-                    <title value="MCC Care Plan: Assessments and QuestionnaireResponse"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="profiles_or_resources_directly_reused_in_this_guide.html"/>
-                    <title value="Profiles or Resources Directly Reused in this Guide"/>
+                    <nameUrl value="mcc_must-support.html"/>
+                    <title value="MCC Must-support"/>
                     <generation value="markdown"/>
                 </page>
             </page>
             <page>
-                <nameUrl value="mcc_value_set_library.html"/>
-                <title value="MCC Value Set Library"/>
+                <nameUrl value="mcc_value_set_library_use.html"/>
+                <title value="MCC Value Set Library Use"/>
                 <generation value="markdown"/>
                 <page>
                     <nameUrl value="mcc_chronic_condition_value_sets.html"/>
@@ -735,11 +778,6 @@
                     <title value="MCC Symptom Value Sets"/>
                     <generation value="markdown"/>
                 </page>
-            </page>
-            <page>
-                <nameUrl value="mcc_care_plan_sdoh_guidance.html"/>
-                <title value="MCC Care Plan SDOH Guidance"/>
-                <generation value="markdown"/>
             </page>
         </page>
         <parameter>

@@ -9,10 +9,10 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a Pulse intensity Palpation Example for the *Clinical Test Result Observation Profile*."/>
         </extension>
-        <versionId value="4"/>
-        <lastUpdated value="2022-10-10T22:17:46.228+00:00"/>
-        <source value="#XsLG4Yc4ehU8NjEm"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-11-04T11:02:08.272+00:00"/>
+        <source value="#w0KkhhmJCsYOH2OT"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
         <valueReference>

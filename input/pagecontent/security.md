@@ -1,0 +1,1 @@
+Follow [US Core Security gudiance](http://hl7.org/fhir/us/core/STU5/security.html)

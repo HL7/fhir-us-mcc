@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement
+    xmlns="http://hl7.org/fhir">
+    <id value="mcc-server"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2022-11-03T10:48:50.511+00:00"/>
+        <source value="#W3Sr770dOIOoyA4U"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <h3 id="should_igs" class="no_toc">This statement imports all aspects of the US CORE Server Capability Statement, refer to:</h3>
+            <ul>
+                <li>
+                    <a href="http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server">US CORE</a>
+                </li>
+            </ul>
+            <h3 id="shall_css" class="no_toc">SHALL Implement All Or Parts Of The Following Capability Statements:</h3>
+            <ul>
+                <li>
+                    <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a>
+                </li>
+            </ul>
+        </div>
+    </text>
+    <url value="http://hl7.org/fhir/us/mcc/CapabilityStatement/mcc-server"/>
+    <version value="0.1.0"/>
+    <name value="MCCServerCapabilityStatement"/>
+    <title value="MCC Server CapabilityStatement"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2022-05-04"/>
+    <!--value="HL7 International - Cross-Group Projects"/><contact><name value="HL7 International - Cross-Group Projects"/><telecom><system value="url"/><value value="http://www.hl7.org/Special/committees/cgp"/></telecom><telecom><system value="email"/><value value="cgp@lists.HL7.org"/></telecom></contact><description
+               value="This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ONC [U.S. Core Data for Interoperability (USCDI) Version 2 July 2021](https://www.healthit.gov/isa/sites/isa/files/2021-07/USCDI-Version-2-July-2021-Final.pdf).  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements."/-->
+    <description value="This Section describes the expected capabilities of the MCC Server actor which is responsible for providing responses to the queries submitted by the MCC Requestors. See http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of this guide. A conformant server will meet all the requriements of the US CORE server specification, as noted in computable representation of this capability statement. Please refer to the computable definition. This narrative attempts to be complete but itself is not the specification."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+    <kind value="requirements"/>
+    <!--instantiates
+                value="http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"><extension
+               url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"><valueCode value="SHALL"/></extension></instantiates-->
+    <imports value="http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"/>
+    <fhirVersion value="4.0.1"/>
+    <format value="json"/>
+    <format value="xml"/>
+    <patchFormat value="application/json-patch+json"/>
+    <implementationGuide value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc"/>
+    <implementationGuide value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <implementationGuide value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
+    <implementationGuide value="http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata"/>
+</CapabilityStatement>

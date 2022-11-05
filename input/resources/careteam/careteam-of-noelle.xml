@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a careteam example for the MCC CareTeam."/>
         </extension>
-        <versionId value="6"/>
-        <lastUpdated value="2022-08-30T20:08:46.465+00:00"/>
-        <source value="#8MWdc3Ib7r8cVFaT"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-11-04T11:56:28.976+00:00"/>
+        <source value="#KKfIz9YE5wp4BiUp"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
     </meta>
     <status value="active"/>
@@ -66,7 +66,7 @@
             </coding>
         </role>
         <member>
-            <reference value="RelatedPerson/caregiver-of-noelle"/>
+            <reference value="CareTeam/caregiveronteam-of-noelle"/>
             <display value="Sarah van Putten"/>
         </member>
     </participant>
