@@ -1,7 +1,7 @@
 ### Overview
 
 ### Introduction
-This HL7&reg; IG defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), chronic pain and Long Covid.The profiles defined within this IG were based on data elements of importance identified by the National Institute of Health's (NIH) National Institute of Diabetes and Digestive and Kidney Disease technical expert panels.
+This HL7&reg; Multiple Chronic Condition (MCC) Care Plan Implementation Guide (IG) defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), chronic pain and Long Covid.The profiles defined within this IG were based on data elements of importance identified by the National Institute of Health's (NIH) National Institute of Diabetes and Digestive and Kidney Disease technical expert panels.
 
 A Care Plan is a consensus-driven dynamic plan that represents a patient’s and Care Team Members’ prioritized concerns, goals, planned and actual interventions and the resultant care outcomes. It serves as a blueprint shared by all Care Team Members (including the patient, their caregivers, and providers), to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A Care Plan may represent one or more Care Plans and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:
  
@@ -9,26 +9,23 @@ A Care Plan is a consensus-driven dynamic plan that represents a patient’s and
 2.        	Encourage capture of and communication of a patient's health concerns and related goals, interventions, and outcomes.
 3.        	Gather and aggregate patient data for uses beyond the point of care (e.g. public health, population health, quality measurement, risk adjustment, quality improvement, and research.)
 
+This FHIR IG addresses the needs of multiple audiences. It provides technical artifacts that assist programmers when implementing standards-based FHIR application program interfaces (APIs) for specific purposes. It provides instructive material that explains how FHIR is used to accomplish specific use cases. It also provides general information that helps business analysts and technology decision-makers understand the use cases and benefits associated with achieving specific data exchange capabilities. A FHIR IG is as much a business planning tool as it is an educational resource and a technical specification.
 
 ### How to Read this Guide and Cautions
 This Guide is divided into several pages which are listed in the navigation bar at the top each page. The contents of each page are listed in a yellow "Contents" box at the top right of each page.
 
 ### Value Set Library
 
-Rather than creating nearly 1000 profiles covering important concepts for chronic care coordination for use within the MCC FHIR Care Plan profile, we have created XX foundation profiles which conform to US Core Profiles (where available) adding constraints or extensions pertinent to their representation within a dynamic FHIR care plan.
- 
-This FHIR IG addresses the needs of multiple audiences. It provides technical artifacts that assist programmers when implementing standards-based FHIR application program interfaces (APIs) for specific purposes. It provides instructive material that explains how FHIR is used to accomplish specific use cases. It also provides general information that helps business analysts and technology decision-makers understand the use cases and benefits associated with achieving specific data exchange capabilities. A FHIR IG is as much a business planning tool as it is an educational resource and a technical specification.
- 
+Rather than creating nearly 1000 profiles covering important concepts for chronic care coordination for use within the MCC FHIR Care Plan profile, we have created 21 foundation profiles which conform to US Core Profiles (where available) adding constraints or extensions pertinent to their representation within a dynamic FHIR care plan and then creating libraries of value sets pertinent to the base profiles for representing chronic conditions, and their related interventions and goals and outcomes. 
+This project has built and houses its value sets in the National Library of Medicine's (NLM) Value Set Authority Center (VSAC). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used. Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) UMLS license. In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue.
 
 ### History of the Care Plan and Electronic Care Plans
 
 The concept of a care plan began as a teaching tool for nursing students to research and document the medical conditions their patients had and identify the associated nursing care and family support needed. This was documented in a structured paper format that fostered the nursing process. The nursing process is the identification of health concerns and related goals, and the interventions needed to meet those goals and then evaluating the meeting of those goals – the outcomes. Over the years, the care plan evolved from a student teaching tool to something required for most patients in some format by various regulating or certifying bodies, and further, from a nursing care based plan, to an interdisciplinary patient focused tool.
 
-Most major vendors have electronic Care Plan modules, but the degree to which the modules are implemented and actively used is unknown. Few, if any, are exchanged standards ready or mapped to exchange standards. The first HL7 standard representing Care Plan was the C-CDA Care Plan document designed to represent an instance of an EHR Care Plan similar to the Continuity of Care (CCD) CDA. Many of the learnings and designs for the FHIR Care Plan Resource and this IG were derived from the C-CDA Care Plan. There currently is a [ C-CDA on FHIR Pharmacy Care Plan FHIR Document ](http://hl7.org/fhir/us/phcp/)standard also representing an instance in time of a patient’s care plan. There is also an [IHE Profile Dynamic Care Planning Profile](https://wiki.ihe.net/index.php/Dynamic_Care_Planning. The Office of the National Coordinator (ONC) has put into regulation requirements around goals and health concerns which can currently be met by free text. The Dynamic Care Planning (DCP) Profile provides the structures and transactions for care planning and sharing Care Plans that meet the needs of many, such as providers, patients and payers. The DCP profile leverages the FHIR Care Plan resource, but does not specify, describe or define the use of it for representing specific conditions or multiple conditions. We are unaware of any real world implementations of it at this time.
+Most major vendors have electronic Care Plan modules, but the degree to which the modules are implemented and actively used is unknown. Few, if any, are exchange standards ready or mapped to exchange standards. The first HL7 standard representing Care Plan was the C-CDA Care Plan document designed to represent an instance of an EHR Care Plan similar to the Continuity of Care (CCD) CDA. Many of the learnings and designs for the FHIR Care Plan Resource and this IG were derived from the C-CDA Care Plan. There is also an IHE [Dynamic Care Planning (DCP)](https://wiki.ihe.net/index.php/Dynamic_Care_Planning_(DCP)) that provides the structures and transactions for care planning, creating, updating and sharing Care Plans that meet the needs of many, such as providers, patients and payers..  The Office of the National Coordinator (ONC) has put into regulation requirements around goals and health concerns which can currently be met by free text. The Dynamic Care Planning (DCP) Profile provides leveraged FHIR Resources to provide the structures and transactions for care planning and sharing Care Plans that meet the needs of many, such as providers, patients and payers. The DCP profile leverages the FHIR Care Plan resource, but does not specify, describe or define the use of it for representing specific conditions or multiple conditions. We are unaware of any real world implementations of it at this time.
 
 We believe that this IG will be the first fully defined HL7 FHIR IG leveraging the FHIR Care Plan resources as its backbone structure for representing a dynamic care plan and testing its ability to bring together aggregated patient care plan data including patient outcomes.
-
-
 
 ### Project Overview
 
@@ -43,17 +40,17 @@ Initiated by the National Institute of Diabetes and Digestive and Kidney Disease
 The HL7-based activities of the MCC eCare Plan Project include:
  
  - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
- - Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards (clinical information models (CIMs)), and FHIR® mappings that will enable the standardized transfer of data across health settings.
- - Through an non-HL7 project, the initiative will develop and test an open-source clinician facing SMART-on-FHIR eCare plan application for managing persons with MCC.
+ - Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards and FHIR® mappings that will enable the standardized transfer of data across health settings.
  - Develop, test, and ballot an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
  
-Additional non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate).
+Non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate):
+ - The project includes the develoment and testing of an open-source clinician and patient facing SMART-on-FHIR eCare plan application for managing persons with MCC.
 
 ####  Project Timelines
-To be developed.
+ - January 2024: A For comment ballot to gather community input prior to the formal STU Ballot
+ - September 2024: Formal STU Ballot
+ - May 2025 Formal HL7 Publication
 
-### Acknowledgements
-To be developed.
 
 ### Guidance
 The guidance section provides general implementation guidance and best practices. It describes the relation to and reuse of the US Core Implementation Guide profiles and reuse of its conformance requirements and expectations for the servers and client applications. Vocabulary use and value set binding heuristics are described.
@@ -76,9 +73,10 @@ This IG recommends implementers adhere to guidelines and definitions provided in
 
 This IG will adhere to the US Core [Must Support](https://www.hl7.org/fhir/us/core/general-guidance.html#must-support) concept and rules.
 
-####  Value Set Binding
+### Acknowledgements
+This Implementation Guide was made possible through the visionary leadership of the [National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) ](https://www.niddk.nih.gov/)and the [Agency for Healthcare Research and Quality (AHRQ) ](https://www.ahrq.gov/)with funding from the [Office of the Assistant Secretary for Planning and Evaluation (ASPE)](https://aspe.hhs.gov/collaborations-committees-advisory-groups/os-pcortf/explore-portfolio). The joint NIDDK-AHRQ project team can be found [here](https://cmext.ahrq.gov/confluence/display/EC/Project+Team). We would also like to thank the many clinicians, patients, caregivers, researchers, advocates, and subject matter experts who served on our [Technical Expert Panels](https://cmext.ahrq.gov/confluence/display/EC/Technical+Expert+Panels) and [Contract Monitoring Board ](https://cmext.ahrq.gov/confluence/display/EC/Contract+Monitoring+Board) for their time, insight, and support. 
 
-This project has built and houses its value sets in the National Library of Medicine's (NLM) Value Set Authority Center (VSAC). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used. Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) UMLS license. In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue.
+This Implementation Guide was created under the supervision and review of the [HL7 Patient Care Work Group](https://www.hl7.org/Special/committees/patientcare/index.cfm). This is the HL7 project page for the [Multiple Chronic Conditions e-Care Project.](https://confluence.hl7.org/display/PC/Multiple+Chronic+Conditions+%28MCC%29+eCare+Plan)
 
 
 
@@ -93,15 +91,19 @@ This project has built and houses its value sets in the National Library of Medi
 </thead>
 <tbody>
 <tr>
-<td>Entire MCC Project Team</td>
-<td><a href="https://ecareplan.ahrq.gov/collaborate/display/EC/Project+Team" target="_new">https://ecareplan.ahrq.gov/collaborate/display/EC/Project+Team</a></td>
-</tr>
-<tr>
 <td>Jenna Norton (NIH/NIDDK)</td>
 <td><a href="mailto:jenna.norton@nih.gov">jenna.norton@nih.gov</a></td>
 </tr>
 <tr>
-<td>Evelyn Gallego (SDO Business Liason)</td>
+<td>Kevin Abbot (NIH/NIDDK)</td>
+<td><a href="mailto:kevin.abbott@nih.gov">kevin.abbott@nih.gov</a></td>
+</tr>
+<tr>
+<td>Arlene Bierman (AHRQ)</td>
+<td><a href="mailto:arlene.bierman@ahrq.hhs.gov">arlene.bierman@ahrq.hhs.gov</a></td>
+</tr>
+<tr>
+<td>Evelyn Gallego (EMI Advisors)</td>
 <td><a href="mailto:evelyn.gallego@emiadvisors.net">evelyn.gallego@emiadvisors.net</a></td>
 </tr>
 <tr>
@@ -109,16 +111,32 @@ This project has built and houses its value sets in the National Library of Medi
 <td><a href="mailto:gdolin@NamasteInformatics.com">gdolin@NamasteInformatics.com</a></td>
 </tr>
 <tr>
-<td>HL7 International - Patient Care</td>
-<td><a href="http://www.hl7.org/Special/committees/patientare" target="_new">http://www.hl7.org/Special/committees/patientare</a></td>
+<td>Bret Heale (IG Developer)</td>
+<td><a href="mailto:bheale@humanizedhealthconsulting.com">bheale@humanizedhealthconsulting.com</a></td>
+</tr>
+<tr>
+<td>Himali Saitwal (Terminologist)</td>
+<td><a href="mailto:himali.saitwal@emiadvisors.net">himali.saitwal@emiadvisors.net</a></td>
+</tr>
+<tr>
+<td>Sara Armson (Terminologist)</td>
+<td><a href="mailto:sara.armson@hhs.gov">sara.armson@hhs.gov</a></td>
 </tr>
 <tr>
 <td>Emma Jones (Clinical and IG Modeler)</td>
-<td></td>
+<td><a href="mailto:emma.jones@veradigm.com">emma.jones@veradigm.com</a></td>
 </tr>
 <tr>
 <td>Dave Carlson (Technical and IG Developer)</td>
-<td></td>
+<td><a href="mailto:dcarlson@clinicalcloud.solutions">dcarlson@clinicalcloud.solutions</a></td>
+</tr>
+<tr>
+<td>Sean Muir (Developer)</td>
+<td><a href="mailto:sean.muir@jkmsoftware.com">sean.muir@jkmsoftware.com</a></td>
+</tr>
+<tr>
+<td>HL7 International - Patient Care</td>
+<td><a href="http://www.hl7.org/Special/committees/patientare" target="_new">http://www.hl7.org/Special/committees/patientare</a></td>
 </tr>
 </tbody>
 </table>

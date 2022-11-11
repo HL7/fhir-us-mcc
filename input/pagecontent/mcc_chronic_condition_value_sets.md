@@ -19,9 +19,7 @@ The value sets in the MCC Value Set Library pages are not bound within any profi
 * To fetch the FHIR ValueSet resource expansion use the FHIR $expand operation:
  * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID]/$expand 
 
-For more information refer to the FHIR Terminology Service for VSAC Resources
-
-
+For more information refer to the [FHIR Terminology Service for VSAC Resources](https://www.nlm.nih.gov/vsac/support/usingvsac/vsacfhirapi.html#:~:text=The%20FHIR%20Terminology%20Service%20for,included%20in%20the%20value%20sets.)
 
 <table border="1" cellspacing="0" style="width:100.0%">
 	<tbody>
@@ -293,7 +291,7 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1549/expansion">Cerebrovascular Disease</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1524/expansion">Congestive heart failure Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing Congestive heart failure.</p>
@@ -307,7 +305,7 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1524/expansion">Congestive heart failure Diagnosis</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.369/expansion">Coronary Artery Disease No MI</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>The purpose of this value set is to represent concepts of a diagnosis of coronary artery disease without myocardial infarction.</p>
@@ -321,10 +319,10 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.526.3.369/expansion">Coronary Artery Disease No MI</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1540/expansion">Coronary Revascularization History</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>The purpose of this value set is to represent concepts of a diagnosis of coronary artery disease without myocardial infarction.</p>
+			<p>This set of values contains diagnosis terms representing the presence of coronary stent or history of coronary revascularization procedure.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
 			<p>2.16.840.1.113762.1.4.1222.1540</p>
@@ -516,44 +514,16 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 			</td>
 		</tr>
 		<tr>
-			<td style="border-color:black; height:28.5pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.645/expansion">Pulmonary Edema</a></p>
-			</td>
-			<td style="height:28.5pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Pulmonary Edema.</p>
-			</td>
-			<td style="height:28.5pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.611</p>
-			</td>
-			<td style="height:28.5pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.618/expansion">Stroke History</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Stroke and History of Stroke.</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113883.3.464.1003.104.12.1017</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="background-color:#d0cece; border-color:black; height:15.75pt; width:11%">
+			<td style="background-color:#d0cece; border-color:black; height:44.65pt; width:11%">
 			<p><strong>Chronic Kidney Disease (CKD)Conditions</strong></p>
 			</td>
-			<td style="background-color:#d0cece; height:15.75pt; width:32%">
+			<td style="background-color:#d0cece; height:44.65pt; width:32%">
 			<p><strong>Value Set Clinical Focus</strong></p>
 			</td>
-			<td style="background-color:#d0cece; height:15.75pt; width:20%">
+			<td style="background-color:#d0cece; height:44.65pt; width:20%">
 			<p><strong>OID</strong></p>
 			</td>
-			<td style="background-color:#d0cece; height:15.75pt; width:12%">
+			<td style="background-color:#d0cece; height:44.65pt; width:12%">
 			<p><strong>Profile Element</strong></p>
 			</td>
 		</tr>
@@ -762,6 +732,20 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
 			<p>2.16.840.1.113762.1.4.1222.618</p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.618/expansion">Stroke History</a></p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Stroke and History of Stroke.</p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113883.3.464.1003.104.12.1017</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -1372,8 +1356,6 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1566/expansion">Pregnancy</a></p>
-
-			<p>&nbsp;</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>The purpose of this value set is to represent concepts for the pregnant state.</p>
@@ -1726,7 +1708,6 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1106.26/expansion">Urolithiasis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>&nbsp;</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
 			<p>2.16.840.1.113762.1.4.1106.26</p>
@@ -2101,7 +2082,7 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.681/expansion">Post Partum</a><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.681/expansion"> Depression</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.681/expansion">Post Partum Depression</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values addresses terms representing Post Partum Depression.</p>
@@ -2255,7 +2236,7 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.93/expansion">Alkaline Phosphatase Deficiency Condition</a><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.93/expansion">s</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.93/expansion">Alkaline Phosphatase Deficiency Conditions</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing alkaline phosphatase deficiency conditions.</p>
@@ -2661,6 +2642,20 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.645/expansion">Pulmonary Edema</a></p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:32%">
+			<p>This set of values addresses terms representing Pulmonary Edema.</p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.611</p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1481/expansion">Pulmonary embolism Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
@@ -2702,20 +2697,30 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 			</td>
 		</tr>
 		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1196.788/expansion">Social Determinants of Health Conditions</a></p>
-
-			<p>&nbsp;</p>
+			<td style="background-color:#fcfdfd; border-color:black; height:15.75pt; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1336/expansion">Elder and Child Abuse</a></p>
 			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
+			<td style="background-color:#fcfdfd; height:15.75pt; width:32%">
+			<p>This set of values addresses terms representing Experience of Abuse.</p>
+			</td>
+			<td style="background-color:#fcfdfd; height:15.75pt; width:20%">
+			<p>2.16.840.1.113762.1.4.1222.1336</p>
+			</td>
+			<td style="background-color:#fcfdfd; height:15.75pt; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#fcfdfd; border-color:black; height:15.75pt; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1196.788/expansion">Social Determinants of Health Conditions</a></p>
+			</td>
+			<td style="background-color:#fcfdfd; height:15.75pt; width:32%">
 			<p>The value sets in this group represent all of the individual domain diagnoses identified by the Gravity Project.</p>
 			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
+			<td style="background-color:#fcfdfd; height:15.75pt; width:20%">
 			<p>2.16.840.1.113762.1.4.1196.788</p>
-
-			<p>&nbsp;</p>
 			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
+			<td style="background-color:#fcfdfd; height:15.75pt; width:12%">
 			<p>Condition.code</p>
 			</td>
 		</tr>
@@ -2805,20 +2810,6 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.600.1559/expansion">Smoking</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>&nbsp;</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113883.3.600.1559</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.106.12.1004/expansion">Substance Abuse</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
@@ -2861,5 +2852,3 @@ For more information refer to the FHIR Terminology Service for VSAC Resources
 		</tr>
 	</tbody>
 </table>
-
-<hr />

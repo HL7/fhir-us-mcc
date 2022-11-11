@@ -27,13 +27,13 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="mcc_value_set_library_use.html">MCC Value Set Library Use</a></li>
+      <li><a href="mcc_value_set_libraries_and_usage.html">MCC Value Set Libraries and Usage</a></li>
       <li><a href="mcc_chronic_condition_value_sets.html">MCC Chronic Condition Value Sets</a></li>
+      <li><a href="mcc_diagnostic_report_value_sets.html">MCC Diagnostic Report Value Sets</a></li>
       <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
       <li><a href="mcc_medication_request_value_sets.html">MCC Medication Request Value Sets</a></li>
       <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
-      <li><a href="mcc_diagnostic_report_value_sets.html">MCC Diagnostic Report Value Sets</a></li>
       <li><a href="mcc_symptom_value_sets.html">MCC Symptom Value Sets</a></li>    </ul>
   </li>  <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

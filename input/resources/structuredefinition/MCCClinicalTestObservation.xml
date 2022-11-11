@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCClinicalTestObservation"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-11-03T10:46:10.183+00:00"/>
-        <source value="#hIIzUgo68cY1pxKC"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-11-11T20:12:23.351+00:00"/>
+        <source value="#B57t4vpxt0CMFCWa"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
     <name value="MCCClinicalTestObservation"/>

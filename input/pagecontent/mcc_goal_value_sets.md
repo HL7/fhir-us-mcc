@@ -1,1 +1,8 @@
-Table and usage instructions to be developed
+There are no value sets developed for the [MCC Goal Profile](http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal) beyond the vocabulary bindings as defined in the US Core Goal Profile that the MCC Goal profile is derived from. 
+The Goal.description and the Goal.target.measure are extensible bindings or Example bindings. Extensible bindings mean if there is no applicable concept in value set (based on human review), an alternate concept (either system/code pair, or text) may be used instead. Example bindings are just suggestions.
+
+In today's systems, goals are most often captured as free text, and sometimes high-level terms/codes such as LOINC (97842-9) "Achievement of therapeutic goals by discharge", or re-using an observable lab code within a goal context, such as LOINC (41995-2) Hemoglobin A1c [Mass/volume] in Blood, and specifying a target measure or detail value of less than 5.7% and a due date. Nursing Care Plan specific EHR modules may take advantage of specific nursing terminology terms that can also often be found in SNOMED CT such as 1144884009 | Improvement in level of integrity of skin (finding) | or 703941003 | Improved exercise tolerance (finding) |
+
+Most of the value sets defined in the MCC libraries, in the context of the MCC Goal profile, could represent goals. For example, the [Laboratory Result Value Sets](mcc_laboratory_result_value_sets.html#mcc-laboratory-result-value-sets) may be used in the MCC Goal Profile as discussed above, and the Symptom Value Sets, may be used in the MCC Goal profiles with an encoded target measure or detail of SNOMED CT 1250004 | Decreased (qualifier value) |.
+
+Comments are welcome as to whether specific goal value sets should be developed for use in the context of a Multiple Chronic Condition Care Plan and the likelihood of being able to successfully query for encoded goals.

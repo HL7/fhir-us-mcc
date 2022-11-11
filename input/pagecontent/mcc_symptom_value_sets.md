@@ -19,7 +19,7 @@ The value sets in the MCC Value Set Library pages are not bound within any profi
 * To fetch the FHIR ValueSet resource expansion use the FHIR $expand operation:
  * GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID]/$expand 
 
-For more information refer to the FHIR Terminology Service for VSAC Resources
+For more information refer to the  [FHIR Terminology Service for VSAC Resources](https://www.nlm.nih.gov/vsac/support/usingvsac/vsacfhirapi.html#:~:text=The%20FHIR%20Terminology%20Service%20for,included%20in%20the%20value%20sets.)
 
 <table border="1" cellspacing="0" style="width:100.0%">
 	<tbody>
