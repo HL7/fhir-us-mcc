@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="'An example of an SDC QuestionnaireResponse that represents questions and selected answers from the Hunger Vital Sign Example questionnaire represented in LOINC (code 88122-7). The example is generated using the LHC-Forms SDC Questionnaire App.'"/>
         </extension>
-        <versionId value="2"/>
-        <lastUpdated value="2022-08-30T07:38:31.806+00:00"/>
-        <source value="#mf17jHs5Yo3l7GmQ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-11-15T05:42:42.360+00:00"/>
+        <source value="#Z1xWYn0ZHHFKXseT"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -19,7 +19,7 @@
             <reference value="Goal/HPT-WNL"/>
         </valueReference>
     </extension>
-    <questionnaire value="http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire/SDOHCC-QuestionnaireHungerVitalSign">
+    <questionnaire value="http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire/SDOHCC-QuestionnaireHungerVitalSign.html">
         <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-extension-questionnaire-uri">
             <valueUri value="https://example.org/forms/hsv"/>
         </extension>

@@ -4,3 +4,5 @@ The [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/Structur
 See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
+
+Value sets pertinent to this profile are found on the [MCC Questionnaire Response Library Value Set ](mcc_questionnaire_response_value_sets.html)

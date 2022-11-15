@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCaregiverConsiderationsObservation"/>
     <meta>
-        <versionId value="56"/>
-        <lastUpdated value="2022-09-29T17:39:00.664+00:00"/>
-        <source value="#2wOZlNgwstpVivS0"/>
+        <versionId value="57"/>
+        <lastUpdated value="2022-11-15T04:27:08.095+00:00"/>
+        <source value="#0NLvjv15qPpMebBU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
     <version value="0.1.0"/>
@@ -108,7 +108,7 @@
             <constraint>
                 <key value="us-core-2"/>
                 <severity value="warning"/>
-                <human value=" If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
+                <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
                 <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
             </constraint>
         </element>

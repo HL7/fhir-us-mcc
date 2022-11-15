@@ -78,6 +78,208 @@ This Implementation Guide was made possible through the visionary leadership of 
 
 This Implementation Guide was created under the supervision and review of the [HL7 Patient Care Work Group](https://www.hl7.org/Special/committees/patientcare/index.cfm). This is the HL7 project page for the [Multiple Chronic Conditions e-Care Project.](https://confluence.hl7.org/display/PC/Multiple+Chronic+Conditions+%28MCC%29+eCare+Plan)
 
+**Implementation Guide Contributors:**
+<table border="1" cellspacing="0" style="width:100.0%">
+        <tbody>
+            <tr>
+                <td style="background-color:#d9e2f3; width:89.75pt">
+                    <p><strong>Contributor</strong></p>
+                </td>
+                <td style="background-color:#d9e2f3; width:148.5pt">
+                    <p><strong>Organization</strong></p>
+                </td>
+                <td style="background-color:#d9e2f3; width:229.5pt">
+                    <p><strong>Role</strong></p>
+                </td>
+                <td style="background-color:#d9e2f3; width:211.5pt">
+                    <p><strong>email</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Jenna Norton</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>NIH/NIDDK</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Project Champion</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>jenna.norton@nih.gov</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Kevin Abbott</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>NIH/NIDDK</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Project Champion</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>kevin.abbott@nih.gov</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Arlene Bierman</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>AHRQ</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Project Champion</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>arlene.bierman@ahrq.hhs.gov</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Evelyn Gallego</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>EMI Advisors</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Project Champion</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>evelyn.gallego@emiadvisors.net</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Gay Dolin</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>Namaste Informatics</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>IG Design Lead</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>gdolin@namasteinformatics.com</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Bret Heale</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>Humanized Health Consulting</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>IG Developer</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>bheale@humanizedhealthconsulting.com</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Himali Saitwal</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>EMI Advisors</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Terminologist</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>himali.saitwal@emiadvisors.net</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Sara Armson</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>RTI/ONC</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Terminologist</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>sara.armson@hhs.gov</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Karen Bertodatti</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>EMI Advisors</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Project Manager</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>karen.bertodatti@emiadvisors.net</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Savanah Mueller</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>EMI Advisors</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Analyst</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>savanah.mueller@emiadvisors.net</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Emma Jones</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>Veradigm</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Domain Expert</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>emma.jones@veradigm.com</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Dave Carlson</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>Clinical Cloud Solutions</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Solutions Architect, Test Implementations</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>dcarlson@clinicalcloud.solutions</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top; width:89.75pt">
+                    <p>Sean Muir</p>
+                </td>
+                <td style="vertical-align:top; width:148.5pt">
+                    <p>JKM Software</p>
+                </td>
+                <td style="vertical-align:top; width:229.5pt">
+                    <p>Developer, Test Implementations</p>
+                </td>
+                <td style="vertical-align:top; width:211.5pt">
+                    <p>sean.muir@jkmsoftware.com</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 
 
 ### Authors
@@ -90,50 +292,6 @@ This Implementation Guide was created under the supervision and review of the [H
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Jenna Norton (NIH/NIDDK)</td>
-<td><a href="mailto:jenna.norton@nih.gov">jenna.norton@nih.gov</a></td>
-</tr>
-<tr>
-<td>Kevin Abbot (NIH/NIDDK)</td>
-<td><a href="mailto:kevin.abbott@nih.gov">kevin.abbott@nih.gov</a></td>
-</tr>
-<tr>
-<td>Arlene Bierman (AHRQ)</td>
-<td><a href="mailto:arlene.bierman@ahrq.hhs.gov">arlene.bierman@ahrq.hhs.gov</a></td>
-</tr>
-<tr>
-<td>Evelyn Gallego (EMI Advisors)</td>
-<td><a href="mailto:evelyn.gallego@emiadvisors.net">evelyn.gallego@emiadvisors.net</a></td>
-</tr>
-<tr>
-<td>Gay Dolin MSN RN (Clinical and IG Modeler)</td>
-<td><a href="mailto:gdolin@NamasteInformatics.com">gdolin@NamasteInformatics.com</a></td>
-</tr>
-<tr>
-<td>Bret Heale (IG Developer)</td>
-<td><a href="mailto:bheale@humanizedhealthconsulting.com">bheale@humanizedhealthconsulting.com</a></td>
-</tr>
-<tr>
-<td>Himali Saitwal (Terminologist)</td>
-<td><a href="mailto:himali.saitwal@emiadvisors.net">himali.saitwal@emiadvisors.net</a></td>
-</tr>
-<tr>
-<td>Sara Armson (Terminologist)</td>
-<td><a href="mailto:sara.armson@hhs.gov">sara.armson@hhs.gov</a></td>
-</tr>
-<tr>
-<td>Emma Jones (Clinical and IG Modeler)</td>
-<td><a href="mailto:emma.jones@veradigm.com">emma.jones@veradigm.com</a></td>
-</tr>
-<tr>
-<td>Dave Carlson (Technical and IG Developer)</td>
-<td><a href="mailto:dcarlson@clinicalcloud.solutions">dcarlson@clinicalcloud.solutions</a></td>
-</tr>
-<tr>
-<td>Sean Muir (Developer)</td>
-<td><a href="mailto:sean.muir@jkmsoftware.com">sean.muir@jkmsoftware.com</a></td>
-</tr>
 <tr>
 <td>HL7 International - Patient Care</td>
 <td><a href="http://www.hl7.org/Special/committees/patientare" target="_new">http://www.hl7.org/Special/committees/patientare</a></td>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCareTeam"/>
     <meta>
-        <versionId value="51"/>
-        <lastUpdated value="2022-11-04T16:49:07.399+00:00"/>
-        <source value="#aslouVUCrMejFV5n"/>
+        <versionId value="53"/>
+        <lastUpdated value="2022-11-15T07:50:13.773+00:00"/>
+        <source value="#kASxt2KgAWeX2cUt"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
     <name value="MCCCareTeam"/>
@@ -47,7 +47,7 @@
             <path value="CareTeam.participant"/>
             <slicing>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="pattern"/>
                     <path value="role.coding.code"/>
                 </discriminator>
                 <discriminator>
@@ -55,9 +55,10 @@
                     <path value="$this.member.resolve()"/>
                 </discriminator>
                 <discriminator>
-                    <type value="value"/>
+                    <type value="pattern"/>
                     <path value="role.coding.system"/>
                 </discriminator>
+                <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
             <min value="2"/>

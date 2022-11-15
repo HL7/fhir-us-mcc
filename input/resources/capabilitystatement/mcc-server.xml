@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="mcc-server"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-11-03T10:48:50.511+00:00"/>
-        <source value="#W3Sr770dOIOoyA4U"/>
+        <versionId value="22"/>
+        <lastUpdated value="2022-11-15T05:31:43.597+00:00"/>
+        <source value="#uAcJbuxYmVltDUZ0"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -55,4 +55,75 @@
     <implementationGuide value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <implementationGuide value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
     <implementationGuide value="http://hl7.org/fhir/uv/bulkdata/ImplementationGuide/hl7.fhir.uv.bulkdata"/>
+    <rest>
+        <mode value="server"/>
+        <documentation value="note: All behaviors of the US CORE server capability statement imported in this statement apply. The supported profiles listed here are in addition to that covered by US CORE."/>
+        <resource>
+            <type value="CarePlan"/>
+        </resource>
+        <resource>
+            <type value="CareTeam"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
+        </resource>
+        <resource>
+            <type value="Condition"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+        </resource>
+        <resource>
+            <type value="ClinicalImpression"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
+        </resource>
+        <resource>
+            <type value="DiagnosticReport"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
+        </resource>
+        <resource>
+            <type value="DocumentReference"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/DocRefPACP"/>
+        </resource>
+        <resource>
+            <type value="FamilyMemberHistory"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
+        </resource>
+        <resource>
+            <type value="Goal"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
+        </resource>
+        <resource>
+            <type value="Immunization"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImmunization"/>
+        </resource>
+        <resource>
+            <type value="MedicationRequest"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
+        </resource>
+        <resource>
+            <type value="NutritionOrder"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
+        </resource>
+        <resource>
+            <type value="Procedure"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
+        </resource>
+        <resource>
+            <type value="QuestionnaireResponse"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
+        </resource>
+        <resource>
+            <type value="ServiceRequest"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"/>
+        </resource>
+        <resource>
+            <type value="Observation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImagingObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSimpleObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
+        </resource>
+    </rest>
 </CapabilityStatement>

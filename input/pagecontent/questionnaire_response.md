@@ -11,20 +11,17 @@ This draft of the IG recommends the use of the NIH, [Lister Hill Center (LHC) FH
 The [SDC Questionnaire App](https://lhcforms.nlm.nih.gov/sdc) is a SMART on FHIR open-source application that establishes a connection with a FHIR Server and provides an interface for selecting Questionnaires, filling them out, and saving Questionnaires and Observation data. This tooling is still under development but provides form and FHIR resource instance generation in support of many LOINC panel codes. 
 
 Please see the [LHC Forms Developer Documentation](http://lhncbc.github.io/lforms/) for features, installation and usage guidance as well as for detailed information about support for FHIR Questionnaire Resources.
-
-The LOINC panel codes for questionnaires of interest for CKD and for patients with multiple chronic conditions that *also* currently have the support of the LHC widget are listed in the table of LOINC Panel question codes on the [Table of LOINC Panel Codes](https://trifolia-fhir.lantanagroup.com/igs/lantana_hapi_r4/MCC-IG/table_of_loinc_panel_codes.html#table-of-loinc-panel-codes)
-The figure below highlights recommended integration points with in the MCC eCare Plan within the Care Plan profile relationship diagram.
-
-Note that relevant LOINC panels can be retrieved as FHIR Questionnaires directly from the LOINC FHIR server. They have canonical ids of the following pattern: http://loinc.org/q/{LOINC code}. For example:
+Relevant LOINC panels can be retrieved as FHIR Questionnaires directly from the LOINC FHIR server. They have canonical ids of the following pattern: http://loinc.org/q/{LOINC code}. For example:
 http://loinc.org/q/62199-5
 
-**Figure:  MCC eCare Plan Integration Points**
+The figure below highlights recommended integration points in the MCC eCare Plan. For example, a questionnaire panel code in the Patient Goal Related Questionnaire Panel Codes value set, such as, [Chronic kidney disease management personal goals panel 87533-6](https://forms.loinc.org/87533-6) may be useful to derive and document health goals that can be represented in the MCC Goal profile. The questionnaire may be referenced from the MCC Goal profile where the goal is asserted.
 
-<table><tr><td><img src="QQR_Integration.png" /></td></tr></table>
+**Figure:  MCC eCare Plan QuestionnaireResponse Integration Points**
+<table><tr><td><img width="650px" height="650px" src="Copy of QR Integration.svg" /></td></tr></table>
+
 ## Deriving assessments and observations from QuestionnaireResponses
  
-This implementation Guide recommends using QuestionnaireResponse profile from the [MCC QuestionnaireResponse](StructureDefinition-MCCQuestionnaireResponse.html) to gather important and varied data during an assessment process and from which can be derived observations. Questionnaires and forms are found everywhere in healthcare. They are used to capture administrative data, claims data, clinical information, research information, for public health reporting - every type of data that is manipulated by healthcare systems. They provide a user-friendly mechanism for capturing data in a consistent way. In FHIR, forms are represented using the Questionnaire resource and completed forms are represented using the QuestionnaireResponse resource. Please see the [SDC IG](http://hl7.org/fhir/uv/sdc/STU3/) for additional information.
+This implementation Guide recommends using QuestionnaireResponse profile from the [MCC QuestionnaireResponse](StructureDefinition-MCCQuestionnaireResponse.html) to gather important and varied data during an assessment process and from which can be derived observations. Questionnaires and forms are found everywhere in healthcare. They are used to capture administrative data, claims data, clinical information, research information, for public health reporting - every type of data that is manipulated by healthcare systems. They provide a user-friendly mechanism for capturing data in a consistent way. In FHIR, forms are represented using the Questionnaire Resource and completed forms are represented using the QuestionnaireResponse resource. Please see the [SDC IG](http://hl7.org/fhir/uv/sdc/STU3/) for additional information.
  
-As described in the SDC IG, key responses values from completed questionnaires (e.g. pain intensity rating, PROMIS total score variables, etc) to be represented as/converted to Observations. LHC-Forms can output a DiagnosticReport, the SDC approach would be a combination of QuestionnaireResponse plus extracted Observations.  The advantage is that it is a documented, standard approach in the IG; the downside is that in the Questionnaire definition requires marking each question that needs to be extracted into an Observation. As this IG matures we will recommend leveraging this method.
 
-****The MCC Questionnaire Value Set Library provides a list of LOINC codes that are associated with Questionaires that are often used in the care of individuals with multiple chronic conditions - NEED TO ADD LINK TO Questionnaire Response value set library page when it exist **
+****The [MCC QuestionnaireResponse Value Set Library](mcc_questionnaire_response_value_sets.html) provides Value sets of LOINC panel codes that are associated with questionaires that are often used in the care of individuals with multiple chronic conditions.

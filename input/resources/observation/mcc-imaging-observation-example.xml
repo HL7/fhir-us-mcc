@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="mcc-imaging-observation-example"/>
+    <meta>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="MCC Imaging Observation Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This example of a MCC Observation Imaging Result Profile illustrates its use to capture information about a patient's radiology study findings."/>
+        </extension>
+        <versionId value="3"/>
+        <lastUpdated value="2022-11-15T04:16:16.794+00:00"/>
+        <source value="#vp69mu7o5ua7NCVs"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImagingObservation"/>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
+        <valueReference>
+            <reference value="Goal/HPT-WNL"/>
+        </valueReference>
+    </extension>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="imaging"/>
+            <display value="Imaging"/>
+        </coding>
+        <text value="Imaging"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="18782-3"/>
+            <display value="Radiology Study observation (narrative)"/>
+        </coding>
+        <text value="Findings"/>
+    </code>
+    <subject>
+        <reference value="Patient/example"/>
+        <display value="Amy Shaw"/>
+    </subject>
+    <encounter>
+        <display value="ER Visit"/>
+    </encounter>
+    <effectiveDateTime value="2019-02-03T19:43:30.000Z"/>
+    <performer>
+        <reference value="Practitioner/practitionerMCC-1"/>
+    </performer>
+    <valueString value="LINES AND TUBES: None.\n LUNGS AND PLEURA:\n Clear lungs. Normal pulmonary vascularity.\n No pleural effusion.\n No pneumothorax.\n HEART, MEDIASTINUM AND HILA:\n Heart is normal in size.\n Normal mediastinal and hilar contour.\n BONES AND SOFT TISSUES:\n No acute abnormality.\n"/>
+</Observation>
