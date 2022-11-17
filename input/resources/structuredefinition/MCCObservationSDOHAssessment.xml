@@ -43,8 +43,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.extension.extension">
-            <path value="Observation.extension.extension"/>
-        </element>
+
     </differential>
 </StructureDefinition>
