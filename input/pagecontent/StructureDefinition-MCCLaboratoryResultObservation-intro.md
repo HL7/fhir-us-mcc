@@ -5,4 +5,4 @@ The [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
 
-This profile can be bound with any of the value sets found (put in link to Labortory Results Value Set Page) to query for, fetch or record particular medication of interest as described in the scope of each medication value set.
+This profile can be bound with any of the value sets found [MCC Laboratory Result ](mcc_laboratory_result_value_sets.html) value set library to query for, fetch or record particular medication of interest as described in the scope of each medication value set.

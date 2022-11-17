@@ -4,6 +4,4 @@ The [US Core Care Team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-
 * MCCCareTeam.participant required slice for Patient and set to must support
 * MCCCareTeam.participant required slice for RelatedPerson (caregiver) and set to must support
 
-See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.
-
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.

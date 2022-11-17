@@ -12,14 +12,15 @@
       <li><a href="profiles_or_resources_directly_reused_in_this_guide.html">Profiles or Resources Directly Reused in this Guide</a></li>
       <li><a href="security.html">Security</a></li>
       <li><a href="questionnaire_response.html">Questionnaire Response</a></li>
-      <li><a href="mcc_care_plan_sdoh_guidance.html">MCC Care Plan SDOH Guidance</a></li>    </ul>
+      <li><a href="mcc_care_plan_sdoh_guidance.html">MCC Care Plan SDOH Guidance</a></li>
+      <li><a href="note_on__include_and__revInclude.html">Note on _include and _revinclude</a></li>    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="conformance.html">Conformance</a></li>
+      <li><a href="us_core_general_requirements.html">US Core General Requirements</a></li>
       <li><a href="mcc_must-support.html">MCC Must-support</a></li>    </ul>
   </li>
   <li class="dropdown">
@@ -30,12 +31,15 @@
       <li><a href="mcc_value_set_libraries_and_usage.html">MCC Value Set Libraries and Usage</a></li>
       <li><a href="mcc_chronic_condition_value_sets.html">MCC Chronic Condition Value Sets</a></li>
       <li><a href="mcc_clinical_test_value_sets.html">MCC Clinical Test Value Sets</a></li>
-      <li><a href="mcc_diagnostic_report_value_sets.html">MCC Diagnostic Report Value Sets</a></li>
       <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
       <li><a href="mcc_medication_request_value_sets.html">MCC Medication Request Value Sets</a></li>
+      <li><a href="mcc_observation_imaging_value_sets.html">MCC Observation Imaging Value Sets</a></li>
       <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
       <li><a href="mcc_questionnaire_response_value_sets.html">MCC Questionnaire Response Value Sets</a></li>
+      <li><a href="mcc_simple_observation_value_sets.html">MCC Simple Observation Value Sets</a></li>
       <li><a href="mcc_symptom_value_sets.html">MCC Symptom Value Sets</a></li>    </ul>
-  </li>  <li><a href="artifacts.html">Artifact Index</a></li>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

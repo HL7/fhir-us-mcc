@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCPatientCaregiverConditionStatus"/>
     <meta>
-        <versionId value="67"/>
-        <lastUpdated value="2022-10-10T15:13:15.422+00:00"/>
-        <source value="#ug7uJldxZSvVYFKD"/>
+        <versionId value="70"/>
+        <lastUpdated value="2022-11-16T01:39:46.468+00:00"/>
+        <source value="#x8IrVr5jCAtLPr8V"/>
     </meta>
     <text>
         <status value="additional"/>
@@ -17,47 +17,6 @@
     <status value="active"/>
     <date value="2022-09-27T19:57:15+00:00"/>
     <publisher value="HL7 International - Patient Care WG"/>
-    <contact>
-        <name value="Entire MCC Project Team"/>
-        <telecom>
-            <system value="url"/>
-            <value value="https://ecareplan.ahrq.gov/collaborate/display/EC/Project+Team"/>
-        </telecom>
-    </contact>
-    <contact>
-        <name value="Jenna Norton (NIH/NIDDK)"/>
-        <telecom>
-            <system value="email"/>
-            <value value="jenna.norton@nih.gov"/>
-        </telecom>
-    </contact>
-    <contact>
-        <name value="Evelyn Gallego (SDO Business Liason)"/>
-        <telecom>
-            <system value="email"/>
-            <value value="evelyn.gallego@emiadvisors.net"/>
-        </telecom>
-    </contact>
-    <contact>
-        <name value="Gay Dolin MSN RN (Clinical and IG Modeler)"/>
-        <telecom>
-            <system value="email"/>
-            <value value="gdolin@NamasteInformatics.com"/>
-        </telecom>
-    </contact>
-    <contact>
-        <name value="HL7 International - Patient Care"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/patientare"/>
-        </telecom>
-    </contact>
-    <contact>
-        <name value="Emma Jones (Clinical and IG Modeler)"/>
-    </contact>
-    <contact>
-        <name value="Dave Carlson (Technical and IG Developer)"/>
-    </contact>
     <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
     <jurisdiction>
         <coding>

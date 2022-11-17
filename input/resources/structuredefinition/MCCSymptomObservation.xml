@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="29"/>
-        <lastUpdated value="2022-08-30T19:27:40.991+00:00"/>
-        <source value="#40GNhtQ9rtnp2oyL"/>
+        <versionId value="34"/>
+        <lastUpdated value="2022-11-16T21:55:32.887+00:00"/>
+        <source value="#UkiqRUslHIwSEQhR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
@@ -62,9 +62,6 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <short value="MCC Symptom Value Sets may be used at this Observation.code element found on the MCC Symptom Value Sets page in this IG. The value sets are derived from SNOMED CT"/>
-            <definition value="Place three: Value sets of symptoms found [xx] may be used at this Observation.code element (this one can have a live link)"/>
-            <comment value="Place 4: Value sets of symptoms found [xx] may be used at this Observation.code element (This one can have a live link)"/>
-            <requirements value="This is a test [MCC Symptom Value sets](http://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_symptom_value_sets.html)"/>
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>

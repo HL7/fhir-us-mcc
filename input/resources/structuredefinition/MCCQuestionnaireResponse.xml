@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCQuestionnaireResponse"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-11-13T20:24:29.809+00:00"/>
-        <source value="#y5XsQVP7IP0lqYCE"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-11-16T01:41:59.935+00:00"/>
+        <source value="#bBhZnUzGxd6CkQH5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
     <name value="MCCQuestionnaireResponse"/>

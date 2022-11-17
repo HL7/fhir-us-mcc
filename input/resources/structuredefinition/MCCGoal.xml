@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCGoal"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-08-15T22:36:39.249+00:00"/>
-        <source value="#bEn6BqAriYcBaorH"/>
+        <versionId value="21"/>
+        <lastUpdated value="2022-11-16T19:11:32.064+00:00"/>
+        <source value="#Iv5vHcGXYgKv9cVT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
     <name value="MCCGoal"/>

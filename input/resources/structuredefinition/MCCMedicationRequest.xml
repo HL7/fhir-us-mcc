@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCMedicationRequest"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-08-15T19:56:35.406+00:00"/>
-        <source value="#dgbIm3rKfMNvkwTY"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-11-16T01:30:36.804+00:00"/>
+        <source value="#A5w0f92NZHOObQq9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
     <name value="MCCMedicationRequest"/>

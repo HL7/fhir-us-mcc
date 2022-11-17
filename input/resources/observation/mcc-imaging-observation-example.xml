@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This example of a MCC Observation Imaging Result Profile illustrates its use to capture information about a patient's radiology study findings."/>
         </extension>
-        <versionId value="3"/>
-        <lastUpdated value="2022-11-15T04:16:16.794+00:00"/>
-        <source value="#vp69mu7o5ua7NCVs"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-11-16T23:42:40.247+00:00"/>
+        <source value="#UoU66P7pG8FUZuip"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImagingObservation"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -37,8 +37,8 @@
         <text value="Findings"/>
     </code>
     <subject>
-        <reference value="Patient/example"/>
-        <display value="Amy Shaw"/>
+        <reference value="Patient/cc-pat-pnoelle"/>
+        <display value="Patricia Noelle"/>
     </subject>
     <encounter>
         <display value="ER Visit"/>

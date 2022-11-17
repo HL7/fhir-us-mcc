@@ -6,4 +6,4 @@ In addition to the requirements set forth in US Core Diagnostic Report and Note,
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
 
-This profile can be bound with any of the value sets found (put in link to Diagnostic Report Value Set Page) to query for, fetch or record particular diagnositic report of interest as described in the scope of each diagnostic report value set.
+No additional value sets were defined for use in this profile beyond the US Core Diagnostic Report profile.

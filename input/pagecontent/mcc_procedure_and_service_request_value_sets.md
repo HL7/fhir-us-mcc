@@ -1,3 +1,5 @@
+There are no additional value sets developed for the [MCC Procedure](StructureDefinition-MCCProcedure.html) profile or the [MCC Service Request](StructureDefinition-MCCServiceRequest.html) profile beyond the [US Core Procedure](http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-procedure-code.html#root) value set bound at Procedure.code and other vocabulary bindings as defined in the US Core Profiles that the MCC Procedure and the MCC Service Request Profiles are derived from and the SDOH value sets defined by the Gravity project for Procedures and Service Requests.  Procedure and Service Request encoded concepts are typically interchangeable, but there may be some nuanced differences, and so Gravity has created two similar sets. 
+
 This table holds the value sets that may be used with the [MCC Procedure](StructureDefinition-MCCProcedure.html) profile or the [MCC Service Request](StructureDefinition-MCCServiceRequest.html). 
 
 **Table Key**
@@ -21,7 +23,6 @@ The value sets in the MCC Value Set Library pages are not bound within any profi
 
 For more information refer to the [FHIR Terminology Service for VSAC Resources](https://www.nlm.nih.gov/vsac/support/usingvsac/vsacfhirapi.html#:~:text=The%20FHIR%20Terminology%20Service%20for,included%20in%20the%20value%20sets.)
 
-There are no additional value sets developed for the [MCC Procedure](StructureDefinition-MCCProcedure.html) profile or the [MCC Service Request](StructureDefinition-MCCServiceRequest.html) profile beyond the vocabulary bindings as defined in the US Core Profiles that the MCC Procedure and the MCC Service Request Profiles are derived from and the SDOH value sets defined by the Gravity project for Procedures and Service Requests.  Procedure and Service Request encoded concepts are typically interchangeable, but there may be some nuanced differences, and so Gravity has created two similar sets. 
 
 The Gravity sets are grouped sets made up many contained value sets. The value sets may be used individually or as an entire set depending on the context and need.
 

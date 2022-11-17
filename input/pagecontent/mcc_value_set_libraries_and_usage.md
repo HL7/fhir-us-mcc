@@ -1,5 +1,6 @@
 The value sets in the MCC Value Set Library pages are not bound within any profile.
-The child pages here contain "libraries" of value sets that may be used with MCC Profiles and where within the profile they should be used.
+The Value Set Library pages contain "libraries" of value sets that may be used with MCC Profiles and where within the profile they should be used. Not all of the profiles have additional value sets defined beyond those already defined in the US Core profile. In some cases there is a Value set library page even if no additional sets were developed, to call out the Gravity SDOH value sets and/or if it was deemed important to call out the US Core Profile "main" value set (e.g. those bound at Resource.code) for higher-level stakeholders of the IG.
+
 You must have an NLM/UMLS account to access. There is no charge for an account. 
 All of these value sets are housed in the NLM Value Set Authority Center (VSAC). 
 

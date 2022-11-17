@@ -240,13 +240,13 @@ This Implementation Guide was created under the supervision and review of the [H
                     <p>Emma Jones</p>
                 </td>
                 <td style="vertical-align:top; width:148.5pt">
-                    <p>Veradigm</p>
+                    <p>Allscripts Veradigm</p>
                 </td>
                 <td style="vertical-align:top; width:229.5pt">
                     <p>Domain Expert</p>
                 </td>
                 <td style="vertical-align:top; width:211.5pt">
-                    <p>emma.jones@veradigm.com</p>
+                    <p>emma.jones@allscripts.com</p>
                 </td>
             </tr>
             <tr>

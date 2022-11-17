@@ -4,6 +4,4 @@ The [ClinicalImpression](http://hl7.org/fhir/StructureDefinition/ClinicalImpress
 * MCCClinicalImpression.effective is must support
 * MCCClinicalImpression.problem is required and must be supported
 
-See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns.
-
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.

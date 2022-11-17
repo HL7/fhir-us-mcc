@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCFamilyHistory"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-05-17T21:16:49.931+00:00"/>
-        <source value="#anrH5YDYAa0l1Y9r"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-11-16T19:07:20.497+00:00"/>
+        <source value="#QZZQFwPFkaIFrGTy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCFamilyHistory"/>
     <name value="MCCFamilyHistory"/>
@@ -49,7 +49,7 @@
             <binding>
                 <strength value="preferred"/>
                 <description value="This set of values includes first degree family members (i.e., parent, sibling, full child)"/>
-                <valueSet value="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1032.92/expansion/Latest"/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.92"/>
             </binding>
         </element>
         <element id="FamilyMemberHistory.condition">
@@ -60,7 +60,6 @@
         </element>
         <element id="FamilyMemberHistory.condition.code">
             <path value="FamilyMemberHistory.condition.code"/>
-            <short value="Please see the MCC Condition Value Set Library (link?) for Condition value sets that can be used at FamilyHistory.condition.code"/>
             <mustSupport value="true"/>
         </element>
     </differential>

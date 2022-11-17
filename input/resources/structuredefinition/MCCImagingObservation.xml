@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCImagingObservation"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-11-11T20:16:02.808+00:00"/>
-        <source value="#WzACpcNaFrE2Qd7K"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-11-16T20:57:46.206+00:00"/>
+        <source value="#aWof1e5rT0rHJPWi"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImagingObservation"/>
     <name value="MCCImagingObservation"/>

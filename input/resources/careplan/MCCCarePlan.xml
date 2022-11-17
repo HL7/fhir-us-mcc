@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is an example for the *MCC CarePlan Profile*."/>
         </extension>
-        <versionId value="4"/>
-        <lastUpdated value="2022-05-24T15:07:20.982+00:00"/>
-        <source value="#8nOMFYVU88zFP6Z2"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-11-16T23:03:27.124+00:00"/>
+        <source value="#lh8xM5mIbbHVNz84"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     </meta>
     <status value="active"/>
@@ -62,10 +62,6 @@
     <supportingInfo>
         <reference value="Procedure/Dialysis"/>
         <display value="Chronic Pain"/>
-    </supportingInfo>
-    <supportingInfo>
-        <reference value="QuestionnaireResponse/questionnaireresponse-sdc-profile-example-PHQ9"/>
-        <display value="Patient health questionnaire 9 item total score: 13 Moderate Depression"/>
     </supportingInfo>
     <supportingInfo>
         <reference value="Observation/bunMCC"/>

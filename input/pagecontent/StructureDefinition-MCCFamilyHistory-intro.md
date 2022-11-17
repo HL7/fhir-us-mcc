@@ -6,3 +6,5 @@ This derived profile is designed to add requirements to the following elements:
 * FamilyMemberHistory.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
+
+No additional value sets were defined for use in this profile beyond the US Core Family Member History profile.

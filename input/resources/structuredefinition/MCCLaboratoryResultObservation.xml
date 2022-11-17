@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCLaboratoryResultObservation"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-08-15T19:55:28.184+00:00"/>
-        <source value="#VAgoYPsoxxiEK2m9"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-11-16T19:22:36.656+00:00"/>
+        <source value="#0Yi0aesct8kZaz2S"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
     <name value="MCCLaboratoryResultObservation"/>

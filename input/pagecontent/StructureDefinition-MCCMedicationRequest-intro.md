@@ -5,4 +5,4 @@ Medication.reasonReference (Must Support) to encourage linking back to the healt
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
 
-This profile can be bound with any of the value sets found (put in link to Medication Value Set Page) to query for, fetch or record particular medication of interest as described in the scope of each medication value set.
+No additional value sets beyond those bound in the US Core MedicationRequest profile are defined in this guide. The binding in US Core Medication Request value set is RxNorm [Medication Clinical Drug](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.4/expansion)

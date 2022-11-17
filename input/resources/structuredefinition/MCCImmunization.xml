@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCImmunization"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-09-09T10:40:03.737+00:00"/>
-        <source value="#BYBusd9mbIGPn71G"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-11-16T19:12:59.954+00:00"/>
+        <source value="#fl91yPdKUxgUbezj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImmunization"/>
     <name value="MCCImmunization"/>

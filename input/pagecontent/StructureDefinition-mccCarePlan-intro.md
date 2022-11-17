@@ -17,7 +17,7 @@ This profile on the [FHIR Care Plan Resource](http://hl7.org/fhir/R4/careplan.ht
 
 
 #### Multiple Chronic Condition FHIR Care Plan Profile Relationship Diagram
-<table><tr><td><img src="MCC Profile RelationshipDiagramFinal.png" /></td></tr></table>
+<table><tr><td><img width="975px" height="975px" src="carePlanProfileRelationshipDiagram.svg" /></td></tr></table>
 
 ### Supporting Machine Assisted Dynamic Care Coordination/Planning with the FHIR Care Plan Resource and FHIR Goal Resource
 

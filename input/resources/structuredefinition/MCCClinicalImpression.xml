@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCClinicalImpression"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2022-08-30T07:16:52.443+00:00"/>
-        <source value="#kXyBWjLJJmQcFxf6"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-11-16T01:23:06.945+00:00"/>
+        <source value="#OeiXbCnTky4pbpkd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
     <name value="MCCClinicalImpression"/>

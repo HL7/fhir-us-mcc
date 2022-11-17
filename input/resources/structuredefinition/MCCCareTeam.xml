@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCareTeam"/>
     <meta>
-        <versionId value="53"/>
-        <lastUpdated value="2022-11-15T07:50:13.773+00:00"/>
-        <source value="#kASxt2KgAWeX2cUt"/>
+        <versionId value="54"/>
+        <lastUpdated value="2022-11-16T01:22:13.321+00:00"/>
+        <source value="#PAgOdsv5RdhvbLBg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
     <name value="MCCCareTeam"/>

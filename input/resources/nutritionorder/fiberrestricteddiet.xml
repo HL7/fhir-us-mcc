@@ -9,9 +9,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a NutritionOrder example for the MCC NutritionOrder Profile."/>
         </extension>
-        <versionId value="4"/>
-        <lastUpdated value="2022-08-24T09:45:16.359+00:00"/>
-        <source value="#swNujXYT0WasfAGx"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-11-17T21:47:24.298+00:00"/>
+        <source value="#C3SNt2EIydZnYyJe"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCNutritionOrder"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -29,13 +29,11 @@
         <reference value="Patient/cc-pat-pnoelle"/>
         <display value="Patricia Noelle"/>
     </patient>
-    <!--encounter><reference value="Encounter/example"/><display value="Inpatient"/></encounter-->
     <dateTime value="2014-09-17"/>
     <orderer>
         <reference value="Practitioner/practitionerMCC-3"/>
     </orderer>
     <allergyIntolerance>
-        <!--reference value="AllergyIntolerance/example"/-->
         <display value="Cashew Nuts"/>
     </allergyIntolerance>
     <foodPreferenceModifier>
@@ -52,19 +50,12 @@
         </coding>
     </excludeFoodModifier>
     <oralDiet>
-        <!--EH:  list type of diet showing standard code and local codes-->
         <type>
             <coding>
                 <system value="http://snomed.info/sct"/>
                 <code value="15108003"/>
                 <display value="Restricted fiber diet"/>
             </coding>
-            <coding>
-                <system value="http://goodhealthhospital.org/diet-type-codes"/>
-                <code value="1000"/>
-                <display value="Fiber restricted"/>
-            </coding>
-            <text value="Fiber restricted diet"/>
         </type>
         <type>
             <coding>
@@ -72,14 +63,8 @@
                 <code value="16208003"/>
                 <display value="Low fat diet"/>
             </coding>
-            <coding>
-                <system value="http://goodhealthhospital.org/diet-type-codes"/>
-                <code value="1100"/>
-                <display value="Low Fat"/>
-            </coding>
             <text value="Low fat diet"/>
         </type>
-        <!--EH example of three times a day starting on 2/10-->
         <schedule>
             <repeat>
                 <boundsPeriod>
@@ -91,7 +76,6 @@
             </repeat>
         </schedule>
         <nutrient>
-            <!--list nutrients and amounts here-->
             <modifier>
                 <coding>
                     <system value="http://snomed.info/sct"/>

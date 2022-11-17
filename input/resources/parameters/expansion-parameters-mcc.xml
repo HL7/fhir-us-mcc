@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="expansion-parameters-mcc"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-06-21T21:43:05.056+00:00"/>
-        <source value="#b9aQOv4CRjfh3Tbl"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-11-17T22:47:55.761+00:00"/>
+        <source value="#SVpAQpE1eZRRaTva"/>
     </meta>
     <parameter>
         <name value="profile-url"/>
@@ -13,6 +13,6 @@
     </parameter>
     <parameter>
         <name value="system-version"/>
-        <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
+        <valueString value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
     </parameter>
 </Parameters>

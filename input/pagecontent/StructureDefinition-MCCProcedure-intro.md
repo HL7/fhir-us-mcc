@@ -9,5 +9,5 @@ See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
 
-This profile can be bound @Procedure.code with any of the value sets found on <link to Procedure Value Set Page) to query for, fetch or record particular procedure of interest as described in the scope of each procedure value set.
+No additional value sets were defined for use in this profile beyond the the value set bindings in the US Core Procedure profile, but please see the [MCC Procedure and Service Request Value Set](mcc_procedure_and_service_request_value_sets.html) library page for guidance on use of procedure terminology in this guide.
 .

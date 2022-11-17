@@ -1,5 +1,7 @@
 The [US Core Imaging Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-imaging) sets minimum expectations for the Observation resource to record, search, and fetch components of diagnostic imaging test results. Along with the US Core DiagnosticReport Profile for Report and Note exchange, meets the U.S. Core Data for Interoperability (USCDI) v2 ‘Diagnostic Imaging’ requirements. These observations include reasons, findings, and impressions.  It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. In addition to the requirements set forth in US Core the MCC derived profile is designed to add requirements to the following elements:
 
-MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
+* MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal in hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
+
+This profile can be bound with any of the value sets found on the [MCC Observation Imaging Value Sets](mcc_observation_imaging_value_sets.html) library page to query for, fetch or record imaging procedure results as defined in the scope of each value set. Additional codes and value sets are not precluded.
 
 Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements.

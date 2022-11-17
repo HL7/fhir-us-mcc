@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSimpleObservation"/>
     <meta>
-        <versionId value="33"/>
-        <lastUpdated value="2022-11-15T15:59:42.372+00:00"/>
-        <source value="#vg6Y9erCiuiMPz4n"/>
+        <versionId value="35"/>
+        <lastUpdated value="2022-11-16T19:35:54.859+00:00"/>
+        <source value="#M5QB7pHCqnNSbm6t"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSimpleObservation"/>
     <name value="MCCSimpleObservation"/>
