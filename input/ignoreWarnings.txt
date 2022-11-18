@@ -1,5 +1,17 @@
 == Suppressed Messages ==
 
+# reviewed and behaving as expected
+WARNING: ImplementationGuide/hl7.fhir.us.mcc: ImplementationGuide.description: The markdown contains content that appears to be an embedded HTML tag starting at ' I'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[46].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: StructureDefinition/mccCarePlan: StructureDefinition.differential.element[12].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+
+# reviewed the code system is correct and valid
+INFORMATION: DocumentReference/PACP: DocumentReference.content[0].format: Code System URI 'urn:oid:1.3.6.1.4.1.19376.1.2.3' is unknown so the code cannot be validated
+
+# we supply a differential, the warning is due to the US Core profile used
+WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
+
 # The following issues have been reviewed and are because this IG has a dependency on US Core, the value set from US Core triggers this error. Note that we do not reference the code in our example
 ERROR: CareTeam/MCCCareTeamexample: CareTeam.participant[0].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
 ERROR: CareTeam/MCCCareTeamexample: CareTeam.participant[1].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
