@@ -7,45 +7,6 @@
         <lastUpdated value="2022-11-17T23:38:23.224+00:00"/>
         <source value="#RYhu6Q1NLD2SRn43"/>
     </meta>
-    <contained>
-        <DocumentReference>
-            <id value="package-list"/>
-            <status value="current"/>
-            <type>
-                <coding>
-                    <code value="package-list"/>
-                </coding>
-            </type>
-            <content>
-                <attachment>
-                    <contentType value="application/json"/>
-                    <data value="ewoJImxpc3QiOiBbCgkJewoJCQkidmVyc2lvbiI6ICJjdXJyZW50IiwKCQkJInBhdGgiOiAiaHR0cHM6Ly9idWlsZC5maGlyLm9yZy9pZy9ITDcvZmhpci11cy1tY2MvIiwKCQkJImRlc2MiOiAiRGV2ZWxvcGluZyBEcmFmdCIsCgkJCSJmaGlydmVyc2lvbiI6ICI0LjAuMSIsCgkJCSJkYXRlIjogIiIsCgkJCSJzZXF1ZW5jZSI6ICIiLAoJCQkic3RhdHVzIjogImNpLWJ1aWxkIiwKCQkJImN1cnJlbnQiOiB0cnVlCgkJfQoJXSwKCSJwYWNrYWdlLWlkIjogImhsNy5maGlyLnVzLm1jYyIsCgkidGl0bGUiOiAiTUNDIGVDYXJlIFBsYW4gRHJhZnQgSW1wbGVtZW50YXRpb24gR3VpZGUiLAoJImNhbm9uaWNhbCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL21jYyIKfQ=="/>
-                </attachment>
-            </content>
-        </DocumentReference>
-    </contained>
-    <contained>
-        <DocumentReference>
-            <id value="publishing-request"/>
-            <status value="current"/>
-            <type>
-                <coding>
-                    <code value="publishing-request"/>
-                </coding>
-            </type>
-            <content>
-                <attachment>
-                    <contentType value="application/json"/>
-                    <data value="ewoJInBhY2thZ2UtaWQiOiAiaGw3LmZoaXIudXMubWNjIiwKCSJ0aXRsZSI6ICJNQ0MgZUNhcmUgUGxhbiBJbXBsZW1lbnRhdGlvbiBHdWlkZSIsCgkicGF0aCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL21jYyIsCgkidmVyc2lvbiI6ICIwLjEuMCIsCgkic3RhdHVzIjogImRyYWZ0Igp9"/>
-                </attachment>
-            </content>
-        </DocumentReference>
-    </contained>
-    <extension url="https://trifolia-fhir.lantanagroup.com/StructureDefinition/extension-ig-publishing-request">
-        <valueReference>
-            <reference value="#publishing-request"/>
-        </valueReference>
-    </extension>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="1.0.0-ballot"/>
     <name value="MCCeCarePlan"/>
