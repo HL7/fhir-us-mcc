@@ -2,7 +2,7 @@
   "package-id": "hl7.fhir.us.mcc",
 	"version": "1.0.0-ballot",
 	"path": "http://hl7.org/fhir/us/mcc/2023Jan",
-	"milestone": true,
+	"milestone": false,
 	"status": "ballot",
 	"sequence": "STU 1",
 	"desc": "FHIR STU Release 1",
