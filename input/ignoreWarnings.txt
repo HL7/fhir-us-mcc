@@ -1,1 +1,56 @@
 == Suppressed Messages ==
+
+# The following issues have been reviewed and are because this IG has a dependency on US Core, the value set from US Core triggers this error. Note that we do not reference the code in our example
+ERROR: CareTeam/MCCCareTeamexample: CareTeam.participant[0].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+ERROR: CareTeam/MCCCareTeamexample: CareTeam.participant[1].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+ERROR: CareTeam/MCCCareTeamexample: CareTeam.participant[2].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+ERROR: CareTeam/MCCCareTeamexample: CareTeam.participant[3].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+
+# The following issues have been reviewed and are because this IG has a dependency on US Core, the value set from US Core triggers this error
+ERROR: CareTeam/caregiveronteam-of-noelle: CareTeam.participant[0].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+
+# The following issues have been reviewed and are because this IG has a dependency on US Core, the value set from US Core triggers this error. Note that we do not reference the code in our example
+ERROR: CareTeam/careteam-of-noelle: CareTeam.participant[0].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+ERROR: CareTeam/careteam-of-noelle: CareTeam.participant[2].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+ERROR: CareTeam/careteam-of-noelle: CareTeam.participant[3].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
+
+# The following issues have been reviewed and these items are not intended to validate against one of the slices.
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
+
+# The issue was reviewed. The slice is intended to match the caregiver slice but with the terminology error above it is not recognized and is suspected to cause this slice to be unrecognized. A subsequent error occurs regarding the absence of the slice.
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
+ERROR: CareTeam/careteam-of-noelle: CareTeam: CareTeam.participant:caregiver: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot)
+
+# LOINC answer list is not found by Terminology server. reviewed and the LOINC answer list is correct
+WARNING: Observation/caregiver-feelings-condition-status: Observation.value.ofType(CodeableConcept): ValueSet https://loinc.org/LL4938-8/ not found by validator
+
+# The following issue is inherited from US Core dependency
+INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
+INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
+
+# The following issue is inherited from US Core dependency
+INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
+INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
+
+# The following issue is inherited from US Core dependency
+INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
+INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
+
+# The following occur in US Core as well
+INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|5.0.1
+ERROR: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.questionnaire: Canonical URL 'http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnaireHungerVitalSign|STU1' does not resolve
+WARNING: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse: The questionnaire 'http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnaireHungerVitalSign|STU1' could not be resolved, so no validation can be performed against the base questionnaire
+
+
+# The following issues to be addressed by an exception granted by the Cross-Group Projects work group
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSimpleObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# The following is a LOINC answer list is valid
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference https://loinc.org/LL4938-8/ on element Observation.valueCodeableConcept could not be resolved
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[23].binding: The valueSet reference https://loinc.org/LL4938-8/ on element Observation.value[x] could not be resolved
+
