@@ -47,7 +47,7 @@
         </valueReference>
     </extension>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
-    <version value="0.1.0"/>
+    <version value="1.0.0-ballot"/>
     <name value="MCCeCarePlan"/>
     <title value="MCC eCare Plan Implementation Guide"/>
     <status value="draft"/>

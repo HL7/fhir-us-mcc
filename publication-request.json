@@ -2,12 +2,13 @@
   "package-id": "hl7.fhir.us.mcc",
 	"version": "1.0.0-ballot",
 	"path": "http://hl7.org/fhir/us/mcc/2023Jan",
-	"milestone": false,
+	"milestone": true,
 	"status": "ballot",
 	"sequence": "STU 1",
 	"desc": "FHIR STU Release 1",
 	"descmd": "FHIR STU Release 1",
 	"title": "MCC eCare Plan Implementation Guide",
+	"ci-build" : "http://build.fhir.org/ig/HL7/fhir-us-mcc",
 	"category": "Care Planning",
 	"introduction": "The implementation guide provides representation of clinical and social data elements in the FHIR format and defines where these elements should be represented within the FHIR Care Plan Resource. It describes the necessary operations and transactions needed to generate, aggregate and exchange care plans. The primary audience for this specification is EHR independent application developers and EHR developers of Care Plan modules and IT departments at implementation sites. A secondary target audience are consumers of structured Care Plan data such as researchers and payers. It provides the rules and methods to achieve this aggregated view within a Care Plan structure pulling data from all systems where patients receive care, including patient provided data. Interoperability is often hamstrung by policy, technical, business and cultural challenges among EHRs to write back or pull data into their EHRs which is needed to provide a holistic picture of patients."
 }
