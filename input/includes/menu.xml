@@ -21,7 +21,8 @@
     </a>
     <ul class="dropdown-menu">
       <li><a href="us_core_general_requirements.html">US Core General Requirements</a></li>
-      <li><a href="mcc_must-support.html">MCC Must-support</a></li>    </ul>
+      <li><a href="mcc_must-support.html">MCC Must-support</a></li>
+      <li><a href="capability_statements.html">Capability Statements</a></li>    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Terminology Guidance<b class="caret">

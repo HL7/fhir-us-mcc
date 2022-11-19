@@ -1,0 +1,1 @@
+This guide builds on US Core. The CapabilityStatements import all the features of the US Core versions. [Server](CapabilityStatement-mcc-server.html) and [Client](CapabilityStatement-mcc-client.html) are versions are provided.

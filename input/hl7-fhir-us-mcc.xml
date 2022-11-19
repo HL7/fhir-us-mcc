@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-mcc"/>
     <meta>
-        <versionId value="427"/>
-        <lastUpdated value="2022-11-17T23:38:23.224+00:00"/>
-        <source value="#RYhu6Q1NLD2SRn43"/>
+        <versionId value="438"/>
+        <lastUpdated value="2022-11-18T22:06:06.137+00:00"/>
+        <source value="#hiorUqksM4PhnfX4"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
     <version value="1.0.0-ballot"/>
@@ -13,7 +13,7 @@
     <title value="MCC eCare Plan Implementation Guide"/>
     <status value="draft"/>
     <experimental value="false"/>
-    <date value="2022-04-13"/>
+    <date value="2022-11-18"/>
     <publisher value="HL7 International - Patient Care WG"/>
     <contact>
         <name value="HL7 International - Patient Care"/>
@@ -730,6 +730,11 @@
                 <generation value="markdown"/>
             </page>
             <page>
+                <nameUrl value="capability_statements.html"/>
+                <title value="Capability Statements"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="mcc_value_set_libraries_and_usage.html"/>
                 <title value="MCC Value Set Libraries and Usage"/>
                 <generation value="markdown"/>
@@ -764,6 +769,11 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
+                    <nameUrl value="mcc_observation_sdoh_assessment_value_sets.html"/>
+                    <title value="MCC Observation SDOH Assessment Value Sets"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
                     <nameUrl value="mcc_procedure_and_service_request_value_sets.html"/>
                     <title value="MCC Procedure and Service Request Value Sets"/>
                     <generation value="markdown"/>
@@ -781,11 +791,6 @@
                 <page>
                     <nameUrl value="mcc_symptom_value_sets.html"/>
                     <title value="MCC Symptom Value Sets"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="mcc_observation_sdoh_assessment_value_sets.html"/>
-                    <title value="MCC Observation SDOH Assessment Value Sets"/>
                     <generation value="markdown"/>
                 </page>
             </page>

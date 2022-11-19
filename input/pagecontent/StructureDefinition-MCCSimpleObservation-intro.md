@@ -1,5 +1,4 @@
-This profile sets expectations to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles. In addition to the requirements set in the the Observation resource, this derived profile is designed to add requirements to the following elements:
-
+This profile sets expectations to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles. In addition to the requirements set in the the observation resource, this derived profile is designed to add requirements to the following elements:
 
 * Observation.extension:resource-pertainsToGoal (Must Support)
 
