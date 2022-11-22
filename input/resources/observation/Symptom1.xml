@@ -3,9 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Symptom1"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-06-30T20:54:05.332+00:00"/>
-        <source value="#qQgswJnJreZxqt9p"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+            <valueString value="MCC Symptom Observation Example"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+            <valueMarkdown value="This example of a MCC Symptom Observation Profile illustrates its use to capture observation of a patient's symptoms study findings."/>
+        </extension>
+        <versionId value="5"/>
+        <lastUpdated value="2022-11-22T02:31:57.310+00:00"/>
+        <source value="#bdH6UAgNrK2m0Yu6"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -24,9 +30,9 @@
     </category>
     <code>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="271801002"/>
-            <display value="Taste Sense Altered (finding)"/>
+            <system value="http://loinc.org"/>
+            <code value="75325-1"/>
+            <display value="Symptom"/>
         </coding>
     </code>
     <subject>
@@ -34,4 +40,11 @@
         <display value="Patricia Noelle"/>
     </subject>
     <effectiveDateTime value="2022-05-18T22:33:22Z"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="271801002"/>
+            <display value="Taste Sense Altered (finding)"/>
+        </coding>
+    </valueCodeableConcept>
 </Observation>

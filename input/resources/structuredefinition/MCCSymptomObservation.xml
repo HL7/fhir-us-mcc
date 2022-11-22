@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="34"/>
-        <lastUpdated value="2022-11-16T21:55:32.887+00:00"/>
-        <source value="#UkiqRUslHIwSEQhR"/>
+        <versionId value="47"/>
+        <lastUpdated value="2022-11-21T20:58:41.028+00:00"/>
+        <source value="#fevDwG6bD4ECi3Uy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
@@ -42,31 +42,18 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.category">
-            <path value="Observation.category"/>
-            <short value="Symptom Category: The Observation.category binding to LOINC 75325-1 &quot;Symptom&quot; may help some systems identify that an instance of this profile is communicating a symptom. There is currently no FHIR &quot;Symptom&quot; code in the observation.category value set"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.category.coding.system">
-            <path value="Observation.category.coding.system"/>
-            <fixedUri value="http://loinc.org"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.category.coding.code">
-            <path value="Observation.category.coding.code"/>
-            <label value="Symptom"/>
-            <short value="Symptom"/>
-            <fixedCode value="75325-1"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="MCC Symptom Value Sets may be used at this Observation.code element found on the MCC Symptom Value Sets page in this IG. The value sets are derived from SNOMED CT"/>
+            <label value="Symptom"/>
+            <short value="Symptom"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="75325-1"/>
+                    <display value="Symptom"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="example"/>
-                <description value="MCC Symptom Value Sets"/>
-            </binding>
         </element>
         <element id="Observation.code.coding">
             <path value="Observation.code.coding"/>
@@ -87,6 +74,18 @@
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.value[x]">
+            <path value="Observation.value[x]"/>
+            <short value="MCC Symptom Value Sets may be used at this Observation.valueCodeableConcept element found on the MCC Symptom Value Sets page in this IG. The value sets are derived from SNOMED CT"/>
+            <definition value="MCC Symptom Value Sets may be used at this Observation.valueCodeableConcept element found on the MCC Symptom Value Sets page in this IG. The value sets are derived from SNOMED CT"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <strength value="example"/>
+                <description value="MCC Symptom Value Sets"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>
