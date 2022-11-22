@@ -48,7 +48,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1435</p>
 			</td>
 			<td style="height:36.5pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -62,7 +62,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1380</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -76,7 +76,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1425</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -90,7 +90,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1492</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -104,7 +104,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1429</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -118,7 +118,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1434</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -132,7 +132,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1377</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -146,7 +146,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1426</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -160,7 +160,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1399</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -174,7 +174,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1458</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -188,7 +188,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1440</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -202,7 +202,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1405</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -216,7 +216,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1446</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 				<tr>
@@ -230,7 +230,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 				<p>2.16.840.1.113762.1.4.1222.1502</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-				<p>Observation.value.CodableConcept</p>
+				<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -244,7 +244,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1378</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -258,7 +258,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1436</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -272,7 +272,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1441</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -286,7 +286,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1455</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -300,7 +300,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1451</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -314,7 +314,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1406</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -328,7 +328,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1415</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -342,7 +342,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1398</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -356,7 +356,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1400</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 				<tr>
@@ -370,7 +370,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 				<p>2.16.840.1.113762.1.4.1222.1401</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-				<p>Observation.value.CodableConcept</p>
+				<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -384,7 +384,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1437</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -398,7 +398,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1383</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -412,7 +412,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1453</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -426,7 +426,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1427</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -440,7 +440,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1456</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -454,7 +454,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1422</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -468,7 +468,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1460</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -482,7 +482,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1396</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -496,7 +496,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1385</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -510,7 +510,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1384</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -524,7 +524,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1447</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -538,7 +538,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1485</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -552,7 +552,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1381</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -566,7 +566,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1443</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -580,7 +580,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1449</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -594,7 +594,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1448</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -608,7 +608,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1379</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -622,7 +622,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1428</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -636,7 +636,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1438</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -650,7 +650,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1459</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -664,7 +664,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1403</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -678,7 +678,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1424</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -692,7 +692,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1430</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -706,7 +706,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1431</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -720,7 +720,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1432</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -734,7 +734,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1444</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -748,7 +748,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1461</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -762,7 +762,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1457</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -776,7 +776,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1445</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -790,7 +790,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1414</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -804,7 +804,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1413</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -818,7 +818,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1382</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -832,7 +832,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1433</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -846,7 +846,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1375</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -860,7 +860,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1450</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -874,7 +874,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1395</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -888,7 +888,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1439</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -902,7 +902,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1419</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 		<tr>
@@ -916,7 +916,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p>2.16.840.1.113762.1.4.1222.1409</p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:12%">
-			<p>Observation.value.CodableConcept</p>
+			<p>Observation.valueCodableConcept</p>
 			</td>
 		</tr>
 	</tbody>
