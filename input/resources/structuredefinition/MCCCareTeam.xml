@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCareTeam"/>
     <meta>
-        <versionId value="54"/>
-        <lastUpdated value="2022-11-16T01:22:13.321+00:00"/>
-        <source value="#PAgOdsv5RdhvbLBg"/>
+        <versionId value="57"/>
+        <lastUpdated value="2022-11-22T22:26:57.079+00:00"/>
+        <source value="#04lIcw71sSrwp4Gs"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
     <name value="MCCCareTeam"/>
@@ -47,7 +47,7 @@
             <path value="CareTeam.participant"/>
             <slicing>
                 <discriminator>
-                    <type value="pattern"/>
+                    <type value="value"/>
                     <path value="role.coding.code"/>
                 </discriminator>
                 <discriminator>
@@ -55,7 +55,7 @@
                     <path value="$this.member.resolve()"/>
                 </discriminator>
                 <discriminator>
-                    <type value="pattern"/>
+                    <type value="value"/>
                     <path value="role.coding.system"/>
                 </discriminator>
                 <ordered value="false"/>
@@ -78,7 +78,6 @@
                 <coding>
                     <system value="http://snomed.info/sct"/>
                     <code value="116154003"/>
-                    <display value="Patient (person)"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
@@ -110,7 +109,6 @@
                 <coding>
                     <system value="http://snomed.info/sct"/>
                     <code value="133932002"/>
-                    <display value="Caregiver (person)"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>

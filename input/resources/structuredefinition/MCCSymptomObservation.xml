@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCSymptomObservation"/>
     <meta>
-        <versionId value="47"/>
-        <lastUpdated value="2022-11-21T20:58:41.028+00:00"/>
-        <source value="#fevDwG6bD4ECi3Uy"/>
+        <versionId value="48"/>
+        <lastUpdated value="2022-11-23T00:42:55.543+00:00"/>
+        <source value="#zpKVo85HFqlcB7SI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
     <name value="MCCSymptomObservation"/>
@@ -50,7 +50,6 @@
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="75325-1"/>
-                    <display value="Symptom"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>

@@ -2,11 +2,10 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="MCCCaregiverOnCareTeam"/>
-    
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2022-11-16T18:40:43.913+00:00"/>
-        <source value="#tfZrP14jwEKhxGDH"/>
+        <versionId value="28"/>
+        <lastUpdated value="2022-11-22T22:30:23.032+00:00"/>
+        <source value="#cqm3ZaKvlDu9BK3Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
     <name value="MCCCaregiverOnCareTeam"/>
@@ -59,7 +58,6 @@
                 <coding>
                     <system value="http://snomed.info/sct"/>
                     <code value="133932002"/>
-                    <display value="Caregiver (person)"/>
                 </coding>
             </patternCodeableConcept>
         </element>

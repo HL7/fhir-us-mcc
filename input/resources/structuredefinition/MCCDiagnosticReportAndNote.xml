@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCDiagnosticReportAndNote"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-11-16T18:58:17.021+00:00"/>
-        <source value="#wueJhXr0KhBXETSA"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-11-23T00:33:47.859+00:00"/>
+        <source value="#mMyjIpP8v6OHXban"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
     <name value="MCCDiagnosticReportAndNote"/>
@@ -58,7 +58,7 @@
         <element id="DiagnosticReport.code">
             <path value="DiagnosticReport.code"/>
             <label value="Label"/>
-            <short value="Please see the Diagnostic Report and Note Value Set Library (link?) for value sets that are derived from LOINC that can be used at DiagnosticReport.code element"/>
+            <short value="Please see the Diagnostic Report and Note Value Set Library for value sets that are derived from LOINC that can be used at DiagnosticReport.code element"/>
         </element>
     </differential>
 </StructureDefinition>

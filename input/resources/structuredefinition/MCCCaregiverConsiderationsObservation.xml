@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCCaregiverConsiderationsObservation"/>
     <meta>
-        <versionId value="67"/>
-        <lastUpdated value="2022-11-21T18:59:05.845+00:00"/>
-        <source value="#Zd0YP8T3auE9SpYG"/>
+        <versionId value="68"/>
+        <lastUpdated value="2022-11-22T22:28:50.523+00:00"/>
+        <source value="#qyfJr1tYF90s7efT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
     <version value="0.1.0"/>
@@ -111,13 +111,14 @@
         <element id="Observation.category:caregiver-concerns">
             <path value="Observation.category"/>
             <sliceName value="caregiver-concerns"/>
+            <label value="Goals, preferences, and priorities for care experience"/>
+            <short value="Goals, preferences, and priorities for care experience"/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="81380-8"/>
-                    <display value="Goals, preferences, and priorities for care experience [Reported]"/>
                 </coding>
             </patternCodeableConcept>
         </element>

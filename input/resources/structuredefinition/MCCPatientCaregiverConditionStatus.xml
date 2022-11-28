@@ -3,13 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCPatientCaregiverConditionStatus"/>
     <meta>
-        <versionId value="70"/>
-        <lastUpdated value="2022-11-16T01:39:46.468+00:00"/>
-        <source value="#x8IrVr5jCAtLPr8V"/>
+        <versionId value="73"/>
+        <lastUpdated value="2022-11-25T16:10:00.763+00:00"/>
+        <source value="#zy3S4uoDbqpezf3l"/>
     </meta>
-    <text>
-        <status value="additional"/>
-    </text>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
     <version value="0.1.0"/>
     <name value="MCCPatientCaregiverConditionStatus"/>
@@ -108,7 +105,6 @@
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="89253-9"/>
-                    <display value="Trend"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>
@@ -184,7 +180,7 @@
             <binding>
                 <strength value="example"/>
                 <description value="Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding. valueString is also available as an alternative to valueCodeableConcept."/>
-                <valueSet value="https://loinc.org/LL4938-8/"/>
+                <valueSet value="https://loinc.org/LL4938-8"/>
             </binding>
             <mapping>
                 <identity value="argonaut-dq-dstu2"/>
