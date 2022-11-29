@@ -63,7 +63,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDe
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
 # The following is a LOINC answer list is valid, reviewed the code system is correct and valid
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference https://loinc.org/LL4938-8 on element Observation.valueCodeableConcept could not be resolved
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[23].binding: The valueSet reference https://loinc.org/LL4938-8 on element Observation.value[x] could not be resolved
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference http://loinc.org/LL4938-8 on element Observation.valueCodeableConcept could not be resolved
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[23].binding: The valueSet reference http://loinc.org/LL4938-8 on element Observation.value[x] could not be resolved
 WARNING: Observation/caregiver-feelings-condition-status: Observation.value.ofType(CodeableConcept): ValueSet http://loinc.org/LL4938-8 not found by validator
-
