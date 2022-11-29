@@ -1,20 +1,26 @@
 The value sets in the MCC Value Set Library pages are not bound within any profile.
-The Value Set Library pages contain "libraries" of value sets that may be used with MCC Profiles and where within the profile they should be used. Not all of the profiles have additional value sets defined beyond those already defined in the US Core profile. In some cases there is a Value set library page even if no additional sets were developed, to call out the Gravity SDOH value sets and/or if it was deemed important to call out the US Core Profile "main" value set (e.g. those bound at Resource.code) for higher-level stakeholders of the IG.
+The Value Set Library pages contain "libraries" of value sets that may be used with MCC Profiles and where within the profile they should be used. Not all of the profiles have additional value sets defined beyond those already defined in the US Core profile. In some cases there is a Value set library page even if no additional sets were developed to provide guidance for terminology use within that profile.
 
-You must have an NLM/UMLS account to access. There is no charge for an account. 
+You must have an [NLM/UMLS](https://www.nlm.nih.gov/research/umls/index.html) account to access. There is no charge for an account in the United States. 
 All of these value sets are housed in the NLM Value Set Authority Center (VSAC). 
 
 Note: the first time you click on the value set name link in a given session, there my be a delay in loading and you will need to sign in once loaded.
 
-**Table Key**
-
-* *Value Set Name and Link*: The value set name is a link to the value set. 
-* *Value Set Clinical Focus*: The Value Set Clinical Focus is the same as the clinical focus as written in VSAC which is a free text statement describing the general context of the concepts in the set.
-* *OID*: The Object Identifier (OID) of the set. OIDs of value sets are unique, whereas the names may not be. If accessing the value set outside of this table link, it is safest to perform that search with the OID
-* *Profile Element*: The Profile element asserts the location within the profile the value set term SHALL be used.
+**Value Set Libraries**
+* [MCC Chronic Condition](mcc_chronic_condition_value_sets.html)
+* [MCC Clinical Test](mcc_clinical_test_value_sets.html)
+* [MCC Goal](mcc_goal_value_sets.html)
+* [MCC Laboratory Result](mcc_laboratory_result_value_sets.html)
+* [MCC Medication Request](mcc_medication_request_value_sets.html)
+* [MCC Observation Imaging](mcc_observation_imaging_value_sets.html)
+* [MCC Observation SDOH Assessment](mcc_observation_sdoh_assessment_value_sets.html)
+* [MCC Procedure and Service Request](mcc_procedure_and_service_request_value_sets.html)
+* [MCC Questionnaire Response](mcc_questionnaire_response_value_sets.html)
+* [MCC Simple Observation](mcc_simple_observation_value_sets.html)
+* [MCC Symptom](mcc_symptom_value_sets.html)
 
 **MCC Value Sets Use and Validation**
-The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occurr. Validation support can be added in implmentation. These  Value Sets may be used for several different purposes and no clinically appropriate use is precluded:
+The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occur. Validation support can be added in implementation. These  Value Sets may be used for several different purposes and no clinically appropriate use is precluded:
 
 * Querying for patients that have experienced particular symptoms
 * Within Quality Measures or for research using Clinical Quality Language (CQL) (for example)
