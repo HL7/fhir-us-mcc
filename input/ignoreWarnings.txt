@@ -34,9 +34,6 @@ INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element 
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
 ERROR: CareTeam/careteam-of-noelle: CareTeam: CareTeam.participant:caregiver: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot)
 
-# LOINC answer list is not found by Terminology server. reviewed and the LOINC answer list is correct
-WARNING: Observation/caregiver-feelings-condition-status: Observation.value.ofType(CodeableConcept): ValueSet https://loinc.org/LL4938-8/ not found by validator
-
 # The following issue is inherited from US Core dependency
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
@@ -54,16 +51,19 @@ INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireRespo
 ERROR: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.questionnaire: Canonical URL 'http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnaireHungerVitalSign|STU1' does not resolve
 WARNING: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse: The questionnaire 'http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnaireHungerVitalSign|STU1' could not be resolved, so no validation can be performed against the base questionnaire
 
-
-# The following issues are addressed by an exception granted by the Cross-Group Projects work group. see JIRA tickets: MCC Observation SDOH Assessment mistakenly identified as not derived from US Core Profile FHIR-39471, US Core Variance Request for Multiple Chronic Condition Care Plan Symptom Observation: FHIR-39472, US Core Variance Request For MCC Patient/Caregiver Condition Status Observation: FHIR-39473, US Core Variance Request for Caregiver Considerations Observation FHIR-39474, US Core Variance Request for MCC Simple Observation: FHIR-39475. Also, https://chat.fhir.org/#narrow/stream/179175-argonaut/topic/Variance.20Request.20MCC.20Observations 
+# The following issues are addressed by an exception granted by the Cross-Group Projects work group. see JIRA tickets: MCC Observation SDOH Assessment mistakenly identified as not derived from US Core Profile FHIR-39471, US Core Variance Request for Multiple Chronic Condition Care Plan Symptom Observation: FHIR-39472, US Core Variance Request For MCC Patient/Caregiver Condition Status Observation: FHIR-39473, US Core Variance Request for Caregiver Considerations Observation FHIR-39474, US Core Variance Request for MCC Simple Observation: FHIR-39475. Additionally, https://jira.hl7.org/browse/FHIR-39516 and
+https://jira.hl7.org/browse/FHIR-39517 . See https://chat.fhir.org/#narrow/stream/179175-argonaut/topic/Variance.20Request.20MCC.20Observations
 
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSimpleObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImagingObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
-# The following is a LOINC answer list is valid
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference https://loinc.org/LL4938-8/ on element Observation.valueCodeableConcept could not be resolved
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[23].binding: The valueSet reference https://loinc.org/LL4938-8/ on element Observation.value[x] could not be resolved
+# The following is a LOINC answer list is valid, reviewed the code system is correct and valid
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference https://loinc.org/LL4938-8 on element Observation.valueCodeableConcept could not be resolved
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[23].binding: The valueSet reference https://loinc.org/LL4938-8 on element Observation.value[x] could not be resolved
+WARNING: Observation/caregiver-feelings-condition-status: Observation.value.ofType(CodeableConcept): ValueSet http://loinc.org/LL4938-8 not found by validator
 
