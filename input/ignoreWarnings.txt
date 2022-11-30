@@ -9,7 +9,7 @@ WARNING: StructureDefinition/mccCarePlan: StructureDefinition.differential.eleme
 # reviewed the code system is correct and valid
 INFORMATION: DocumentReference/PACP: DocumentReference.content[0].format: Code System URI 'urn:oid:1.3.6.1.4.1.19376.1.2.3' is unknown so the code cannot be validated
 
-# we supply a differential, the warning is due to the US Core profile used
+# the warning comes from the Core resource
 WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
 
 # The following issues have been reviewed and are because this IG has a dependency on US Core, the value set from US Core triggers this error. Note that we do not reference the code in our example
@@ -46,10 +46,6 @@ INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[1]: This el
 INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
 INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|5.0.1
 
-# The following occur in US Core as well
-INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|5.0.1
-ERROR: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.questionnaire: Canonical URL 'http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnaireHungerVitalSign|STU1' does not resolve
-WARNING: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse: The questionnaire 'http://hl7.org/fhir/us/sdoh-clinicalcare/Questionnaire-SDOHCC-QuestionnaireHungerVitalSign|STU1' could not be resolved, so no validation can be performed against the base questionnaire
 
 # The following issues are addressed by an exception granted by the Cross-Group Projects work group. see JIRA tickets: MCC Observation SDOH Assessment mistakenly identified as not derived from US Core Profile FHIR-39471, US Core Variance Request for Multiple Chronic Condition Care Plan Symptom Observation: FHIR-39472, US Core Variance Request For MCC Patient/Caregiver Condition Status Observation: FHIR-39473, US Core Variance Request for Caregiver Considerations Observation FHIR-39474, US Core Variance Request for MCC Simple Observation: FHIR-39475. Additionally, https://jira.hl7.org/browse/FHIR-39516 and
 https://jira.hl7.org/browse/FHIR-39517 . See https://chat.fhir.org/#narrow/stream/179175-argonaut/topic/Variance.20Request.20MCC.20Observations
