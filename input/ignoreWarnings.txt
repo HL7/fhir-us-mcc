@@ -9,7 +9,7 @@ WARNING: StructureDefinition/mccCarePlan: StructureDefinition.differential.eleme
 # reviewed the code system is correct and valid
 INFORMATION: DocumentReference/PACP: DocumentReference.content[0].format: Code System URI 'urn:oid:1.3.6.1.4.1.19376.1.2.3' is unknown so the code cannot be validated
 
-# the warning comes from the Core resource
+# the warning comes from the Core resource, see https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/StructureDefinition.2Esnapshot.2Eelement.5B30.5D.2Ecomment.3A.20The.20Unicod
 WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
 
 # The following issues have been reviewed and are because this IG has a dependency on US Core, the value set from US Core triggers this error. Note that we do not reference the code in our example
@@ -27,6 +27,7 @@ ERROR: CareTeam/careteam-of-noelle: CareTeam.participant[2].role[0]: Local Error
 ERROR: CareTeam/careteam-of-noelle: CareTeam.participant[3].role[0]: Local Error: Unable to evaluate based on empty code system. Server Error: Error from server: The filter "concept = 768734005" from the value set http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27 was not understood in the context of http://snomed.info/sct
 
 # The following issues have been reviewed and these items are not intended to validate against one of the slices.
+INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|5.0.1
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
 

@@ -576,7 +576,7 @@
         <resource>
             <reference>
                 <reference value="Observation/caregiver-feelings-condition-status"/></reference>
-            <name value="Multiple Chronic Condition Care Plan example of  Observation of Caregiver feelings towards status of a patient's condition"/>
+            <name value="Multiple Chronic Condition Care Plan example of Observation of Caregiver feelings towards status of a patient's condition"/>
             <description value="Multiple Chronic Condition Care Plan example of  Observation of Caregiver feelings towards status of a patient's condition"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
@@ -596,7 +596,7 @@
                 <reference value="CareTeam/caregiveronteam-of-noelle"/>
                 <display value="CaregiverOnCareTeam of Noelle Example"/>
             </reference>
-            <name value="Multiple Chronic Condition Care Plan example of  MCC CaregiverOnCareTeam"/>
+            <name value="Multiple Chronic Condition Care Plan example of MCC CaregiverOnCareTeam"/>
             <description value="MCC CaregiverOnCareTeam of Noelle Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
