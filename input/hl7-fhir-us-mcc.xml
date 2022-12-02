@@ -810,7 +810,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="Comment only Ballot"/>
+            <value value="Comment only"/>
         </parameter>
     </definition>
 </ImplementationGuide>
