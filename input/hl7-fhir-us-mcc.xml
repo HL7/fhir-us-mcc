@@ -810,7 +810,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="CI Build"/>
+            <value value="Comment only Ballot"/>
         </parameter>
     </definition>
 </ImplementationGuide>
