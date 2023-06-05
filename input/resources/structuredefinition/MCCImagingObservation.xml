@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCImagingObservation"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-11-16T20:57:46.206+00:00"/>
-        <source value="#aWof1e5rT0rHJPWi"/>
+        <versionId value="17"/>
+        <lastUpdated value="2023-06-02T18:39:51.640Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCImagingObservation"/>
     <name value="MCCImagingObservation"/>
@@ -16,7 +15,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-imaging"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

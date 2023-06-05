@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCClinicalTestObservation"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-11-16T18:48:47.471+00:00"/>
-        <source value="#18Pj0pnlH43QN6fl"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-06-02T17:41:01.440Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
     <name value="MCCClinicalTestObservation"/>
@@ -16,7 +15,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-test"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">

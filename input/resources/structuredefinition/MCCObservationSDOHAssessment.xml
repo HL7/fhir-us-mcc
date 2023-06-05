@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCObservationSDOHAssessment"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2022-11-18T17:23:55.314+00:00"/>
-        <source value="#OtliIf8jNBzfMkjI"/>
+        <versionId value="19"/>
+        <lastUpdated value="2023-06-02T17:29:26.935Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
     <name value="MCCObservationSDOHAssessment"/>
@@ -16,7 +15,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-sdoh-assessment"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
