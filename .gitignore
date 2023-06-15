@@ -1,1 +1,6 @@
 /*.zip
+output/*
+temp/*
+input-cache/*
+_update*
+_gen*
