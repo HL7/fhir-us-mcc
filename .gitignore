@@ -1,6 +1,7 @@
 /*.zip
 output/*
 temp/*
+template/*
 input-cache/*
 _update*
 _gen*
