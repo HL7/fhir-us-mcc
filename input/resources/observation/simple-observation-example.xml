@@ -20,6 +20,15 @@
         </valueReference>
     </extension>
     <status value="final"/>
+    <category>
+    <coding>
+      <system
+              value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+    <text value="Clinical Test"/>
+  </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
