@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCClinicalImpression"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2022-11-16T01:23:06.945+00:00"/>
-        <source value="#OeiXbCnTky4pbpkd"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-06-20T21:59:37.449Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalImpression"/>
     <name value="MCCClinicalImpression"/>
@@ -41,6 +40,15 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
             </type>
             <mustSupport value="true"/>
+        </element>
+        <element id="ClinicalImpression.extension:changePattern">
+            <path value="ClinicalImpression.extension"/>
+            <sliceName value="changePattern"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern"/>
+            </type>
         </element>
         <element id="ClinicalImpression.subject">
             <path value="ClinicalImpression.subject"/>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="changePattern"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2023-06-20T23:23:23.653Z"/>
+    </meta>
+    <url value="http://example.org/StructureDefinition/changePattern"/>
+    <name value="ChangePattern"/>
+    <title value="Change Pattern R5 backport"/>
+    <status value="active"/>
+    <description value="Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change. It is a subjective assessment of the direction of the change."/>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="ClinicalImpression"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Change Pattern R5 backport"/>
+            <definition value="Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change. It is a subjective assessment of the direction of the change."/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://example.org/StructureDefinition/changePattern"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Extension.valueCodeableConcept">
+            <path value="Extension.valueCodeableConcept"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="ClinicalImpression Change Pattern"/>
+                </extension>
+                <strength value="example"/>
+                <description value="Example codes indicating the change pattern of a ClinicalImpression. Note that these are in no way complete and might not even be appropriate for some uses."/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/clinicalimpression-change-pattern"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>
