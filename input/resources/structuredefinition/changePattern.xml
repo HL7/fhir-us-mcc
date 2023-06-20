@@ -6,7 +6,7 @@
         <versionId value="7"/>
         <lastUpdated value="2023-06-20T23:23:23.653Z"/>
     </meta>
-    <url value="http://example.org/StructureDefinition/changePattern"/>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern"/>
     <name value="ChangePattern"/>
     <title value="Change Pattern R5 backport"/>
     <status value="active"/>
