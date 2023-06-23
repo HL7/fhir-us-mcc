@@ -41,5 +41,20 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Observation.category:us-core">
+            <path value="Observation.category"/>
+            <sliceName value="us-core"/>
+            <label value="imaging category"/>
+            <short value="indicates imaging category"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                    <code value="imaging"/>
+                    <display value="Imaging"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
     </differential>
 </StructureDefinition>
