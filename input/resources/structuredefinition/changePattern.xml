@@ -38,7 +38,7 @@
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://example.org/StructureDefinition/changePattern"/>
+            <fixedUri value="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

@@ -44,12 +44,19 @@
         <element id="ClinicalImpression.extension:changePattern">
             <path value="ClinicalImpression.extension"/>
             <sliceName value="changePattern"/>
+			<short value="Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change"/>
+			<description value="Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change. It is a subjective assessment of the direction of the change." />
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern"/>
+				<profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern"/>
+				<!--profile value="http://hl7.org/fhir/5.0/StructureDefinition/extension-ClinicalImpression.changePattern"/-->
+                <!--profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern"/-->
             </type>
         </element>
+		
+
+		
         <element id="ClinicalImpression.subject">
             <path value="ClinicalImpression.subject"/>
             <type>
