@@ -21,7 +21,7 @@ The figure below highlights recommended integration points in the MCC eCare Plan
 
 ## Deriving assessments and observations from QuestionnaireResponses
  
-This implementation Guide recommends using QuestionnaireResponse profile from the [MCC QuestionnaireResponse](StructureDefinition-MCCQuestionnaireResponse.html)to gather important and varied data during an assessment process and from which observations can be derived. In FHIR, forms are represented using the Questionnaire Resource and completed forms are represented using the QuestionnaireResponse resource. Please see the [Structured Data Capture IG](http://hl7.org/fhir/uv/sdc/STU3/) for additional information.
+This implementation Guide recommends using QuestionnaireResponse profile from the [MCC QuestionnaireResponse](StructureDefinition-MCCQuestionnaireResponse.html) to gather important and varied data during an assessment process and from which observations can be derived. In FHIR, forms are represented using the Questionnaire Resource and completed forms are represented using the QuestionnaireResponse resource. Please see the [Structured Data Capture IG](http://hl7.org/fhir/uv/sdc/STU3/) for additional information.
  
 
 ****The [MCC QuestionnaireResponse Value Set Library](mcc_questionnaire_response_value_sets.html) provides Value sets of LOINC panel codes that are associated with questionaires that are often used in the care of individuals with multiple chronic conditions.

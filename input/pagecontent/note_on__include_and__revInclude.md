@@ -16,7 +16,7 @@ A chronic condition CarePlan references the patient's COPD condition. The COPD c
 
 <table><tr><td><img  src="includeRevinclude_example1.svg" /></td></tr></table>
 
-The MCC COPD Condition references the patient's underlying or secondary conditions, relevant observations, procedures, FamilyMEmberHistory and DiagnosticReport.
+The MCC COPD Condition references the patient's underlying or secondary conditions, relevant observations, procedures, FamilyMemberHistory and DiagnosticReport.
 
 <table><tr><td><img  src="includeRevinclude_example2.svg" /></td></tr></table>
 
