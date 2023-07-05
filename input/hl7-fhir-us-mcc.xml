@@ -704,6 +704,15 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
         </resource>
+		        <resource>
+            <reference>
+                <reference value="StructureDefinition/changePattern"/>
+                <display value="Change Pattern R5 backport"/>
+            </reference>
+            <name value="Change Pattern R5 backport"/>
+            <description value="Change in the status/pattern of a subject’s condition since previously assessed, such as worsening, improving, or no change. It is a subjective assessment of the direction of the change."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
