@@ -3,13 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="mccCarePlan"/>
     <meta>
-        <versionId value="107"/>
-        <lastUpdated value="2022-11-18T17:28:27.663+00:00"/>
-        <source value="#ZniStTEC3c8OqK4R"/>
+        <versionId value="110"/>
+        <lastUpdated value="2023-07-05T14:39:05.213Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
     <version value="0.2"/>
-    <name value="MCCCarePLan"/>
+    <name value="MCCCarePlan"/>
     <title value="Multiple Chronic Care Condition Care Plan"/>
     <status value="active"/>
     <date value="2022-04-13"/>
@@ -119,6 +118,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation"/>
             </type>
             <mustSupport value="true"/>
         </element>
