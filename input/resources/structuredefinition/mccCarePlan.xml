@@ -81,7 +81,6 @@
             <path value="CarePlan.careTeam"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
             </type>
@@ -117,7 +116,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation"/>
             </type>
             <mustSupport value="true"/>

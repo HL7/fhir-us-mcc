@@ -78,9 +78,6 @@
         <grouping id="new-group19">
             <name value="MCC CaregiverConsiderationsObservation"/>
         </grouping>
-        <grouping id="new-group20">
-            <name value="MCC CaregiverOnCareTeam"/>
-        </grouping>
         <grouping id="new-group16">
             <name value="MCC CareTeam"/>
         </grouping>
@@ -570,26 +567,6 @@
             <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans reflecting information about the **caregiver**. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care to the patient."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group19"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/MCCCaregiverOnCareTeam"/>
-                <display value="Multiple Chronic Condition Care Plan Caregiver on Care Team"/>
-            </reference>
-            <name value="Multiple Chronic Condition Care Plan Caregiver on Care Team"/>
-            <description value="This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) for use in the MCC FHIR Care Plan or other FHIR Care Plans when there is a requirement for the focus to be on one caregiver as a team participant. The purpose is to establish that the RelatedPerson is a caregiver for the indicated patient and can be reference from the [MCC Caregiver Considerations Observation](StructureDefinition-MCCCaregiverConsiderationsObservation.html) profile."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="new-group20"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CareTeam/caregiveronteam-of-noelle"/>
-                <display value="CaregiverOnCareTeam of Noelle Example"/>
-            </reference>
-            <name value="Multiple Chronic Condition Care Plan example of  MCC CaregiverOnCareTeam"/>
-            <description value="MCC CaregiverOnCareTeam of Noelle Example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
         </resource>
         <resource>
             <reference>

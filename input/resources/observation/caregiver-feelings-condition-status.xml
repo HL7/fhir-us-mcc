@@ -38,7 +38,7 @@
     </focus>
     <effectiveDateTime value="2021-11-10T16:48:57.246958-08:00"/>
     <performer>
-        <reference value="CareTeam/caregiveronteam-of-noelle"/>
+        <reference value="RelatedPerson/caregiver-of-noelle"/>
     </performer>
     <valueCodeableConcept>
         <coding>
