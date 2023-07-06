@@ -1,6 +1,6 @@
 The  [US Core Observation Screening Assessment Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment) sets minimum expectations for the Observation resource to record, search, and fetch Observations where the Observation is an SDOH assesment. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. In addition to the requirements set forth in US Core profile this derived profile is designed to add requirements to the following elements:
 
-* MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
+* MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support)  to encourage linking a goal to the SDOH assessment in hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 
 MCC Value sets that may be used with this profile are found on the [MCC Observation SDOH Assessment Value Sets ](mcc_observation_sdoh_assessment_value_sets.html) library page. Other value sets are not precluded.
 

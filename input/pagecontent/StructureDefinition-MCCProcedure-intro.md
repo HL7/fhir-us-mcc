@@ -2,7 +2,7 @@ The [US Core Procedure profile](http://hl7.org/fhir/us/core/StructureDefinition/
 
 In addition to the requirements set forth in US Core Procedure, this derived profile is designed to add requirements to the following elements:
 
-Procedure.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
+Procedure.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the procedure hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 Procedue.reasonReference (Must Support) to encourage linking back to the health concern, problem or observation associated with the procedure, and/or to encourage systems to be able to receive and understand a reason for a procedure, if present.
 
 See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) procedures. 
