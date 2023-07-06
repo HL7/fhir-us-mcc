@@ -463,7 +463,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Immunization/immunizarion-1"/></reference>
+                <reference value="Immunization/immunization-1"/></reference>
             <name value="Multiple Chronic Condition Care Plan Immunization Example"/>
             <description value="Multiple Chronic Condition Care Plan Immunization Example"/>
             <exampleBoolean value="false"/>
