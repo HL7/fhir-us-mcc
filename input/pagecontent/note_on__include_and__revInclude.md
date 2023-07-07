@@ -6,7 +6,7 @@ GET [base]/CarePlan?_include=CarePlan:condition
 The _reveinclude search parameter enables a FHIR client to fetch a particular clinical resource as well as any resources that references it. For example, a search for a Condition resource can include any resource that references that Condition resource. If the Condition is referenced by a ServiceRequest element, the following will return the ServiceRequest resource
 GET [base]/Condition?_revinclude=serviceRequest:target
  
-The system or application can use its presentation layer to present the condition addressed by the careplan along with the other resources that referenced the same condition resource. This information provides the clinical picture needed for care coordination.  
+The system or application can use its presentation layer to present the condition addressed by the CarePlan along with the other Resources that referenced the same Condition Resource. This information provides the clinical picture needed for care coordination.  
 
 FHIR Core guidance is found here: [search.html#revinclude]({{site.data.fhir.path}}search.html#revinclude)
 
@@ -16,7 +16,7 @@ A chronic condition CarePlan references the patient's COPD condition. The COPD c
 
 <table><tr><td><img  src="includeRevinclude_example1.svg" /></td></tr></table>
 
-The MCC COPD Condition references the patient's underlying or secondary conditions, relevant observations, procedures, FamilyMemberHistory and DiagnosticReport.
+The MCC COPD Condition references the patient's underlying or secondary conditions, relevant observations, procedures, family member history and diagnostic reports.
 
 <table><tr><td><img  src="includeRevinclude_example2.svg" /></td></tr></table>
 
