@@ -114,9 +114,11 @@ This use case is relevant to how a shared care plan is generated in a health car
 -  Generation of an eCare Plan with FHIR
     - A FHIR eCare Plan is an aggregation of the clinical indications and supporting information for conditions and issues which the plan is created to address. The plan also includes the CareTeam. Most items in a [MCC CarePlan](StructureDefinition-mccCarePlan.html) are connected (i.e. added) to the CarePlan through [FHIR references](https://www.hl7.org/fhir/references.html). For example, a goal would be linked through the FHIR MCC CarePlan instance through the aptly named [goal](StructureDefinition-mccCarePlan.html#CarePlan.goal) backbone data element. As activities are added to the CarePlan the [activity.outcome](StructureDefinition-mccCarePlan.html#CarePlan.activity.outcomeReference) or [activity.reference](StructureDefinition-mccCarePlan.html#CarePlan.activity.reference) elements are populated. In our example patient story, these are the interventions/referrals that Judy documents. In the EHR, future interventions related to the CarePlan would be ordered and a reference to the order would be attached to the CarePlan instance. The care team is referenced through the CarePlan. For more details on specific data elements please refer to the [MCC CarePlan structure definition](StructureDefinition-mccCarePlan.html), and the other profiles found on the [artifacts](artifacts.html) page.
 
--  Updating the eCare Clinical Plan (as previous information changes or new actions are added)
-The MCC CarePlan includes references to underlying activities, as changes are made to the targets of the eCarePlan references the MCC CarePlan is updated. For example, if the CareTeam gains a team member, the CareTeam instance referenced by the MCC CarePlan will reflect that change. Other updates to the eCare plan, such as adding new interventions, are achieved by adding additional references in the appropriate data elements.
-	
+- Updating the eCare Plan
+    - The MCC eCare Plan includes references to underlying activities. As information changes or new actions are added within that referenced activity, it will be reflected in the eCare Plan.
+        -  For example, if the CareTeam gains a team member, the eCare Plan and the CareTeam instance referenced by the MCC CarePlan will reflect that change. 
+    - New updates to the eCare plan, such as adding new interventions, are achieved by adding additional references to the appropriate data elements.
+
 -  This implementation guide also covers standard terminology codes that are expected to be encountered. The terminology libraries contain the details on their use. 
 
 ### Use Case 2: Expose (Share) eCare Plan to Clinical Care Team and Patient or Caregiver
