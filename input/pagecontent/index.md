@@ -14,7 +14,7 @@
 
 ### Plain Language Summary about HL7 and this Guide
 
-"Welcome! Thank-you for wanting to learn about this guide. 
+Welcome! Thank-you for wanting to learn about this guide. 
 
 #### About HL7
 HL7, which stands for Health Level Seven, creates standards to help different healthcare computer systems talk to each other. It's a special language or set of rules that lets information be shared between hospitals, doctors' offices, and labs.
