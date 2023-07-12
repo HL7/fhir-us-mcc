@@ -710,6 +710,11 @@
                 <generation value="markdown"/>
             </page>
             <page>
+                <nameUrl value="careplanAggregation.html"/>
+                <title value="CarePlan Data Aggregation"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="security.html"/>
                 <title value="Security"/>
                 <generation value="markdown"/>
