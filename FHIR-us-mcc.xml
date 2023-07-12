@@ -40,7 +40,7 @@
 <artifact id="StructureDefinition/mccCarePlan" key="StructureDefinition-mccCarePlan" name="Multiple Chronic Care Condition Care Plan"/>
 <artifact id="CareTeam/MCCCareTeamexample" key="CareTeam-MCCCareTeamexample" name="Multiple Chronic Condition Care Plan Care Team"/>
 <artifact id="StructureDefinition/MCCCaregiverConsiderationsObservation" key="StructureDefinition-MCCCaregiverConsiderationsObservation" name="Multiple Chronic Condition Care Plan Caregiver Considerations Observation"/>
-<artifact id="StructureDefinition/MCCCaregiverOnCareTeam" key="StructureDefinition-MCCCaregiverOnCareTeam" name="Multiple Chronic Condition Care Plan Caregiver on Care Team"/>
+<artifact deprecated="true" id="StructureDefinition/MCCCaregiverOnCareTeam" key="StructureDefinition-MCCCaregiverOnCareTeam" name="Multiple Chronic Condition Care Plan Caregiver on Care Team"/>
 <artifact id="StructureDefinition/MCCChronicDisease" key="StructureDefinition-MCCChronicDisease" name="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
 <artifact id="StructureDefinition/MCCImagingObservation" key="StructureDefinition-MCCImagingObservation" name="Multiple Chronic Condition Care Plan Clinical Imaging Observation"/>
 <artifact id="StructureDefinition/MCCClinicalImpression" key="StructureDefinition-MCCClinicalImpression" name="Multiple Chronic Condition Care Plan Clinical Impression"/>
@@ -52,7 +52,7 @@
 <artifact id="StructureDefinition/MCCGoal" key="StructureDefinition-MCCGoal" name="Multiple Chronic Condition Care Plan Goal"/>
 <artifact id="Observation/mcc-imaging-observation-example" key="Observation-mcc-imaging-observation-example" name="Multiple Chronic Condition Care Plan Imagining Observation Example"/>
 <artifact id="StructureDefinition/MCCImmunization" key="StructureDefinition-MCCImmunization" name="Multiple Chronic Condition Care Plan Immunization"/>
-<artifact id="Immunization/immunizarion-1" key="Immunization-immunizarion-1" name="Multiple Chronic Condition Care Plan Immunization Example"/>
+<artifact id="Immunization/immunization-1" key="Immunization-immunizarion-1" name="Multiple Chronic Condition Care Plan Immunization Example"/>
 <artifact id="StructureDefinition/MCCLaboratoryResultObservation" key="StructureDefinition-MCCLaboratoryResultObservation" name="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
 <artifact id="StructureDefinition/MCCMedicationRequest" key="StructureDefinition-MCCMedicationRequest" name="Multiple Chronic Condition Care Plan Medication Request"/>
 <artifact id="StructureDefinition/MCCNutritionOrder" key="StructureDefinition-MCCNutritionOrder" name="Multiple Chronic Condition Care Plan Nutrition Order"/>
@@ -65,7 +65,7 @@
 <artifact id="StructureDefinition/MCCSimpleObservation" key="StructureDefinition-MCCSimpleObservation" name="Multiple Chronic Condition Care Plan Simple Observation"/>
 <artifact id="Observation/simple-observation-example" key="Observation-simple-observation-example" name="Multiple Chronic Condition Care Plan Simple Observation Example"/>
 <artifact id="StructureDefinition/MCCSymptomObservation" key="StructureDefinition-MCCSymptomObservation" name="Multiple Chronic Condition Care Plan Symptom Observation"/>
-<artifact id="CareTeam/caregiveronteam-of-noelle" key="CareTeam-caregiveronteam-of-noelle" name="Multiple Chronic Condition Care Plan example of MCC CaregiverOnCareTeam"/>
+<artifact deprecated="true" id="CareTeam/caregiveronteam-of-noelle" key="CareTeam-caregiveronteam-of-noelle" name="Multiple Chronic Condition Care Plan example of MCC CaregiverOnCareTeam"/>
 <artifact id="ServiceRequest/foodpantry-referral" key="ServiceRequest-foodpantry-referral" name="Multiple Chronic Condition Service Request - Food Pantry"/>
 <artifact id="Observation/MCCweight" key="Observation-MCCweight" name="US-Core MCC Weight Example"/>
 <page key="NA" name="(NA)"/>
