@@ -1,8 +1,22 @@
+
+<div class="note-to-balloters">
+
+  <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
+
+  <p>The <strong>"Plain Language Summary about HL7 and this Guide"</strong> is an experimental section that potentially could become a required part of HL7 FHIR implementation guides. The MCC IG team has agreed to incorporate this in the MCC guide and as part of ballot and ask for:</p>
+
+  <ul>
+    <li>Evaluation of whether or not it would be a useful section in a guide for non-technical and/or non-clinical readers</li>
+    <li>Evaluation of the content as written for the MCC guide, especially in terms of appropriate reading level and if fit for purpose.</li>
+  </ul>
+</div>
+
+
 ### Plain Language Summary about HL7 and this Guide
 
 "Welcome! Thank-you for wanting to learn about this guide. 
 
-#### About HL7:
+#### About HL7
 HL7, which stands for Health Level Seven, creates standards to help different healthcare computer systems talk to each other. It's a special language or set of rules that lets information be shared between hospitals, doctors' offices, and labs.
 
 One of the HL7 standards is HL7 FHIR (Fast Healthcare Interoperability Resources). It helps connect healthcare systems, making it easier for doctors, nurses, and other healthcare professionals to share important information about patients. For example, if you have a lab test at a hospital, HL7 FHIR helps send the results to your doctor's office so they can provide the right care.
