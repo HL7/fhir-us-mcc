@@ -2,7 +2,7 @@
 
 "Welcome! Thank-you for wanting to learn about this guide. 
 
-**About HL7:**
+#### About HL7:
 HL7, which stands for Health Level Seven, creates standards to help different healthcare computer systems talk to each other. It's a special language or set of rules that lets information be shared between hospitals, doctors' offices, and labs.
 
 One of the HL7 standards is HL7 FHIR (Fast Healthcare Interoperability Resources). It helps connect healthcare systems, making it easier for doctors, nurses, and other healthcare professionals to share important information about patients. For example, if you have a lab test at a hospital, HL7 FHIR helps send the results to your doctor's office so they can provide the right care.
@@ -13,7 +13,7 @@ To learn more about HL7, you can visit the website hl7.org
 
 The people at HL7 make guides that explain how to use the rules (standards) for different things. These guides bring the rules together and show how to use them for specific purposes.
 
-**About this Guide**
+#### About this Guide
 
 The FHIR HL7® Multiple Chronic Condition (MCC) Care Plan Implementation Guide helps healthcare technology experts design systems that help the healthcare team take care of people with multiple chronic conditions.
 
