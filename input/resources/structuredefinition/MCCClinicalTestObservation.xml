@@ -58,6 +58,8 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <mustSupport value="true"/>
+            <label value="Label"/>
+            <short value="Please see the Clinical Test Value Set Library for value sets that are subsets of US Core Observation Code that can be used at Observation.code element"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>

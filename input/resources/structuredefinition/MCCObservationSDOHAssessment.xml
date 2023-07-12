@@ -42,5 +42,10 @@
             </type>
             <mustSupport value="true"/>
         </element>
+		<element id="Observation.code">
+            <path value="Observation.code"/>
+            <label value="Label"/>
+            <short value="Please see the SDOH Assessment Value Set Library for value sets that are subsets of US Core Observation Code that can be used at Observation.code element"/>
+        </element>
     </differential>
 </StructureDefinition>
