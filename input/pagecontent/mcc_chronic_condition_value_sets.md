@@ -21,6 +21,7 @@ The value sets in the MCC Value Set Library pages are not bound within any profi
 
 For more information refer to the [FHIR Terminology Service for VSAC Resources](https://www.nlm.nih.gov/vsac/support/usingvsac/vsacfhirapi.html#:~:text=The%20FHIR%20Terminology%20Service%20for,included%20in%20the%20value%20sets.)
 
+
 <table border="1" cellspacing="0" style="width:100.0%">
 	<tbody>
 		<tr>
@@ -165,7 +166,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3011/expansion">Acute Myocardial Infarction (AMI)</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.666.5.3011/expansion">Acute Myocardial Infarction</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This grouping value set contains diagnoses used to identify patients with acute myocardial infarction.</p>
@@ -291,7 +292,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1524/expansion">Congestive heart failure Diagnosis</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1524/expansion">Congestive Heart Failure Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing Congestive heart failure.</p>
@@ -333,7 +334,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1543/expansion">Heart Failure</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1543/expansion">Heart Failure Diagnois</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing heart failure.</p>
@@ -361,13 +362,13 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1547/expansion/Latest">Hypertension, Primary and Secondary</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1547/expansion/Latest">Hypertension, Primary and Secondary Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values addresses terms representing Essential or Primary Hypertension.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.571</p>
+			<p>2.16.840.1.113762.1.4.1222.1547</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.stage</p>
@@ -381,7 +382,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Hypertension Stage.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.566</p>
+			<p>2.16.840.1.113762.1.4.1222.571</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -395,7 +396,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Essential or Primary Hypertension.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.1484</p>
+			<p>2.16.840.1.113762.1.4.1222.566</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -409,7 +410,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values contains diagnosis terms representing Pulmonary hypertension.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.569</p>
+			<p>2.16.840.1.113762.1.4.1222.1484</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -423,7 +424,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Secondary Hypertension.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.642</p>
+			<p>2.16.840.1.113762.1.4.1222.569</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -437,7 +438,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Intracranial Stenosis.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.614</p>
+			<p>2.16.840.1.113762.1.4.1222.642</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -451,7 +452,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Ischemic Heart Disease.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.615</p>
+			<p>2.16.840.1.113762.1.4.1222.614</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -465,7 +466,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Left Ventricular Hypertrophy.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.580</p>
+			<p>2.16.840.1.113762.1.4.1222.615</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.stage</p>
@@ -479,7 +480,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing NYHA Heart Failure Functional Classifications.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.27</p>
+			<p>2.16.840.1.113762.1.4.1222.580</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -493,7 +494,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values contains condition or diagnosis terms representing peripheral vascular disease conditions.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.1488</p>
+			<p>2.16.840.1.113762.1.4.1222.27</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -507,12 +508,26 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values contains diagnosis terms representing Postural tachycardia syndrome (POTS).</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.645</p>
+			<p>2.16.840.1.113762.1.4.1222.1488</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
 			</td>
 		</tr>
+	    <tr>
+	        <td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
+	            <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1488/expansion">Unstable Angina</a></p>
+	        </td>
+	        <td style="height:15.75pt; vertical-align:top; width:32%">
+	            <p>This set of values addresses terms representing Unstable Angina.</p>
+	        </td>
+	        <td style="height:15.75pt; vertical-align:top; width:20%">
+	            <p>2.16.840.1.113762.1.4.1222.611</p>
+	        </td>
+	        <td style="height:15.75pt; vertical-align:top; width:12%">
+	            <p>Condition.code</p>
+	        </td>
+	    </tr>
 		<tr>
 			<td style="background-color:#d0cece; border-color:black; height:44.65pt; width:11%">
 			<p><strong>Chronic Kidney Disease (CKD)Conditions</strong></p>
@@ -529,7 +544,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1534/expansion/Latest">Acute Renal Failure</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1534/expansion/Latest">Acute Renal Failure Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing acute renal failure.</p>
@@ -543,13 +558,13 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.157/expansion">Chronic Kidney Disease All Stages (1 through 5) SNOMED</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.159/expansion">Chronic Kidney Disease All Stages (1 through 5)</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing All Stages (1 or 2 or 3 or 4 or 5) of chronic kidney disease.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.157</p>
+			<p>2.16.840.1.113762.1.4.1222.159</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -585,7 +600,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1549/expansion">Cerebrovascular Disease</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1549/expansion">Cerebrovascular Disease Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing cerebrovascular disease.</p>
@@ -613,7 +628,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3157.4043/expansion">Dementia</a></p>
+			    <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.3157.4043/expansion">Dementia and Related Intracranial Pathologies</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>The purpose of this value set is to represent concepts for dementia.</p>
@@ -739,20 +754,6 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.618/expansion">Stroke History</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Stroke and History of Stroke.</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113883.3.464.1003.104.12.1017</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.621/expansion">Transient Ischemic Attack</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
@@ -865,7 +866,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1537/expansion">Complication due to Diabetes Mellitus</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1537/expansion">Complication due to Diabetes Mellitus Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing complication due to diabetes mellitus.</p>
@@ -921,7 +922,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.535/expansion">Diabetic hand/ Diabetic cheiroarthropathy</a></p>
+			    <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.535/expansion">Diabetic Hand or Diabetic Cheiroarthropathy</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values addresses terms representing Diabetic Hand or Diabetic Cheiroarthropathy.</p>
@@ -1956,7 +1957,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1530/expansion">Post Acute Sequelae of Sars-Cov-2 infection (PASC)</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1530/expansion">Post Acute Sequelae of Sars Cov 2 Infection (PASC) Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing Post Acute Sequelae of Sars-Cov-2 infection (PASC) (Long Covid) disease.</p>
@@ -2432,7 +2433,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1561/expansion">Metabolic syndrome</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1561/expansion">Metabolic Syndrome Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing metabolic syndrome.</p>
@@ -2516,7 +2517,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1552/expansion">Migraine</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1552/expansion">Migraine Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing migraine.</p>
@@ -2530,7 +2531,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1555/expansion">Chronic Tension-type Headache diagnosis</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1555/expansion">Chronic Tension Type Headache Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
 			<p>This set of values contains diagnosis terms representing chronic tension-type headache.</p>
@@ -2648,7 +2649,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Pulmonary Edema.</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.611</p>
+			<p>2.16.840.1.113762.1.4.1222.645</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
@@ -2704,7 +2705,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>This set of values addresses terms representing Experience of Abuse.</p>
 			</td>
 			<td style="background-color:#fcfdfd; height:15.75pt; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.1336</p>
+			    <p>2.16.840.1.113762.1.4.1222.1281</p>
 			</td>
 			<td style="background-color:#fcfdfd; height:15.75pt; width:12%">
 			<p>Condition.code</p>

@@ -310,13 +310,13 @@ The codes in the value sets below should be able to retrieve [MCC QuestionnaireR
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.0pt; vertical-align:top; width:91.15pt">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1592/expansion">Social Determinant of Health Related Questionnaire Panel Codes</a></p>
+				<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1247.126/expansion">Social Determinants of Health Screening Assessments</a></p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:116.25pt">
-			<p>This set of values contain LOINC Panel codes pertaining to Social Determinant of Health questionnaire panels.</p>
+				<p>This set of values represents screening assessments for all SDOH domains as selected by the Gravity Project.</p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:95.25pt">
-			<p>2.16.840.1.113762.1.4.1222.1592</p>
+				<p>2.16.840.1.113762.1.4.1247.126</p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:137.9pt">
 			<p>Questionnaire.code</p>
