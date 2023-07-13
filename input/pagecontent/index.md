@@ -11,6 +11,7 @@
   </ul>
 </div>
 
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
 
 ### Plain Language Summary about HL7 and this Guide
 
@@ -40,6 +41,7 @@ Long-term health issues like asthma, diabetes, or depression are called chronic 
 The step-by-step instructions in this guide are for building electronic care plan systems that help provide care for people with multiple chronic conditions.
 
 Healthcare technology experts worked with patients, caregivers, and clinicians to create this guide. This guide contains important information and guidelines for healthcare technology professionals to use when building care plan tools.
+
 
 
 ### Overview
