@@ -66,7 +66,7 @@
             </coding>
         </role>
         <member>
-            <reference value="CareTeam/caregiveronteam-of-noelle"/>
+            <reference value="RelatedPerson/caregiver-of-noelle"/>
             <display value="Sarah van Putten"/>
         </member>
     </participant>

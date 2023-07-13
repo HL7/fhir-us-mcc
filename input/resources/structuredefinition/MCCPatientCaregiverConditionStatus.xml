@@ -3,9 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="MCCPatientCaregiverConditionStatus"/>
     <meta>
-        <versionId value="73"/>
-        <lastUpdated value="2022-11-25T16:10:00.763+00:00"/>
-        <source value="#zy3S4uoDbqpezf3l"/>
+        <versionId value="75"/>
+        <lastUpdated value="2023-06-06T13:59:43.446Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
     <version value="0.1.0"/>
@@ -14,7 +13,7 @@
     <status value="active"/>
     <date value="2022-09-27T19:57:15+00:00"/>
     <publisher value="HL7 International - Patient Care WG"/>
-    <description value="This profile constrains  [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
+    <description value="This profile constrains  [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -57,7 +56,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
@@ -154,7 +153,7 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -180,7 +179,7 @@
             <binding>
                 <strength value="example"/>
                 <description value="Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding. valueString is also available as an alternative to valueCodeableConcept."/>
-                <valueSet value="http://loinc.org/LL4938-8"/>
+                <valueSet value="https://loinc.org/LL4938-8"/>
             </binding>
             <mapping>
                 <identity value="argonaut-dq-dstu2"/>

@@ -68,7 +68,7 @@
             <sliceName value="patient-as-team-member"/>
             <label value="patient-as-careTeam-member"/>
             <short value="patient-as-careTeam-member"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -99,7 +99,7 @@
             <sliceName value="caregiver"/>
             <label value="caregiver"/>
             <short value="caregiver"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
@@ -117,7 +117,7 @@
             <path value="CareTeam.participant.member"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             </type>
             <mustSupport value="true"/>
         </element>

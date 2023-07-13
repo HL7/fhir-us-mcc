@@ -1,4 +1,4 @@
 The [NutritionOrder](http://hl7.org/fhir/StructureDefinition/NutritionOrder) sets minimum expectations for the NutritionOrder Resource to record, search, and fetch requests to supply a diet, formula feeding (enteral) or oral nutritional supplement to a patient/resident. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in NutritionOrder this derived profile is designed to add requirements to the following elements:
-* MCCNutritionOrder.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
+* MCCNutritionOrder.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the nutrition order hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 
 Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.

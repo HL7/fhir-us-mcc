@@ -1,9 +1,55 @@
+
+<div class="note-to-balloters">
+
+  <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
+
+  <p>The <strong>"Plain Language Summary about HL7 and this Guide"</strong> is an experimental section that potentially could become a required part of HL7 FHIR implementation guides. The MCC IG team has agreed to incorporate this in the MCC guide and as part of ballot and ask for:</p>
+
+  <ul>
+    <li>Evaluation of whether or not it would be a useful section in a guide for non-technical and/or non-clinical readers</li>
+    <li>Evaluation of the content as written for the MCC guide, especially in terms of appropriate reading level and if fit for purpose.</li>
+  </ul>
+</div>
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+
+### Plain Language Summary about HL7 and this Guide
+
+Welcome! Thank-you for wanting to learn about this guide. 
+
+#### About HL7
+HL7, which stands for Health Level Seven, creates standards to help different healthcare computer systems talk to each other. It's a special language or set of rules that lets information be shared between hospitals, doctors' offices, and labs.
+
+One of the HL7 standards is HL7 FHIR (Fast Healthcare Interoperability Resources). It helps connect healthcare systems, making it easier for doctors, nurses, and other healthcare professionals to share important information about patients. For example, if you have a lab test at a hospital, HL7 FHIR helps send the results to your doctor's office so they can provide the right care.
+
+A goal of HL7 is to make sure everyone involved in your healthcare has the right information at the right time. Our standards help machines and people, including you, work together to make better decisions for your health. HL7 sets rules that computer systems follow, so they can understand and share information in a consistent and reliable way.
+
+To learn more about HL7, you can visit the website hl7.org
+
+The people at HL7 make guides that explain how to use the rules (standards) for different things. These guides bring the rules together and show how to use them for specific purposes.
+
+#### About this Guide
+
+The FHIR HL7® Multiple Chronic Condition (MCC) Care Plan Implementation Guide helps healthcare technology experts design systems that help the healthcare team take care of people with multiple chronic conditions.
+
+A care plan is a tool that helps ensure that you get the right care at the right time to stay as healthy as possible. 
+
+A healthcare technology expert is someone who helps healthcare teams use new technology. They make sure the technology is set up correctly, train the staff to use it, and provide ongoing support. Their goal is to improve healthcare using technology.
+
+Long-term health issues like asthma, diabetes, or depression are called chronic conditions. Sometimes people have more than one chronic condition, which we call multiple chronic conditions. Care plans help make sure that nothing important is missed, which is especially important for people with many healthcare needs. Care plans also help prevent conflicts in treatments by improving communication among healthcare teams. This helps create stronger partnerships in managing chronic conditions.
+
+The step-by-step instructions in this guide are for building electronic care plan systems that help provide care for people with multiple chronic conditions.
+
+Healthcare technology experts worked with patients, caregivers, and clinicians to create this guide. This guide contains important information and guidelines for healthcare technology professionals to use when building care plan tools.
+
+
+
 ### Overview
 
 ### Introduction
-This HL7&reg; Multiple Chronic Condition (MCC) Care Plan Implementation Guide (IG) defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), chronic pain and Long Covid.The profiles defined within this IG were based on data elements of importance identified by technical expert panels assembled by the National Institute of Health’s (NIH) National Institute of Diabetes and Digestive and Kidney Disease (NIDDK) and the Agency for Healthcare Research and Quality (AHRQ).
+This HL7&reg; Multiple Chronic Condition (MCC) Care Plan Implementation Guide (IG) defines FHIR R4 profiles, structures, extensions, transactions and value sets needed to represent, query for, and exchange Care Plan information. It defines how to represent coded content used to support the care planning activities focusing on the needs of patients with multiple chronic conditions. This initial version focuses on Chronic Kidney Disease Type 2 diabetes mellitus, common cardiovascular disease (hypertension, ischemic heart disease and heart failure), chronic pain and Long Covid. The profiles defined within this IG were based on data elements of importance identified by technical expert panels assembled by the National Institute of Health’s (NIH) National Institute of Diabetes and Digestive and Kidney Disease (NIDDK) and the Agency for Healthcare Research and Quality (AHRQ).
 
-A Care Plan is a consensus-driven dynamic plan that represents a the prioritized concerns, goals, planned and actual interventions and the resultant care outcomes from the entire care team (including the patient, their caregivers, and providers). It serves as a blueprint shared by all care team members, to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A care plan may represent one or more treatment plans, care plans or plans of care (the plan naming and definition varies across institutions) and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:
+A Care Plan is a consensus-driven dynamic plan that represents the prioritized concerns, goals, planned and actual interventions and the resultant care outcomes from the entire care team (including the patient, their caregivers, and providers). It serves as a blueprint shared by all care team members, to guide the patient’s care. A Care Plan integrates multiple interventions proposed by multiple providers and disciplines for multiple conditions. A care plan may represent one or more treatment plans, care plans or plans of care (the plan naming and definition varies across institutions) and serves to reconcile and resolve conflicts between the various plans developed for a specific patient by different providers. It supports the following use cases:
  
 1.        	Query for patient data across providers/care settings and compile into a consolidated care plan representation.
 2.        	Encourage capture of and communication of a patient's health concerns and related goals, interventions, and outcomes.
@@ -24,9 +70,9 @@ More than 25 percent of Americans have MCC, accounting for more than 65 percent 
 Care plans are a prominent part of multifaceted, care coordination interventions that reduce mortality and hospitalizations and improve disease management and satisfaction. In addition, proactive care planning promotes person-centeredness, improves outcomes, and reduces the cost of care. By design, care plans take a patient-centered approach, both by making comprehensive health data available across providers and settings and through the incorporation of data elements that have not traditionally been included in health IT systems (e.g., social determinants of health [SDOH], patient health and life goals, patient preferences). While Care Plans have been developed, they remain paper-based in many U.S. healthcare settings and are not standardized and interoperable across care settings when electronic. While care plans focused on a single disease or condition are unlikely to be tenable for patients with MCC or their providers, existing care plans infrequently address individuals with MCC. The development of care plans based on structured data has been proposed as a method for enabling electronic systems to pull together and share data elements automatically and dynamically. Such aggregated data would not only provide actionable information to identify and achieve health and wellness goals for individuals with MCC, but also would reduce missingness and improve quality of point-of-care data for use in pragmatic research.
 Initiated by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) and the Agency for Healthcare Research and Quality (AHRQ)—with support from the Assistant Secretary for Planning and Evaluation’s Patient-Centered Outcomes Research Trust Fund, the multiple chronic conditions (MCC) electronic care (eCare) Plan Project aims to develop, test, and pilot an interoperable eCare plan that will facilitate aggregation and sharing of critical patient-centered data across home, community, clinic, and research-based settings for persons with MCC, including chronic kidney disease (CKD), type 2 diabetes mellitus (T2D), cardiovascular disease (CVD), chronic pain, and long COVID.
 The HL7-based activities of the MCC eCare Plan Project include:
-•	Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
-•	Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards and FHIR® mappings that will enable the standardized transfer of data across health settings.
-•	Develop, test, and ballot an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
+ - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
+ - Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards and FHIR® mappings that will enable the standardized transfer of data across health settings.
+ - Develop, test, and ballot an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
  
 Non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate):
  - The project includes the development and testing of open-source clinician and patient/caregiver- facing SMART-on-FHIR eCare plan applications for managing persons with MCC.
@@ -55,7 +101,7 @@ This guide will reuse the US Core Care Plan. However, the required US Core CareP
 
 #####  General US Core IG Conformance
 
-This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/capstatements.html) where applicable. 
+This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/capability-statements.html) where applicable. 
 
 #####  Provenance
 

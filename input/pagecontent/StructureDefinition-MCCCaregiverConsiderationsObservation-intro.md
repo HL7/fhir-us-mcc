@@ -1,5 +1,5 @@
-The [FHIR R4.0.1 Observation](http://hl7.org/fhir/R4/observation.html) sets minimum expectations for the Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver’s ability to provide care. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. 
-The focus is on the caregiver who is identified as part of the care team within the required focus.reference to the [Caregiver on Care Team](StructureDefinition-MCCCaregiverOnCareTeam.html) profile .
+The [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) sets minimum expectations for the Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver’s ability to provide care. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. 
+The focus is on a caregiver who is identified as part of the care team within the required focus.reference, a US CORE RelatedPerson identified as the target of the [Caregiver slice of the MCC Care Team](StructureDefinition-MCCCareTeam.html) profile.
 
 Some clinical examples are:
 * The caregiver has back pain
@@ -13,6 +13,6 @@ In addition to the requirements set forth in the Observation Resource, this deri
 
 * MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal
 * MCCCaregiverConsiderationsObservation.category: requires LOINC code 81380-8 (Goals, preferences, and priorities for care experience)
-* **MCCCaregiverConsiderationsObservation.focus:  requires focus.reference to the [Caregiver on Care Team](StructureDefinition-MCCCaregiverOnCareTeam.html) profile .**
+* **MCCCaregiverConsiderationsObservation.focus: requires focus.reference to a person via US Core RelatedPerson. This person is assumed to be a participant in the CareTeam and is the target of the [Caregiver slice of the MCC Care Team](StructureDefinition-MCCCareTeam.html) profile.**
 
 Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements.

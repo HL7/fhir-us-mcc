@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="AHC-HRSN-item-example-68517-2"/>
     <meta>
-        <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+	    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
             <valueString value="Observation SDOH assessment Ahc-Hrsn Item Example 68517-2"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
             <valueMarkdown value="This is a Ahc-Hrsn Item Example 68517-2 (How many times in the past 12 months have you had 5 or more drinks in a day (males) or 4 or more drinks in a day (females)?) for the MCC Observation SDOH Assessment profile"/>
         </extension>
-        <versionId value="4"/>
-        <lastUpdated value="2022-08-24T09:45:16.359+00:00"/>
         <source value="#0HmHgxkgtir4ApmZ"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-06-06T13:00:24.847Z"/>
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
@@ -22,7 +22,7 @@
     <status value="final"/>
     <category>
         <coding>
-            <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-tags"/>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-category"/>
             <code value="sdoh"/>
             <display value="SDOH"/>
         </coding>

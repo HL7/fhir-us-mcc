@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Immunization
     xmlns="http://hl7.org/fhir">
-    <id value="immunizarion-1"/>
+    <id value="immunization-1"/>
     <meta>
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
             <valueString value="Imm 1 Example"/>

@@ -21,11 +21,11 @@
     </extension>
     <status value="final"/>
     <category>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="81380-8"/>
-            <display value="Goals, preferences, and priorities for care experience [Reported]"/>
-        </coding>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="405193005"/>
+			<display value="Caregiver wellbeing status (observable entity)"/>
+		</coding>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
             <code value="social-history"/>
@@ -46,7 +46,7 @@
         <display value="Noelle"/>
     </subject>
     <focus>
-        <reference value="CareTeam/caregiveronteam-of-noelle"/>
+        <reference value="RelatedPerson/caregiver-of-noelle"/>
     </focus>
     <effectiveDateTime value="2021-11-10T16:48:57.246958-08:00"/>
     <performer>
