@@ -1,4 +1,3 @@
-
 <div class="note-to-balloters">
 
   <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
@@ -12,6 +11,43 @@
 </div>
 
 <!--a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a-->
+
+<h3 id="plain-language-summary-about-hl7-and-this-guide">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary-about-hl7-and-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
+  <button class="btn btn-info btn-lg collapsed" type="button" title="Click to Open or Close the Plain Language Summary" data-toggle="collapse" data-target="#plain-lang-summary" aria-expanded="false" aria-controls="collapseExample">
+    Welcome! Thank-you for wanting to learn about this guide.  Click Here to see the Plain Language Summary
+  </button>
+</h3>
+
+<div class="collapse" id="plain-lang-summary" aria-expanded="false" style="height: 0px;">
+  <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+  
+<h4 id="about-hl7">About HL7<a class="anchorjs-link " href="#about-hl7" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+<p><a href="http://hl7.org/">HL7</a>, which stands for Health Level Seven, creates standards to help different healthcare computer systems talk to each other. It’s a special language or set of rules that lets information be shared between hospitals, doctors’ offices, and labs.</p>
+
+<p>One of the HL7 standards is HL7 FHIR (Fast Healthcare Interoperability Resources). It helps connect healthcare systems, making it easier for doctors, nurses, and other healthcare professionals to share important information about patients. For example, if you have a lab test at a hospital, HL7 FHIR helps send the results to your doctor’s office so they can provide the right care.</p>
+
+<p>A goal of HL7 is to make sure everyone involved in your healthcare has the right information at the right time. Our standards help machines and people, including you, work together to make better decisions for your health. HL7 sets rules that computer systems follow, so they can understand and share information in a consistent and reliable way.</p>
+
+<p>To learn more about HL7, you can visit the website <a href="http://hl7.org/">hl7.org</a></p>
+
+<p>The people at HL7 make guides that explain how to use the rules (standards) for different things. These guides bring the rules together and show how to use them for specific purposes.</p>
+
+<h4 id="about-this-guide">About this Guide<a class="anchorjs-link " href="#about-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+
+<p>The FHIR HL7® Multiple Chronic Condition (MCC) Care Plan Implementation Guide helps healthcare technology experts design systems that help the healthcare team take care of people with multiple chronic conditions.</p>
+
+<p><strong>A care plan</strong> is a tool that helps ensure that you get the right care at the right time to stay as healthy as possible.</p>
+
+<p><strong>A healthcare technology expert</strong> is someone who helps healthcare teams use new technology. They make sure the technology is set up correctly, train the staff to use it, and provide ongoing support. Their goal is to improve healthcare using technology.</p>
+
+<p>Long-term health issues like asthma, diabetes, or depression are called chronic conditions. Sometimes people have more than one chronic condition, which we call multiple chronic conditions. Care plans help make sure that nothing important is missed, which is especially important for people with many healthcare needs. Care plans also help prevent conflicts in treatments by improving communication among healthcare teams, people needing healthcare, and their caregivers.This helps create stronger partnerships in managing chronic conditions to help people build plans of care that help them be as healthy and functional as possible.</p>
+
+<p>The step-by-step instructions in this guide are for building electronic care plan systems. These systems help healthcare providers give dependable, steady, and safe care for people with <strong>multiple chronic conditions</strong> across different healthcare places. The guide contains specific rules that are needed in United States healthcare.</p>
+
+<p>Healthcare technology experts worked with patients, caregivers, and clinicians to create this guide. This guide contains important information and guidelines for healthcare technology professionals to use when building care plan tools.</p>
+
+  </div>
+</div>
 
 ### Plain Language Summary about HL7 and this Guide
 
@@ -337,5 +373,3 @@ This Implementation Guide was created under the supervision and review of the [H
 </tr>
 </tbody>
 </table>
-
-
