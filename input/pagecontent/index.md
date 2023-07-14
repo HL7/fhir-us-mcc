@@ -7,6 +7,7 @@
   <ul>
     <li>Evaluation of whether or not it would be a useful section in a guide for non-technical and/or non-clinical readers</li>
     <li>Evaluation of the content as written for the MCC guide, especially in terms of appropriate reading level and if fit for purpose.</li>
+	<li>Evaluation of the presentation. We present both an expandable button version and a non-expandable version. The purpose of the expandable button is to limit the interruption of the IG-flow by the Plain Language Summary. Are either preferred? Or, is there some other user interface modality that would be preferred?</li>
   </ul>
 </div>
 
