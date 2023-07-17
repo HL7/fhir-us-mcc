@@ -62,7 +62,6 @@
         </resource>
         <resource>
             <type value="CareTeam"/>
-            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverOnCareTeam"/>
             <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
         </resource>
         <resource>

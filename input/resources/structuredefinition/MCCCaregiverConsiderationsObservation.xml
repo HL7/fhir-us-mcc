@@ -63,12 +63,12 @@
             <path value="Observation"/>
             <definition value="Observation focused on issues effecting the Caregiver's ability to care for the patient."/>
             <comment value="Observation focused on issues effecting the Caregiver's ability to care for the patient."/>
-            <constraint>
+            <!--constraint>
                 <key value="us-core-2"/>
                 <severity value="warning"/>
                 <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
                 <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
-            </constraint>
+            </constraint-->
         </element>
         <element id="Observation.extension">
             <path value="Observation.extension"/>
@@ -105,9 +105,10 @@
                 <rules value="open"/>
             </slicing>
             <short value="Caregiver considerations"/>
+            <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.category:caregiver-concerns">
+        <!--element id="Observation.category:caregiver-concerns">
             <path value="Observation.category"/>
             <sliceName value="caregiver-concerns"/>
             <label value="Caregiver well being status"/>
@@ -115,11 +116,36 @@
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
-				<coding>
-					<system value="http://snomed.info/sct"/>
-					<code value="405193005"/>
-				</coding>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="405193005"/>
+                </coding>
             </patternCodeableConcept>
+        </element-->
+		<!-- element id="Observation.category:us-core">
+            <path value="Observation.category"/>
+            <sliceName value="us-core/caregiver-concerns"/>
+			<label value="Caregiver well being status"/>
+            <short value="Caregiver well being status"/>
+            <min value="0"/>
+        </element>
+        <element id="Observation.category:us-core/caregiver-concerns">
+            <path value="Observation.category"/>
+            <sliceName value="us-core/caregiver-concerns"/>
+            <min value="1"/>
+            <binding>
+                <strength value="preferred"/>
+                <description value="Note that other codes are permitted. See US CORE Simple Observation Profile for details"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category"/>
+            </binding>
+        </element-->
+        <element id="Observation.category:us-core/caregiver-concerns.coding">
+            <path value="Observation.category.coding"/>
+            <min value="1"/>
+            <patternCoding>
+                <system value="http://snomed.info/sct"/>
+                <code value="405193005"/>
+            </patternCoding>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -172,13 +198,13 @@
                 <code value="instant"/>
             </type>
             <condition value="us-core-1"/>
-            <constraint>
+            <!--constraint>
                 <key value="us-core-1"/>
                 <severity value="error"/>
                 <human value="Datetime must be at least to day."/>
                 <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
                 <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
-            </constraint>
+            </constraint-->
             <mustSupport value="true"/>
         </element>
         <element id="Observation.performer">
@@ -203,12 +229,12 @@
                 </extension>
                 <code value="CodeableConcept"/>
             </type>
-            <constraint>
+            <!--constraint>
                 <key value="us-core-3"/>
                 <severity value="error"/>
                 <human value="SHALL use UCUM for coded quantity units."/>
                 <expression value="valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'"/>
-            </constraint>
+            </constraint-->
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
