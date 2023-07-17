@@ -10,8 +10,8 @@
             <valueMarkdown value="This is a Pulse intensity Palpation Example for the *Clinical Test Result Observation Profile*."/>
         </extension>
         <source value="#w0KkhhmJCsYOH2OT"/>
-        <versionId value="7"/>
-        <lastUpdated value="2023-06-06T12:58:03.421Z"/>
+        <!--versionId value="7"/>
+        <lastUpdated value="2023-06-06T12:58:03.421Z"/-->
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">

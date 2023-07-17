@@ -6,7 +6,6 @@
         <versionId value="41"/>
         <lastUpdated value="2023-06-06T21:06:42.669Z"/>
     </meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category"/>
     <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSimpleObservation"/>
     <name value="MCCSimpleObservation"/>
     <title value="Multiple Chronic Condition Care Plan Simple Observation"/>

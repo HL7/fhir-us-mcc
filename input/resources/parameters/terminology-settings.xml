@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters
+    xmlns="http://hl7.org/fhir">
+    <id value="terminology-settings"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2021-11-15T03:34:54.002Z"/>
+    </meta>
+    <parameter>
+        <name value="system-version"/>
+        <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
+    </parameter>
+</Parameters>
