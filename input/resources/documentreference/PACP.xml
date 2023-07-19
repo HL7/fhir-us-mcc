@@ -50,9 +50,10 @@
             <title value="Uri where the data can be found: [base]/Binary/1-note"/>
         </attachment>
         <format>
-            <system value="http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"/>
+            <!--system value="http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"/-->
+			<system value="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"/>
             <code value="urn:ihe:pcc:cm:2008"/>
-            <display value="Care Management"/>
+            <display value="Care Management (CM)"/>
         </format>
     </content>
     <context>

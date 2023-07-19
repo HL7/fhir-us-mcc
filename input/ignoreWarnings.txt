@@ -4,9 +4,8 @@
 WARNING: ImplementationGuide/hl7.fhir.us.mcc: ImplementationGuide.description: The markdown contains content that appears to be an embedded HTML tag starting at ' I'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
-# the warning comes from the Core resource, see https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/StructureDefinition.2Esnapshot.2Eelement.5B30.5D.2Ecomment.3A.20The.20Unicod
+# the warning comes from the Core resource, see zulip thread in IG creation https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/StructureDefinition.2Esnapshot.2Eelement.5B30.5D.2Ecomment.3A.20The.20Unicod
 WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
-
 
 
 # The following issues have been reviewed and these items are not intended to validate against one of the slices.
