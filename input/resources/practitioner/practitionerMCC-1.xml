@@ -15,8 +15,8 @@
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
     </meta>
     <identifier>
-        <system value="http://hl7.org.fhir/sid/us-npi"/>
-        <value value="9941339108"/>
+        <system value="http://hl7.org/fhir/sid/us-npi"/>
+        <value value="9941339100"/>
     </identifier>
     <identifier>
         <system value="http://www.acme.org/practitioners"/>
