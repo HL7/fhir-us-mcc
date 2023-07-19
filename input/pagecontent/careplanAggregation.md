@@ -1,20 +1,3 @@
-### Aggregation of Data:
-Care planning involves iterative assessment, diagnosis, planning, implementation, and evaluation. And, especially in the care of patients with multiple chronic conditions, requires coordination of a team of increasingly specialized roles. This includes caregivers. To bring all the important data together with a FHIR Careplan requires understanding what is needed in the care of a given condition. However, the mental model of a care plan is not easy to pin down. Each provider, system or use case may differ in what they consider to be essential in planning. 
-
-Fortunately, there are patterns that can be followed to aid in aggregation of information to capture a care plan. In this implementation guide we lay out constraints on key FHIR profiles that will be used in the process (pay attention to Must Support flags to identify key data elements). We also have described the need/use of _includes and _revincludes (ref), as well as other features of the FHIR API (ref). And provide several additional use case examples as well as [structure and design considerations] (http://hl7.org/fhir/us/mcc/2023Jan/structure_and_design_considerations.html#instantiated-fhir-supported-dynamic-care-planning-and-coordination). Once collected and brought together by a FHIR Careplan the data structure will look something like [this diagram](http://hl7.org/fhir/us/mcc/2023Jan/structure_and_design_considerations.html#multiple-chronic-condition-fhir-care-plan-profile-relationship-diagram). All of this guidance frames useful patterns for retrieval and structuring care planning data. But without effective use of ontologically linked vocabulary, one will not be able to identify what data to retrieve or structure.
-
-Electronically accessible data in EMRs can be found associated with codes from standard terminologies, taking advantage of these codes makes it possible to find care planning data. In this guide we have what can be considered a good starter set for vocabulary to use to frame what data to retrieve. For example, on the vocabulary page for symptoms we have a value set for ['Chest Pain'](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1426/expansion/Latest). The value set is a set of SNOMED terms that are likely to be used to indicate an observation of a symptom of 'chest pain.' In US CORE FHIR this is expected to be a value found in the Observation.valueCodableConcept data element. One would use the value set concepts (codes) to find Observations that represented a record of the symptom of 'chest pain.' Similarly, the condition of ['persistent hypertension'](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1563/expansion) could be captured as an ICD10 or SNOMED code found in the value set OID:2.16.840.1.113762.1.4.1222.1563, and used to pull relevant conditions by searching for FHIR Conditions using a 'Condition.code' that matches one of the concepts. Here is an example FHIR query using a value set and Condition.code to search for persistent hypertension
-    
-GET [base]/Condition?code:in=http[terminology server base url]/ValueSet/$expand?url=https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1563/
-
-note: if the expansion is too large an error will be returned. 
-
-Some systems may not be able to support value set expansions in queries, in this case you may need to adopt an alternative strategy such as pulling all Conditions and looking iteratively through the returned conditions (typically one would do this on a periodic basis to limit the number of FHIR Conditions returned, and perhaps use a bulk FHIR approach in the initial data request).
-
-The model of care planning in a chronic condition includes aggregation of condition relevant goals, assessments/evaluations (labs, clinical tests, patient questionnaire responses, observations, sometimes exploratory/diagnostic procedures), treatments and intervention procedures. While we have value sets enumerated in the implementation guide, these are only a starter set, each provider, use case or system may both use different codes (concepts) and consider some characteristics to be key to a specific condition. 
-
-In summary, as an implementer you are looking to find the goal, treatments/procedures and team that is relevant to a specific condition, and then link them as an overall plan for a patient with multiple chronic conditions. To know the vocabulary terms (codes) to use to pull data elements, use our value sets as a starter and iteratively work with the provider systems that treat your patients to determine the value set you need to meet the specific condition. 
-
 ### CarePlan transaction alternatives:
 The choice in how to package an aggregated CarePlan is dependent on the capabilities of the sender and receiver.
 
@@ -31,3 +14,28 @@ When conditions are met, the client is alerted by the FHIR server that there is 
 FHIR Client retrieves the CarePlan with a FHIR API transaction, and any additional referenced resources it needs.
 
 Use of Bulk FHIR: For a Bulk Data [HL7.FHIR.UV.BULKDATA\Bulk Data IG Home Page - FHIR v4.0.1](https://hl7.org/fhir/uv/bulkdata/) FHIR enabled server the client would use the bulk data paradigm to retrieve the CarePlan, and possibly the constituent parts. This is a ‘pull’ by the recipient
+
+### Application POST example - eCare Plan App transmission to downstream systems
+The eCare Plan App has been built alongside the IG to demonstrate the principals of the IG in action. It is an example of allowing for patient-mediated exchange of health data as part of care planning. By aggregating care plan data, the standards-based application platform empowers patients and caregivers to actively participate in their care planning for MCC. It enables them to write and share information with their providers, while also providing a comprehensive view of their health data from all providers for goal-oriented care planning. Moreover, the platform supports better care coordination through interoperable data exchange and serves as a companion app to the provider-facing platform, facilitating shared care planning among all members of the care team.
+
+The following figure depicts the types of interactions it performs.
+<table><tr><td><img src="MCCCarePatientMediatedHealthInformationExchange.png" /></td></tr></table>
+
+The figure below depicts a high-level view of the application aggregating data from multiple sources and then transmitting an aggregated CarePlan to multiple outputs using POST.
+<table><tr><td><img src="MCCCarePlanBundlePOST_TransactionDiagram.png" /></td></tr></table>
+
+### Developer notes on finding components of a CarePlan to aggregate
+To aggregate FHIR Careplan instances and care plan data, it's crucial to understand the necessary data for a specific condition. However, the mental model of a care plan varies among providers, systems, and use cases. Sometimes one must look for individual care planning data, in addition to CarePlan instances. Fortunately, there are helpful patterns for aggregating care plan information. The implementation guide defines constraints on key FHIR profiles, emphasizing Must Support flags to identify essential data elements. It also explains the use of _includes, _revincludes, and other FHIR API features, along with offering use case examples and structure/design considerations. Recall that for a FHIR Careplan the data structure will look something like [this diagram](http://hl7.org/fhir/us/mcc/2023Jan/structure_and_design_considerations.html#multiple-chronic-condition-fhir-care-plan-profile-relationship-diagram). This guidance provides valuable patterns for retrieving and structuring care planning data. Additionally, the effective use of ontologically linked vocabulary is crucial for identifying relevant data to retrieve and structure.
+
+Electronically accessible data in EMRs is associated with codes from standard terminologies. Utilizing these codes enables the retrieval of care planning data. For instance, the condition ['persistent hypertension'](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1563/expansion) can be captured as an ICD10 or SNOMED code from the value set OID:2.16.840.1.113762.1.4.1222.1563. So, to pull relevant FHIR Condition instances one looks for a 'Condition.code' that matches one of the concepts from the value set.
+
+Here is an example FHIR query, using a value set and Condition.code, to search for persistent hypertension as a condition of a patient. The value set is expanded by the server and all Condition instances with a code in the list of codes in the expansion would be returned:
+    
+GET [base]/Condition?code:in=http[terminology server base url]/ValueSet/$expand?url=https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1563/
+
+note: if the expansion is too large an error will be returned. 
+
+Some systems may not support value set expansions in queries. In such cases, you can adopt an alternative strategy by pulling all Conditions and iteratively looking through them for the Condition.code values one needs.
+
+As an implementer you are looking to find the goal, treatments/procedures and team that is relevant to a specific condition, and then link them as an overall plan for a patient with multiple chronic conditions. To know the vocabulary terms (codes) to use to pull data elements, use our value sets as a starter and iteratively work with the provider systems that treat your patients to determine the value set you need to meet the specific conditions or care of interest. 
+

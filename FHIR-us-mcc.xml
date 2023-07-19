@@ -70,9 +70,9 @@
 <artifact id="Observation/MCCweight" key="Observation-MCCweight" name="US-Core MCC Weight Example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="careplanAggregation" name="Alternatives for Transmitting/Collecting Aggregated Care Plans"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="capability_statements" name="Capability Statements"/>
-<page key="careplanAggregation" name="CarePlan Data Aggregation"/>
 <page deprecated="true" key="conformance" name="Conformance"/>
 <page key="downloads" name="Downloads"/>
 <page key="index" name="Home Page"/>

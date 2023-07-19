@@ -10,7 +10,7 @@
     <ul class="dropdown-menu">
       <li><a href="structure_and_design_considerations.html">Structure and Design Considerations</a></li>
       <li><a href="profiles_or_resources_directly_reused_in_this_guide.html">Profiles or Resources Directly Reused in this Guide</a></li>
-      <li><a href="careplanAggregation.html">CarePlan Data Aggregation</a></li>
+      <li><a href="careplanAggregation.html">Alternatives for Transmitting/Collecting Aggregated Care Plans</a></li>
       <li><a href="security.html">Security</a></li>
       <li><a href="questionnaire_response.html">Questionnaire Response</a></li>
       <li><a href="mcc_care_plan_sdoh_guidance.html">MCC Care Plan SDOH Guidance</a></li>
