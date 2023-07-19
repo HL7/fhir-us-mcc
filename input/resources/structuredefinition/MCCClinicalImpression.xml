@@ -45,7 +45,6 @@
             <path value="ClinicalImpression.extension"/>
             <sliceName value="changePattern"/>
 			<short value="Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change"/>
-			<definition value="Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change. It is a subjective assessment of the direction of the change." />
             <max value="1"/>
             <type>
                 <code value="Extension"/>

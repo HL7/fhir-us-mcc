@@ -59,15 +59,17 @@
             <type>
                 <code value="CodeableConcept"/>
             </type>
-            <binding>
+            <!--binding>
                 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                     <valueString value="ClinicalImpression Change Pattern"/>
                 </extension>
                 <strength value="example"/>
                 <description value="Example codes indicating the change pattern of a ClinicalImpression. Note that these are in no way complete and might not even be appropriate for some uses."/>
-                <!--valueSet value="http://hl7.org/fhir/ValueSet/clinicalimpression-change-pattern"/-->
+
 				<valueSet value="http://hl7.org/fhir/ValueSet/clinicalimpression-change-pattern"/>
-            </binding>
+
+
+            </binding-->
         </element>
     </differential>
 </StructureDefinition>
