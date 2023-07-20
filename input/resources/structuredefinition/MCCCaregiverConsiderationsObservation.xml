@@ -94,7 +94,7 @@
             <path value="Observation.status"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.category">
+        <!--element id="Observation.category">
             <path value="Observation.category"/>
             <label value="Caregiver considerations"/>
             <slicing>
@@ -102,12 +102,55 @@
                     <type value="pattern"/>
                     <path value="$this"/>
                 </discriminator>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="codeableConcept.coding"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
+			<min value="1"/>
+			<max value="*"/>
             <short value="Caregiver considerations"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.category:caregiver-concerns">
+
+        <element id="Observation.category:us-core">
+            <path value="Observation.category"/-->
+            <!--slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="$this"/>
+                </discriminator>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="codeableConcept.coding"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing-->
+			<!--min value="1"/>
+			<max value="*"/>
+        </element>
+        <element id="Observation.category:us-core/caregiver-concerns">
+            <path value="Observation.category"/>
+            <sliceName value="us-core/caregiver-concerns"/>
+            <label value="Caregiver well being status"/-->
+            <!--slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing-->
+            <!--short value="Caregiver well being status"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="405193005"/>
+                </coding>
+            </patternCodeableConcept>
+			<min value="1"/>
+			<max value="1"/>
+        </element-->
+        <!--element id="Observation.category:caregiver-concerns">
             <path value="Observation.category"/>
             <sliceName value="caregiver-concerns"/>
             <label value="Caregiver well being status"/>
@@ -120,7 +163,49 @@
 					<code value="405193005"/>
 				</coding>
             </patternCodeableConcept>
+        </element-->
+		
+		<element id="Observation.category">
+            <path value="Observation.category"/>
+            <label value="Caregiver considerations"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="$this"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="Caregiver considerations"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
+        <!--element id="Observation.category:caregiver-concerns">
+            <path value="Observation.category"/>
+            <sliceName value="caregiver-concerns"/>
+            <label value="Caregiver well being status"/>
+            <short value="Caregiver well being status"/>
+            <min value="0"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="405193005"/>
+                </coding>
+            </patternCodeableConcept>
+        </element-->
+        <element id="Observation.category:us-core/slice7412">
+            <path value="Observation.category"/>
+            <sliceName value="us-core/slice7412"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="405193005"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+		
+		
         <element id="Observation.code">
             <path value="Observation.code"/>
             <mustSupport value="true"/>
