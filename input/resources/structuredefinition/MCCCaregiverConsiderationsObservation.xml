@@ -193,9 +193,11 @@
                 </coding>
             </patternCodeableConcept>
         </element-->
-        <element id="Observation.category:us-core/slice7412">
+        <element id="Observation.category:us-core/caregiver-concerns">
             <path value="Observation.category"/>
-            <sliceName value="us-core/slice7412"/>
+            <sliceName value="us-core/caregiver-concerns"/>
+			<label value="Caregiver well being status"/>
+            <short value="Caregiver well being status"/>
             <min value="1"/>
             <patternCodeableConcept>
                 <coding>
