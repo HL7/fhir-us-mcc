@@ -207,7 +207,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 		</tr>
 		<tr>
 			<td style="border-color:#222222; height:12.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1446/expansion/Latest">Covid Toes</a></p>
+			    <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1446/expansion/Latest">Covid Toes (Toes and/or Fingers)</a></p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:32%">
 			<p>This set of values reflect patients experiencing Covid Toes is a condition that develops on your toes, fingers, or both. Along with the swelling and discoloration, COVID toes can also cause blisters, itch, or pain. Some people develop painful raised bumps or areas of rough skin. Others may see a small amount of pus under their skin.</p>
@@ -221,7 +221,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 		</tr>
 				<tr>
 			<td style="border-color:#222222; height:12.75pt; vertical-align:top; width:11%">
-				<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1446/expansion/Latest">Debility or Frailty</a></p>
+				<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1502/expansion/Latest">Debility or Frailty</a></p>
 			</td>
 			<td style="height:12.75pt; vertical-align:top; width:32%">
 				<p>This set of values contains finding of Debility or Frailty related terms representing physical weakness, feebleness, or infirmity.</p>

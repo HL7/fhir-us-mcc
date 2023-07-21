@@ -1,5 +1,5 @@
 This table holds the value sets that may be used with the [MCC Observation SDOH Assessment Profile](StructureDefinition-MCCObservationSDOHAssessment.html). 
-In general, these value sets represent simple social determinants of health questions that may have answers lists that should be used with them and are assocated with the code in LOINC. They may or may not be part of a larger LOINC panel that could be referred to or from a QuestionnaireResponse profile. 
+In general, these value sets represent simple social determinants of health questions that may have answers lists that should be used with them and are assocated with the code in LOINC. In some cases the value (answer) at Observation.value may be boolean true | false. They may or may not be part of a larger LOINC panel that could be referred to or from a QuestionnaireResponse profile.
 
 **Table Key**
 * **Value Set Name and Link**: All of these value sets are housed in the [NLM Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/welcome). The value set name is a link to the value set. You must have an NLM/UMLS account to access. There is no charge for an account. Note: the first time you click on the value set name link in a given session, there my be a delay in loading and you will need to sign in once loaded.
@@ -128,7 +128,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
                 <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1080/expansion">Experiences of Discrimination</a></p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:132.7pt">
-                <p>This set of values addresses terms representing an observation of an experiences of discrimination.</p>
+                <p>This set of values addresses terms representing questions intended to capture experiences of discrimination.</p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:153.55pt">
                 <p>2.16.840.1.113762.1.4.1222.1080</p>
@@ -170,7 +170,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
                 <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1053/expansion">Income Level</a></p>
             </td>
             <td style="background-color:white; height:41.25pt; width:132.7pt">
-                <p>This set of values addresses terms representing an observation of an individual or household income level.</p>
+                <p>This set of values addresses terms representing questions intended to capture observations of individual or household income level.</p>
             </td>
             <td style="background-color:white; height:41.25pt; width:153.55pt">
                 <p>2.16.840.1.113762.1.4.1222.1053</p>
@@ -198,7 +198,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
                 <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1060/expansion">Living Situation</a></p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:132.7pt">
-                <p>This set of values addresses terms representing an observation of a patient&#39;s living situation/living arrangements.</p>
+                <p>This set of values addresses terms representing questions about living situations/living arrangements.</p>
             </td>
             <td style="height:41.25pt; vertical-align:top; width:153.55pt">
                 <p>2.16.840.1.113762.1.4.1222.1060</p>
@@ -240,7 +240,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
                 <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1068/expansion">Physical Activity Level</a></p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:132.7pt">
-                <p>This set of values addresses terms representing an observation of physical activity level.</p>
+                <p>This set of values addresses terms representing questions about physical activity level.</p>
             </td>
             <td style="height:41.25pt; vertical-align:top; width:153.55pt">
                 <p>2.16.840.1.113762.1.4.1222.1068</p>
@@ -254,7 +254,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
                 <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1076/expansion">Unsafe Neighborhood</a></p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:132.7pt">
-                <p>This set of values addresses terms representing an observation that a patient lives in an unsafe neighborhood.</p>
+                <p>This set of values contains terms representing Questions about neighborhood safety.</p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:153.55pt">
                 <p>2.16.840.1.113762.1.4.1222.1076</p>
@@ -268,7 +268,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
                 <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1050/expansion">Work Productivity</a></p>
             </td>
             <td style="background-color:#fcfdfd; height:41.25pt; width:132.7pt">
-                <p>This set of values addresses terms representing an observation of work productivity.</p>
+                <p>This set of values represent question terms about work productivity.</p>
             </td>
             <td style="height:41.25pt; vertical-align:top; width:153.55pt">
                 <p>2.16.840.1.113762.1.4.1222.1050</p>

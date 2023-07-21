@@ -490,7 +490,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.991/expansion">Suicidal Ideation and Behaviors</a></p>
 			</td>
 			<td style="background-color:#fcfdfd; height:15.0pt; width:154.5pt">
-			<p>This set of values addresses terms representing an observation of suicidal ideation and behaviors.</p>
+			<p>This set of values contains terms representing questions about suicidal ideation and behaviors.</p>
 			</td>
 			<td style="background-color:#fcfdfd; height:15.0pt; width:87.0pt">
 			<p>2.16.840.1.113762.1.4.1222.991</p>

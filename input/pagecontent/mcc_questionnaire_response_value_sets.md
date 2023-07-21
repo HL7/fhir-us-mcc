@@ -141,6 +141,24 @@ The codes in the value sets below should be able to retrieve [MCC QuestionnaireR
 			<p><a href="https://forms.loinc.org/99673-6">COVID-19 Knowledge, Attitudes, and Avoidant Behaviors panel</a></p>
 			</td>
 		</tr>
+				<tr>
+			<td style="border-color:black; height:15.0pt; vertical-align:top; width:91.15pt">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1598/expansion">Criminal Justice Involvement or Incarceration History</a></p>
+			</td>
+			<td style="height:15.0pt; vertical-align:top; width:116.25pt">
+			<p>This set of values contain LOINC Panel codes pertaining to criminal justice involvement or incarceration in the past year.</p>
+			</td>
+			<td style="height:15.0pt; vertical-align:top; width:95.25pt">
+			<p>2.16.840.1.113762.1.4.1222.1598</p>
+			</td>
+			<td style="height:15.0pt; vertical-align:top; width:137.9pt">
+			<p>Questionnaire.code</p>
+			</td>
+			<td style="height:15.0pt; vertical-align:top; width:247.65pt">
+			<p><a href="https://forms.loinc.org/62940-2">PhenX - crime and delinquency - adult protocol 181202</a></p>
+			<p><a href="https://forms.loinc.org/62939-4">PhenX - crime and delinquency - adolescent protocol 181201</a></p>
+			</td>
+		</tr>
 		<tr>
 			<td style="border-color:black; height:15.0pt; vertical-align:top; width:91.15pt">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.582/expansion">Framingham Risk Assessments</a></p>

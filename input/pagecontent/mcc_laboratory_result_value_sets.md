@@ -447,69 +447,13 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.0pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.816/expansion">Drugs of Abuse Screen in Blood</a></p>
+				<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1597/expansion">Drugs of Abuse Screen</a></p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Drugs of Abuse Screen in Blood.</p>
+			<p>This set of values addresses terms representing Drugs of Abuse Screen.</p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.816</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:12%">
-			<p>Observation.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.0pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.818/expansion">Drugs of Abuse Screen in Body Fluid</a></p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Drugs of Abuse Screen in Body Fluid.</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.818</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:12%">
-			<p>Observation.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.0pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.814/expansion">Drugs of Abuse Screen in Hair</a></p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Drugs of Abuse Screen in Hair.</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.814</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:12%">
-			<p>Observation.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.0pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.817/expansion">Drugs of Abuse Screen in Tissue</a></p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Drugs of Abuse Screen in Tissue.</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.817</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:12%">
-			<p>Observation.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.0pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.815/expansion">Drugs of Abuse Screen in Urine</a></p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Drugs of Abuse Screen in Urine.</p>
-			</td>
-			<td style="height:15.0pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.815</p>
+				<p>2.16.840.1.113762.1.4.1222.1597</p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:12%">
 			<p>Observation.code</p>
@@ -1223,7 +1167,7 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 	            <p>This set of values contains laboratory observable terms for urine sediment including RBC, RBC casts, WBC, WBC casts, Tubular cells. Cellular casts, Granular casts, and Fat (oval fat bodies, fatty casts, free fat).</p>
 	        </td>
 	        <td style="height:15.0pt; vertical-align:top; width:20%">
-	            <p>2.16.840.1.113762.1.4.1222.154</p>
+	            <p>2.16.840.1.113762.1.4.1222.176</p>
 	        </td>
 	        <td style="height:15.0pt; vertical-align:top; width:12%">
 	            <p>Observation.code</p>
