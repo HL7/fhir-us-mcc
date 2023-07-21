@@ -29,7 +29,7 @@
         </valueReference>
     </extension-->
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
-    <version value="1.0.0-ballot"/>
+    <version value="1.0.0-ballot2"/>
     <name value="MCCeCarePlan"/>
     <title value="MCC eCare Plan Implementation Guide"/>
     <status value="draft"/>
@@ -681,13 +681,22 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
         </resource>
-		        <resource>
+		<resource>
             <reference>
                 <reference value="StructureDefinition/changePattern"/>
                 <display value="Change Pattern R5 backport"/>
             </reference>
             <name value="Change Pattern R5 backport"/>
             <description value="Change in the status/pattern of a subject’s condition since previously assessed, such as worsening, improving, or no change. It is a subjective assessment of the direction of the change."/>
+            <exampleBoolean value="false"/>
+        </resource>
+		<resource>
+            <reference>
+                <reference value="StructureDefinition/custodian"/>
+                <display value="Custodian R5 backport"/>
+            </reference>
+            <name value="Custodian R5 backport"/>
+            <description value="Who is the designated responsible party. When populated, the custodian is responsible for the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor."/>
             <exampleBoolean value="false"/>
         </resource>
         <page>

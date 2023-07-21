@@ -19,10 +19,21 @@
     <abstract value="false"/>
     <type value="CarePlan"/>
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+	<!--baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan"/-->
     <derivation value="constraint"/>
     <differential>
         <element id="CarePlan">
             <path value="CarePlan"/>
+        </element>
+		<element id="CarePlan.extension:custodian">
+            <path value="CarePlan.extension"/>
+            <sliceName value="custodian"/>
+			<short value="When populated, the custodian is responsible for the care plan. The care plan is attributed to the custodian."/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+				<profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/custodian"/>
+            </type>
         </element>
         <element id="CarePlan.status">
             <path value="CarePlan.status"/>

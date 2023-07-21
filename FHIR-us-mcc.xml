@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Jan" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0-ballot" defaultWorkgroup="" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep-ballot" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0-ballot2" defaultWorkgroup="" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-us-mcc"/>
-<version code="1.0.0-ballot" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
+<version code="1.0.0-ballot2" url="http://hl7.org/fhir/us/mcc/2023Sep-ballot"/>
+<version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="RelatedPerson/caregiver-of-noelle" key="RelatedPerson-caregiver-of-noelle" name="Caregiver Example"/>
 <artifact id="StructureDefinition/changePattern" key="StructureDefinition-changePattern" name="Change Pattern R5 backport"/>
+<artifact id="StructureDefinition/custodian" key="StructureDefinition-custodian" name="Custodian R5 backport"/>
 <artifact id="StructureDefinition/DocRefPACP" key="StructureDefinition-DocRefPACP" name="Document Reference to Patient's Personal Advance Care Plan (Advance Directive)"/>
 <artifact deprecated="true" id="Parameters/expansion-parameters-fhir-mcc-ig" key="Parameters-expansion-parameters-fhir-mcc-ig" name="Expansion Parameters - MCC SNOMED"/>
 <artifact id="Parameters/expansion-parameters-mcc" key="Parameters-expansion-parameters-mcc" name="Expansion Parameters SNOMED US Version"/>
