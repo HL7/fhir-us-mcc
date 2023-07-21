@@ -13,6 +13,7 @@
 
 <!--a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a-->
 
+
 <h3 id="plain-language-summary-about-hl7-and-this-guide">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary-about-hl7-and-this-guide" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a>
   <button class="btn btn-info btn-lg collapsed" type="button" title="Click to Open or Close the Plain Language Summary" data-toggle="collapse" data-target="#plain-lang-summary" aria-expanded="false" aria-controls="collapseExample">
     Welcome! Thank-you for wanting to learn about this guide.  Click Here to see the Plain Language Summary
@@ -49,6 +50,9 @@
 
   </div>
 </div>
+
+
+
 
 ### Plain Language Summary about HL7 and this Guide
 
@@ -100,7 +104,7 @@ This Guide is divided into several pages which are listed in the navigation bar 
 
 ### Value Set Library
 
-Rather than creating nearly 1000 profiles covering important concepts for chronic care coordination for use within the MCC FHIR Care Plan profile, we have created 21 foundation profiles which conform to US Core Profiles (where available), adding constraints or extensions pertinent to their representation within a dynamic FHIR care plan.  To represent specific concepts within these foundational profiles, we then created libraries of value sets pertinent to the base profiles for representing chronic conditions, and their related interventions and goals and outcomes. This project has built and houses its value sets in the National Library of Medicine’s (NLM) Value Set Authority Center (VSAC). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used. Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) [UMLS license](https://www.nlm.nih.gov/databases/umls.htm). In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue.
+Rather than creating nearly 1000 profiles covering important concepts for chronic care coordination for use within the MCC FHIR Care Plan profile, we have created 21 foundation profiles which conform to US Core Profiles (where available), adding constraints or extensions pertinent to their representation within a dynamic FHIR care plan.  To represent specific concepts within these foundational profiles, we then created libraries of value sets pertinent to the base profiles for representing chronic conditions, and their related interventions and goals and outcomes. This project has built and houses its value sets in the [National Library of Medicine’s (NLM) Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/). The value sets are not directly bound within the foundation profiles, but value set library pages are provided with links to the value sets in VSAC and descriptions of where within the profile each value set may be used. Because the value sets are housed in VSAC, it is necessary for implementation sites to obtain a free (for the US) [UMLS license](https://www.nlm.nih.gov/databases/umls.htm). In addition, HL7 FHIR Policies requiring everything to be open source in all realms, may present some implementation validation issues when interfacing with a value set housed in VSAC. This IG will provide guidance for this issue.
 
 ### Project Overview
 
@@ -133,8 +137,7 @@ This guidance section provides general implementation guidance and best practice
 
 ####  Relationship to US Core
 
-This Implementation Guide reuses US Core profiles either through direct use or by constraining select profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG constrains or directly reuses other resources, or profiles defined in other FHIR IGs. 
-This guide will reuse the US Core Care Plan. However, the required US Core CarePlan.text and the required Care.Plan.category:AssessPlan may be limiting factors for this context of use: aggregation of multiple chronic condition care plans and the ability to query for structured data within a structured Care Plan. As such, we recommend adding additional Care Plan categories if deemed more informational to reflect multiple chronic condition care coordination and plans and to hard code “Multiple Chronic Condition Care Coordination Plan” at CarePlan.text
+This Implementation Guide reuses US Core profiles either through direct use or by constraining select profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG created new profiles, or constrains or directly reuses other resources ,or profiles defined in other FHIR IGs. This guide re-uses and contrains the US Core Care Plan as it's core profile.
 
 
 #####  General US Core IG Conformance
@@ -152,7 +155,8 @@ This IG will adhere to the US Core [Must Support](https://www.hl7.org/fhir/us/co
 ### Acknowledgements
 This Implementation Guide was made possible through the visionary leadership of the [National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) ](https://www.niddk.nih.gov/)and the [Agency for Healthcare Research and Quality (AHRQ) ](https://www.ahrq.gov/) with funding from the [Patient-Centered Outcomes Research Trust Fund of the Office of the Assistant Secretary for Planning and Evaluation (ASPE)](https://aspe.hhs.gov/collaborations-committees-advisory-groups/os-pcortf/explore-portfolio). The joint NIDDK-AHRQ project team can be found [here](https://cmext.ahrq.gov/confluence/display/EC/Project+Team). We would also like to thank the many clinicians, patients, caregivers, researchers, advocates, and subject matter experts who served on our [Technical Expert Panels](https://cmext.ahrq.gov/confluence/display/EC/Technical+Expert+Panels) and [Contract Monitoring Board ](https://cmext.ahrq.gov/confluence/display/EC/Contract+Monitoring+Board) for their time, insight, and support. 
 
-This Implementation Guide was created under the supervision and review of the [HL7 Patient Care Work Group](https://www.hl7.org/Special/committees/patientcare/index.cfm). This is the HL7 project page for the [Multiple Chronic Conditions e-Care Project.](https://confluence.hl7.org/display/PC/Multiple+Chronic+Conditions+%28MCC%29+eCare+Plan)
+This Implementation Guide was created under the supervision and review of the [HL7 Patient Care Work Group (PCWG)](https://www.hl7.org/Special/committees/patientcare/index.cfm). This is the HL7 project page for the HL7 PCWG [Multiple Chronic Conditions e-Care Project.](https://confluence.hl7.org/display/PC/Multiple+Chronic+Conditions+%28MCC%29+eCare+Plan)
+The [HL7 Learning Health System](https://confluence.hl7.org/display/LHS) and [Clinical Decision Support Work](https://confluence.hl7.org/display/CDS) Groups were co-sponsors of the Implementation Guide development.
 
 **Implementation Guide Contributors:**
 <table border="1" cellspacing="0" style="width:100.0%">

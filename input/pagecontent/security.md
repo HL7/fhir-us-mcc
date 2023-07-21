@@ -1,1 +1,1 @@
-Follow [US Core Security gudiance](http://hl7.org/fhir/us/core/security.html)
+Follow [US Core Security Guidance](http://hl7.org/fhir/us/core/security.html)
