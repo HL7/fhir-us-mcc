@@ -6,8 +6,8 @@ WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9
 
 # The following issues have been reviewed and these items are not intended to validate against one of the slices.
 INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
-INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
-INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot2
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot2
 
 
 
@@ -22,7 +22,7 @@ INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[1]: This el
 INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
 
 # Examples use category of Symptom which is not in the USCORE value set. There is no suitable code exists in the ValueSet US Core Simple Observation Category 
-INFORMATION: Observation/Symptom1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0-ballot
+INFORMATION: Observation/Symptom1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0-ballot2
 
 # The following is a LOINC answer list is valid, reviewed the code system is correct and valid
 WARNING: Observation/caregiver-feelings-condition-status: Observation.value.ofType(CodeableConcept): ValueSet https://loinc.org/LL4938-8 not found
