@@ -10,7 +10,7 @@
     <name value="Custodian"/>
     <title value="Custodian R5 backport"/>
     <status value="active"/>
-    <description value="Who is the designated responsible party. When populated, the custodian is responsible for the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor."/>
+    <description value="When populated, the custodian is responsible for the care and maintenance of the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor. This CarePlan.custodian extension should be used instead of CarePlan.author which in R4 is currently identified as the designated responsible party and in R5 has been removed."/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="rim"/>
@@ -30,7 +30,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Custodian R5 backport"/>
-            <definition value="Who is the designated responsible party."/>
+            <definition value="When populated, the custodian is responsible for the care and maintenance of the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor. This CarePlan.custodian extension should be used instead of CarePlan.author which in R4 is currently identified as the designated responsible party and in R5 has been removed."/>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>
