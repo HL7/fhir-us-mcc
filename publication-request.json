@@ -1,14 +1,11 @@
 {
   "package-id": "hl7.fhir.us.mcc",
-	"version": "1.0.0-ballot",
-	"path": "http://hl7.org/fhir/us/mcc/2023Jan",
-	"milestone": false,
+	"version": "1.0.0-ballot2",
+	"path": "http://hl7.org/fhir/us/mcc/2023Sep-ballot",
+	"mode" : "milestone",
 	"status": "ballot",
 	"sequence": "STU 1",
+	"first" : false,
 	"desc": "FHIR STU Release 1",
-	"descmd": "FHIR STU Release 1",
-	"title": "MCC eCare Plan Implementation Guide",
-	"ci-build" : "http://build.fhir.org/ig/HL7/fhir-us-mcc",
-	"category": "Care Planning",
-	"introduction": "The IG represents clinical and social data elements within the FHIR Care Plan Resource. It defines the FHIR resource relationships necessary for care planning, and reuses or defines FHIR queries for an aggregated view within the Care Plan structure."
+	"descmd": "FHIR STU Release 1"
 }
