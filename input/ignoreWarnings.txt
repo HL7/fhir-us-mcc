@@ -13,8 +13,8 @@ INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element 
 
 
 
-# the warning comes from the Core resource, see zulip thread in IG creation https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/StructureDefinition.2Esnapshot.2Eelement.5B30.5D.2Ecomment.3A.20The.20Unicod
-WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
+# the warning comes from a character in the Core resource, see zulip thread in IG creation, has been addressed in a workaround by Grahame in IG publisher
+WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[31].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
 
 # Examples demonstrate use of additional Codes or Identifiers not defined in US Core profiles.
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
