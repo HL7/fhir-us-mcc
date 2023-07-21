@@ -235,7 +235,7 @@
             </reference>
             <name value="Multiple Chronic Condition Care Plan Example"/>
             <description value="A Multiple Chronic Condition Care Plan Example reflecting multiple chronic conditions and associated, goals, health concerns, interventions and outcomes as seen in the profile and profile relationship diagram. (NOTE: Only CKD examples present as of 2022-APR)"/>
-            <exampleBoolean value="false"/>
+            <exampleBoolean value="true"/>
             <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
         </resource>
         <resource>
