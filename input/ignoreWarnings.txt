@@ -4,15 +4,17 @@
 WARNING: ImplementationGuide/hl7.fhir.us.mcc: ImplementationGuide.description: The markdown contains content that appears to be an embedded HTML tag starting at ' I'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
-# the warning comes from the Core resource, see zulip thread in IG creation https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/StructureDefinition.2Esnapshot.2Eelement.5B30.5D.2Ecomment.3A.20The.20Unicod
-WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
-
-
 # The following issues have been reviewed and these items are not intended to validate against one of the slices.
 INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot
 
+
+
+
+
+# the warning comes from the Core resource, see zulip thread in IG creation https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/StructureDefinition.2Esnapshot.2Eelement.5B30.5D.2Ecomment.3A.20The.20Unicod
+WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[30].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
 
 # Examples demonstrate use of additional Codes or Identifiers not defined in US Core profiles.
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
@@ -23,7 +25,6 @@ INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This el
 INFORMATION: Observation/Symptom1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0-ballot
 
 # The following is a LOINC answer list is valid, reviewed the code system is correct and valid
-INFORMATION: Observation/caregiver-feelings-condition-status: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus|1.0.0-ballot
 WARNING: Observation/caregiver-feelings-condition-status: Observation.value.ofType(CodeableConcept): ValueSet https://loinc.org/LL4938-8 not found
 WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference https://loinc.org/LL4938-8 on element Observation.valueCodeableConcept could not be resolved
 WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[24].binding: The valueSet reference https://loinc.org/LL4938-8 on element Observation.value[x] could not be resolved

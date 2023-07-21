@@ -21,17 +21,19 @@
     </extension>
     <status value="final"/>
     <category>
-		<coding>
-			<system value="http://snomed.info/sct"/>
-			<code value="405193005"/>
-			<display value="Caregiver wellbeing status (observable entity)"/>
-		</coding>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
             <code value="social-history"/>
             <display value="Social History"/>
         </coding>
-        <text value="Goals, preferences, and priorities for care experience [Reported]"/>
+    </category>
+	<category>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="405193005"/>
+			<display value="Caregiver well-being status (observable entity)"/>
+		</coding>
+        <text value="Caregiver well-being status"/>
     </category>
     <code>
         <coding>
