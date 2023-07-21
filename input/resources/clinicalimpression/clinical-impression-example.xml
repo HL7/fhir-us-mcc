@@ -19,6 +19,15 @@
             <reference value="Goal/HPT-WNL"/>
         </valueReference>
     </extension>
+	<extension url="http://hl7.org/fhir/us/mcc/StructureDefinition/changePattern">
+        <valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="260388006"/>
+				<display value="No status change"/>
+			</coding>
+        </valueCodeableConcept>
+    </extension>
     <status value="completed"/>
     <description value="patient was highly distressed in waiting room prior to appointment for CKD about her health"/>
     <subject>
