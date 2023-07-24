@@ -1,13 +1,6 @@
 == Suppressed Messages ==
-
-# reviewed and not expected to render as html
-WARNING: ImplementationGuide/hl7.fhir.us.mcc: ImplementationGuide.description: The markdown contains content that appears to be an embedded HTML tag starting at ' I'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-
-
 # reviewed and not expected to render as html. This is from a comment on CarePlan.text.div in the structure definition from US CORE. The comment is calling out the HTML link element
 WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-
-
 
 # The following issues have been reviewed and these items are not intended to validate against slices defined in the indicated profiles
 INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
