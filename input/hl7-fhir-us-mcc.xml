@@ -714,11 +714,6 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="profiles_or_resources_directly_reused_in_this_guide.html"/>
-                <title value="Profiles or Resources Directly Reused in this Guide"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
                 <nameUrl value="careplanAggregation.html"/>
                 <title value="Alternatives for Transmitting/Collecting Aggregated Care Plans"/>
                 <generation value="markdown"/>
