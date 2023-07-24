@@ -11,9 +11,6 @@ INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireRespo
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot2
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot2
 
-# The warning comes from a character in the Core resource, see zulip thread in IG creation, is to be addressed in a workaround by Grahame in IG publisher
-WARNING: StructureDefinition/MCCClinicalImpression: StructureDefinition.snapshot.element[31].comment: The Unicode sequence has unterminated bi-di control characters (see CVE-2021-42574): {1}
-
 # Examples demonstrate use of additional Codes or Identifiers not defined in US Core profiles.
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
 INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
