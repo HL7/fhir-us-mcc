@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep-ballot" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0-ballot2" defaultWorkgroup="" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0-ballot2" defaultWorkgroup="" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-us-mcc"/>
-<version code="1.0.0-ballot2" url="http://hl7.org/fhir/us/mcc/2023Sep-ballot"/>
+<version code="1.0.0-ballot2" url="http://hl7.org/fhir/us/mcc/2023Sep"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
 <version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
 <artifactPageExtension value="-definitions"/>
@@ -16,7 +16,7 @@
 <artifact id="CareTeam/careteam-of-noelle" key="CareTeam-careteam-of-noelle" name="MCC Care Team Example"/>
 <artifact id="Observation/caregiver-feelings-condition-status" key="Observation-caregiver-feelings-condition-status" name="MCC Caregiver Feelings on Condition Observation example"/>
 <artifact id="Condition/ConditionCKD" key="Condition-ConditionCKD" name="MCC Chronic Condition - CKD Example"/>
-<artifact id="Observation/pulse-intensity-palpation" key="Observation-pulse-intensity-palpation" name="MCC Clinical Test Observation example"/>
+<artifact id="Observation/pulse-intensity-palpation" key="Observation-pulse-intensity-palpation" name="MCC Clinical Result Observation example"/>
 <artifact id="DiagnosticReport/BoneSurvey" key="DiagnosticReport-BoneSurvey" name="MCC Diagnostic Report and Note Example"/>
 <artifact id="DocumentReference/PACP" key="DocumentReference-PACP" name="MCC Document Reference to Advance Directives Example"/>
 <artifact id="FamilyMemberHistory/father" key="FamilyMemberHistory-father" name="MCC Family Member History Example - Father"/>
@@ -47,7 +47,8 @@
 <artifact id="StructureDefinition/MCCImagingObservation" key="StructureDefinition-MCCImagingObservation" name="Multiple Chronic Condition Care Plan Clinical Imaging Observation"/>
 <artifact id="StructureDefinition/MCCClinicalImpression" key="StructureDefinition-MCCClinicalImpression" name="Multiple Chronic Condition Care Plan Clinical Impression"/>
 <artifact id="ClinicalImpression/clinical-impression-example" key="ClinicalImpression-clinical-impression-example" name="Multiple Chronic Condition Care Plan Clinical Impression Example"/>
-<artifact id="StructureDefinition/MCCClinicalTestObservation" key="StructureDefinition-MCCClinicalTestObservation" name="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
+<artifact id="StructureDefinition/MCCClinicalResultObservation" key="StructureDefinition-MCCClinicalResultObservation" name="Multiple Chronic Condition Care Plan Clinical Result Observation"/>
+<artifact deprecated="true" id="StructureDefinition/MCCClinicalTestObservation" key="StructureDefinition-MCCClinicalTestObservation" name="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
 <artifact id="StructureDefinition/MCCDiagnosticReportAndNote" key="StructureDefinition-MCCDiagnosticReportAndNote" name="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
 <artifact id="CarePlan/MCCCarePlan" key="CarePlan-MCCCarePlan" name="Multiple Chronic Condition Care Plan Example"/>
 <artifact id="StructureDefinition/MCCFamilyHistory" key="StructureDefinition-MCCFamilyHistory" name="Multiple Chronic Condition Care Plan Family History"/>

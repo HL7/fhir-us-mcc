@@ -7,12 +7,12 @@
             <valueString value="Pulse intensity Palpation Example"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
-            <valueMarkdown value="This is a Pulse intensity Palpation Example for the *Clinical Test Result Observation Profile*."/>
+            <valueMarkdown value="This is a Pulse intensity Palpation Example for the *Clinical Result Observation Profile*."/>
         </extension>
         <source value="#w0KkhhmJCsYOH2OT"/>
         <!--versionId value="7"/>
         <lastUpdated value="2023-06-06T12:58:03.421Z"/-->
-        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalResultObservation"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
         <valueReference>
@@ -26,7 +26,7 @@
             <code value="exam"/>
             <display value="Exam"/>
         </coding>
-        <text value="Clinical Test"/>
+        <text value="Clinical Result"/>
     </category>
     <code>
         <coding>

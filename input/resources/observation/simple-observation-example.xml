@@ -27,7 +27,7 @@
       <code value="exam"/>
       <display value="Exam"/>
     </coding>
-    <text value="Clinical Test"/>
+    <text value="Clinical Result"/>
   </category>
     <code>
         <coding>

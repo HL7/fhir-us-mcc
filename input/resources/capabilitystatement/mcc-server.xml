@@ -120,7 +120,7 @@
             <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
             <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCObservationSDOHAssessment"/>
             <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
-            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalResultObservation"/>
             <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
         </resource>
     </rest>

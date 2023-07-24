@@ -28,7 +28,7 @@
 		<element id="CarePlan.extension:custodian">
             <path value="CarePlan.extension"/>
             <sliceName value="custodian"/>
-			<short value="When populated, the custodian is responsible for the care plan. The care plan is attributed to the custodian."/>
+			<short value="When populated, the custodian is responsible for the care and maintenance of the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor. This CarePlan.custodian extension should be used instead of CarePlan.author which in R4 is currently identified as the designated responsible party and in R5 has been removed."/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -58,9 +58,9 @@
         </element>
         <element id="CarePlan.author">
             <path value="CarePlan.author"/>
-            <short value="Who is the designated responsible party. CUSTODIAN OR CARE PLAN OWNER"/>
-            <definition value="	Who is the designated responsible party. (CarePlan.author to be renamed to CarePlan.custodian in R5)"/>
-            <type>
+            <short value="Use the CarePlan custodian extension instead. Use of CarePlan.author is discouraged, it is removed in R5."/>
+            <definition value="Use of CarePlan.author is discouraged. It is removed from the R5 CarePlan Resource and replaced with CarePlan.custodian and should not be used to indicate the responsible party. CarePlan custodian extension should be used to identify a responsible party in the MCC CarePlan Profile"/>
+            <!--type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
@@ -71,10 +71,11 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
             </type>
-            <mustSupport value="true"/>
+            <mustSupport value="true"/-->
         </element>
         <element id="CarePlan.contributor">
             <path value="CarePlan.contributor"/>
+			<definition value="CarePlan.contributor SHALL be used to represent contributors to the care plan instead of author in the MCC CarePlan. Contributors can range from devices (e.g. a home BP monitor) to an individual, team or organization"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
@@ -126,7 +127,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCPatientCaregiverConditionStatus"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCaregiverConsiderationsObservation"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalResultObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation"/>
             </type>

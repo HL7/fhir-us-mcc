@@ -88,7 +88,7 @@
             <name value="MCC Clinical Impression"/>
         </grouping>
         <grouping id="new-group21">
-            <name value="MCC Clinical Test Observation"/>
+            <name value="MCC Clinical Result Observation"/>
         </grouping>
         <grouping id="new-group7">
             <name value="MCC Diagnostic Report and Note"/>
@@ -570,11 +570,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/MCCClinicalTestObservation"/>
-                <display value="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
+                <reference value="StructureDefinition/MCCClinicalResultObservation"/>
+                <display value="Multiple Chronic Condition Care Plan Clinical Result Observation"/>
             </reference>
-            <name value="Multiple Chronic Condition Care Plan Clinical Test Observation"/>
-            <description value="This profile constrains [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a laboratory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Echocardiogram' is an example observation which would use the MCC Clinical Test profile."/>
+            <name value="Multiple Chronic Condition Care Plan Clinical Result Observation"/>
+            <description value="This profile constrains [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a laboratory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Echocardiogram' is an example observation which would use the MCC Clinical Result profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group21"/>
         </resource>
@@ -616,10 +616,10 @@
         <resource>
             <reference>
                 <reference value="Observation/pulse-intensity-palpation"/></reference>
-            <name value="MCC Clinical Test Observation example"/>
-            <description value="MCC Clinical Test Observation example"/>
+            <name value="MCC Clinical Result Observation example"/>
+            <description value="MCC Clinical Result Observation example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalTestObservation"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalResultObservation"/>
         </resource>
         <resource>
             <reference>
