@@ -96,7 +96,7 @@
 <page key="mcc_use_cases" name="MCC Use Cases"/>
 <page key="mcc_value_set_libraries_and_usage" name="MCC Value Set Libraries and Usage"/>
 <page key="note_on__include_and__revInclude" name="Note on _include and _revinclude"/>
-<page key="profiles_or_resources_directly_reused_in_this_guide" name="Profiles or Resources Directly Reused in this Guide"/>
+<page deprecated="true" key="profiles_or_resources_directly_reused_in_this_guide" name="Profiles or Resources Directly Reused in this Guide"/>
 <page key="questionnaire_response" name="Questionnaire Response"/>
 <page key="security" name="Security"/>
 <page key="structure_and_design_considerations" name="Structure and Design Considerations"/>
