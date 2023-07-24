@@ -63,7 +63,7 @@
     <dependsOn id="usnlmvsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
         <packageId value="us.nlm.vsac"/>
-        <version value="0.9.0"/>
+        <version value="0.11.0"/>
     </dependsOn>
     <dependsOn id="hl7fhiruvsdc">
         <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>

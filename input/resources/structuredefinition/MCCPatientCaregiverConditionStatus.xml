@@ -179,7 +179,7 @@
             <binding>
                 <strength value="example"/>
                 <description value="Use CodeableConcept.text for the exact words of the patient/caregiver, or when not using a coding. valueString is also available as an alternative to valueCodeableConcept."/>
-                <valueSet value="https://loinc.org/LL4938-8"/>
+                <valueSet value="https://loinc.org/vs/LL4938-8"/>
             </binding>
             <mapping>
                 <identity value="argonaut-dq-dstu2"/>
