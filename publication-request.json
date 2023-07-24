@@ -2,7 +2,7 @@
   "package-id": "hl7.fhir.us.mcc",
 	"version": "1.0.0-ballot2",
 	"path": "http://hl7.org/fhir/us/mcc/2023Sep",
-	"mode" : "working",
+	 "mode" : "working",
 	"status": "ballot",
 	"sequence": "STU 1",
 	"first" : false,
