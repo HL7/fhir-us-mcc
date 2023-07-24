@@ -2,6 +2,9 @@
 
 # reviewed and not expected to render as html
 WARNING: ImplementationGuide/hl7.fhir.us.mcc: ImplementationGuide.description: The markdown contains content that appears to be an embedded HTML tag starting at ' I'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+
+
+# reviewed and not expected to render as html. This is from a comment on CarePlan.text.div in the structure definition from US CORE. The comment is calling out the HTML link element
 WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9].comment: The markdown contains content that appears to be an embedded HTML tag starting at 'Th'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
 
@@ -21,4 +24,4 @@ INFORMATION: Observation/Symptom1: Observation.category[0]: This element does no
 
 # The following is in regards to a LOINC answer list. The answered list is valid, reviewed, code system. The code from the value set in caregiver-feelings-condition-status is a valid LOINC code from the answer list
 WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference http://loinc.org/vs/LL4938-8 on element Observation.valueCodeableConcept could not be resolved
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[24].binding: The valueSet reference http://loinc.org/vs/LL4938-8on element Observation.value[x] could not be resolved
+WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[24].binding: The valueSet reference http://loinc.org/vs/LL4938-8 on element Observation.value[x] could not be resolved
