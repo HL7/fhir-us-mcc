@@ -59,14 +59,6 @@
             <path value="Observation"/>
             <definition value="\-"/>
             <comment value="\-"/>
-            <constraint>
-                <key value="us-core-2"/>
-                <severity value="error"/>
-                <human value="If there is no component or hasMember element then either a value[x] or a data absent reason must be present"/>
-                <expression value="(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"/>
-                <xpath value="exists(f:component) or exists(f:hasMember) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)"/>
-                <source value="http://example.org/StructureDefinition/MCCSimpleObservation"/>
-            </constraint>
             <mustSupport value="false"/>
         </element>
         <element id="Observation.extension">
@@ -136,15 +128,6 @@
             <type>
                 <code value="instant"/>
             </type>
-            <condition value="us-core-1"/>
-            <constraint>
-                <key value="us-core-1"/>
-                <severity value="error"/>
-                <human value="Datetime must be at least to day."/>
-                <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
-                <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
-                <source value="http://example.org/StructureDefinition/MCCSimpleObservation"/>
-            </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.performer">
@@ -199,16 +182,6 @@
             <type>
                 <code value="Period"/>
             </type>
-            <condition value="us-core-2"/>
-            <condition value="us-core-3"/>
-            <constraint>
-                <key value="us-core-3"/>
-                <severity value="error"/>
-                <human value="SHALL use UCUM for coded quantity units."/>
-                <expression value="valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'"/>
-                <xpath value="not(exists(f:valueQuantity/f:system) ) or f:valueQuantity/f:system[@value='http://unitsofmeasure.org']"/>
-                <source value="http://example.org/StructureDefinition/MCCSimpleObservation"/>
-            </constraint>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.dataAbsentReason">

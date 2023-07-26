@@ -825,7 +825,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="CI Build"/>
+            <value value="ballot"/>
         </parameter>
 		<parameter>
             <code value="path-expansion-params"/>
