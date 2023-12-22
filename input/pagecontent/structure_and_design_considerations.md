@@ -30,7 +30,7 @@ Represented with OUTCOME REFERENCE (performed activity) or ACTIVITY REFERENCE (p
 		
 * OUTCOME REFERENCE exists in FHIR R4 which the MCC Care Plan profile is built on. This element was renamed in FHIR R5 to clarify its intended use to **CarePlan.activity.performedActivity**. This element identifies the activity that was performed. For example, an activity could be patient education, exercise, or a medication administration. The reference to an "event" resource, such as Procedure or Encounter or Observation, represents the activity that was performed. The requested activity can be conveyed using the CarePlan.activity.plannedActivityReference (a reference to a “request” resource).
 
-* ACTIVITY REFERENCE exists in FHIR R4 which the MCC Care Plan profile is built on. This element was renamed in FHIR R5 to clarify its intended use to **CarePlan.activity.PlannedActivityReference**.  This element identifies activity that is intended or planned as part of the care plan. It provides the details of the proposed activity within the referenced resource. Typically, the referenced resources represent requests or orders.
+* ACTIVITY REFERENCE exists in FHIR R4 which the MCC Care Plan profile is built on. This element was renamed in FHIR R5 to clarify its intended use to **CarePlan.activity.plannedActivityReference**.  This element identifies activity that is intended or planned as part of the care plan. It provides the details of the proposed activity within the referenced resource. Typically, the referenced resources represent requests or orders.
 
 **Health Concerns** represented with:
 

@@ -34,11 +34,11 @@
     <condition>
         <code>
             <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="57054005"/>
-                <display value="Acute Myocardial Infarction"/>
+			  <system value="http://snomed.info/sct"/>
+			  <code value="709044004"/>
+			  <display value="Chronic kidney disease (disorder)"/>
             </coding>
-            <text value="Sudden Heart Attack"/>
+            <text value="Chronic kidney disease (CKD)"/>
         </code>
         <contributedToDeath value="true"/>
         <onsetAge>
