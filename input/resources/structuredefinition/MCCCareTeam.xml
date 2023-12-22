@@ -61,7 +61,7 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
-            <min value="2"/>
+            <!--min value="2"/-->
         </element>
         <element id="CareTeam.participant:patient-as-team-member">
             <path value="CareTeam.participant"/>
