@@ -28,6 +28,9 @@ The value sets in the MCC Value Set Library pages are not bound within any profi
 * Terminology validation support
 * Accessing Value Sets using FHIR Value Set Resource
 
+Example of use:
+<table><tr><td><img src="ValueSetUseeg1.drawio.png" /></td></tr></table>
+
 **Fetching VSAC Value sets with FHIR APIs:**
 
 * FHIR ValueSet resource (in other words, the value set definition) use: GET https://cts.nlm.nih.gov/fhir/ValueSet/[VSAC OID]
