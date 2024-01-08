@@ -43,12 +43,12 @@
             <path value="CarePlan.intent"/>
             <mustSupport value="true"/>
         </element>
-        <element id="CarePlan.category">
+        <!-- element id="CarePlan.category">
             <path value="CarePlan.category"/>
             <label value="Care Plan category code describes the type of care plan"/>
             <short value="Care Plan category code describes the type of care plan. Please see CarePlan.category detail for guidance."/>
             <mustSupport value="true"/>
-        </element>
+        </element -->
         <element id="CarePlan.subject">
             <path value="CarePlan.subject"/>
             <type>
