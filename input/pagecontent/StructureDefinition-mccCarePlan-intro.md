@@ -19,7 +19,7 @@ The dynamic care plan process diagram shows Care Plan Cornerstones as they exist
 #### High Level Dynamic Care Plan Process Diagram
 <table><tr><td><img src="CarePlanProcessCornerstones.png" /></td></tr></table>
 
-This profile on the [FHIR Care Plan Resource](http://hl7.org/fhir/R4/careplan.html) describes rules and contraints to record, search, and fetch care plan data associated with a patient with multiple chronic conditions. It identifies which profiles, core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. Care plan data may or may not be tagged in an EHR as part of a care plan, but is also useful to retrieve data such as goals, problems, medications etc. and their time stamps from EHRs and other health system records to bring into an aggegated plan. This includes care plans that may be authored by a patient.
+This profile on the [FHIR Care Plan Resource](http://hl7.org/fhir/R4/careplan.html) describes rules and contraints to record, search, and fetch care plan data associated with a patient with multiple chronic conditions. It identifies which profiles, core elements, extensions, vocabularies and value sets can be present in the resource when using this profile. Care plan data may or may not be tagged in an EHR as part of a care plan, but is also useful to retrieve data such as goals, problems, medications etc. and their time stamps from EHRs and other health system records to bring into an aggegated plan. This includes care plans that may be authored by a patient.
 
 
 #### Multiple Chronic Condition FHIR Care Plan Profile Relationship Diagram
