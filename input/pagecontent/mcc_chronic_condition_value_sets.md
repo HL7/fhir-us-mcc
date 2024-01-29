@@ -1510,20 +1510,6 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.593/expansion">Functional Status</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Functional Status.</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.593</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.592/expansion">Hearing Impairment</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
