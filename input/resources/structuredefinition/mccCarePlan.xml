@@ -93,7 +93,11 @@
             <path value="CarePlan.careTeam"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam">
+					<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+					<valueBoolean value="true"/>
+          </extension>
+				</targetProfile>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
             </type>
             <mustSupport value="true"/>
