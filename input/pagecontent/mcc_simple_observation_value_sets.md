@@ -165,13 +165,13 @@ For more information refer to the  [FHIR Terminology Service for VSAC Resources]
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.0pt; vertical-align:top; width:131.25pt">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/ 2.16.840.1.113762.1.4.1222.711/expansion">Fall Risk</a></p>
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.711/expansion">Fall Risk</a></p>
 			</td>
 			<td style="background-color:white; height:15.0pt; width:154.5pt">
 			<p>This set of values addresses terms representing an observation indicating fall risk.</p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:87.0pt">
-			<p> 2.16.840.1.113762.1.4.1222.711</p>
+			<p>2.16.840.1.113762.1.4.1222.711</p>
 			</td>
 			<td style="height:15.0pt; vertical-align:top; width:94.5pt">
 			<p>Observation.code</p>
