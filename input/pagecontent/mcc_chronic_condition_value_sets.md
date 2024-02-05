@@ -1468,20 +1468,6 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.712/expansion">Fall Risk</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Fall Risk.</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.712</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.464.1003.113.12.1074/expansion">Frailty Diagnosis</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
