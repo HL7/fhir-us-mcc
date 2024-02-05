@@ -1955,6 +1955,20 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>Condition.code</p>
 			</td>
 		</tr>
+				<tr>
+			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
+			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.58/expansion">Acute COVID 19 Diagnosis Value Set</a></p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:32%">
+			<p>This set of values contains diagnosis terms representing Acute COVID-19 disease.</p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:20%">
+			<p>2.16.840.1.113762.1.4.1099.58</p>
+			</td>
+			<td style="height:15.75pt; vertical-align:top; width:12%">
+			<p>Condition.code</p>
+			</td>
+		</tr>
 		<tr>
 			<td style="background-color:#d0cece; border-color:black; height:15.75pt; width:11%">
 			<p><strong>Mental Health Conditions</strong></p>
