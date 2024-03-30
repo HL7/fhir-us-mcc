@@ -4,8 +4,8 @@ WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9
 
 # The following issues have been reviewed and these items are not intended to validate against slices defined in the indicated profiles
 INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
-INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot2
-INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0-ballot2
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Examples demonstrate use of additional Codes or Identifiers not defined in US Core profiles.
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
@@ -13,8 +13,14 @@ INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[1]: This el
 INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
 
 # Example use category of 'Symptom' which is not in the USCORE value set. There is no suitable code existing in the ValueSet US Core Simple Observation Category 
-INFORMATION: Observation/Symptom1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0-ballot2
+INFORMATION: Observation/Symptom1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0
 
-# The following is in regards to a LOINC answer list. The answered list is valid, reviewed, code system. The code from the value set in caregiver-feelings-condition-status is a valid LOINC code from the answer list
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.differential.element[11].binding: The valueSet reference http://loinc.org/vs/LL4938-8 on element Observation.valueCodeableConcept could not be resolved
-WARNING: StructureDefinition/MCCPatientCaregiverConditionStatus: StructureDefinition.snapshot.element[24].binding: The valueSet reference http://loinc.org/vs/LL4938-8 on element Observation.value[x] could not be resolved
+# Use of these draft CodeSystems is intentional
+Reference to draft CodeSystem http://hl7.org/fhir/goal-acceptance-status|5.1.0-cibuild
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/goal-priority|0.1.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/goal-relationship-type|0.1.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/goal-category|0.1.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/diet|0.1.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|0.5.0

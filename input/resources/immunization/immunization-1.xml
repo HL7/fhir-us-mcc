@@ -29,7 +29,7 @@
         <coding>
             <system value="http://hl7.org/fhir/sid/ndc"/>
             <code value="49281012165"/>
-            <display value="FLUZONE High-Dose Quadrivalent Northern Hemisphere, 10 SYRINGE, GLASS in 1 PACKAGE (49281-121-65)  &gt; .7 mL in 1 SYRINGE, GLASS (49281-121-88)  (package)"/>
+            <display value="FLUZONE High-Dose Quadrivalent Northern Hemisphere, 10 SYRINGE, GLASS in 1 PACKAGE (49281-121-65) > .7 mL in 1 SYRINGE, GLASS (49281-121-88) (package)"/>
         </coding>
         <text value="influenza, high-dose, quadrivalent"/>
     </vaccineCode>

@@ -36,6 +36,9 @@
         <display value="Amy Shaw"/>
     </subject>
     <effectiveDateTime value="2022-05-05"/>
+	<performer>
+        <reference value="Practitioner/practitionerMCC-1"/>
+    </performer>
     <valueQuantity>
         <value value="24"/>
         <unit value="mg/dL"/>

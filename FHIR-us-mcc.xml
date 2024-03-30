@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0-ballot2" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/mcc/2023Sep" ciUrl="http://build.fhir.org/ig/HL7/fhir-us-mcc" defaultVersion="1.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/mcc" url="http://hl7.org/fhir/us/mcc">
 <version code="current" url="http://build.fhir.org/ig/HL7/fhir-us-mcc"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/mcc/STU1"/>
 <version code="1.0.0-ballot2" url="http://hl7.org/fhir/us/mcc/2023Sep"/>
 <version code="1.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
-<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/us/mcc/2023Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>

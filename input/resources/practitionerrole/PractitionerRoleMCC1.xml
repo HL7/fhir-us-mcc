@@ -43,7 +43,7 @@
         <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="207RN0300X"/>
-            <display value="Allopathic Osteopathic Physicians; Internal Medicine, Nephrology"/>
+            <display value="Nephrology Physician"/>
         </coding>
     </specialty>
     <location>

@@ -32,7 +32,7 @@
 		<valueCode value="pc"/>
 	</extension>
     <url value="http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7-fhir-us-mcc"/>
-    <version value="1.0.0-ballot2"/>
+    <version value="1.0.0"/>
     <name value="MCCeCarePlan"/>
     <title value="MCC eCare Plan Implementation Guide"/>
     <status value="draft"/>
@@ -663,7 +663,7 @@
                 <display value="MCCServerCapabilityStatement"/>
             </reference>
             <name value="MCCServerCapabilityStatement"/>
-            <description value="This Section describes the expected capabilities of the MCC Server actor which is responsible for providing responses to the queries submitted by the MCC Requesters. See [http://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html](http://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of [MCC eCare Plan Implementation Guide](http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc), as well as other conformance artifacts of the MCC eCare Plan Implementation Guide."/>
+            <description value="This Section describes the expected capabilities of the MCC Server actor which is responsible for providing responses to the queries submitted by the MCC Requesters. See [http://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html](http://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of MCC eCare Plan Implementation Guide, as well as other conformance artifacts of the MCC eCare Plan Implementation Guide."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -672,7 +672,7 @@
                 <display value="MCCClientCapabilityStatement"/>
             </reference>
             <name value="MCCClientCapabilityStatement"/>
-            <description value="This Section describes the expected capabilities of the MCC Client actor. See [http://hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html](http://hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of [MCC eCare Plan Implementation Guide](http://hl7.org/fhir/us/mcc/ImplementationGuide/hl7.fhir.us.mcc), as well as other conformance artifacts of the MCC eCare Plan Implementation Guide"/>
+            <description value="This Section describes the expected capabilities of the MCC Client actor. See [http://hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html](http://hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of MCC eCare Plan Implementation Guide, as well as other conformance artifacts of the MCC eCare Plan Implementation Guide"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

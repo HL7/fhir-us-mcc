@@ -39,6 +39,9 @@
         <display value="GP Visit"/>
     </encounter>
     <effectiveDateTime value="1999-07-02"/>
+	<performer>
+        <reference value="Practitioner/practitionerMCC-1"/>
+    </performer>
     <valueQuantity>
         <value value="165"/>
         <unit value="Pounds"/>

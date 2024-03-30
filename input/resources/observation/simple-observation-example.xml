@@ -50,7 +50,10 @@
     </performer>
     <valueQuantity>
         <value value="2"/>
-        <system value="http://unitsofmeasure.org"/>
-        <code value="{score}"/>
+        <!--system value="http://unitsofmeasure.org"/>
+        <code value="{score}"/--> 
+		<system value="http://snomed.info/sct"/>
+        <code value="246262008"/>
+        <!--display value="Score"/-->
     </valueQuantity>
 </Observation>

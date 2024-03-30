@@ -42,7 +42,7 @@
         <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="163WD0400X"/>
-            <display value="Nursing Service Providers; Registered Nurse, Diabetes Educator"/>
+            <display value="Diabetes Educator Registered Nurse"/>
         </coding>
     </specialty>
     <location>
