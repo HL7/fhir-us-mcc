@@ -24,3 +24,6 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/diet|0.1.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+
+# due to bug in US Core 6.1.0 that was fixed in US Core 7. see http://jira.hl7.org/browse/FHIR-42814
+WARNING: Immunization/immunization-1: Immunization: Constraint failed: us-core-5: 'SHOULD have a translation to the NDC value set' (defined in http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) (Best Practice Recommendation)

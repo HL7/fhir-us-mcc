@@ -5,6 +5,7 @@
 	 "mode" : "milestone",
 	"status": "trial-use",
 	"sequence": "STU 1",
-	"first" : false,
 	"desc": "FHIR STU Release 1",
+	"decmd": "FHIR STU Release 1",
+	"first" : false
 }
