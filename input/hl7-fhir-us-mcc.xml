@@ -100,7 +100,7 @@
             <name value="MCC CareTeam"/>
         </grouping>
         <grouping id="new-group2">
-            <name value="MCC Chronic Disease Conditions"/>
+            <name value="MCC Chronic Condition and Health Concern Profile"/>
         </grouping>
         <grouping id="new-group15">
             <name value="MCC Clinical Impression"/>
@@ -198,11 +198,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/MCCChronicDisease"/>
-                <display value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
+                <reference value="StructureDefinition/MCCChronCondHealthConcern"/>
+                <display value="MCC Chronic Condition and Health Concern Profile"/>
             </reference>
-            <name value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
-            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to encourage its use for chronic disease conditions for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
+            <name value="MCC Chronic Condition and Health Concern Profile"/>
+            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to encourage its use for chronic condition and health concerns for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -304,7 +304,7 @@
             <name value="MCC Chronic Condition - CKD Example"/>
             <description value="MCC Chronic Condition - CKD Example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
         </resource>
         <resource>
             <reference>

@@ -114,7 +114,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"/>
@@ -164,7 +164,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCDiagnosticReportAndNote"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCMedicationRequest"/>
-                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+                <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>

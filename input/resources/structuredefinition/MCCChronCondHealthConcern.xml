@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="MCCChronicDisease"/>
+    <id value="MCCChronCondHealthConcern"/>
     <meta>
         <versionId value="28"/>
         <lastUpdated value="2022-11-21T19:36:31.641+00:00"/>
         <source value="#Uz5PQ5F4xDGT7ONb"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
-    <name value="MCCChronicDisease"/>
-    <title value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/>
+    <url value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
+	<!-- MCCChronicDisease -->
+    <name value="MCCChronCondHealthConcern"/>
+    <!--title value="Multiple Chronic Condition Care Plan Chronic Disease Conditions"/--> 
+	<title value="MCC Chronic Condition and Health Concern Profile"/>
     <status value="draft"/>
     <date value="2020-06-29"/>
     <publisher value="Patient Care Work Group"/>
-    <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to encourage its use for chronic disease conditions for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
+    <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to encourage its use for chronic conditions or health concerns for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -46,15 +48,10 @@
                 <profile value="http://hl7.org/fhir/StructureDefinition/condition-dueTo"/>
             </type>
         </element>
-        <element id="Condition.extension:resource-pertainsToGoal">
-            <path value="Condition.extension"/>
-            <sliceName value="resource-pertainsToGoal"/>
-            <short value="The resource-pertainsToGoal relates the resource to the goal(s) that pertain to it. Whenever there is a goal associated with a health concern or problem, this extension should be present and populated in activity (event or intent) resources."/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal"/>
-            </type>
-            <mustSupport value="true"/>
+
+        <element id="Condition.category">
+            <path value="Condition.category"/>
+            <short value="Within the industry, Health Concerns may reside on the problem list along with Problems"/>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>

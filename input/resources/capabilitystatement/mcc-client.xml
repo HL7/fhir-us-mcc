@@ -66,7 +66,7 @@
         </resource>
         <resource>
             <type value="Condition"/>
-            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+            <supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
         </resource>
         <resource>
             <type value="ClinicalImpression"/>

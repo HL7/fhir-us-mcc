@@ -1,4 +1,4 @@
-This profile sets expectations to record, search, and fetch patient symptoms often associated with chronic disease conditions. 
+This profile sets expectations to record, search, and fetch patient symptoms often associated with chronic conditions or health concerns. 
 
 In addition to the requirements set in the the observation resource, this derived profile is designed to add requirements to the following elements:
 * Observation.extension:resource-pertainsToGoal (Must Support)

@@ -6,13 +6,9 @@
         <versionId value="5"/>
         <lastUpdated value="2022-06-17T23:22:56.193+00:00"/>
         <source value="#5R98DWXS6a48AGkD"/>
-        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronicDisease"/>
+        <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
     </meta>
-    <extension url="http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal">
-        <valueReference>
-            <reference value="Goal/HPT-WNL"/>
-        </valueReference>
-    </extension>
+
     <clinicalStatus>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>

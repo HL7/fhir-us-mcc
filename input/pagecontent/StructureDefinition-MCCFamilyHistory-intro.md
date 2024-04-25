@@ -1,4 +1,4 @@
-This profile provides a way for the Multiple Chronic Condition Care Plan to record, search, and fetch first degree family members and their chronic disease conditions or any pertinent condition. 
+This profile provides a way for the Multiple Chronic Condition Care Plan to record, search, and fetch first degree family members and their chronic conditions, health concerns or any pertinent condition. 
 The profile is based onthe [FHIR Family Member History Resource](https://www.hl7.org/fhir/familymemberhistory.html) 
 This derived profile is designed to add requirements to the following elements:
 * FamilyMemberHistory.condition is set to "Must Support"

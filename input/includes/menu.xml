@@ -30,7 +30,7 @@
     </a>
     <ul class="dropdown-menu">
       <li><a href="mcc_value_set_libraries_and_usage.html">MCC Value Set Libraries and Usage</a></li>
-      <li><a href="mcc_chronic_condition_value_sets.html">MCC Chronic Condition Value Sets</a></li>
+      <li><a href="mcc_chronic_condition_value_sets.html">MCC Chronic Condition and Health Concern Value Sets</a></li>
       <li><a href="mcc_clinical_test_value_sets.html">MCC Clinical Test Value Sets</a></li>
       <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>

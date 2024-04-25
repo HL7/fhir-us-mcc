@@ -1,4 +1,4 @@
-This table holds the value sets that may be used with the [MCC Chronic Disease Conditions Profile](StructureDefinition-MCCChronicDisease.html). 
+This table holds the value sets that may be used with the [MCC Chronic Condition and Health Concern Profile](StructureDefinition-MCCChronCondHealthConcern.html). 
 
 **Table Key**
 * **Value Set Name and Link**: All of these value sets are housed in the [NLM Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/welcome). The value set name is a link to the value set. You must have an NLM/UMLS account to access. There is no charge for an account. Note: the first time you click on the value set name link in a given session, there my be a delay in loading and you will need to sign in once loaded.
@@ -7,7 +7,7 @@ This table holds the value sets that may be used with the [MCC Chronic Disease C
 * **Profile Element**: The Profile element asserts the location within the profile the value set term **SHALL** be used.
 
 **MCC Value Sets Use and Validation**
-The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occurr. Validation support can be added in implmentation. These Symptom Value Sets may be used for several different purposes and no clinically appropriate use is precluded: 
+The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occur. Validation support can be added in implementation. These Symptom Value Sets may be used for several different purposes and no clinically appropriate use is precluded: 
 * Querying for patients that have experienced particular conditions or diagnoses
 * Within Quality Measures or for research using [Clinical Quality Language (CQL)](http://cql.hl7.org/) (for example)
 * For display within applications
