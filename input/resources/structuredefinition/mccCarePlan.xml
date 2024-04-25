@@ -102,8 +102,13 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="CarePlan.addresses.reference">
-            <path value="CarePlan.addresses.reference"/>
+        <element id="CarePlan.addresses">
+            <path value="CarePlan.addresses"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
+			</type>
+			<mustSupport value="true"/>
         </element>
         <element id="CarePlan.supportingInfo">
             <path value="CarePlan.supportingInfo"/>
