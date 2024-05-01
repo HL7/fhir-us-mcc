@@ -2,14 +2,14 @@
 
   <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
 
-  <!--p>The <strong>"Plain Language Summary about HL7 and this Guide"</strong> is an experimental section that potentially could become a required part of HL7 FHIR implementation guides. The MCC IG team has agreed to incorporate this in the MCC guide and as part of ballot and ask for:</p>
+  <!--p>The <strong>"Plain Language Summary about HL7 and this Guide"</strong> is an experimental section that potentially could become a required part of HL7 FHIR implementation guides. The MCC IG team has agreed to incorporate this in the MCC guide and as part of ballot and ask for:</p-->
 
-  <ul>
+  <!--ul>
     <li>Evaluation of whether or not it would be a useful section in a guide for non-technical and/or non-clinical readers</li>
     <li>Evaluation of the content as written for the MCC guide, especially in terms of appropriate reading level and if fit for purpose.</li>
 	<li>Evaluation of the presentation. We present both an expandable button version and a non-expandable version. The purpose of the expandable button is to limit the interruption of the IG-flow by the Plain Language Summary. Are either preferred? Or, is there some other user interface modality that would be preferred?</li>
-  </ul>
-</div-->
+  </ul-->
+<!--/div-->
 
 <!--a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a-->
 
