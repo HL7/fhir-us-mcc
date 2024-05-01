@@ -1,4 +1,4 @@
-<!--div class="note-to-balloters">
+<!--div class="note-to-balloters"-->
 
   <!--h4 id="plain-language-summary">Plain Language Summary about HL7 and this Guide<a class="anchorjs-link " href="#plain-language-summary" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h4-->
 
