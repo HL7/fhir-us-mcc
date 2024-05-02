@@ -5,5 +5,3 @@ The [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition
 * MCCPatientCaregiverConditionStatus.code requires LOINC code 89253-9 (Trend) 
 * MCCPatientCaregiverConditionStatus.focus is limited to us-core-condition-problems-health-concerns and us-core-condition-encounter-diagnosis and set to must support
 * MCCPatientCaregiverConditionStatus.performer is limited to Patient and RelatedPerson (caregiver)
-
-Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements.

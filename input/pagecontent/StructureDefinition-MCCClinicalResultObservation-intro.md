@@ -3,5 +3,3 @@ The [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/St
 * MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking a goal to the clinical result observation in hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 
 MCC Value sets that may be used with this profile are found on the [MCC Clinical Test Value Set ](mcc_clinical_test_value_sets.html) library page. Other value sets are not precluded.
-
-Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements.

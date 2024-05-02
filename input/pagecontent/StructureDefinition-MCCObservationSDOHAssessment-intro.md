@@ -3,5 +3,3 @@ The  [US Core Observation Screening Assessment Profile](http://hl7.org/fhir/us/c
 * MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking a goal to the SDOH assessment in hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 
 MCC Value sets that may be used with this profile are found on the [MCC Observation SDOH Assessment Value Sets ](mcc_observation_sdoh_assessment_value_sets.html) library page. Other value sets are not precluded.
-
-Comments are welcome with respect to the pragmatic use of the “Must Support” rules defined on these elements.
