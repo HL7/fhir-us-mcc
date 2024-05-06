@@ -59,6 +59,20 @@
         <documentation value="note: All behaviors of the US CORE Client capability statement imported in this statement apply. The supported profiles listed here are in addition to that covered by US CORE."/>
         <resource>
             <type value="CarePlan"/>
+			<supportedProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"/>
+			
+			<searchParam>
+				<extension
+					   url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+				<valueCode value="SHALL"/>
+				</extension>
+				<name value="condition"/>
+				<definition
+						value="http://hl7.org/fhir/SearchParameter/CarePlan-condition"/>
+				<type value="reference"/>
+				<documentation value="Health issue(s) this plan addresses"/>
+			</searchParam>
+			
         </resource>
         <resource>
             <type value="CareTeam"/>
