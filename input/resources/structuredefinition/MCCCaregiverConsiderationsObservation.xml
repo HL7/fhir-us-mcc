@@ -90,10 +90,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.status">
-            <path value="Observation.status"/>
-            <mustSupport value="true"/>
-        </element>
 		<element id="Observation.category">
             <path value="Observation.category"/>
             <label value="Caregiver considerations"/>
@@ -105,8 +101,6 @@
                 <rules value="open"/>
             </slicing>
             <short value="Caregiver considerations"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
         </element>
         <element id="Observation.category:caregiver-concerns">
             <path value="Observation.category"/>
@@ -121,6 +115,7 @@
 					<code value="405193005"/>
 				</coding>
             </patternCodeableConcept>
+			<mustSupport value="true"/>
         </element>
 		<!--fun re-slice>
         <element id="Observation.category:us-core/caregiver-concerns">
@@ -140,14 +135,13 @@
 		
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <mustSupport value="true"/>
             <binding>
                 <strength value="preferred"/>
                 <description value="Problem Type"/>
                 <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.28"/>
             </binding>
         </element>
-        <element id="Observation.subject">
+        <!--element id="Observation.subject">
             <path value="Observation.subject"/>
             <min value="1"/>
             <max value="1"/>
@@ -156,7 +150,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
             <mustSupport value="true"/>
-        </element>
+        </element-->
         <element id="Observation.focus">
             <path value="Observation.focus"/>
             <label value="caregiver"/>
@@ -169,7 +163,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.effective[x]">
+        <!--element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
             <definition value="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;."/>
             <comment value="At least a date should be present unless this observation is a historical report."/>
@@ -189,16 +183,16 @@
                 <code value="instant"/>
             </type>
             <condition value="us-core-1"/>
-            <!--constraint>
+            <constraint>
                 <key value="us-core-1"/>
                 <severity value="error"/>
                 <human value="Datetime must be at least to day."/>
                 <expression value="$this is DateTime implies $this.toString().length() &gt;= 10"/>
                 <xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
-            </constraint-->
+            </constraint>
             <mustSupport value="true"/>
-        </element>
-        <element id="Observation.performer">
+        </element-->
+        <!--element id="Observation.performer">
             <path value="Observation.performer"/>
             <type>
                 <code value="Reference"/>
@@ -210,14 +204,14 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             </type>
             <mustSupport value="true"/>
-        </element>
+        </element-->
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <type>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+                <!--extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
                     <valueBoolean value="true"/>
-                </extension>
+                </extension-->
                 <code value="CodeableConcept"/>
             </type>
             <!--constraint>
@@ -226,7 +220,7 @@
                 <human value="SHALL use UCUM for coded quantity units."/>
                 <expression value="valueQuantity.system.empty() or valueQuantity.system = 'http://unitsofmeasure.org'"/>
             </constraint-->
-            <mustSupport value="true"/>
+            <!--mustSupport value="true"/-->
             <binding>
                 <strength value="extensible"/>
                 <description value="US Core Condition Codes"/>

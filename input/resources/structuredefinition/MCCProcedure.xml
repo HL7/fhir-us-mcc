@@ -86,7 +86,7 @@
         <element id="Procedure.code">
             <path value="Procedure.code"/>
             <label value="Label"/>
-            <short value="Please see the xx Value Set Library (link?) for value sets that are subsets of  US Core Procedure Codes that can be used at the Procedure.code element element"/>
+            <short value="Please see the Procedure and Service Request Value Set Library for value sets that are subsets of  US Core Procedure Codes that can be used at the Procedure.code element element"/>
         </element>
         <element id="Procedure.reasonReference">
             <path value="Procedure.reasonReference"/>

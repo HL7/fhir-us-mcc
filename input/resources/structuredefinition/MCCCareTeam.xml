@@ -81,7 +81,7 @@
 					<display value="Patient (person)"/>
                 </coding>
             </patternCodeableConcept>
-            <mustSupport value="true"/>
+            <!--mustSupport value="true"/-->
         </element>
         <element id="CareTeam.participant:patient-as-team-member.member">
             <path value="CareTeam.participant.member"/>
@@ -89,7 +89,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
-            <mustSupport value="true"/>
+            <!--mustSupport value="true"/-->
         </element>
         <element id="CareTeam.participant:patient-as-team-member.onBehalfOf">
             <path value="CareTeam.participant.onBehalfOf"/>
@@ -113,7 +113,7 @@
 					<display value="Caregiver (person)"/>
                 </coding>
             </patternCodeableConcept>
-            <mustSupport value="true"/>
+            <!--mustSupport value="true"/-->
         </element>
         <element id="CareTeam.participant:caregiver.member">
             <path value="CareTeam.participant.member"/>
@@ -121,7 +121,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
             </type>
-            <mustSupport value="true"/>
+            <!--mustSupport value="true"/-->
         </element>
     </differential>
 </StructureDefinition>

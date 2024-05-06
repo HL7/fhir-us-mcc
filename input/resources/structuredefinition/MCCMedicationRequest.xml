@@ -77,7 +77,7 @@
         <element id="MedicationRequest.medication[x]">
             <path value="MedicationRequest.medication[x]"/>
             <label value="Label"/>
-            <short value="Please see the Medication Value Set Library (link?) for value sets that are subsets of Medication Clinical Drug 2.16.840.1.113762.1.4.1010.4 that can be used at MedicationRequest.medication.codableConcept"/>
+            <short value="Please see the Medication Value Set Library for value sets that are subsets of Medication Clinical Drug 2.16.840.1.113762.1.4.1010.4 that can be used at MedicationRequest.medication.codableConcept"/>
         </element>
         <element id="MedicationRequest.reasonReference">
             <path value="MedicationRequest.reasonReference"/>

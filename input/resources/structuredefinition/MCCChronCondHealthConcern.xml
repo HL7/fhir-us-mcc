@@ -58,14 +58,6 @@
             <label value="Label"/>
             <short value="Please see the Condition Value Set Library for value sets that are subsets of US Core Condition Code that can be used at Conditon.code element"/>
         </element>
-        <element id="Condition.onset[x]">
-            <path value="Condition.onset[x]"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Condition.recordedDate">
-            <path value="Condition.recordedDate"/>
-            <mustSupport value="true"/>
-        </element>
         <element id="Condition.evidence">
             <path value="Condition.evidence"/>
             <label value="label on evidence"/>

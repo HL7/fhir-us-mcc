@@ -35,27 +35,19 @@
 				<profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/custodian"/>
             </type>
         </element>
-        <element id="CarePlan.status">
-            <path value="CarePlan.status"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="CarePlan.intent">
-            <path value="CarePlan.intent"/>
-            <mustSupport value="true"/>
-        </element>
         <!-- element id="CarePlan.category">
             <path value="CarePlan.category"/>
             <label value="Care Plan category code describes the type of care plan"/>
             <short value="Care Plan category code describes the type of care plan. Please see CarePlan.category detail for guidance."/>
             <mustSupport value="true"/>
         </element -->
-        <element id="CarePlan.subject">
+        <!--element id="CarePlan.subject">
             <path value="CarePlan.subject"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
             </type>
-        </element>
+        </element-->
         <element id="CarePlan.author">
             <path value="CarePlan.author"/>
             <short value="Use the CarePlan custodian extension instead. Use of CarePlan.author is discouraged, it is removed in R5."/>

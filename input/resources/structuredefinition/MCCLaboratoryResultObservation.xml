@@ -95,7 +95,7 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <label value="Label"/>
-            <short value="Please see the Laboratory Result Observation Value Set Library (link?) for value sets that are subsets of http://hl7.org/fhir/ValueSet/observation-codes that can be used at Observation.code element"/>
+            <short value="Please see the Laboratory Result Observation Value Set Library for value sets that are subsets of http://hl7.org/fhir/ValueSet/observation-codes that can be used at Observation.code element"/>
         </element>
     </differential>
 </StructureDefinition>
