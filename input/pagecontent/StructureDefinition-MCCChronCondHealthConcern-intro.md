@@ -8,7 +8,7 @@ Important note with regards to goals: Goals can be associated with a Condition i
 
 See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) Problems/Health Concerns. Be sure to consider the appropriate Condition.category to use as well for the SDOH concern. Additionally, codes in [MCC Symptom Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_symptom_value_sets.html) are potentially appropriate for Condition.code when Condition.category is Health Concern. 
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
+
 
 This profile can be bound with any of the value sets found [MCC Condition Value Sets](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_chronic_condition_value_sets.html) to query for, fetch or record particular condition of interest as described in the scope of each condition value set.
 

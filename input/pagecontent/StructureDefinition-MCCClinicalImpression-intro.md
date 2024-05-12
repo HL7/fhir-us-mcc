@@ -8,4 +8,3 @@ The [ClinicalImpression](http://hl7.org/fhir/StructureDefinition/ClinicalImpress
 * MCCClinicalImpression.effective is must support
 * MCCClinicalImpression.problem is required and must be supported
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.

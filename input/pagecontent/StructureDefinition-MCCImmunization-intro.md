@@ -3,4 +3,3 @@ The [US Core Immunization Profile](http://hl7.org/fhir/us/core/StructureDefiniti
 
 No additional value sets were defined for use in this profile beyond the US Core Immunization profile.
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.

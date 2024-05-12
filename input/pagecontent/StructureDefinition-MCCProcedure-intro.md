@@ -7,7 +7,7 @@ Procedue.reasonReference (Must Support) to encourage linking back to the health 
 
 See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) procedures. 
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
+
 
 No additional value sets were defined for use in this profile beyond the the value set bindings in the US Core Procedure profile, but please see the [MCC Procedure and Service Request Value Set](mcc_procedure_and_service_request_value_sets.html) library page for guidance on use of procedure terminology in this guide.
 .

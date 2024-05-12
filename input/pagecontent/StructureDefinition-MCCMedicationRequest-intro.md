@@ -3,6 +3,6 @@ The [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) resource 
 MedicationRequest.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal the medication hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 Medication.reasonReference (Must Support) to encourage linking back to the health concern, problem or observation it was ordered for  and/or to encourage systems to be able to receive and understand a reason for a medication, if present.
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
+
 
 No additional value sets beyond those bound in the US Core MedicationRequest profile are defined in this guide. The binding in US Core Medication Request value set is RxNorm [Medication Clinical Drug](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.4/expansion)

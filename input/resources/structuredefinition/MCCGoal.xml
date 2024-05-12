@@ -61,10 +61,10 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Goal.extension:relationship">
+        <element id="Goal.extension:related-goal">
             <path value="Goal.extension"/>
-            <sliceName value="relationship"/>
-            <short value="Establishes a relationship between this goal and other goals"/>
+            <sliceName value="related-goal"/>
+            <short value="Establishes a relationship between this goal and other goals. Such as related Milestone Goal."/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/StructureDefinition/goal-relationship"/>

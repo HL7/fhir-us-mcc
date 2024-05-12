@@ -5,10 +5,10 @@ The [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal)
 * Goal.outcomeReference (Must Support)
 * Goal.extension:goal-acceptance (Must Support)
 * Goal.extension:reasonRejected (Must Support)
-* Goal.extension:goal-relationship (Must Support)
+* Goal.extension:related-goal (Must Support)
 
 Although no MCC Goal value sets were developed for this guide beyond what is present in the US Core Goal profile, please see the [MCC Goal Value Set](mcc_goal_value_sets.html) library page for terminology and value set guidance specific to this Goal profile.
 
 See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/branches/master/mcc_care_plan_sdoh_guidance.html) page for more information when exchanging Social Determinants of Health (SDOH) goals.
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
+

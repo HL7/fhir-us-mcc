@@ -7,4 +7,3 @@ In addition to the requirements set forth in US Core CareTeam this derived profi
 * MCCCareTeam.participant slice for Patient and set to must support
 * MCCCareTeam.participant slice for RelatedPerson (caregiver) and set to must support
 
-Comments are welcome with respect to the pragmatic use of the "Must Support" rules defined on these elements.
