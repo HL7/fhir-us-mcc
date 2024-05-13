@@ -1,1 +1,1 @@
-General Requirements of [US CORE](http://hl7.org/fhir/us/core/general-requirements.html#general-requirements) apply to this IG, and can be found at [http://hl7.org/fhir/us/core/general-requirements.html#general-requirements](http://hl7.org/fhir/us/core/general-requirements.html#general-requirements).
+[US CORE General Requirements](http://hl7.org/fhir/us/core/STU6.1/general-requirements.html#general-requirements) apply to this IG.
