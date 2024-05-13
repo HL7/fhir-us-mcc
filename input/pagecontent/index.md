@@ -111,18 +111,13 @@ Rather than creating nearly 1000 profiles covering important concepts for chroni
 More than 25 percent of Americans have MCC, accounting for more than 65 percent of U.S. healthcare spending. These individuals have complex health needs handled by diverse providers, across multiple settings of care. As a result, their care is often fragmented, poorly coordinated, and inefficient. Therefore, data aggregation and coordination is particularly important and challenging for people with MCC. These challenges will increasingly strain the U.S. health system with the aging of the U.S. population. Projections suggest numbers of adults aged 65 and older will more than double and numbers of those aged 85 and older will triple by 2050.
 Care plans are a prominent part of multifaceted, care coordination interventions that reduce mortality and hospitalizations and improve disease management and satisfaction. In addition, proactive care planning promotes person-centeredness, improves outcomes, and reduces the cost of care. By design, care plans take a patient-centered approach, both by making comprehensive health data available across providers and settings and through the incorporation of data elements that have not traditionally been included in health IT systems (e.g., social determinants of health [SDOH], patient health and life goals, patient preferences). While Care Plans have been developed, they remain paper-based in many U.S. healthcare settings and are not standardized and interoperable across care settings when electronic. While care plans focused on a single disease or condition are unlikely to be tenable for patients with MCC or their providers, existing care plans infrequently address individuals with MCC. The development of care plans based on structured data has been proposed as a method for enabling electronic systems to pull together and share data elements automatically and dynamically. Such aggregated data would not only provide actionable information to identify and achieve health and wellness goals for individuals with MCC, but also would reduce missingness and improve quality of point-of-care data for use in pragmatic research.
 Initiated by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) and the Agency for Healthcare Research and Quality (AHRQ)—with support from the Assistant Secretary for Planning and Evaluation’s Patient-Centered Outcomes Research Trust Fund, the multiple chronic conditions (MCC) electronic care (eCare) Plan Project aims to develop, test, and pilot an interoperable eCare plan that will facilitate aggregation and sharing of critical patient-centered data across home, community, clinic, and research-based settings for persons with MCC, including chronic kidney disease (CKD), type 2 diabetes mellitus (T2D), cardiovascular disease (CVD), chronic pain, and long COVID.
-The HL7-based activities of the MCC eCare Plan Project include:
- - Identified use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
+The HL7-based activities of the MCC eCare Plan Project included:
+ - Identification of use cases to support the documentation and exchange of MCC eCare plan data within EHRs and related systems.
  - Identified, developed, and prioritized the necessary MCC data elements and clinical terminology standards and FHIR® mappings that will enable the standardized transfer of data across health settings.
- - Develop, test, and ballot an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
+ - Developed, tested, and balloted an HL7® Fast Health Interoperability Resources (FHIR®) Implementation Guide based on the defined use cases and MCC data elements.
  
-Non-HL7 related activities of the MCC eCare Plan project will be facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate):
- - The project includes the development and testing of open-source clinician and patient/caregiver- facing SMART-on-FHIR eCare plan applications for managing persons with MCC.
-
-####  Project Timelines
- - January 2023: A For comment ballot to gather community input prior to the formal STU Ballot
- - September 2023: Formal STU Ballot
- - May 2024 Formal HL7 Publication
+Non-HL7 related activities of the MCC eCare Plan project were facilitated through the [AHRQ eCare Plan Project Confluence](https://ecareplan.ahrq.gov/collaborate):
+ - The project included the development and testing of open-source clinician and patient/caregiver- facing SMART-on-FHIR eCare plan applications for managing persons with MCC.
 
 ### History of the Care Plan and Electronic Care Plans
 
@@ -137,12 +132,12 @@ This guidance section provides general implementation guidance and best practice
 
 ####  Relationship to US Core
 
-This Implementation Guide reuses US Core profiles either through direct use or by constraining select profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG created new profiles, or constrains or directly reuses other resources, or profiles defined in other FHIR IGs. This guide re-uses and contrains the US Core Care Plan as its core profile.
+This Implementation Guide reuses US Core profiles for representation within a FHIR Care Plan profile. Where US Core does not have a profile or function that is needed for the use cases or data elements, the IG created new profiles, or constrains or directly reuses other resources, or profiles defined in other FHIR IGs. This guide re-uses and contrains the US Core Care Plan as its core profile.
 
 
 #####  General US Core IG Conformance
 
-This guide will adhere to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/capability-statements.html) where applicable. 
+This guide adheres to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/capability-statements.html) where applicable. 
 
 #####  Provenance
 
@@ -150,7 +145,7 @@ This IG recommends implementers adhere to guidelines and definitions provided in
 
 #####  Must Support
 
-This IG will adhere to the US Core [Must Support](https://www.hl7.org/fhir/us/core/general-guidance.html#must-support) concept and rules.
+This IG adheres to the US Core [Must Support](https://www.hl7.org/fhir/us/core/general-guidance.html#must-support) concept and rules.
 
 ### Acknowledgements
 This Implementation Guide was made possible through the visionary leadership of the [National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) ](https://www.niddk.nih.gov/)and the [Agency for Healthcare Research and Quality (AHRQ) ](https://www.ahrq.gov/) with funding from the [Patient-Centered Outcomes Research Trust Fund of the Office of the Assistant Secretary for Planning and Evaluation (ASPE)](https://aspe.hhs.gov/collaborations-committees-advisory-groups/os-pcortf/explore-portfolio). The joint NIDDK-AHRQ project team can be found [here](https://cmext.ahrq.gov/confluence/display/EC/Project+Team). We would also like to thank the many clinicians, patients, caregivers, researchers, advocates, and subject matter experts who served on our [Technical Expert Panels](https://cmext.ahrq.gov/confluence/display/EC/Technical+Expert+Panels) and [Contract Monitoring Board ](https://cmext.ahrq.gov/confluence/display/EC/Contract+Monitoring+Board) for their time, insight, and support. 
