@@ -30,7 +30,8 @@ This Care Plan profile relationship diagram identifies five iterative clinical c
 In the diagram, the clinical care planning processes are superimposed on the FHIR Care Plan elements and the MCC FHIR profiles. This overlay illustrates how these processes integrate within the FHIR Care Plan architecture, highlighting their specific positions, references, linkages, and the associated MCC value sets to demonstrate their application in clinical scenarios.
 
 #### Multiple Chronic Condition FHIR Care Plan Profile Relationship Diagram
-<-- PUT NEW PROFILE RELATIONSHIP DIAGRAM HERE -->
+<!-- PUT NEW PROFILE RELATIONSHIP DIAGRAM HERE -->
+<table><tr><td><img  src="FHIR MCC Care Plan Profile Relationship Diagram with Clinical Process-relationship diagram.drawio.svg" /></td></tr></table>
 
 ### Resource Referencing versus Activity.detail
 This Care Plan aims to support care coordination and share relevant data across the care team, while avoiding double documentation. The IG describes referencing profiles and precludes using activity.detail due to its use of in-line representation which means that information would have been entered directly into a care plan module vs existing data  being “pulled into” and aggregated within a dynamic plan.
@@ -74,11 +75,13 @@ Represented with OUTCOME REFERENCE (performed activity) or ACTIVITY REFERENCE (p
 The following diagram represents a high level view of the care planning process integrated with the FHIR Care Plan structure and how the clinical concepts and profiles reference each other in support of the care plan processes: 1) Identify problems (health concerns) 2) Set goals to resolve problems 3) Plan and implement interventions to reach goals 4) Measure outcomes.
 
 #### FHIR Supported Dynamic Care Planning and Coordination
-<-- INSERT DIAGRAM WITHOUT EXAMPLES -->
+<!-- INSERT DIAGRAM WITHOUT EXAMPLES -->
+<table><tr><td><img  src="Care PlanSimpleedited-Overview.drawio.svg" /></td></tr></table>
 
 The following diagram represents a high level view of the care planning process integrated with the FHIR Care Plan structure with clinical examples relevant to Chronic Kidney Disease.
 
 #### Instantiated FHIR Supported Dynamic Care Planning and Coordination
-<-- INSERT DIAGRAM WITH CKD EXAMPLES -->
+<!-- INSERT DIAGRAM WITH CKD EXAMPLES -->
 
+<table><tr><td><img  src="Care PlanSimpleedited-Use Case.drawio.svg" /></td></tr></table>
 
