@@ -131,6 +131,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCClinicalResultObservation"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-occupation"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
             </type>
             <mustSupport value="true"/>
         </element>
