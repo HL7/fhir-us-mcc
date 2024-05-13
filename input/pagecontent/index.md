@@ -137,15 +137,15 @@ This Implementation Guide reuses US Core profiles for representation within a FH
 
 #####  General US Core IG Conformance
 
-This guide adheres to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/capability-statements.html) where applicable. 
+This guide adheres to or build on US conformance requirements, most of its [General Guidance](https://www.hl7.org/fhir/us/core/STU6.1/general-guidance.html), and its [Capability Statements](https://www.hl7.org/fhir/us/core/STU6.1/capability-statements.html) where applicable. 
 
 #####  Provenance
 
-This IG recommends implementers adhere to guidelines and definitions provided in US Core’s [Basic Provenance Guidance](https://www.hl7.org/fhir/us/core/basic-provenance.html). 
+This IG recommends implementers adhere to guidelines and definitions provided in US Core’s [Basic Provenance Guidance](https://www.hl7.org/fhir/us/core/STU6.1/basic-provenance.html). 
 
 #####  Must Support
 
-This IG adheres to the US Core [Must Support](https://www.hl7.org/fhir/us/core/general-guidance.html#must-support) concept and rules.
+This IG adheres to the US Core [Must Support](https://www.hl7.org/fhir/us/core/STU6.1/general-guidance.html#must-support) concept and rules.
 
 ### Acknowledgements
 This Implementation Guide was made possible through the visionary leadership of the [National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) ](https://www.niddk.nih.gov/)and the [Agency for Healthcare Research and Quality (AHRQ) ](https://www.ahrq.gov/) with funding from the [Patient-Centered Outcomes Research Trust Fund of the Office of the Assistant Secretary for Planning and Evaluation (ASPE)](https://aspe.hhs.gov/collaborations-committees-advisory-groups/os-pcortf/explore-portfolio). The joint NIDDK-AHRQ project team can be found [here](https://cmext.ahrq.gov/confluence/display/EC/Project+Team). We would also like to thank the many clinicians, patients, caregivers, researchers, advocates, and subject matter experts who served on our [Technical Expert Panels](https://cmext.ahrq.gov/confluence/display/EC/Technical+Expert+Panels) and [Contract Monitoring Board ](https://cmext.ahrq.gov/confluence/display/EC/Contract+Monitoring+Board) for their time, insight, and support. 
