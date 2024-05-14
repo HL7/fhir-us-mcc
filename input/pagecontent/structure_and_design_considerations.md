@@ -31,7 +31,7 @@ In the diagram, the clinical care planning processes are superimposed on the FHI
 
 #### Multiple Chronic Condition FHIR Care Plan Profile Relationship Diagram
 <!-- PUT NEW PROFILE RELATIONSHIP DIAGRAM HERE -->
-<table><tr><td><img  src="FHIR MCC Care Plan Profile Relationship Diagram with Clinical Process.svg" /></td></tr></table>
+<table><tr><td><img width="95%" height="95%" src="FHIR MCC Care Plan Profile Relationship Diagram with Clinical Process.svg" /></td></tr></table>
 
 ### Resource Referencing versus Activity.detail
 This Care Plan aims to support care coordination and share relevant data across the care team, while avoiding double documentation. The IG describes referencing profiles and precludes using activity.detail due to its use of in-line representation which means that information would have been entered directly into a care plan module vs existing data  being “pulled into” and aggregated within a dynamic plan.
