@@ -1,4 +1,4 @@
-The [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) sets minimum expectations for the Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver’s ability to provide care. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. 
+The [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition/us-core-simple-observation) sets minimum expectations for the Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver’s ability to provide care. It identifies which core elements, extensions, vocabularies and value sets SHALL be present in the resource when using this profile. 
 The focus is on a caregiver who is identified as part of the care team within the required focus.reference, a US CORE RelatedPerson identified as the target of the [Caregiver slice of the MCC Care Team](StructureDefinition-MCCCareTeam.html) profile.
 
 Some clinical examples are:
