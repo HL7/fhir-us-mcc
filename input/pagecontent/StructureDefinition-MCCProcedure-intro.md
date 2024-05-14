@@ -10,4 +10,3 @@ See the [MCC Care Plan SDOH Guidance](https://build.fhir.org/ig/HL7/fhir-us-mcc/
 
 
 No additional value sets were defined for use in this profile beyond the the value set bindings in the US Core Procedure profile, but please see the [MCC Procedure and Service Request Value Set](mcc_procedure_and_service_request_value_sets.html) library page for guidance on use of procedure terminology in this guide.
-.
