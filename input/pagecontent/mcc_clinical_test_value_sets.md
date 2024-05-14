@@ -107,19 +107,5 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
                 <p>observation.code</p>
             </td>
         </tr>
-        <tr>
-            <td style="border-color:black; height:30.0pt; vertical-align:top; width:139.25pt">
-                <p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.824/expansion">Post Void Residual</a></p>
-            </td>
-            <td style="height:30.0pt; vertical-align:top; width:151.5pt">
-                <p>This set of values addresses terms representing an observation of post void residual urine.</p>
-            </td>
-            <td style="height:30.0pt; vertical-align:top; width:78.0pt">
-                <p>2.16.840.1.113762.1.4.1222.824</p>
-            </td>
-            <td style="height:30.0pt; vertical-align:top; width:98.75pt">
-                <p>observation.code</p>
-            </td>
-        </tr>
     </tbody>
 </table>

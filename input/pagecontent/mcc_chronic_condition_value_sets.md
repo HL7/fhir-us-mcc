@@ -390,20 +390,6 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 		</tr>
 		<tr>
 			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.566/expansion">Hypertension, Essential or Primary</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Essential or Primary Hypertension.</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.566</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
 			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.1484/expansion">Hypertension, Pulmonary Hypertension</a></p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:32%">
@@ -411,20 +397,6 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:20%">
 			<p>2.16.840.1.113762.1.4.1222.1484</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:12%">
-			<p>Condition.code</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="border-color:black; height:15.75pt; vertical-align:top; width:11%">
-			<p><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1222.569/expansion">Hypertension, Secondary</a></p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:32%">
-			<p>This set of values addresses terms representing Secondary Hypertension.</p>
-			</td>
-			<td style="height:15.75pt; vertical-align:top; width:20%">
-			<p>2.16.840.1.113762.1.4.1222.569</p>
 			</td>
 			<td style="height:15.75pt; vertical-align:top; width:12%">
 			<p>Condition.code</p>
