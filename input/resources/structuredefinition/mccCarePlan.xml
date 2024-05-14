@@ -168,6 +168,7 @@
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCGoal"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi"/>
                 <targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
             </type>
             <mustSupport value="true"/>
         </element>
