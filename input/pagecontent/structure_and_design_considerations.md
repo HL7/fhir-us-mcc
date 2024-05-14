@@ -17,7 +17,7 @@ The FHIR Care Plan resource is a complicated resource that presents some challen
 * Educational Tool: It serves to educate healthcare IT professionals, developers, and analysts on FHIR protocol and implementation, enhancing understanding of the profiles' structure and functionality.
 * Facilitates Integration: The diagram aids the integration of new systems or applications into existing FHIR-based architectures by mapping profile interactions and dependencies.
 
-Overall, these diagrams are crucial for implementing complicated FHIR implementation guide rules effectively, improving precise communication across systems. Please see the [Care Plan Profile](StructureDefinition-mccCarePlan.html)  for the technical rules and constraints that the MCC FHIR Care Plan Profile Relationship Diagram visually depicts.
+Overall, these diagrams are crucial for implementing complicated FHIR implementation guide rules effectively, improving precise communication across systems. Please see the [MCC Care Plan Profile](StructureDefinition-mccCarePlan.html)  for the technical rules and constraints that the MCC FHIR Care Plan Profile Relationship Diagram visually depicts.
 This Care Plan profile relationship diagram identifies five iterative clinical care planning processes: 
 <ol>
 	<li>Identify problems (health concerns)</li>
