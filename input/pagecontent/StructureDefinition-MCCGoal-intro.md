@@ -1,4 +1,4 @@
-The [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) sets minimum expectations for the Goal resource to record, search, and fetch goals associated with a patient, including information about a Social Determinants of Health-related goals. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Goal this derived profile is designed to add requirements to the following elements:
+The [US Core Goal](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition/us-core-goal) sets minimum expectations for the Goal resource to record, search, and fetch goals associated with a patient, including information about a Social Determinants of Health-related goals. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. In addition to the requirements set forth in US Core Goal this derived profile is designed to add requirements to the following elements:
 
 * Goal.expressedBy (Must Support)
 * Goal.addresses (Must Support)
