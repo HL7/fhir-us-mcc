@@ -2,4 +2,4 @@ The [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/St
 
 * MCCCaregiverConsiderationsObservation.extension:resource-pertainsToGoal (Must Support) to encourage linking to the goal in hopes to facilitate and/or to encourage systems to be able to receive and understand a goal linkage if present.
 
-This profile can be bound with any of the value sets found on the [MCC Observation Imaging Value Sets](mcc_observation_imaging_value_sets.html) library page to query for, fetch or record imaging procedure results as defined in the scope of each value set. Additional codes and value sets are not precluded.
+No additional value sets were defined for use in this profile beyond the US Core Clinical Result Observation profile. Additional codes and value sets are not precluded.

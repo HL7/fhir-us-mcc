@@ -800,9 +800,9 @@
                     <title value="MCC Medication Request Value Sets"/>
                     <generation value="markdown"/>
                 </page>
-                <page>
-                    <nameUrl value="mcc_observation_imaging_value_sets.html"/>
-                    <title value="MCC Observation Imaging Value Sets"/>
+                <page> 
+                    <nameUrl value="mcc_diagnostic_report_and_note_imaging_value_sets.html"/>
+                    <title value="MCC Diagnostic Report and Note Imaging Value Sets"/>
                     <generation value="markdown"/>
                 </page>
                 <page>

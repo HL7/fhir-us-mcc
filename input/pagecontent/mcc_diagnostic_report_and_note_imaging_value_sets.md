@@ -1,4 +1,4 @@
-This table holds the value sets that may be used with the <INSERT LINK> 
+This table holds the value sets that may be used with the [MCC DiagnosticReport And Note Profile](StructureDefinition-MCCDiagnosticReportAndNote.html)
 
 **Table Key**
 * **Value Set Name and Link**: All of these value sets are housed in the [NLM Value Set Authority Center (VSAC)](https://vsac.nlm.nih.gov/welcome). The value set name is a link to the value set. You must have an NLM/UMLS account to access. There is no charge for an account. Note: the first time you click on the value set name link in a given session, there my be a delay in loading and you will need to sign in once loaded.
@@ -7,7 +7,7 @@ This table holds the value sets that may be used with the <INSERT LINK>
 * **Profile Element**: The Profile element asserts the location within the profile the value set term **SHALL** be used.
 
 **MCC Value Sets Use and Validation**
-The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occurr. Validation support can be added in implmentation. These Symptom Value Sets may be used for several different purposes and no clinically appropriate use is precluded: 
+The value sets in the MCC Value Set Library pages are not bound within any profile. As a result "automatic" validation (confirmation) that a code sent in an instance is a member of that value set will not occur. Validation support can be added in implementation. These Symptom Value Sets may be used for several different purposes and no clinically appropriate use is precluded: 
 * Querying for patients that have experienced particular symptoms
 * Within Quality Measures or for research using [Clinical Quality Language (CQL)](http://cql.hl7.org/) (for example)
 * For display within applications
@@ -48,7 +48,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.894</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -62,7 +62,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.943</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -76,7 +76,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.910</p>
 			</td>
 			<td style="height:54.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -90,7 +90,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.882</p>
 			</td>
 			<td style="height:81.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -104,7 +104,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.911</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -118,7 +118,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.935</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -132,7 +132,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.904</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -146,7 +146,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.155</p>
 			</td>
 			<td style="height:27.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -160,7 +160,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113883.3.526.2.1374</p>
 			</td>
 			<td style="height:27.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -174,7 +174,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.156</p>
 			</td>
 			<td style="height:27.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -188,7 +188,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.922</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -202,7 +202,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.918</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -216,7 +216,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.881</p>
 			</td>
 			<td style="height:68.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -230,7 +230,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.888</p>
 			</td>
 			<td style="height:81.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -244,7 +244,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.944</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -258,7 +258,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.916</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -272,7 +272,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.1571</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -286,7 +286,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.885</p>
 			</td>
 			<td style="height:81.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -300,7 +300,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113883.3.526.3.1134</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -314,7 +314,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.938</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -328,7 +328,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.899</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -342,7 +342,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.925</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -356,7 +356,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.903</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -370,7 +370,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.937</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -384,7 +384,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.898</p>
 			</td>
 			<td style="height:54.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -398,7 +398,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.949</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -412,7 +412,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.892</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -426,7 +426,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.891</p>
 			</td>
 			<td style="height:54.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -440,7 +440,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.940</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -454,7 +454,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.896</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -468,7 +468,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.889</p>
 			</td>
 			<td style="height:81.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -482,7 +482,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.947</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -496,7 +496,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.921</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -510,7 +510,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113883.17.4077.2.1019</p>
 			</td>
 			<td style="height:27.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -524,7 +524,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.884</p>
 			</td>
 			<td style="height:27.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -538,7 +538,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.933</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -552,7 +552,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.908</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -566,7 +566,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.915</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -580,7 +580,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.912</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -594,7 +594,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.893</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -608,7 +608,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.924</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -622,7 +622,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.906</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -636,7 +636,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.883</p>
 			</td>
 			<td style="height:68.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -650,7 +650,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.886</p>
 			</td>
 			<td style="height:81.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -664,7 +664,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.928</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -678,7 +678,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.936</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -692,7 +692,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.909</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -706,7 +706,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.951</p>
 			</td>
 			<td style="height:54.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -720,7 +720,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.913</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -734,7 +734,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.948</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -748,7 +748,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.923</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -762,7 +762,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.895</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -776,7 +776,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.917</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -790,7 +790,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.905</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -804,7 +804,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.927</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -818,7 +818,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.901</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -832,7 +832,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.880</p>
 			</td>
 			<td style="height:81.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -846,7 +846,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.920</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -860,7 +860,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.930</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -874,7 +874,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.934</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -888,7 +888,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.907</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -902,7 +902,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.900</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -916,7 +916,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.945</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -930,7 +930,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.942</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -944,7 +944,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.902</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -958,7 +958,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.939</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -972,7 +972,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1222.897</p>
 			</td>
 			<td style="height:41.25pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 		<tr>
@@ -986,7 +986,7 @@ For more information refer to the [FHIR Terminology Service for VSAC Resources](
 			<p>2.16.840.1.113762.1.4.1146.9</p>
 			</td>
 			<td style="height:27.75pt; vertical-align:top; width:width:12%">
-			<p>Observation.code</p>
+			<p>DiagnosticReport.code</p>
 			</td>
 		</tr>
 	</tbody>

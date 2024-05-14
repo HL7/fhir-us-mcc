@@ -35,7 +35,7 @@
       <li><a href="mcc_goal_value_sets.html">MCC Goal Value Sets</a></li>
       <li><a href="mcc_laboratory_result_value_sets.html">MCC Laboratory Result Value Sets</a></li>
       <li><a href="mcc_medication_request_value_sets.html">MCC Medication Request Value Sets</a></li>
-      <li><a href="mcc_observation_imaging_value_sets.html">MCC Observation Imaging Value Sets</a></li>
+      <li><a href="mcc_diagnostic_report_and_note_imaging_value_sets.html">MCC Diagnostic Report and Note Imaging Value Sets</a></li>
       <li><a href="mcc_observation_sdoh_assessment_value_sets.html">MCC Observation SDOH Assessment Value Sets</a></li>
       <li><a href="mcc_procedure_and_service_request_value_sets.html">MCC Procedure and Service Request Value Sets</a></li>
       <li><a href="mcc_questionnaire_response_value_sets.html">MCC Questionnaire Response Value Sets</a></li>

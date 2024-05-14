@@ -4,6 +4,4 @@ In addition to the requirements set forth in US Core Diagnostic Report and Note,
 * DiagnosticReport.extension:resource-pertainsToGoal (Must Support)
 * DiagnosticReport.basedOn (Must Support) to encourage linking back Care Plan activities.
 
-
-
-No additional value sets were defined for use in this profile beyond the US Core Diagnostic Report profile.
+This profile can be bound with any of the value sets found on US Core Diagnostic Report profile or the [MCC Diagnostic Report and Note Imaging Value Sets](mcc_diagnostic_report_and_note_imaging_value_sets.html) library page to query for, fetch or record imaging procedure results as defined in the scope of each value set. Additional codes and value sets are not precluded.

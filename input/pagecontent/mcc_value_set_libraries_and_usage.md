@@ -12,7 +12,7 @@ Note: the first time you click on the value set name link in a given session, th
 * [MCC Goal](mcc_goal_value_sets.html)
 * [MCC Laboratory Result](mcc_laboratory_result_value_sets.html)
 * [MCC Medication Request](mcc_medication_request_value_sets.html)
-* [MCC Observation Imaging](mcc_observation_imaging_value_sets.html)
+* [MCC Diagnostic Report and Note Imaging Value Sets](mcc_diagnostic_report_and_note_imaging_value_sets.html)
 * [MCC Observation SDOH Assessment](mcc_observation_sdoh_assessment_value_sets.html)
 * [MCC Procedure and Service Request](mcc_procedure_and_service_request_value_sets.html)
 * [MCC Questionnaire Response](mcc_questionnaire_response_value_sets.html)
