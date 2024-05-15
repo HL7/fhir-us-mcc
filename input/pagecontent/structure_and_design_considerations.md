@@ -76,12 +76,12 @@ The following diagram represents a high level view of the care planning process 
 
 #### FHIR Supported Dynamic Care Planning and Coordination
 <!-- INSERT DIAGRAM WITHOUT EXAMPLES -->
-<table><tr><td><img  src="Care PlanSimpleedited-Overview.drawio.svg" /></td></tr></table>
+<table><tr><td><img  src="Care PlanSimpleedited-Overview.svg" /></td></tr></table>
 
 The following diagram represents a high level view of the care planning process integrated with the FHIR Care Plan structure with clinical examples relevant to Chronic Kidney Disease.
 
 #### Instantiated FHIR Supported Dynamic Care Planning and Coordination
 <!-- INSERT DIAGRAM WITH CKD EXAMPLES -->
 
-<table><tr><td><img  src="Care PlanSimpleedited-Use Case.drawio.svg" /></td></tr></table>
+<table><tr><td><img  src="Care PlanSimpleedited-Use Case.svg" /></td></tr></table>
 
