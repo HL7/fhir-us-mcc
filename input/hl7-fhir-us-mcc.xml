@@ -162,7 +162,7 @@
                 <display value="Multiple Chronic Condition Care Plan Medication Request"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Medication Request"/>
-            <description value="This profile constrains [US Core Medication Request ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Medication Request ](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-medicationrequest.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group4"/>
         </resource>
@@ -172,7 +172,7 @@
                 <display value="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Laboratory Result Observation"/>
-            <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-lab.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group3"/>
         </resource>
@@ -182,7 +182,7 @@
                 <display value="Multiple Chronic Condition Care Plan Goal"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Goal"/>
-            <description value="This profile constrains [US Core Goal](http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Goal](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-goal.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group6"/>
         </resource>
@@ -192,7 +192,7 @@
                 <display value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
-            <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-note.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group7"/>
         </resource>
@@ -202,7 +202,7 @@
                 <display value="MCC Chronic Condition and Health Concern Profile"/>
             </reference>
             <name value="MCC Chronic Condition and Health Concern Profile"/>
-            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns) to encourage its use for chronic condition and health concerns for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
+            <description value="This profile constrains [US Core Condition Problems and Health Concerns Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-condition-problems-health-concerns.html) to encourage its use for chronic condition and health concerns for use in the MCC FHIR Care Plan or other FHIR Care Plans by linkages or references to goals and other resources.."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group2"/>
         </resource>
@@ -232,7 +232,7 @@
                 <display value="Multiple Chronic Condition Care Plan Procedure"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Procedure"/>
-            <description value="This profile constrains [US Core Procedure ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Procedure ](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group5"/>
         </resource>
@@ -242,7 +242,7 @@
                 <display value="MCCCarePLan"/>
             </reference>
             <name value="Multiple Chronic Care Condition Care Plan"/>
-            <description value="This profile constrains the FHIR Care Plan Resource to represent the requirements of a care plan for patients with multiple chronic conditions."/>
+            <description value="This profile constrains the [US Core FHIR Care Plan Resource](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careplan.html) to represent the requirements of a care plan for patients with multiple chronic conditions."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group1"/>
         </resource>
@@ -434,7 +434,7 @@
                 <display value="MCCSymptomObservation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Symptom Observation"/>
-            <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) creating a symptom profile for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html) creating a symptom profile for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group9"/>
         </resource>
@@ -452,7 +452,7 @@
                 <display value="MCCServiceRequest"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Service Request"/>
-            <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/StructureDefinition/us-core-servicerequest) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Service Requst](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-servicerequest.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group10"/>
         </resource>
@@ -462,7 +462,7 @@
                 <display value="MCCObservationSDOHAssessment"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Observation SDOH Assessment"/>
-            <description value="This profile constrains [US Core Observation Screening Assessment Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Observation Screening Assessment Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-screening-assessment.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group12"/>
         </resource>
@@ -472,7 +472,7 @@
                 <display value="MCCImmunization"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Immunization"/>
-            <description value="This profile constrains [US Core Immunization Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core Immunization Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-immunization.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group13"/>
         </resource>
@@ -526,7 +526,7 @@
                 <display value="MCCQuestionnaireResponse"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Questionnaire Response"/>
-            <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+            <description value="This profile constrains [US Core QuestionnaireResponse Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group17"/>
         </resource>
@@ -536,7 +536,7 @@
                 <display value="MCCCareTeam"/>
             </reference>
             <name value="MCCCareTeam"/>
-            <description value="This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It features a requirement for Patient and at least one caregiver to be part of the members of the team."/>
+            <description value="This profile constrains [US Core Care team](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careteam.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It features a requirement for Patient and at least one caregiver to be part of the members of the team."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group16"/>
         </resource>
@@ -572,7 +572,7 @@
                 <display value="MCCPatientCaregiverConditionStatus"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Patient/Caregiver Condition Status Observation"/>
-            <description value="This profile constrains  [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
+            <description value="This profile constrains  [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations of the Patient or Caregivers feelings towards the status of patient conditions. The focus is on the conditions of interest and the performer element indicates weather this is the Patient or Caregiver's feelings. This is similar to a clinical impression but is being made by a non-clinican."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group18"/>
         </resource>
@@ -582,7 +582,7 @@
                 <display value="MCCCaregiverConsiderationsObservation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Caregiver Considerations Observation"/>
-            <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans reflecting information about the **caregiver**. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care to the patient."/>
+            <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans reflecting information about the **caregiver**. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care to the patient."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group19"/>
         </resource>
@@ -592,7 +592,7 @@
                 <display value="Multiple Chronic Condition Care Plan Clinical Result Observation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Clinical Result Observation"/>
-            <description value="This profile constrains [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a laboratory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Echocardiogram' is an example observation which would use the MCC Clinical Result profile."/>
+            <description value="This profile constrains [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-clinical-result.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations where the Observation is neither a laboratory, imaging, vital sign, social history, sexual orientation, survey, SDOH assesment, nor a smoking status observation. 'Echocardiogram' is an example observation which would use the MCC Clinical Result profile."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group21"/>
         </resource>
@@ -602,7 +602,7 @@
                 <display value="Multiple Chronic Condition Care Plan Simple Observation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Simple Observation"/>
-            <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles."/>
+            <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group22"/>
         </resource>
@@ -612,7 +612,7 @@
                 <display value="MCCImagingObservation"/>
             </reference>
             <name value="Multiple Chronic Condition Care Plan Clinical Imaging Observation"/>
-            <description value="This profile constrains [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch the components of diagnostic imaging test results for a patient."/>
+            <description value="This profile constrains [US Core Clinical Result Observation Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-clinical-result.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch the components of diagnostic imaging test results for a patient."/>
             <exampleBoolean value="false"/>
             <groupingId value="new-group23"/>
         </resource>
@@ -663,7 +663,7 @@
                 <display value="MCCServerCapabilityStatement"/>
             </reference>
             <name value="MCCServerCapabilityStatement"/>
-            <description value="This Section describes the expected capabilities of the MCC Server actor which is responsible for providing responses to the queries submitted by the MCC Requesters. See [http://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html](http://hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of MCC eCare Plan Implementation Guide, as well as other conformance artifacts of the MCC eCare Plan Implementation Guide."/>
+            <description value="This Section describes the expected capabilities of the MCC Server actor which is responsible for providing responses to the queries submitted by the MCC Requesters. See [http://hl7.org/fhir/us/core/STU6.1/CapabilityStatement-us-core-server.html](http://hl7.org/fhir/us/core/STU6.1/CapabilityStatement-us-core-server.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of MCC eCare Plan Implementation Guide, as well as other conformance artifacts of the MCC eCare Plan Implementation Guide."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -672,7 +672,7 @@
                 <display value="MCCClientCapabilityStatement"/>
             </reference>
             <name value="MCCClientCapabilityStatement"/>
-            <description value="This Section describes the expected capabilities of the MCC Client actor. See [http://hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html](http://hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of MCC eCare Plan Implementation Guide, as well as other conformance artifacts of the MCC eCare Plan Implementation Guide"/>
+            <description value="This Section describes the expected capabilities of the MCC Client actor. See [http://hl7.org/fhir/us/core/STU6.1/CapabilityStatement-us-core-client.html](http://hl7.org/fhir/us/core/STU6.1/CapabilityStatement-us-core-client.html) for specifics. Additionally, support for the extension 'Pertains to Goal' is indicated in the StructureDefinitions of MCC eCare Plan Implementation Guide, as well as other conformance artifacts of the MCC eCare Plan Implementation Guide"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

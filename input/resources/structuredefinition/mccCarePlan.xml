@@ -13,7 +13,7 @@
     <status value="active"/>
     <date value="2022-04-13"/>
     <publisher value="Patient Care Work Group"/>
-    <description value="This profile constrains the FHIR Care Plan Resource to represent the requirements of a care plan for patients with multiple chronic conditions."/>
+    <description value="This profile constrains the [US Core FHIR Care Plan Resource](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-careplan.html) to represent the requirements of a care plan for patients with multiple chronic conditions."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

@@ -24,6 +24,7 @@
     <category>
         <coding>
             <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"/>
+			<version value="6.1.0"/>
             <code value="clinical-note"/>
             <display value="Clinical Note"/>
         </coding>

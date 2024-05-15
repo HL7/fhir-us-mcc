@@ -30,6 +30,7 @@
         </coding>
         <coding>
             <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+			<version value="6.1.0"/>
             <code value="assess-plan"/>
         </coding>
     </category>
