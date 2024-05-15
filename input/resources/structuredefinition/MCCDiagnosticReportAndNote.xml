@@ -12,7 +12,7 @@
     <title value="Multiple Chronic Condition Care Plan Diagnostic Report and Note"/>
     <status value="active"/>
     <publisher value="Patient Care Work Group"/>
-    <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <description value="This profile constrains [US Core Diagnostic Report and Note](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-diagnosticreport-note.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166:-2"/>

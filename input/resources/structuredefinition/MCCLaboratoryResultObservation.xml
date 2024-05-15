@@ -13,7 +13,7 @@
     <status value="draft"/>
     <date value="2021-08-27"/>
     <publisher value="Patient Care Work Group"/>
-    <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <description value="This profile constrains [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-observation-lab.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

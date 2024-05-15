@@ -1,4 +1,4 @@
-The MCC IG is built on the premise that the US Core IG is implemented on conformant servers. As such, where the MCC IG does not additionally constrain a US Core profile, the US Core definition of Must Support and Missing Data SHOULD be followed [http://hl7.org/fhir/us/core/must-support.html](http://hl7.org/fhir/us/core/STU6.1/must-support.html).  In addtion, where MCC constrains a profile the [US Core definition of Must Support and Missing Data](http://hl7.org/fhir/us/core/STU6.1/must-support.html#must-support-elements) applies.
+The MCC IG is built on the premise that the US Core IG is implemented on conformant servers. As such, where the MCC IG does not additionally constrain a US Core profile, the US Core definition of Must Support and Missing Data SHOULD be followed [http://hl7.org/fhir/us/core/STU6.1/must-support.html](http://hl7.org/fhir/us/core/STU6.1/must-support.html).  In addtion, where MCC constrains a profile the [US Core definition of Must Support and Missing Data](http://hl7.org/fhir/us/core/STU6.1/must-support.html#must-support-elements) applies.
 
 To clarify, in the context of MCC, Support, implementations are expected to 
 

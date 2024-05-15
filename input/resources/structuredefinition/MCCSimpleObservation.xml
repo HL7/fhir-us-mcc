@@ -10,7 +10,7 @@
     <name value="MCCSimpleObservation"/>
     <title value="Multiple Chronic Condition Care Plan Simple Observation"/>
     <status value="active"/>
-    <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles."/>
+    <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans. It is using Observation resource to record, search, and fetch Observations on issues or items that are not appropriate for the other MCC FHIR Observation profiles."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

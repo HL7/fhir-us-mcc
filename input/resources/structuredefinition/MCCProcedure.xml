@@ -19,7 +19,7 @@
     <title value="Multiple Chronic Condition Care Plan Procedure"/>
     <status value="draft"/>
     <date value="2020-07-22"/>
-    <description value="This profile constrains [US Core Procedure ](http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
+    <description value="This profile constrains [US Core Procedure ](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166:-2"/>

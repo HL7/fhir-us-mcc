@@ -1,4 +1,4 @@
-The [US Core Procedure profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition/us-core-procedure) sets minimum expectations for the Procedure resource to record, search, and fetch procedures associated with a patient, including information about a Social Determinants of Health-related procedures. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+The [US Core Procedure profile](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-procedure.html) sets minimum expectations for the Procedure resource to record, search, and fetch procedures associated with a patient, including information about a Social Determinants of Health-related procedures. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
 
 In addition to the requirements set forth in US Core Procedure, this derived profile is designed to add requirements to the following elements:
 

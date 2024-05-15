@@ -13,7 +13,7 @@
     <status value="active"/>
     <date value="2022-09-28T14:05:21+00:00"/>
     <publisher value="HL7 International - Patient Care WG"/>
-    <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation) for use in the MCC FHIR Care Plan or other FHIR Care Plans reflecting information about the **caregiver**. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care to the patient."/>
+    <description value="This profile constrains [US Core Simple Observation](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-simple-observation.html) for use in the MCC FHIR Care Plan or other FHIR Care Plans reflecting information about the **caregiver**. It is using Observation resource to record, search, and fetch Observations on issues or items that might effect the Caregiver's ability to provide care to the patient."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
