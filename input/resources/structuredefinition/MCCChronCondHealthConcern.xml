@@ -56,7 +56,7 @@
         <element id="Condition.code">
             <path value="Condition.code"/>
             <label value="Label"/>
-            <short value="Please see the Condition Value Set Library for value sets that are subsets of US Core Condition Code that can be used at Conditon.code element"/>
+            <short value="Please see the MCC Chronic Condition and Health Concern Value Sets Library for value sets that are subsets of US Core Condition Code that can be used at Conditon.code element"/>
         </element>
         <element id="Condition.evidence">
             <path value="Condition.evidence"/>
