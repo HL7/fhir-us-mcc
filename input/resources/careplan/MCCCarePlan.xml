@@ -42,10 +42,10 @@
         <start value="2018-05-01"/>
     </period>
     <created value="2019-01-01"/>
-    <author>
+    <!--author>
         <reference value="PractitionerRole/PractitionerRoleMCC2"/>
         <display value="Nancy Nurse RN"/>
-    </author>
+    </author-->
     <contributor>
         <reference value="PractitionerRole/PractitionerRoleMCC1"/>
         <display value="Henry Levin VII MD Nephrologist"/>
