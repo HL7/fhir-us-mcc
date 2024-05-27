@@ -27,7 +27,7 @@
             <code value="89253-9"/>
             <display value="Trend"/>
         </coding>
-        <text value="Observation on patient/caregiver feelings on the condition satus"/>
+        <text value="Observation on patient/caregiver feelings on the condition status"/>
     </code>
     <subject>
         <reference value="Patient/cc-pat-pnoelle"/>
