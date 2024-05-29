@@ -16,7 +16,7 @@ Usage: #example
 * active = true
 * patient = Reference(Patient/cc-pat-pnoelle)
 * relationship.coding = $v3-RoleCode#DAUC
-* name.text = "Rose  Noelle"
+* name.text = "Rose Noelle"
 * name.family = "Rose"
 * name.given = "Noelle"
 
@@ -54,8 +54,9 @@ Usage: #example
 * period.end = "2012-03-31"
 * practitioner = Reference(practitionerMCC-V) "Dr Vince Jones"
 * organization = Reference(http://example.org/Organization/123)
-* code = $provider-taxonomy#207RN0300X "Nephrology Physician"
-* specialty = $provider-taxonomy#207RN0300X "Nephrology Physician"
+* code = $sct#11911009 "Nephrologist (occupation)"
+* specialty[0] = $provider-taxonomy#246ZN0300X "Nephrology Specialist/Technologist"
+* specialty[+] = $sct#394589003 "Nephrology"
 * location = Reference(http://example.org/Location/SouthWing) "South Wing, second floor"
 * healthcareService = Reference(http://example.org/HealthcareService/123)
 * telecom[0].system = #phone
@@ -179,6 +180,7 @@ Usage: #example
 * verificationStatus.text = "Confirmed"
 * category[0] = $condition-health-concern#health-concern "Health Concern"
 * category[+] = $us-core-category#sdoh
+//* code = $sct#198288003	"Anxiety state (finding)"
 * code.text = "Worried and depressed regarding her progressive CKD and that Long Covid will make CKD worse due to decreased activity, shortness of breath and pain."
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * recordedDate = "2022-07-01"

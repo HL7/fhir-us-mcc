@@ -99,6 +99,7 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-encounter-diagnosis"/>
 			</type>
 			<mustSupport value="true"/>
         </element>

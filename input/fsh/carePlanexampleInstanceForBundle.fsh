@@ -4,12 +4,11 @@ InstanceOf: CarePlan
 Usage: #example
 //* meta.extension[0].valueMarkdown = "This is an example for the *MCC CarePlan Profile*."
 * meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/mccCarePlan"
-* extension.url = "http://hl7.org/fhir/us/mcc/StructureDefinition/custodian"
-* extension.valueReference = Reference(Practitioner/careCoordinator1)
-
-* extension.url = "http://hl7.org/fhir/us/mcc/StructureDefinition/custodian"
-* extension.valueReference = Reference(RelatedPerson/caregiver-of-noelle)
-
+//* extension.url = "http://hl7.org/fhir/us/mcc/StructureDefinition/custodian"
+//* extension.valueReference = Reference(Practitioner/careCoordinator1)
+//* extension.url = "http://hl7.org/fhir/us/mcc/StructureDefinition/custodian"
+//* extension.valueReference = Reference(RelatedPerson/caregiver-of-noelle)
+//* text.status = #additional
 
 * status = #active
 * intent = #plan
@@ -25,7 +24,7 @@ Usage: #example
 * contributor[+] = Reference(PractitionerRole/careCoordinator-1) "Care-coordinator, served by Julie Smith"
 * contributor[+] = Reference(Patient/cc-pat-pnoelle) "Noelle"
 * contributor[+] = Reference(PractitionerRole/dr-vince-jones) "Nephrologist Role, served by Dr Vince Jones"
-* contributor[+] = Reference(RelatedPerson/daughter1) "Rose  Noelle, Daughter"
+* contributor[+] = Reference(RelatedPerson/daughter1) "Rose Noelle, Daughter"
 * careTeam = Reference(CareTeam/careteam-for-bundle) "Long-COVID and CKD focused care team"
 * addresses[0] = Reference(Condition/ConditionCKD) "Chronic Kidney Disease"
 * addresses[+} = Reference(Condition/encounter-diag-1) "Long COVID"
@@ -85,6 +84,6 @@ Usage: #example
 * activity[=].outcomeReference[+] = Reference(Condition/chilblain-resolved) 
 * activity[=].outcomeReference[+] = Reference(ServiceRequest/pt-3x-wk) "PT 3x per week"
 * activity[=].outcomeReference[+] = Reference(ServiceRequest/counseling-1x-wk) "Counseling 1x per week"
-* activity[=].outcomeReference[+] = Reference(ServiceRequest/meditation-7x-wk) "Meditation 7x per week"
+* activity[=].outcomeReference[+] = Reference(Task/meditation-7x-wk) "Meditation 7x per week"
 * activity[=].outcomeReference[+] = Reference(Observation/observation-moca) "MOCA new result showing improvement"
 * activity[=].outcomeReference[+] = Reference(Observation/observation-moca-original) "MOCA initial result showing impairment"

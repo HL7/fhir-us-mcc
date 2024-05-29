@@ -721,6 +721,16 @@
             <exampleBoolean value="false"/>
         </resource>
 		
+		
+		<resource>
+			  <reference>
+				<reference value="Bundle/long-covid-and-ckd-bundle" />
+				<display value="long-covid-and-ckd-bundle" />
+			  </reference>
+			  <name value="long-covid-and-ckd-bundle" />
+			  <description value="Long COVID and CKD Collection Bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
 		<resource>
 			  <reference>
 				<reference value="Observation/observation-moca" />
@@ -885,7 +895,7 @@
 		</resource>
 		<resource>
 			  <reference>
-				<reference value="ServiceRequest/meditation-7x-wk" />
+				<reference value="Task/meditation-7x-wk" />
 				<display value="meditation-7x-wk" />
 			  </reference>
 			  <name value="meditation-7x-wk" />

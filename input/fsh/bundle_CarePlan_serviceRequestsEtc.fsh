@@ -69,7 +69,9 @@ Usage: #example
 * status = #completed
 * category = $sct#311401005 "Patient education (procedure)"
 * category.text = "Education"
-* code.text = "Demonstrated (taught) to use CKD app"
+* code = $sct#311401005 "Patient education (procedure)"
+//* code.text = "Demonstrated (taught) to use CKD app"
+* note.text = "Demonstrated (taught) to use CKD app"
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * performedDateTime = "2022-07-03"
 * recorder = Reference(Practitioner/practitionerMCC-1) "Dr Henry Levin"
@@ -218,22 +220,36 @@ Usage: #example
 * patientInstruction = "Call the clinic at 444-COV-ID19 to set up your appointments"
 
 //CarePlan.activity.outcomeReference(ServiceRequest/meditation-7x-wk)
+//Instance: meditation-7x-wk
+//InstanceOf: ServiceRequest
+//Usage: #example
+//* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
+//* status = #active
+//* intent = #plan
+//* code.text = "Meditation self-guided"
+//* subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
+//* reasonReference = Reference(Condition/encounter-diag-1) "Long COVID"
+//* authoredOn = "2022-05-03"
+//* requester = Reference(Practitioner/practitionerMCC-3v) "Dr. John Carlson"
+//* occurrenceTiming.repeat.frequency = 1
+//* occurrenceTiming.repeat.period = 1
+//* occurrenceTiming.repeat.periodUnit = #wk
+//* performer = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
+//* patientInstruction = "Meditate every day"
 Instance: meditation-7x-wk
-InstanceOf: ServiceRequest
+InstanceOf: Task
 Usage: #example
-* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
-* status = #active
-* intent = #plan
-* code.text = "Meditation self-guided"
-* subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
+* status = #ready "Ready"
+* intent = #order
+* priority = #routine
 * reasonReference = Reference(Condition/encounter-diag-1) "Long COVID"
+* code = http://hl7.org/fhir/CodeSystem/task-code#fulfill "Fulfill the focal request"
+* description = "Practice self-guided meditation every day"
 * authoredOn = "2022-05-03"
+* for = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * requester = Reference(Practitioner/practitionerMCC-3v) "Dr. John Carlson"
-* occurrenceTiming.repeat.frequency = 1
-* occurrenceTiming.repeat.period = 1
-* occurrenceTiming.repeat.periodUnit = #wk
-* performer = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
-* patientInstruction = "Meditate every day"
+* owner = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
+
 
 //MOCA improved cognition
 Instance: observation-moca
