@@ -156,6 +156,9 @@
         <grouping id="new-group23">
             <name value="MCC Imaging Observation"/>
         </grouping>
+		<grouping id="new-group24">
+            <name value="MCC Long COVID Bundle"/>
+        </grouping>
         <resource>
             <reference>
                 <reference value="StructureDefinition/MCCMedicationRequest"/>
@@ -717,6 +720,675 @@
             <description value="Who is the designated responsible party. When populated, the custodian is responsible for the care plan. The care plan is attributed to the custodian. The custodian might or might not be a contributor."/>
             <exampleBoolean value="false"/>
         </resource>
+		
+		<resource>
+			  <reference>
+				<reference value="Observation/observation-moca" />
+				<display value="observation-moca" />
+			  </reference>
+			  <name value="observation-moca" />
+			  <description value="MOCA new result showing improvement" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="QuestionnaireResponse/questionnnaire-res-moca" />
+				<display value="questionnnaire-res-moca" />
+			  </reference>
+			  <name value="questionnnaire-res-moca" />
+			  <description value="MOCA new questionnaire response" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/obs-response-moca" />
+				<display value="obs-response-moca" />
+			  </reference>
+			  <name value="obs-response-moca" />
+			  <description value="MOCA new converted observation from question" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/observation-moca-original" />
+				<display value="observation-moca-original" />
+			  </reference>
+			  <name value="observation-moca-original" />
+			  <description value="MOCA initial result showing impairment" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="QuestionnaireResponse/questionnnaire-res-moca-original" />
+				<display value="questionnnaire-res-moca-original" />
+			  </reference>
+			  <name value="questionnnaire-res-moca-original" />
+			  <description value="MOCA initial questionnaire response" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/obs-response-moca-original" />
+				<display value="obs-response-moca-original" />
+			  </reference>
+			  <name value="obs-response-moca-original" />
+			  <description value="MOCA converted original observation from question" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="ServiceRequest/dialysis-request" />
+				<display value="dialysis-request" />
+			  </reference>
+			  <name value="dialysis-request" />
+			  <description value="Referral for dialysis" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Procedure/dialysis-for-bundle" />
+				<display value="dialysis-for-bundle" />
+			  </reference>
+			  <name value="dialysis-for-bundle" />
+			  <description value="Dialysis Procedure" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Procedure/dialysis-for-bundle2" />
+				<display value="dialysis-for-bundle2" />
+			  </reference>
+			  <name value="dialysis-for-bundle2" />
+			  <description value="Dialysis Procedure" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Procedure/dialysis-for-bundle3" />
+				<display value="dialysis-for-bundle3" />
+			  </reference>
+			  <name value="dialysis-for-bundle3" />
+			  <description value="Dialysis Procedure" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Procedure/ckd-app-education" />
+				<display value="ckd-app-education" />
+			  </reference>
+			  <name value="ckd-app-education" />
+			  <description value="Education on CKD app" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="ServiceRequest/dietitian-referral" />
+				<display value="dietitian-referral" />
+			  </reference>
+			  <name value="dietitian-referral" />
+			  <description value="Dietitian Referral" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Procedure/dietitian-consult" />
+				<display value="dietitian-consult" />
+			  </reference>
+			  <name value="dietitian-consult" />
+			  <description value="Dietitian consult" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/better-diet" />
+				<display value="better-diet" />
+			  </reference>
+			  <name value="better-diet" />
+			  <description value="Observation by caregiver (daughter) of improvement in diet" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="ServiceRequest/long-covid-request" />
+				<display value="long-covid-request" />
+			  </reference>
+			  <name value="long-covid-request" />
+			  <description value="Long Covid Clinic Referral serviceRequest" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="MedicationRequest/med-for-chilblains" />
+				<display value="med-for-chilblains" />
+			  </reference>
+			  <name value="med-for-chilblains" />
+			  <description value="Treatment for chilblains" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="ServiceRequest/pt-3x-wk" />
+				<display value="pt-3x-wk" />
+			  </reference>
+			  <name value="pt-3x-wk" />
+			  <description value="PT 3x per week" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="ServiceRequest/counseling-1x-wk" />
+				<display value="counseling-1x-wk" />
+			  </reference>
+			  <name value="counseling-1x-wk" />
+			  <description value="Counseling 1x per week" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="ServiceRequest/meditation-7x-wk" />
+				<display value="meditation-7x-wk" />
+			  </reference>
+			  <name value="meditation-7x-wk" />
+			  <description value="Meditation 7x per week" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="CarePlan/careplan-for-bundle" />
+				<display value="careplan-for-bundle" />
+			  </reference>
+			  <name value="careplan-for-bundle" />
+			  <description value="Long COVID and CKD Careplan for Long COVID Bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="RelatedPerson/daughter1" />
+				<display value="daughter1" />
+			  </reference>
+			  <name value="daughter1" />
+			  <description value="Rose  Noelle, Daughter" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Practitioner/practitionerMCC-V" />
+				<display value="practitionerMCC-V" />
+			  </reference>
+			  <name value="practitionerMCC-V" />
+			  <description value="Dr Vince Jones, Nephrologist" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="PractitionerRole/dr-vince-jones" />
+				<display value="dr-vince-jones" />
+			  </reference>
+			  <name value="dr-vince-jones" />
+			  <description value="Nephrologist Role, served by Dr Vince Jones" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Practitioner/practitionerMCC-3v" />
+				<display value="practitionerMCC-3v" />
+			  </reference>
+			  <name value="practitionerMCC-3v" />
+			  <description value="Dr John Carlson, Primary Care Physician" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Practitioner/careCoordinator1" />
+				<display value="careCoordinator1" />
+			  </reference>
+			  <name value="careCoordinator1" />
+			  <description value="Julie Smith, Care-coordinator" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Organization/funding1" />
+				<display value="funding1" />
+			  </reference>
+			  <name value="funding1" />
+			  <description value="Example of Organization for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Location/communitysite" />
+				<display value="communitysite" />
+			  </reference>
+			  <name value="communitysite" />
+			  <description value="Example of Location for Long COVID bundlee" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="PractitionerRole/careCoordinator-1" />
+				<display value="careCoordinator-1" />
+			  </reference>
+			  <name value="careCoordinator-1" />
+			  <description value="Care-coordinator, served by Julie Smith" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="CareTeam/careteam-for-bundle" />
+				<display value="careteam-for-bundle" />
+			  </reference>
+			  <name value="careteam-for-bundle" />
+			  <description value="Example of CareTeam for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/patient-health-concern-1" />
+				<display value="patient-health-concern-1" />
+			  </reference>
+			  <name value="patient-health-concern-1" />
+			  <description value="Patient Health Concern: Worry that Long Covid symptoms will effect CKD" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/patient-health-concern-2" />
+				<display value="patient-health-concern-2" />
+			  </reference>
+			  <name value="patient-health-concern-2" />
+			  <description value="Patient Health Concern: Hard to exercise due to pain" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/patient-health-concern-3" />
+				<display value="patient-health-concern-3" />
+			  </reference>
+			  <name value="patient-health-concern-3" />
+			  <description value="Patient Health Concern: Struggles to manage her diet and find affordable healthy food choices under her financial strain" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/patient-health-concern-4" />
+				<display value="patient-health-concern-4" />
+			  </reference>
+			  <name value="patient-health-concern-4" />
+			  <description value="Patient Health Concern: Poor appetite for healthy CKD appropriate foods, likes cola, cake and chips" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/careTeam-concerns-1" />
+				<display value="careTeam-concerns-1" />
+			  </reference>
+			  <name value="careTeam-concerns-1" />
+			  <description value="CareTeam Health Concern: Imbalanced Nutrition" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/careTeam-concerns-2" />
+				<display value="careTeam-concerns-2" />
+			  </reference>
+			  <name value="careTeam-concerns-2" />
+			  <description value="CareTeam Health Concern: Dyspnea" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/careTeam-concerns-3" />
+				<display value="careTeam-concerns-3" />
+			  </reference>
+			  <name value="careTeam-concerns-3" />
+			  <description value="CareTeam Health Concern: Pain in Legs" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/careTeam-concerns-4" />
+				<display value="careTeam-concerns-4" />
+			  </reference>
+			  <name value="careTeam-concerns-4" />
+			  <description value="CareTeam Health Concern: Pain in Hands" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/careTeam-concerns-5" />
+				<display value="careTeam-concerns-5" />
+			  </reference>
+			  <name value="careTeam-concerns-5" />
+			  <description value="CareTeam Health Concern: Pain in arms" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/problem-list-1" />
+				<display value="problem-list-1" />
+			  </reference>
+			  <name value="problem-list-1" />
+			  <description value="Finding: Food aversion and cravings" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/problem-list-2" />
+				<display value="problem-list-2" />
+			  </reference>
+			  <name value="problem-list-2" />
+			  <description value="Diagnosis: Metabolic acidosis" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/encounter-diag-1" />
+				<display value="encounter-diag-1" />
+			  </reference>
+			  <name value="encounter-diag-1" />
+			  <description value="Long COVID" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/arterial-blood-gas-panel" />
+				<display value="arterial-blood-gas-panel" />
+			  </reference>
+			  <name value="arterial-blood-gas-panel" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/ph-lab-observation" />
+				<display value="ph-lab-observation" />
+			  </reference>
+			  <name value="ph-lab-observation" />
+			  <description value="Example of Observationfor Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/hco3-arterial-observation" />
+				<display value="hco3-arterial-observation" />
+			  </reference>
+			  <name value="hco3-arterial-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/pCO2-arterial-observation" />
+				<display value="pCO2-arterial-observation" />
+			  </reference>
+			  <name value="pCO2-arterial-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/pO2-arterial-observation" />
+				<display value="pO2-arterial-observation" />
+			  </reference>
+			  <name value="pO2-arterial-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/serum-lactate-observation" />
+				<display value="serum-lactate-observation" />
+			  </reference>
+			  <name value="serum-lactate-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/blood-ketones-observation" />
+				<display value="blood-ketones-observation" />
+			  </reference>
+			  <name value="blood-ketones-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/serum-electrolytes-panel" />
+				<display value="serum-electrolytes-panel" />
+			  </reference>
+			  <name value="serum-electrolytes-panel" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/sodium-serum-observation" />
+				<display value="sodium-serum-observation" />
+			  </reference>
+			  <name value="sodium-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/potassium-serum-observation" />
+				<display value="potassium-serum-observation" />
+			  </reference>
+			  <name value="potassium-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/chloride-serum-observation" />
+				<display value="chloride-serum-observation" />
+			  </reference>
+			  <name value="chloride-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/bicarbonate-serum-observation" />
+				<display value="bicarbonate-serum-observation" />
+			  </reference>
+			  <name value="bicarbonate-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/carbon-dioxide-serum-observation" />
+				<display value="carbon-dioxide-serum-observation" />
+			  </reference>
+			  <name value="carbon-dioxide-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/anion-gap-serum-observation" />
+				<display value="anion-gap-serum-observation" />
+			  </reference>
+			  <name value="anion-gap-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/protein-serum-observation" />
+				<display value="protein-serum-observation" />
+			  </reference>
+			  <name value="protein-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/albumin-serum-observation" />
+				<display value="albumin-serum-observation" />
+			  </reference>
+			  <name value="albumin-serum-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/glomerular-filtration-observation" />
+				<display value="glomerular-filtration-observation" />
+			  </reference>
+			  <name value="glomerular-filtration-observation" />
+			  <description value="Example of Observation for Long COVID bundle" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom2" />
+				<display value="symptom2" />
+			  </reference>
+			  <name value="symptom2" />
+			  <description value="Long Covid symptom: Dyspnea" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom3" />
+				<display value="symptom3" />
+			  </reference>
+			  <name value="symptom3" />
+			  <description value="Long Covid symptom: Pain in Legs" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom4" />
+				<display value="symptom4" />
+			  </reference>
+			  <name value="symptom4" />
+			  <description value="Long Covid symptom: Pain in hands" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom5" />
+				<display value="symptom5" />
+			  </reference>
+			  <name value="symptom5" />
+			  <description value="Long Covid symptom: Pain in arms" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom6" />
+				<display value="symptom6" />
+			  </reference>
+			  <name value="symptom6" />
+			  <description value="Long Covid symptom: Brain Fog - Intermittent confusion" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom7" />
+				<display value="symptom7" />
+			  </reference>
+			  <name value="symptom7" />
+			  <description value="Long Covid symptom: Brain Fog - Memory impairment" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom8" />
+				<display value="symptom8" />
+			  </reference>
+			  <name value="symptom8" />
+			  <description value="Long Covid symptom: Covid Toes - Toe swelling" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/symptom9" />
+				<display value="symptom9" />
+			  </reference>
+			  <name value="symptom9" />
+			  <description value="Long Covid symptom: Covid Toes - Pustular chilblain" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/chilblain-found" />
+				<display value="chilblain-found" />
+			  </reference>
+			  <name value="chilblain-found" />
+			  <description value="Long Covid related condition: Pustular chilblain found" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Condition/chilblain-resolved" />
+				<display value="chilblain-resolved" />
+			  </reference>
+			  <name value="chilblain-resolved" />
+			  <description value="Long Covid related condition: Pustular chilblain resolved" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Goal/lower-pain-minimal-opioids" />
+				<display value="lower-pain-minimal-opioids" />
+			  </reference>
+			  <name value="lower-pain-minimal-opioids" />
+			  <description value="Lower pain with minimal opioids" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Observation/reduced-pain" />
+				<display value="reduced-pain" />
+			  </reference>
+			  <name value="reduced-pain" />
+			  <description value="Outcome example. Caregiver's observed thoughts on pain" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Goal/appetite-to-normal" />
+				<display value="appetite-to-normal" />
+			  </reference>
+			  <name value="appetite-to-normal" />
+			  <description value="Return appetite to normal" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Goal/electrolyte-protein-normal-range" />
+				<display value="electrolyte-protein-normal-range" />
+			  </reference>
+			  <name value="electrolyte-protein-normal-range" />
+			  <description value="Get Electrolyte and proteins back to normal" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Goal/bmi-normal-range" />
+				<display value="bmi-normal-range" />
+			  </reference>
+			  <name value="bmi-normal-range" />
+			  <description value="Get BMI into healthy range" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		<resource>
+			  <reference>
+				<reference value="Goal/access-affordable-healthy-food" />
+				<display value="access-affordable-healthy-food" />
+			  </reference>
+			  <name value="access-affordable-healthy-food" />
+			  <description value="Improve access to affordable, healthy food" />
+			  <groupingId value="new-group24"/>
+		</resource>
+		
+		
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>

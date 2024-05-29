@@ -354,7 +354,7 @@ Usage: #example
 //SCT 1119303003 Post-acute COVID-19 (disorder) 2022 - 06
 //ICD10 U09 Post COVID-19 condition
 Instance: encounter-diag-1
-InstanceOf: Condition
+InstanceOf: Condition 
 Usage: #example
 * clinicalStatus = $condition-clinical#active "Active"
 * clinicalStatus.text = "Active"

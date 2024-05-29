@@ -238,7 +238,7 @@ Usage: #example
 //MOCA improved cognition
 Instance: observation-moca
 InstanceOf: Observation
-Description: "MOCA result"
+//Description: "MOCA new result"
 Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
@@ -251,15 +251,15 @@ Usage: #example
 * derivedFrom = Reference(questionnnaire-res-moca)
 
 Instance: questionnnaire-res-moca
-InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse
-Description: "MOCA initial questionnaire response"
+InstanceOf: QuestionnaireResponse
+//Description: "MOCA new questionnaire response"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #completed
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 //"MDS3.0-NC-1.17"
-* questionnaire.extension[questionnaireDisplay].valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
+//"Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
 * authored = "2022-12-08T17:32:00-05:00"
 * author = Reference(PractitionerRole/careCoordinator-1) "Julie Smith"
 * item[0].linkId = "MoCA"
@@ -270,7 +270,7 @@ Usage: #example
 
 Instance: obs-response-moca
 InstanceOf: Observation
-Description: "MOCA converted observation from question"
+//Description: "MOCA new converted observation from question"
 Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
@@ -284,7 +284,7 @@ Usage: #example
 
 Instance: observation-moca-original
 InstanceOf: Observation
-Description: "MOCA result"
+//Description: "MOCA initial result"
 Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
@@ -297,15 +297,15 @@ Usage: #example
 * derivedFrom = Reference(questionnnaire-res-moca)
 
 Instance: questionnnaire-res-moca-original
-InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse
-Description: "MOCA initial questionnaire response"
+InstanceOf: QuestionnaireResponse
+//Description: "MOCA initial questionnaire response"
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #completed
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
 //"MDS3.0-NC-1.17"
-* questionnaire.extension[questionnaireDisplay].valueString = "Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
+//"Minimum Data Set (MDS) - version 3.0 - Resident Assessment Instrument (RAI) version 1.17.1 [CMS Assessment]"
 * authored = "2022-04-28T17:32:00-05:00"
 * author = Reference(PractitionerRole/careCoordinator-1) "Julie Smith"
 * item[0].linkId = "MoCA"
@@ -316,7 +316,7 @@ Usage: #example
 
 Instance: obs-response-moca-original
 InstanceOf: Observation
-Description: "MOCA converted observation from question"
+//Description: "MOCA converted original observation from question"
 Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final

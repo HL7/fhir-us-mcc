@@ -24,7 +24,10 @@ INFORMATION: QuestionnaireResponse/questionnnaire-res-moca: QuestionnaireRespons
 INFORMATION: QuestionnaireResponse/questionnnaire-res-moca-original: QuestionnaireResponse: The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
 
 # UCUM use of unit less annotation. In this case the annotation is simply for human readability. It is expected to be treated as an integer in machine processing
-UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored 
+
+# UCUM use of 1.73 m2 is consistent with reporting glomerular filtration rate. It is appropriate in this case.
+UCUM Codes that contain human readable annotations like {1.73_m2} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
 
 # This code and system are from US Core 6.1.0 guidance. The slicing is as intended
 INFORMATION: Observation/obs-response-moca: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#cognitive-status)
