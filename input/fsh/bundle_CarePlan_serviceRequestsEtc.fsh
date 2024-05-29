@@ -2,6 +2,7 @@
 Instance: dialysis-request
 InstanceOf: ServiceRequest
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
 * status = #active
 * intent = #plan
 * code = $sct#417038009 "Referral for dialysis (procedure)"
@@ -64,6 +65,7 @@ Usage: #example
 Instance: ckd-app-education
 InstanceOf: Procedure
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"
 * status = #completed
 * category = $sct#311401005 "Patient education (procedure)"
 * category.text = "Education"
@@ -80,6 +82,7 @@ Usage: #example
 Instance: dietitian-referral
 InstanceOf: ServiceRequest
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
 * status = #active
 * intent = #plan
 * code = $sct#103699006	"Referral to dietitian nutritionist"
@@ -92,6 +95,7 @@ Usage: #example
 Instance: dietitian-consult
 InstanceOf: Procedure
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCProcedure"
 * status = #completed
 * category = $sct#311401005 "Patient education (procedure)"
 * category.text = "Education"
@@ -130,6 +134,7 @@ Usage: #example
 Instance: long-covid-request
 InstanceOf: ServiceRequest
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
 * status = #active
 * intent = #plan
 * code = $sct#442135008 "Referral to infectious disease clinic (procedure)"
@@ -178,6 +183,7 @@ Usage: #example
 Instance: pt-3x-wk
 InstanceOf: ServiceRequest
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
 * status = #active
 * intent = #plan
 * code = $sct#444831000124102 "Referral for physical therapy (procedure)"
@@ -196,6 +202,7 @@ Usage: #example
 Instance: counseling-1x-wk
 InstanceOf: ServiceRequest
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
 * status = #active
 * intent = #plan
 * code = $sct#409063005 "Counseling (procedure)"
@@ -214,6 +221,7 @@ Usage: #example
 Instance: meditation-7x-wk
 InstanceOf: ServiceRequest
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCServiceRequest"
 * status = #active
 * intent = #plan
 * code.text = "Meditation self-guided"
@@ -231,6 +239,7 @@ Usage: #example
 Instance: observation-moca
 InstanceOf: Observation
 Description: "MOCA result"
+Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
 * effectiveDateTime = "2022-12-08T17:32:00-05:00"
@@ -244,6 +253,8 @@ Description: "MOCA result"
 Instance: questionnnaire-res-moca
 InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse
 Description: "MOCA initial questionnaire response"
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #completed
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
@@ -260,6 +271,7 @@ Description: "MOCA initial questionnaire response"
 Instance: obs-response-moca
 InstanceOf: Observation
 Description: "MOCA converted observation from question"
+Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
 * effectiveDateTime = "2022-12-08T17:32:00-05:00"
@@ -273,6 +285,7 @@ Description: "MOCA converted observation from question"
 Instance: observation-moca-original
 InstanceOf: Observation
 Description: "MOCA result"
+Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
 * effectiveDateTime = "2022-04-28T17:32:00-05:00"
@@ -286,6 +299,8 @@ Description: "MOCA result"
 Instance: questionnnaire-res-moca-original
 InstanceOf: http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse
 Description: "MOCA initial questionnaire response"
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCQuestionnaireResponse"
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #completed
 * questionnaire = "http://example.org/Questionnaire/MDS3.0-NC-1.17"
@@ -302,6 +317,7 @@ Description: "MOCA initial questionnaire response"
 Instance: obs-response-moca-original
 InstanceOf: Observation
 Description: "MOCA converted observation from question"
+Usage: #example
 * subject = Reference(Patient/cc-pat-pnoelle) "Patricia Noelle"
 * status = #final
 * effectiveDateTime = "2022-04-28T17:32:00-05:00"

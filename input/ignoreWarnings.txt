@@ -6,14 +6,46 @@ WARNING: StructureDefinition/mccCarePlan: StructureDefinition.snapshot.element[9
 INFORMATION: QuestionnaireResponse/hunger-vital-sign-example: QuestionnaireResponse.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CareTeam/careteam-of-noelle: CareTeam.participant[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CareTeam/careteam-for-bundle: CareTeam.participant[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CareTeam/careteam-for-bundle: CareTeam.participant[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Examples demonstrate use of additional Codes or Identifiers not defined in US Core profiles.
 INFORMATION: Practitioner/practitionerMCC-1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
 INFORMATION: Practitioner/practitionerMCC-2: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
 INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0
+INFORMATION: Practitioner/practitionerMCC-3v: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Practitioner/practitionerMCC-V: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+# These codes are examples of 
+
+# Questionnaire is not included, we point to example.org and this should not resolve
+INFORMATION: QuestionnaireResponse/questionnnaire-res-moca: QuestionnaireResponse: The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
+INFORMATION: QuestionnaireResponse/questionnnaire-res-moca-original: QuestionnaireResponse: The questionnaire 'http://example.org/Questionnaire/MDS3.0-NC-1.17' could not be resolved, so no validation can be performed against the base questionnaire
+
+# UCUM use of unit less annotation. In this case the annotation is simply for human readability. It is expected to be treated as an integer in machine processing
+UCUM Codes that contain human readable annotations like {score} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+
+# This code and system are from US Core 6.1.0 guidance. The slicing is as intended
+INFORMATION: Observation/obs-response-moca: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#cognitive-status)
+INFORMATION: Observation/obs-response-moca-original: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#cognitive-status)
+INFORMATION: Observation/observation-moca: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#cognitive-status)
+INFORMATION: Observation/observation-moca-original: Observation.category[1]: None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/us/core/CodeSystem/us-core-category#cognitive-status)
+
 
 # Example use category of 'Symptom' which is not in the USCORE value set. There is no suitable code existing in the ValueSet US Core Simple Observation Category 
 INFORMATION: Observation/Symptom1: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0
+INFORMATION: Observation/symptom2: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom3: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom4: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom5: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom6: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom7: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom8: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/symptom9: Observation.category[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/mcc/StructureDefinition/MCCSymptomObservation|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# Goal description can be text only
+No code provided, and a code should be provided from the value set 'US Core Goal Codes'
 
 # Use of these draft CodeSystems is intentional
 Reference to draft CodeSystem http://hl7.org/fhir/goal-acceptance-status|5.1.0-cibuild
@@ -24,6 +56,9 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/diet|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 Reference to draft CodeSystem http://hl7.org/fhir/narrative-status|4.0.1
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|1.0.0
+INFORMATION: MedicationRequest/med-for-chilblains: MedicationRequest.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0
+INFORMATION: MedicationRequest/med-for-chilblains: MedicationRequest.dosageInstruction[0].doseAndRate[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/dose-rate-type|1.0.0
 
 # due to bug in US Core 6.1.0 that was fixed in US Core 7. see http://jira.hl7.org/browse/FHIR-42814
 WARNING: Immunization/immunization-1: Immunization: Constraint failed: us-core-5: 'SHOULD have a translation to the NDC value set' (defined in http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) (Best Practice Recommendation)
+

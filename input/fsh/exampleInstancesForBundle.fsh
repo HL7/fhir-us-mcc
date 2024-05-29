@@ -24,11 +24,11 @@ Usage: #example
 Instance: practitionerMCC-V
 InstanceOf: Practitioner
 Usage: #example
-* meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
-* meta.extension[=].valueString = "practitionerMCC-V"
-* meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
-* meta.extension[=].valueMarkdown = "This is a practitioner 1 example for the *US Core Practitioner Profile*."
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+//* meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
+//* meta.extension[=].valueString = "practitionerMCC-V"
+//* meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
+//* meta.extension[=].valueMarkdown = "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+//* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[=].value = "9941339100"
 * identifier[+].system = "http://www.acme.org/practitioners"
@@ -82,11 +82,11 @@ Usage: #example
 Instance: practitionerMCC-3v
 InstanceOf: Practitioner
 Usage: #example
-* meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
-* meta.extension[=].valueString = "PractitionerMCC-3v"
-* meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
-* meta.extension[=].valueMarkdown = "This is a practitioner 1 example for the *US Core Practitioner Profile*."
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+//* meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
+//* meta.extension[=].valueString = "PractitionerMCC-3v"
+//* meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
+//* meta.extension[=].valueMarkdown = "This is a practitioner 1 example for the *US Core Practitioner Profile*."
+//* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
 * identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[=].value = "9941339100"
 * identifier[+].system = "http://www.acme.org/practitioners"
@@ -146,10 +146,10 @@ Usage: #example
 Instance: careteam-for-bundle
 InstanceOf: CareTeam
 Usage: #example
-* meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
-* meta.extension[=].valueString = "CareTeam Example for LONG-COVID bundle"
-* meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
-* meta.extension[=].valueMarkdown = "This is a careteam example for the MCC CareTeam."
+//* meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
+//* meta.extension[=].valueString = "CareTeam Example for LONG-COVID bundle"
+//* meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
+//* meta.extension[=].valueMarkdown = "This is a careteam example for the MCC CareTeam."
 * meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam"
 * status = #active
 * name = "Care Team of Noelle Example for LONG-COVID bundle"
@@ -321,6 +321,7 @@ Usage: #example
 Instance: problem-list-2
 InstanceOf: Condition
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"
 * clinicalStatus = $condition-clinical#active "Active"
 * clinicalStatus.text = "Active"
 * verificationStatus = $condition-ver-status#confirmed
@@ -382,6 +383,7 @@ Usage: #example
 Instance: arterial-blood-gas-panel
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
 * category[=].text = "Lab"
@@ -407,6 +409,7 @@ Usage: #example
 Instance: ph-lab-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -424,6 +427,7 @@ Usage: #example
 Instance: hco3-arterial-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -441,6 +445,7 @@ Usage: #example
 Instance: pCO2-arterial-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -458,6 +463,7 @@ Usage: #example
 Instance: pO2-arterial-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -475,6 +481,7 @@ Usage: #example
 Instance: serum-lactate-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -492,6 +499,7 @@ Usage: #example
 Instance: blood-ketones-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -509,6 +517,7 @@ Usage: #example
 Instance: serum-electrolytes-panel
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
 * category[=].text = "Lab"
@@ -538,6 +547,7 @@ Usage: #example
 Instance: sodium-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -555,6 +565,7 @@ Usage: #example
 Instance: potassium-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -572,6 +583,7 @@ Usage: #example
 Instance: chloride-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -589,6 +601,7 @@ Usage: #example
 Instance: bicarbonate-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -606,6 +619,7 @@ Usage: #example
 Instance: carbon-dioxide-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -623,6 +637,7 @@ Usage: #example
 Instance: anion-gap-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -640,6 +655,7 @@ Usage: #example
 Instance: protein-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -657,6 +673,7 @@ Usage: #example
 Instance: albumin-serum-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
@@ -674,6 +691,7 @@ Usage: #example
 Instance: glomerular-filtration-observation
 InstanceOf: Observation
 Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/mcc/StructureDefinition/MCCLaboratoryResultObservation"
 //* basedOn = Reference(ServiceRequest/edgL1qrdpvDNnJNMxFUDV81i4toQJN0dTqmIcrPamkUI3)
 * status = #final
 * category[0] = $observation-category#laboratory "Laboratory"
