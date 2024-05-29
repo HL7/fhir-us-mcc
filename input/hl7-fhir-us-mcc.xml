@@ -67,7 +67,7 @@
 	<dependsOn id="hl7fhiruvextensions">
         <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
         <packageId value="hl7.fhir.uv.extensions"/>
-        <version value="current"/>
+        <version value="5.1.0"/>
     </dependsOn>
 	<!-- hl7.fhir.uv.extensions.r4: current
 	
@@ -80,7 +80,7 @@
     <dependsOn id="usnlmvsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
         <packageId value="us.nlm.vsac"/>
-        <version value="0.11.0"/>
+        <version value="0.18.0"/>
     </dependsOn>
     <dependsOn id="hl7fhiruvsdc">
         <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
@@ -1525,7 +1525,7 @@
         </parameter>
         <parameter>
             <code value="releaselabel"/>
-            <value value="ballot"/>
+            <value value="STU1"/>
         </parameter>
 		<parameter>
             <code value="path-expansion-params"/>

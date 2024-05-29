@@ -5,7 +5,7 @@
 	 "mode" : "milestone",
 	"status": "trial-use",
 	"sequence": "STU 1",
-	"desc": "FHIR STU Release 1",
-	"decmd": "FHIR STU Release 1",
+	"desc": "FHIR STU Release 1 MCC eCare Plan Implementation Guide",
+	"decmd": "FHIR STU Release 1 MCC eCare Plan Implementation Guide",
 	"first" : false
 }

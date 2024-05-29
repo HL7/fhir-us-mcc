@@ -149,10 +149,10 @@ WARNING: Bundle/long-covid-and-ckd-bundle: Bundle.entry[72].resource/*Goal/acces
 # using alternative code
 INFORMATION: PractitionerRole/careCoordinator-1: PractitionerRole.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#171M00000X)
 INFORMATION: Bundle/long-covid-and-ckd-bundle: Bundle.entry[27].resource/*PractitionerRole/careCoordinator-1*/.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#171M00000X)
-
+INFORMATION: Bundle/long-covid-and-ckd-bundle: Bundle.entry[22].resource/*PractitionerRole/dr-vince-jones*/.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#246ZN0300X)
 
 # Use of these draft CodeSystems is intentional
-Reference to draft CodeSystem http://hl7.org/fhir/goal-acceptance-status|5.1.0-cibuild
+Reference to draft CodeSystem http://hl7.org/fhir/goal-acceptance-status|5.1.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/goal-priority|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/goal-relationship-type|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/goal-category|1.0.0
