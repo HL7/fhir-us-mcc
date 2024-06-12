@@ -18,8 +18,10 @@ INFORMATION: Practitioner/practitionerMCC-3: Practitioner.identifier[1]: This el
 INFORMATION: Practitioner/practitionerMCC-3v: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Practitioner/practitionerMCC-V: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
+# The example data instance matches validates against both the US CORE profile and our derived profile.
+WARNING: Bundle/long-covid-and-ckd-bundle: Bundle.entry[19].resource/*CarePlan/careplan-for-bundle*/.careTeam[0]: Found multiple matching profiles for CareTeam/careteam-for-bundle among choices: http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam, http://hl7.org/fhir/us/mcc/StructureDefinition/MCCCareTeam
 
-# These examples represent Patient Health Concerns and do not have appropriate codes. codeableConcept.text is used to convey the meaning
+# These examples represent Patient Health Concerns and do not have appropriate codes. They present the patient's words, for example. Here codeableConcept.text is used to convey the patient's stated goal
 WARNING: Condition/patient-health-concern-1: Condition.code: No code provided, and a code should be provided from the value set 'US Core Condition Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|6.1.0)
 WARNING: Condition/patient-health-concern-2: Condition.code: No code provided, and a code should be provided from the value set 'US Core Condition Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|6.1.0)
 WARNING: Condition/patient-health-concern-3: Condition.code: No code provided, and a code should be provided from the value set 'US Core Condition Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|6.1.0)
@@ -146,7 +148,7 @@ WARNING: Bundle/long-covid-and-ckd-bundle: Bundle.entry[70].resource/*Goal/elect
 WARNING: Bundle/long-covid-and-ckd-bundle: Bundle.entry[71].resource/*Goal/bmi-normal-range*/.description: No code provided, and a code should be provided from the value set 'US Core Goal Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description|6.1.0)
 WARNING: Bundle/long-covid-and-ckd-bundle: Bundle.entry[72].resource/*Goal/access-affordable-healthy-food*/.description: No code provided, and a code should be provided from the value set 'US Core Goal Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-goal-description|6.1.0)
 
-# using alternative code
+# NUCC codes are correct
 INFORMATION: PractitionerRole/careCoordinator-1: PractitionerRole.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#171M00000X)
 INFORMATION: Bundle/long-covid-and-ckd-bundle: Bundle.entry[27].resource/*PractitionerRole/careCoordinator-1*/.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#171M00000X)
 INFORMATION: Bundle/long-covid-and-ckd-bundle: Bundle.entry[22].resource/*PractitionerRole/dr-vince-jones*/.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set) (codes = http://nucc.org/provider-taxonomy#246ZN0300X)
