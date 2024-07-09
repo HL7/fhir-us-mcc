@@ -9,6 +9,11 @@
         <profile value="http://hl7.org/fhir/us/mcc/StructureDefinition/MCCChronCondHealthConcern"/>
     </meta>
 
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narrative: Condition ConditionCKD</b></p><a name="ConditionCKD"> </a><a name="hcConditionCKD"> </a><a name="hcConditionCKD-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: versionId: id (PrimitiveType/Condition.meta.versionId): element = id -&gt; versionId=id[5]; Last updated: 2022-06-17 23:22:56+0000; </p><p style="margin-bottom: 0px">Information Source: #5R98DWXS6a48AGkD</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MCCChronCondHealthConcern.html">MCC Chronic Condition and Health Concern Profile</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 24484000}">Severe</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 700379002}">Chronic kidney disease stage 3B (disorder)</span></p><p><b>subject</b>: <a href="Patient-cc-pat-pnoelle.html">Patricia Noelle</a></p><p><b>onset</b>: No display for Age <li>value: 52</li><li>unit: years</li><li>system: http://unitsofmeasure.org</li><li>code: a</li></p><p><b>recordedDate</b>: 2018-12-01</p><blockquote><p><b>evidence</b></p><p><b>detail</b>: </p><li><a href="FamilyMemberHistory-father.html">Father had Chronic Kidney disease</a></li><li><a href="Procedure-Dialysis.html">Patient receives regular dialysis</a></li><li><a href="Observation-bunMCC.html">BUN is 24 mg/dL</a></li></blockquote></div>
+  </text>
+
     <clinicalStatus>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
